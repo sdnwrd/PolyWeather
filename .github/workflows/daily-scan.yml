@@ -1,0 +1,44 @@
+name: daily-scan
+
+on:
+  schedule:
+    # 05:30 UTC = 07:30 CEST (Berlin summer) / 06:30 CET (Berlin winter).
+    # Markets close at 12:00 UTC, so this leaves >=5.5h headroom year-round.
+    - cron: "30 5 * * *"
+  workflow_dispatch:  # manual "Run workflow" button
+
+# Allow the job to commit the updated CSV back to the repo
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run scan
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NWS_USER_AGENT: ${{ secrets.NWS_USER_AGENT }}
+        run: python main.py --now
+
+      - name: Commit updated paper-trade log
+        run: |
+          if [ -n "$(git status --porcelain data/signals.csv 2>/dev/null)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/signals.csv
+            git commit -m "log: signals + backfill $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "no signals.csv changes to commit"
+          fi
