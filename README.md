@@ -89,34 +89,56 @@ python paper.py --summary    # print win-rate + avg unit ROI
 The daily `python main.py --now` automatically appends new signals AND runs
 backfill on resolved rows — no separate step needed.
 
-## Hosting on GitHub Actions (recommended, free)
+## Hosting on Render (recommended)
 
-The repo includes `.github/workflows/daily-scan.yml` which runs the bot once a
-day at **05:30 UTC** (= 07:30 CEST in summer, 06:30 CET in winter) and commits
-the updated `data/signals.csv` back to the repo.
+Render Cron Jobs fire punctually at the configured UTC time — GitHub Actions
+cron drifts 1-3h, which loses the early-bird edge before US trading desks
+wake up. The repo ships a `render.yaml` Blueprint that wires everything up
+for **$1/month**.
+
+The cron is set to **04:00 UTC** (= 06:00 CEST / 05:00 CET) — after the
+00 UTC GFS model run lands in NWS forecasts (~03:00 UTC) and before the
+US wakes up. Markets close at 12:00 UTC, so this leaves ~8h headroom.
+
+Render Cron containers are ephemeral (no persistent disk), so the wrapper
+script `scripts/run_and_commit.sh` syncs `data/signals.csv` back to the
+GitHub repo after each run. The repo is the database.
 
 Steps:
 
 1. Push this repo to GitHub.
-2. In the repo: **Settings → Secrets and variables → Actions → New repository secret**, add:
+2. Create a **fine-grained Personal Access Token** at
+   `https://github.com/settings/personal-access-tokens/new`:
+   - Resource owner: your user
+   - Repository access: **Only select repositories → rainsignal**
+   - Repository permissions → **Contents: Read and write**
+   - Copy the token — you'll paste it in step 4.
+3. Sign up at `render.com` with your GitHub account.
+4. **New + → Blueprint** → select the `rainsignal` repo. Render reads
+   `render.yaml` and pre-creates the cron job. It will prompt for the four
+   secrets (`sync: false` in render.yaml):
    - `TELEGRAM_TOKEN`
    - `TELEGRAM_CHAT_ID`
    - `NWS_USER_AGENT` (e.g. `weather-signal-bot/1.0 (you@example.com)`)
-3. **Settings → Actions → General → Workflow permissions → "Read and write permissions"** (so the job can commit the CSV back).
-4. Done. The first run kicks off at the next 05:30 UTC. You can also trigger it
-   manually any time via **Actions → daily-scan → Run workflow**.
+   - `GH_TOKEN` (the fine-grained PAT from step 2)
+5. Deploy. The first build runs immediately; the cron fires daily at 04:00 UTC.
+   You can also trigger it on demand via **Render dashboard → Trigger run**.
 
-Each run takes ~30 seconds; with the GitHub free tier (2000 private-repo
-minutes/month) you'll use <20 minutes/month. The repo doubles as a
-browsable, version-controlled record of every signal.
+Each run takes ~30s. The `signals.csv` commit-back triggers a Render rebuild,
+so tomorrow's cron starts from the freshest CSV automatically.
 
-## Hosting on Render (paid alternative)
+## Hosting on GitHub Actions (free fallback)
 
-Render Cron Jobs work too, but cost ~$1/month per job (no free tier for cron).
-If you want to use it anyway: create a **Cron Job** service, point it at this
-repo, set the schedule to `30 5 * * *`, command `python main.py --now`, add the
-same three env vars, and attach a small persistent disk for `data/signals.csv`.
-GitHub Actions is simpler and free, so prefer that unless you have a reason.
+`.github/workflows/daily-scan.yml` is kept for **manual one-off runs** from
+the GitHub UI (**Actions → manual-scan → Run workflow**). The scheduled
+trigger has been removed because GitHub Actions cron drifts 1-3h, which is
+unacceptable for time-sensitive trading signals.
+
+If you don't care about the early-bird edge (e.g. you're only validating
+that the model works at all), re-enable the schedule by adding
+`schedule: - cron: "30 5 * * *"` back to the workflow's `on:` block, and
+make sure the same three secrets are set under
+**Settings → Secrets and variables → Actions**.
 
 ## Tuning
 

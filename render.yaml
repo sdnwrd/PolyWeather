@@ -1,0 +1,25 @@
+services:
+  - type: cron
+    name: rainsignal-daily
+    runtime: python
+    plan: starter
+    # 04:00 UTC = 06:00 CEST / 05:00 CET. Fires after the 00 UTC GFS run has
+    # been ingested into NWS forecasts (~03:00 UTC) and before US trading
+    # desks wake up (~12:00 UTC), so bracket prices are still stale.
+    schedule: "0 4 * * *"
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash scripts/run_and_commit.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: GH_REPO
+        value: sdnwrd/rainsignal
+      # Secrets — set these in the Render dashboard, NOT in this file:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: NWS_USER_AGENT
+        sync: false
+      - key: GH_TOKEN
+        sync: false

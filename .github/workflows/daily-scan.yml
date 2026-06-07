@@ -1,11 +1,11 @@
-name: daily-scan
+name: manual-scan
 
+# Scheduled runs moved to Render Cron (see render.yaml) — Render fires
+# punctually at 04:00 UTC; GitHub Actions cron drifts 1-3h which loses
+# the early-bird edge before US trading desks wake up. This workflow
+# is retained for manual one-off runs from the GitHub UI.
 on:
-  schedule:
-    # 05:30 UTC = 07:30 CEST (Berlin summer) / 06:30 CET (Berlin winter).
-    # Markets close at 12:00 UTC, so this leaves >=5.5h headroom year-round.
-    - cron: "30 5 * * *"
-  workflow_dispatch:  # manual "Run workflow" button
+  workflow_dispatch:
 
 # Allow the job to commit the updated CSV back to the repo
 permissions:
