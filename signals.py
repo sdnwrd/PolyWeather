@@ -65,6 +65,11 @@ def evaluate_markets(
     for m in markets:
         if m.price is None:
             continue
+        # Skip markets whose book is closed — no point alerting on something
+        # the user can't actually trade. `None` means the field was missing,
+        # which we treat as "unknown, allow through" rather than block.
+        if m.accepting_orders is False:
+            continue
         if m.price > max_price:
             continue
         true_prob = estimate_true_probability(forecast_high, m.bracket_low, m.bracket_high)

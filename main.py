@@ -48,11 +48,10 @@ def _scan() -> list[Signal]:
             log.warning("price fetch failed for %s: %s", name, e)
             continue
 
-        now = datetime.now(timezone.utc)
-        closed = [m for m in markets if m.end_time and m.end_time <= now]
+        closed = [m for m in markets if m.accepting_orders is False]
         if closed:
             log.warning(
-                "%s: %d/%d markets already closed for trading (endDate <= now)",
+                "%s: %d/%d markets not accepting orders right now",
                 name, len(closed), len(markets),
             )
 

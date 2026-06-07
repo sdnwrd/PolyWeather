@@ -53,7 +53,8 @@ class Market:
     price: Optional[float] = None
     description: str = ""
     resolution_source: str = ""
-    end_time: Optional[datetime] = None  # when trading closes (UTC)
+    end_time: Optional[datetime] = None  # nominal resolution timestamp (NOT trading close)
+    accepting_orders: Optional[bool] = None  # true source of "is the book open right now?"
 
     @property
     def url(self) -> str:
@@ -257,6 +258,9 @@ def find_city_markets(city: str, target_date: Optional[date] = None) -> list[Mar
         m_desc = m.get("description") or event_desc
         m_src = m.get("resolutionSource") or event_src
         m_end = _parse_iso_datetime(m.get("endDate")) or event_end
+        accepting = m.get("acceptingOrders")
+        if not isinstance(accepting, bool):
+            accepting = None
         out.append(
             Market(
                 city=city,
@@ -270,6 +274,7 @@ def find_city_markets(city: str, target_date: Optional[date] = None) -> list[Mar
                 description=m_desc,
                 resolution_source=m_src,
                 end_time=m_end,
+                accepting_orders=accepting,
             )
         )
     return out
