@@ -15,7 +15,10 @@ git config --global user.email "rainsignal-bot@users.noreply.github.com"
 # The container starts from the image built at last deploy. If commits landed
 # on main since then (e.g. yesterday's CSV push), fetch + hard-reset to pick
 # them up. Any local changes in the container are throwaway by design.
-git remote set-url origin "${REPO_URL}"
+# Render's build image does not preserve the origin remote, so (re)create it
+# with the token-authenticated URL — set-url alone fails with "No such remote".
+git remote remove origin 2>/dev/null || true
+git remote add origin "${REPO_URL}"
 git fetch origin main
 git reset --hard origin/main
 
