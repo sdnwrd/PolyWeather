@@ -43,25 +43,64 @@ def _format_signal_line(s: Signal) -> str:
     return "\n".join(lines)
 
 
-def build_signals_message(signals: list[Signal], today: date) -> str:
-    by_city: dict[str, list[Signal]] = defaultdict(list)
-    for s in signals:
-        by_city[s.market.city].append(s)
-
-    blocks: list[str] = []
-    for city, items in by_city.items():
-        forecast = items[0].forecast_high
-        header = (
-            f"⚡ <b>Signal — {city}, {today.isoformat()}</b>\n"
-            f"NWS forecast high: {forecast:.0f}°F"
+def _city_block(city: str, items: list[Signal], today: date) -> str:
+    head = items[0]
+    if head.forecast_openmeteo is None:
+        forecast_line = f"NDFD forecast: {head.forecast_high:.0f}°F (Open-Meteo: n/a)"
+    else:
+        spread = head.model_spread or 0.0
+        forecast_line = (
+            f"NDFD forecast: {head.forecast_high:.0f}°F  |  "
+            f"Open-Meteo: {head.forecast_openmeteo:.0f}°F  |  "
+            f"spread: {spread:.1f}°F"
         )
-        station = items[0].market.station_hint
-        if station:
-            header += f"\nResolves at: {station}"
-        body = "\n\n".join(_format_signal_line(s) for s in items)
-        blocks.append(f"{header}\n\n{body}")
+    header = (
+        f"<b>{city}, {today.isoformat()}</b>\n"
+        f"{forecast_line}"
+    )
+    station = head.market.station_hint
+    if station:
+        header += f"\nResolves at: {station}"
+    body = "\n\n".join(_format_signal_line(s) for s in items)
+    return f"{header}\n\n{body}"
 
-    return "\n\n———\n\n".join(blocks)
+
+def _group_by_city(signals: list[Signal]) -> dict[str, list[Signal]]:
+    grouped: dict[str, list[Signal]] = defaultdict(list)
+    for s in signals:
+        grouped[s.market.city].append(s)
+    return grouped
+
+
+def build_signals_message(signals: list[Signal], today: date) -> str:
+    traded = [s for s in signals if not s.vetoed]
+    vetoed = [s for s in signals if s.vetoed]
+
+    sections: list[str] = []
+
+    if traded:
+        traded_blocks = [
+            _city_block(c, items, today)
+            for c, items in _group_by_city(traded).items()
+        ]
+        sections.append(
+            "⚡ <b>TRADE THESE</b> (passed Open-Meteo veto)\n\n"
+            + "\n\n———\n\n".join(traded_blocks)
+        )
+    else:
+        sections.append("⚡ <b>TRADE THESE</b>\n\n(none — all signals vetoed or no signals fired)")
+
+    if vetoed:
+        vetoed_blocks = [
+            _city_block(c, items, today)
+            for c, items in _group_by_city(vetoed).items()
+        ]
+        sections.append(
+            "🚫 <b>VETOED</b> (would have fired without Open-Meteo veto)\n\n"
+            + "\n\n———\n\n".join(vetoed_blocks)
+        )
+
+    return "\n\n═══════════════\n\n".join(sections)
 
 
 def build_empty_message(today: date, cities_checked: int) -> str:

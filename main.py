@@ -10,8 +10,8 @@ from datetime import date, datetime, timezone
 
 import schedule
 
-from config import CITIES, RUN_TIME
-from forecast import get_daily_high
+from config import CITIES, RUN_TIME, VETO_SPREAD_THRESHOLD
+from forecast import get_daily_high, get_openmeteo_high
 from markets import fetch_prices, find_city_markets, inspect_event
 from notifier import send_signals
 import paper
@@ -31,7 +31,17 @@ def _scan() -> list[Signal]:
         except Exception as e:
             log.warning("forecast fetch failed for %s: %s", name, e)
             continue
-        log.info("%s forecast high: %.1f°F", name, forecast)
+
+        om_forecast = get_openmeteo_high(city["lat"], city["lon"], today)
+        if om_forecast is None:
+            spread = None
+            log.info("%s NDFD=%.1f°F, Open-Meteo=n/a", name, forecast)
+        else:
+            spread = abs(forecast - om_forecast)
+            log.info(
+                "%s NDFD=%.1f°F, Open-Meteo=%.1f°F (spread %.1f°F)",
+                name, forecast, om_forecast, spread,
+            )
 
         try:
             markets = find_city_markets(name, today)
@@ -56,7 +66,17 @@ def _scan() -> list[Signal]:
             )
 
         signals = evaluate_markets(markets, forecast)
-        log.info("%s: %d markets, %d signals", name, len(markets), len(signals))
+        # Attach multi-model context to every fired signal so the Telegram
+        # message + paper-trade log can show both forecasts and the veto state.
+        for s in signals:
+            s.forecast_openmeteo = om_forecast
+            s.model_spread = spread
+            s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
+        vetoed_count = sum(1 for s in signals if s.vetoed)
+        log.info(
+            "%s: %d markets, %d signals (%d vetoed)",
+            name, len(markets), len(signals), vetoed_count,
+        )
         all_signals.extend(signals)
 
     return all_signals

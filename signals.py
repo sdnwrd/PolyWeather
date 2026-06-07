@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from typing import Optional
 
 import scipy.stats as stats
 
@@ -17,6 +18,9 @@ class Signal:
     true_prob: float
     market_price: float
     ev: float
+    forecast_openmeteo: Optional[float] = None
+    model_spread: Optional[float] = None
+    vetoed: bool = False  # set True when |NDFD - Open-Meteo| ≥ threshold
 
     @property
     def implied_prob(self) -> float:

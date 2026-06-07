@@ -33,6 +33,7 @@ FIELDS = [
     "date", "city", "station", "question",
     "bracket_low", "bracket_high",
     "market_price", "forecast_high", "model_true_prob", "ev",
+    "forecast_openmeteo", "model_spread", "vetoed",
     "actual_high", "outcome", "checked_at",
 ]
 
@@ -57,38 +58,53 @@ def _row_key(row: dict) -> tuple:
 
 
 def log_signals(signals: list[Signal], today: date) -> int:
-    """Append fired signals to the CSV. Returns count of new rows written."""
+    """Append fired signals to the CSV. Returns count of new rows written.
+
+    Always rewrites the whole file so a schema change (new columns added to
+    FIELDS) is migrated transparently — old rows pick up empty values for
+    the new columns instead of desyncing the header.
+    """
     _ensure_csv()
-    # Read existing keys to avoid duplicates if the run fires twice in a day
-    existing: set[tuple] = set()
     with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            existing.add(_row_key(row))
+        rows = list(csv.DictReader(f))
+
+    existing: set[tuple] = {_row_key(r) for r in rows}
 
     new_rows = 0
-    with CSV_PATH.open("a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDS)
-        for s in signals:
-            row = {
-                "date": today.isoformat(),
-                "city": s.market.city,
-                "station": _city_station(s.market.city),
-                "question": s.market.question,
-                "bracket_low": s.market.bracket_low,
-                "bracket_high": s.market.bracket_high,
-                "market_price": round(s.market_price, 4),
-                "forecast_high": round(s.forecast_high, 1),
-                "model_true_prob": round(s.true_prob, 4),
-                "ev": round(s.ev, 2),
-                "actual_high": "",
-                "outcome": "PENDING",
-                "checked_at": "",
-            }
-            if _row_key(row) in existing:
-                continue
-            writer.writerow(row)
-            new_rows += 1
+    for s in signals:
+        row = {
+            "date": today.isoformat(),
+            "city": s.market.city,
+            "station": _city_station(s.market.city),
+            "question": s.market.question,
+            "bracket_low": s.market.bracket_low,
+            "bracket_high": s.market.bracket_high,
+            "market_price": round(s.market_price, 4),
+            "forecast_high": round(s.forecast_high, 1),
+            "model_true_prob": round(s.true_prob, 4),
+            "ev": round(s.ev, 2),
+            "forecast_openmeteo": (
+                round(s.forecast_openmeteo, 1) if s.forecast_openmeteo is not None else ""
+            ),
+            "model_spread": (
+                round(s.model_spread, 1) if s.model_spread is not None else ""
+            ),
+            "vetoed": "true" if s.vetoed else "false",
+            "actual_high": "",
+            "outcome": "PENDING",
+            "checked_at": "",
+        }
+        if _row_key(row) in existing:
+            continue
+        rows.append(row)
+        existing.add(_row_key(row))
+        new_rows += 1
+
+    with CSV_PATH.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=FIELDS, extrasaction="ignore")
+        writer.writeheader()
+        for r in rows:
+            writer.writerow(r)
     return new_rows
 
 
@@ -207,33 +223,49 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
     return counts
 
 
+def _slice_summary(label: str, rows: list[dict]) -> str:
+    resolved = [r for r in rows if r["outcome"] in ("WIN", "LOSS")]
+    pending = [r for r in rows if r["outcome"] == "PENDING"]
+    if not resolved:
+        return f"{label}: signals={len(rows)}, pending={len(pending)}, resolved=0"
+    wins = [r for r in resolved if r["outcome"] == "WIN"]
+    roi_sum = 0.0
+    for r in resolved:
+        try:
+            price = float(r["market_price"])
+        except (TypeError, ValueError):
+            continue
+        if price <= 0:
+            continue
+        roi_sum += (1 / price - 1) if r["outcome"] == "WIN" else -1
+    win_rate = len(wins) / len(resolved)
+    avg_roi = roi_sum / len(resolved)
+    return (
+        f"{label}: signals={len(rows)}, resolved={len(resolved)}, "
+        f"pending={len(pending)}, win_rate={win_rate:.1%}, "
+        f"avg_unit_ROI={avg_roi:+.2f}x"
+    )
+
+
 def summary() -> str:
-    """Quick win-rate / EV summary across all resolved rows."""
+    """Quick win-rate / EV summary across all resolved rows, split by veto state
+    so the strategy can be evaluated with and without the Open-Meteo veto."""
     if not CSV_PATH.exists():
         return "(no signals logged yet)"
     with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    total = len(rows)
-    resolved = [r for r in rows if r["outcome"] in ("WIN", "LOSS")]
-    wins = [r for r in resolved if r["outcome"] == "WIN"]
-    pending = [r for r in rows if r["outcome"] == "PENDING"]
-    if not resolved:
-        return f"signals={total}, pending={len(pending)}, resolved=0 — wait for backfill"
-    win_rate = len(wins) / len(resolved)
-    # Realized ROI assuming €1 unit stake per signal:
-    #   WIN  → (1 / price) − 1
-    #   LOSS → −1
-    roi_sum = 0.0
-    for r in resolved:
-        price = float(r["market_price"])
-        if price <= 0:
-            continue
-        roi_sum += (1 / price - 1) if r["outcome"] == "WIN" else -1
-    avg_roi = roi_sum / len(resolved)
-    return (
-        f"signals={total}, resolved={len(resolved)}, pending={len(pending)}, "
-        f"win_rate={win_rate:.1%}, avg_unit_ROI={avg_roi:+.2f}x"
-    )
+    if not rows:
+        return "(no signals logged yet)"
+
+    # Older rows predate the `vetoed` column and default to "" — treat as
+    # not-vetoed since the veto didn't exist when they were written.
+    traded = [r for r in rows if r.get("vetoed", "") != "true"]
+    vetoed = [r for r in rows if r.get("vetoed", "") == "true"]
+
+    lines = [_slice_summary("ALL", rows), _slice_summary("TRADED (passed veto)", traded)]
+    if vetoed:
+        lines.append(_slice_summary("VETOED (would have fired)", vetoed))
+    return " | ".join(lines)
 
 
 if __name__ == "__main__":

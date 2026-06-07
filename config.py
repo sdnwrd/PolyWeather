@@ -18,6 +18,12 @@ MAX_MARKET_PRICE = 0.15
 MIN_TRUE_PROB = 0.05
 FORECAST_SIGMA = 2.0
 
+# If |NDFD - Open-Meteo| forecast spread ≥ this, the city's signals are
+# flagged as vetoed — shown for visibility but not actionable. Tuned from
+# the 2026-06-07 LA bust where NDFD said 68 but Open-Meteo (and reality)
+# said 71-72; revisit once paper.py has enough data to backtest.
+VETO_SPREAD_THRESHOLD = 3.0
+
 # Polymarket's `endDate` (12:00 UTC) is the nominal resolution timestamp,
 # not the trading deadline — order books typically stay open until late
 # local evening, when the day's recorded high is locked in. The strategic
