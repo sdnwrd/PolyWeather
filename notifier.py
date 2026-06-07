@@ -89,7 +89,17 @@ def _post(text: str) -> bool:
         "disable_web_page_preview": True,
     }
     resp = requests.post(url, json=payload, timeout=_TIMEOUT)
-    resp.raise_for_status()
+    # Telegram returns 200 with {ok: false} for some logical errors; surface
+    # the body either way so the cron logs show exactly what happened.
+    chat_tail = str(TELEGRAM_CHAT_ID)[-4:]
+    if not resp.ok:
+        log.error("Telegram HTTP %s (chat …%s): %s", resp.status_code, chat_tail, resp.text)
+        resp.raise_for_status()
+    body = resp.json() if resp.content else {}
+    if not body.get("ok", False):
+        log.error("Telegram returned ok=false (chat …%s): %s", chat_tail, body)
+        return False
+    log.info("Telegram delivered (chat …%s, message_id=%s)", chat_tail, body.get("result", {}).get("message_id"))
     return True
 
 
