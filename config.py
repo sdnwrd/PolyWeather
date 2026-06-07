@@ -18,9 +18,14 @@ MAX_MARKET_PRICE = 0.15
 MIN_TRUE_PROB = 0.05
 FORECAST_SIGMA = 2.0
 
-# Markets close at 12:00 UTC = 14:00 CEST / 13:00 CET.
+# Polymarket's `endDate` (12:00 UTC) is the nominal resolution timestamp,
+# not the trading deadline — order books typically stay open until late
+# local evening, when the day's recorded high is locked in. The strategic
+# edge window, though, ends around 12:00 UTC when US prop desks wake up
+# and start correcting overnight mispricings. So earlier is better.
+#
 # 07:30 German local = 05:30 UTC (summer) / 06:30 UTC (winter) — leaves
-# 5.5–6.5h headroom before close. The schedule library uses local time, so
+# 5.5–6.5h of edge headroom. The schedule library uses local time, so
 # this stays correct across the European DST switch automatically.
 RUN_TIME = "07:30"
 
