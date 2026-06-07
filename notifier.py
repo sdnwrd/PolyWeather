@@ -59,12 +59,7 @@ def build_signals_message(signals: list[Signal], today: date) -> str:
         if station:
             header += f"\nResolves at: {station}"
         body = "\n\n".join(_format_signal_line(s) for s in items)
-        footer = (
-            "\n\n<i>⚠️ Verify the resolution source matches your forecast — "
-            "the market may resolve on a specific station/window that differs "
-            "from the lat/lon you forecast.</i>"
-        )
-        blocks.append(f"{header}\n\n{body}{footer}")
+        blocks.append(f"{header}\n\n{body}")
 
     return "\n\n———\n\n".join(blocks)
 
