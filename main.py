@@ -6,7 +6,7 @@ import argparse
 import logging
 import sys
 import time
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import schedule
 
@@ -25,73 +25,79 @@ from signals import Signal, evaluate_markets
 log = logging.getLogger("weather-signal-bot")
 
 
+SCAN_HORIZON_DAYS = 4  # scan today + next 3 days; market may not exist for D+3 yet
+
+
+def _scan_city_date(city: dict, target: date) -> list[Signal]:
+    """Scan one (city, target_date) combo and return any qualifying signals."""
+    name = city["name"]
+    forecast = get_primary_forecast(city, target)
+    if forecast is None:
+        log.warning("primary forecast unavailable for %s on %s", name, target)
+        return []
+
+    veto_forecast = get_veto_forecast(city, target)
+    primary_label = "NDFD" if city.get("region") == "us" else "OM-best"
+    veto_label = "OM-best" if city.get("region") == "us" else "OM-GFS"
+    if veto_forecast is None:
+        spread = None
+        log.info("%s %s %s=%.1f°F, %s=n/a", name, target, primary_label, forecast, veto_label)
+    else:
+        spread = abs(forecast - veto_forecast)
+        log.info(
+            "%s %s %s=%.1f°F, %s=%.1f°F (spread %.1f°F)",
+            name, target, primary_label, forecast, veto_label, veto_forecast, spread,
+        )
+
+    try:
+        markets = find_city_markets(name, target)
+    except Exception as e:
+        log.warning("market discovery failed for %s %s: %s", name, target, e)
+        return []
+    if not markets:
+        # Common at D+3 — Polymarket may not have created the event yet
+        return []
+
+    try:
+        markets = fetch_prices(markets)
+    except Exception as e:
+        log.warning("price fetch failed for %s %s: %s", name, target, e)
+        return []
+
+    closed = [m for m in markets if m.accepting_orders is False]
+    if closed:
+        log.warning(
+            "%s %s: %d/%d markets not accepting orders right now",
+            name, target, len(closed), len(markets),
+        )
+
+    candidates = evaluate_markets(markets, forecast)
+    refreshed_markets = [refresh_market_quote(c.market) for c in candidates]
+    signals = evaluate_markets(refreshed_markets, forecast) if refreshed_markets else []
+    for s in signals:
+        s.forecast_openmeteo = veto_forecast
+        s.model_spread = spread
+        s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
+    dropped = len(candidates) - len(signals)
+    vetoed_count = sum(1 for s in signals if s.vetoed)
+    log.info(
+        "%s %s: %d markets, %d candidates, %d signals (%d dropped on re-quote, %d vetoed)",
+        name, target, len(markets), len(candidates), len(signals), dropped, vetoed_count,
+    )
+    return signals
+
+
 def _scan() -> list[Signal]:
     today = date.today()
+    horizons = [today + timedelta(days=i) for i in range(SCAN_HORIZON_DAYS)]
     all_signals: list[Signal] = []
 
     for city in CITIES:
-        name = city["name"]
-        forecast = get_primary_forecast(city, today)
-        if forecast is None:
-            log.warning("primary forecast unavailable for %s", name)
-            continue
-
-        veto_forecast = get_veto_forecast(city, today)
-        primary_label = "NDFD" if city.get("region") == "us" else "OM-best"
-        veto_label = "OM-best" if city.get("region") == "us" else "OM-GFS"
-        if veto_forecast is None:
-            spread = None
-            log.info("%s %s=%.1f°F, %s=n/a", name, primary_label, forecast, veto_label)
-        else:
-            spread = abs(forecast - veto_forecast)
-            log.info(
-                "%s %s=%.1f°F, %s=%.1f°F (spread %.1f°F)",
-                name, primary_label, forecast, veto_label, veto_forecast, spread,
-            )
-
-        try:
-            markets = find_city_markets(name, today)
-        except Exception as e:
-            log.warning("market discovery failed for %s: %s", name, e)
-            continue
-        if not markets:
-            log.info("no markets found for %s", name)
-            continue
-
-        try:
-            markets = fetch_prices(markets)
-        except Exception as e:
-            log.warning("price fetch failed for %s: %s", name, e)
-            continue
-
-        closed = [m for m in markets if m.accepting_orders is False]
-        if closed:
-            log.warning(
-                "%s: %d/%d markets not accepting orders right now",
-                name, len(closed), len(markets),
-            )
-
-        # First pass: cheap pre-filter using bulk-search prices. Anything that
-        # qualifies gets a fresh bestAsk re-pull, then is re-evaluated — this
-        # catches the seconds of price drift between scan and signal fire.
-        candidates = evaluate_markets(markets, forecast)
-        refreshed_markets = []
-        for cand in candidates:
-            refreshed_markets.append(refresh_market_quote(cand.market))
-        signals = evaluate_markets(refreshed_markets, forecast) if refreshed_markets else []
-        # Attach multi-model context to every fired signal so the Telegram
-        # message + journal log can show both forecasts and the veto state.
-        for s in signals:
-            s.forecast_openmeteo = veto_forecast
-            s.model_spread = spread
-            s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
-        dropped = len(candidates) - len(signals)
-        vetoed_count = sum(1 for s in signals if s.vetoed)
-        log.info(
-            "%s: %d markets, %d candidates, %d signals (%d dropped on re-quote, %d vetoed)",
-            name, len(markets), len(candidates), len(signals), dropped, vetoed_count,
-        )
-        all_signals.extend(signals)
+        for target in horizons:
+            try:
+                all_signals.extend(_scan_city_date(city, target))
+            except Exception as e:
+                log.exception("scan of %s %s crashed: %s", city["name"], target, e)
 
     return all_signals
 

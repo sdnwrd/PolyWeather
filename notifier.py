@@ -54,7 +54,7 @@ def _format_signal_line(s: Signal) -> str:
     return "\n".join(lines)
 
 
-def _city_block(city: str, items: list[Signal], today: date) -> str:
+def _city_date_block(city: str, target: date, items: list[Signal]) -> str:
     head = items[0]
     primary_label, veto_label = _source_labels(city)
     if head.forecast_openmeteo is None:
@@ -67,7 +67,7 @@ def _city_block(city: str, items: list[Signal], today: date) -> str:
             f"spread: {spread:.1f}°F"
         )
     header = (
-        f"<b>{city}, {today.isoformat()}</b>\n"
+        f"<b>{city}, {target.isoformat()}</b>\n"
         f"{forecast_line}"
     )
     station = head.market.station_hint
@@ -77,11 +77,13 @@ def _city_block(city: str, items: list[Signal], today: date) -> str:
     return f"{header}\n\n{body}"
 
 
-def _group_by_city(signals: list[Signal]) -> dict[str, list[Signal]]:
-    grouped: dict[str, list[Signal]] = defaultdict(list)
+def _group_by_city_date(signals: list[Signal]) -> "dict[tuple[str, date], list[Signal]]":
+    grouped: dict[tuple[str, date], list[Signal]] = defaultdict(list)
     for s in signals:
-        grouped[s.market.city].append(s)
-    return grouped
+        key = (s.market.city, s.market.resolution_date or date.today())
+        grouped[key].append(s)
+    # Sort by date asc, then city alpha — keeps multi-day output readable
+    return dict(sorted(grouped.items(), key=lambda kv: (kv[0][1], kv[0][0])))
 
 
 def build_signals_message(signals: list[Signal], today: date) -> str:
@@ -92,8 +94,8 @@ def build_signals_message(signals: list[Signal], today: date) -> str:
 
     if traded:
         traded_blocks = [
-            _city_block(c, items, today)
-            for c, items in _group_by_city(traded).items()
+            _city_date_block(c, d, items)
+            for (c, d), items in _group_by_city_date(traded).items()
         ]
         sections.append(
             "⚡ <b>TRADE THESE</b> (passed Open-Meteo veto)\n\n"
@@ -104,8 +106,8 @@ def build_signals_message(signals: list[Signal], today: date) -> str:
 
     if vetoed:
         vetoed_blocks = [
-            _city_block(c, items, today)
-            for c, items in _group_by_city(vetoed).items()
+            _city_date_block(c, d, items)
+            for (c, d), items in _group_by_city_date(vetoed).items()
         ]
         sections.append(
             "🚫 <b>VETOED</b> (would have fired without Open-Meteo veto)\n\n"
