@@ -63,16 +63,25 @@ CITIES = [
     {"name": "Los Angeles",   "lat": 33.9425, "lon": -118.4081, "station": "KLAX", "region": "us",   "tz": "America/Los_Angeles"},
     {"name": "San Francisco", "lat": 37.6189, "lon": -122.3750, "station": "KSFO", "region": "us",   "tz": "America/Los_Angeles"},
     {"name": "Austin",        "lat": 30.1944, "lon": -97.6700,  "station": "KAUS", "region": "us",   "tz": "America/Chicago"},
-    {"name": "New York",      "lat": 40.7794, "lon": -73.9692,  "station": "KNYC", "region": "us",   "tz": "America/New_York"},
+    # NYC market resolves on LaGuardia, not Central Park — confirmed via
+    # Polymarket description: "LaGuardia Airport Station".
+    {"name": "New York",      "lat": 40.7773, "lon": -73.8726,  "station": "KLGA", "region": "us",   "tz": "America/New_York"},
     # International (Open-Meteo best_match primary, GFS veto, °C display on Polymarket)
     {"name": "Tokyo",         "lat": 35.5523, "lon": 139.7798,  "station": "RJTT", "region": "intl", "tz": "Asia/Tokyo"},
-    {"name": "London",        "lat": 51.4775, "lon": -0.4614,   "station": "EGLL", "region": "intl", "tz": "Europe/London"},
-    {"name": "Paris",         "lat": 49.0097, "lon": 2.5479,    "station": "LFPG", "region": "intl", "tz": "Europe/Paris"},
+    # London market resolves on London City Airport (EGLC), NOT Heathrow.
+    # EGLC is 30km east of EGLL and runs a different microclimate.
+    {"name": "London",        "lat": 51.5053, "lon": 0.0553,    "station": "EGLC", "region": "intl", "tz": "Europe/London"},
+    # Paris market resolves on Le Bourget (LFPB), NOT Charles-de-Gaulle.
+    {"name": "Paris",         "lat": 48.9694, "lon": 2.4414,    "station": "LFPB", "region": "intl", "tz": "Europe/Paris"},
     {"name": "Munich",        "lat": 48.3538, "lon": 11.7861,   "station": "EDDM", "region": "intl", "tz": "Europe/Berlin"},
     {"name": "Singapore",     "lat": 1.3592,  "lon": 103.9894,  "station": "WSSS", "region": "intl", "tz": "Asia/Singapore"},
     {"name": "Shanghai",      "lat": 31.1979, "lon": 121.3364,  "station": "ZSPD", "region": "intl", "tz": "Asia/Shanghai"},
     {"name": "Toronto",       "lat": 43.6777, "lon": -79.6248,  "station": "CYYZ", "region": "intl", "tz": "America/Toronto"},
-    {"name": "Hong Kong",     "lat": 22.3080, "lon": 113.9185,  "station": "VHHH", "region": "intl", "tz": "Asia/Hong_Kong"},
+    # Hong Kong dropped: Polymarket resolves on the Hong Kong Observatory
+    # (urban King's Park station), not the airport (VHHH). HKO isn't a
+    # standard METAR station, so we can't reliably get the day's max for
+    # the bust check or backfill. Re-add only if/when we wire up an HKO
+    # data source.
 ]
 
 # Skip D+0 for any city whose local time is at or past this hour — the

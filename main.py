@@ -122,7 +122,10 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
     # the user never sees a signal that reality has already invalidated.
     observed = None
     if days_ahead == 0 and signals:
-        observed = intraday.get_latest_metar_temp(city)
+        # Day's MAX so far, not latest. A city past its peak (London at
+        # 16:20 BST: latest 14°C, day's high 16°C) would falsely pass a
+        # latest-reading check while having already busted the bracket.
+        observed = intraday.get_day_max_temp(city)
 
     for s in signals:
         s.forecast_openmeteo = veto_forecast
