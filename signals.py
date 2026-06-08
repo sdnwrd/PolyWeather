@@ -37,10 +37,28 @@ class Signal:
     forecast_openmeteo: Optional[float] = None
     model_spread: Optional[float] = None
     vetoed: bool = False  # set True when |NDFD - Open-Meteo| ≥ threshold
+    # D+0 reality check: latest METAR temp at scan time, and whether observed
+    # has already exceeded the bracket (definitive loss, don't trade).
+    metar_observed: Optional[float] = None
+    bracket_busted: bool = False
 
     @property
     def implied_prob(self) -> float:
         return self.market_price
+
+
+def is_bracket_busted(observed_f: float, bracket_low_f: float, bracket_high_f: float,
+                      region: str) -> bool:
+    """True if a current observation has already exceeded the bracket, so the
+    day's max can only be further away from it. Unit-aware: intl markets
+    resolve on whole-°C readings, US on whole-°F."""
+    if region == "intl":
+        observed_c = (observed_f - 32) * 5 / 9
+        # For an intl 1°C bin, bracket_low_F corresponds to the °C label
+        # (e.g. 15°C bin → bracket_low_F = 59.0 = exactly 15.0°C).
+        bracket_label_c = round((bracket_low_f - 32) * 5 / 9)
+        return round(observed_c) > bracket_label_c
+    return round(observed_f) > round(bracket_high_f)
 
 
 def estimate_true_probability(

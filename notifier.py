@@ -82,12 +82,22 @@ def _format_signal_line(s: Signal) -> str:
     bracket = _format_bracket(s)
     price_cents = s.market_price * 100
     implied = s.implied_prob * 100
+    is_intl = _city_region(s.market.city) == "intl"
     lines = [
         f"  Bracket: {bracket}",
         f"  Market price: {price_cents:.1f}¢ ({implied:.1f}% implied)",
+    ]
+    if s.metar_observed is not None:
+        observed = (
+            f"{_f_to_c(s.metar_observed):.1f}°C"
+            if is_intl else f"{s.metar_observed:.1f}°F"
+        )
+        flag = " ⚠ above bracket" if s.bracket_busted else ""
+        lines.append(f"  Observed now: {observed}{flag}")
+    lines.extend([
         f"  Est. true prob: {s.true_prob:.0%}",
         f"  Expected value: {s.ev:.1f}x",
-    ]
+    ])
     if s.market.end_time:
         lines.append(f"  Trading closes: {s.market.end_time.strftime('%Y-%m-%d %H:%M UTC')}")
     lines.append(f"  <a href=\"{s.market.url}\">Open market on Polymarket</a>")
@@ -135,8 +145,15 @@ def _group_by_city_date(signals: list[Signal]) -> "dict[tuple[str, date], list[S
 
 
 def build_signals_message(signals: list[Signal], today: date) -> str:
-    traded = [s for s in signals if not s.vetoed]
-    vetoed = [s for s in signals if s.vetoed]
+    # Three buckets, mutually exclusive:
+    #   - BUSTED: observed METAR has already exceeded the bracket — definitive loss
+    #   - VETOED: model spread too large — risky
+    #   - TRADE THESE: everything else
+    # BUSTED takes precedence over VETOED so the user always knows reality
+    # beats the model-disagreement filter.
+    busted = [s for s in signals if s.bracket_busted]
+    vetoed = [s for s in signals if not s.bracket_busted and s.vetoed]
+    traded = [s for s in signals if not s.bracket_busted and not s.vetoed]
 
     sections: list[str] = []
 
@@ -146,11 +163,14 @@ def build_signals_message(signals: list[Signal], today: date) -> str:
             for (c, d), items in _group_by_city_date(traded).items()
         ]
         sections.append(
-            "⚡ <b>TRADE THESE</b> (passed Open-Meteo veto)\n\n"
+            "⚡ <b>TRADE THESE</b> (passed Open-Meteo veto + METAR check)\n\n"
             + "\n\n———\n\n".join(traded_blocks)
         )
     else:
-        sections.append("⚡ <b>TRADE THESE</b>\n\n(none — all signals vetoed or no signals fired)")
+        sections.append(
+            "⚡ <b>TRADE THESE</b>\n\n"
+            "(none — all signals vetoed/busted or no signals fired)"
+        )
 
     if vetoed:
         vetoed_blocks = [
@@ -158,8 +178,18 @@ def build_signals_message(signals: list[Signal], today: date) -> str:
             for (c, d), items in _group_by_city_date(vetoed).items()
         ]
         sections.append(
-            "🚫 <b>VETOED</b> (would have fired without Open-Meteo veto)\n\n"
+            "🚫 <b>VETOED</b> (forecast sources disagree too much — risky)\n\n"
             + "\n\n———\n\n".join(vetoed_blocks)
+        )
+
+    if busted:
+        busted_blocks = [
+            _city_date_block(c, d, items)
+            for (c, d), items in _group_by_city_date(busted).items()
+        ]
+        sections.append(
+            "💀 <b>BUSTED</b> (observed METAR already exceeded bracket — definitive loss)\n\n"
+            + "\n\n———\n\n".join(busted_blocks)
         )
 
     return "\n\n═══════════════\n\n".join(sections)

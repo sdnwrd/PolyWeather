@@ -19,10 +19,11 @@ from forecast import (
     get_primary_forecast,
     get_veto_forecast,
 )
+import intraday
 import journal
 from markets import fetch_prices, find_city_markets, inspect_event, refresh_market_quote
 from notifier import send_signals
-from signals import Signal, evaluate_markets, sigma_for_horizon
+from signals import Signal, evaluate_markets, is_bracket_busted, sigma_for_horizon
 import snapshots
 
 log = logging.getLogger("weather-signal-bot")
@@ -114,15 +115,33 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
         evaluate_markets(refreshed_markets, forecast, sigma=sigma)
         if refreshed_markets else []
     )
+
+    # D+0 reality check: pull current METAR once for the city and bust any
+    # signal whose bracket is already exceeded by the observation. This is
+    # the morning-scan version of the intraday cron — running it here means
+    # the user never sees a signal that reality has already invalidated.
+    observed = None
+    if days_ahead == 0 and signals:
+        observed = intraday.get_latest_metar_temp(city)
+
     for s in signals:
         s.forecast_openmeteo = veto_forecast
         s.model_spread = spread
         s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
+        s.metar_observed = observed
+        if observed is not None:
+            s.bracket_busted = is_bracket_busted(
+                observed, s.market.bracket_low, s.market.bracket_high,
+                city.get("region", "us"),
+            )
     dropped = len(candidates) - len(signals)
     vetoed_count = sum(1 for s in signals if s.vetoed)
+    busted_count = sum(1 for s in signals if s.bracket_busted)
     log.info(
-        "%s %s: %d markets, %d candidates, %d signals (%d dropped on re-quote, %d vetoed)",
-        name, target, len(markets), len(candidates), len(signals), dropped, vetoed_count,
+        "%s %s: %d markets, %d candidates, %d signals "
+        "(%d dropped on re-quote, %d vetoed, %d busted by METAR)",
+        name, target, len(markets), len(candidates), len(signals),
+        dropped, vetoed_count, busted_count,
     )
     snapshots.record_snapshot(
         city=city,
@@ -205,10 +224,13 @@ def run() -> None:
 
     # Journal log + backfill yesterday's pending rows on the same run. No
     # paper-portfolio P&L — user trades live; this is for sigma calibration
-    # and veto backtesting only.
+    # and veto backtesting only. METAR-busted signals are excluded — they're
+    # definitive losses we don't want polluting WIN/LOSS stats.
+    journal_signals = [s for s in signals if not s.bracket_busted]
     try:
-        new_rows = journal.log_signals(signals, today)
-        log.info("journal: %d new signals appended", new_rows)
+        new_rows = journal.log_signals(journal_signals, today)
+        log.info("journal: %d new signals appended (excluded %d busted)",
+                 new_rows, len(signals) - len(journal_signals))
     except Exception as e:
         log.exception("journal logging failed: %s", e)
     try:
