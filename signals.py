@@ -10,12 +10,21 @@ import scipy.stats as stats
 from config import (
     EV_THRESHOLD,
     FORECAST_SIGMA,
+    HORIZON_SIGMA_GROWTH,
     MAX_BID_ASK_SPREAD,
     MAX_MARKET_PRICE,
     MIN_MARKET_VOLUME,
     MIN_TRUE_PROB,
 )
 from markets import Market
+
+
+def sigma_for_horizon(base_sigma: float, days_ahead: int) -> float:
+    """Horizon-adjusted sigma. base_sigma is the per-city calibrated value
+    (or FORECAST_SIGMA if uncalibrated); we widen it by HORIZON_SIGMA_GROWTH
+    for each day past today, reflecting the well-documented growth of NWS
+    forecast MAE with lead time. days_ahead is clamped at zero (D+0)."""
+    return base_sigma + max(0, days_ahead) * HORIZON_SIGMA_GROWTH
 
 
 @dataclass

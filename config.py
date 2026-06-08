@@ -18,6 +18,12 @@ MAX_MARKET_PRICE = 0.15
 MIN_TRUE_PROB = 0.05
 FORECAST_SIGMA = 2.0
 
+# NWS daily-max forecast skill degrades roughly linearly with horizon — D+0
+# MAE ~2-3°F, D+3 MAE ~4-5°F. Without accounting for this we'd treat D+3
+# forecasts as confidently as D+0, inflating true_prob estimates on far-out
+# horizons. Effective sigma = base + HORIZON_SIGMA_GROWTH * days_ahead.
+HORIZON_SIGMA_GROWTH = 0.7  # °F per day past today
+
 # If |NDFD - Open-Meteo| forecast spread ≥ this, the city's signals are
 # flagged as vetoed — shown for visibility but not actionable.
 VETO_SPREAD_THRESHOLD = 3.0

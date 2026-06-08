@@ -21,7 +21,7 @@ from forecast import (
 import journal
 from markets import fetch_prices, find_city_markets, inspect_event, refresh_market_quote
 from notifier import send_signals
-from signals import Signal, evaluate_markets
+from signals import Signal, evaluate_markets, sigma_for_horizon
 import snapshots
 
 log = logging.getLogger("weather-signal-bot")
@@ -73,7 +73,14 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
             name, target, len(closed), len(markets),
         )
 
-    sigma = calibration.get_sigma(name)
+    days_ahead = max(0, (target - date.today()).days)
+    sigma_base = calibration.get_sigma(name)
+    sigma = sigma_for_horizon(sigma_base, days_ahead)
+    if days_ahead > 0:
+        log.info(
+            "%s %s: sigma=%.2f°F (base %.2f + horizon D+%d)",
+            name, target, sigma, sigma_base, days_ahead,
+        )
     candidates = evaluate_markets(markets, forecast, sigma=sigma)
     refreshed_markets = [refresh_market_quote(c.market) for c in candidates]
     signals = (
