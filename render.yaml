@@ -3,10 +3,12 @@ services:
     name: rainsignal-daily
     runtime: python
     plan: starter
-    # 04:00 UTC = 06:00 CEST / 05:00 CET. Fires after the 00 UTC GFS run has
-    # been ingested into NWS forecasts (~03:00 UTC) and before US trading
-    # desks wake up (~12:00 UTC), so bracket prices are still stale.
-    schedule: "0 4 * * *"
+    # 06:00 UTC = 08:00 CEST / 07:00 CET. Sleep-friendly compromise — gives
+    # up roughly 10-20% of the D+0 morning edge premium (vs 04 UTC) for the
+    # user being awake and able to act on signals. Still 6h before US-East
+    # desks wake at ~12 UTC, so most cheap mispricings are intact. D+1..D+3
+    # markets are essentially unaffected by this shift.
+    schedule: "0 6 * * *"
     buildCommand: pip install -r requirements.txt
     startCommand: bash scripts/run_and_commit.sh
     envVars:

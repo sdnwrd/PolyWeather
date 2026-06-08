@@ -33,10 +33,10 @@ MAX_BID_ASK_SPREAD = 0.05   # in dollars; skip if bestAsk - bestBid > this
 # edge window, though, ends around 12:00 UTC when US prop desks wake up
 # and start correcting overnight mispricings. So earlier is better.
 #
-# 07:30 German local = 05:30 UTC (summer) / 06:30 UTC (winter) — leaves
-# 5.5–6.5h of edge headroom. The schedule library uses local time, so
-# this stays correct across the European DST switch automatically.
-RUN_TIME = "07:30"
+# Render Cron fires the morning scan at 06:00 UTC (08:00 CEST). This local-
+# time RUN_TIME is only used by the legacy `schedule` loop in main.py for
+# manual local runs — kept for parity.
+RUN_TIME = "08:00"
 
 # Lat/lon are the airport stations Polymarket actually resolves on (per the
 # market `description` / `resolutionSource`). The downtown coordinates would
