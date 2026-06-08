@@ -46,6 +46,49 @@ class Signal:
     def implied_prob(self) -> float:
         return self.market_price
 
+    @property
+    def kelly_fraction(self) -> float:
+        """Kelly-criterion optimal stake fraction — the principled 'is this
+        bet worth it' rating. Combines EV and true_prob in one number:
+            f* = p − (1−p)/b, where b = (1/price) − 1
+        Higher = more attractive. Capped at 0 for negative-edge bets.
+        Used flat ($1) trading still benefits from this as a *ranking*
+        signal, even if you don't size by it.
+        """
+        return kelly_fraction(self.true_prob, self.market_price)
+
+    @property
+    def rating(self) -> str:
+        """At-a-glance star rating mapped from kelly_fraction."""
+        return kelly_to_stars(self.kelly_fraction)
+
+
+def kelly_fraction(true_prob: float, market_price: float) -> float:
+    """Kelly optimal stake fraction for a binary YES bet. Returns 0 on any
+    degenerate input or non-positive edge."""
+    if not (0 < market_price < 1):
+        return 0.0
+    if not (0 < true_prob < 1):
+        return 0.0
+    b = (1.0 / market_price) - 1.0
+    f = true_prob - (1.0 - true_prob) / b
+    return max(0.0, f)
+
+
+def kelly_to_stars(kelly: float) -> str:
+    """Map Kelly fraction to a 5-star summary. Tuned so a typical bot
+    signal (Kelly ~0.05-0.10) hits 3 stars and exceptional ones (Kelly
+    ≥0.25) get 5."""
+    if kelly >= 0.25:
+        return "★★★★★"
+    if kelly >= 0.15:
+        return "★★★★☆"
+    if kelly >= 0.07:
+        return "★★★☆☆"
+    if kelly >= 0.03:
+        return "★★☆☆☆"
+    return "★☆☆☆☆"
+
 
 def is_bracket_busted(observed_f: float, bracket_low_f: float, bracket_high_f: float,
                       region: str) -> bool:

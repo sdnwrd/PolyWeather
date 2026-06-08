@@ -97,6 +97,7 @@ def _format_signal_line(s: Signal) -> str:
     lines.extend([
         f"  Est. true prob: {s.true_prob:.0%}",
         f"  Expected value: {s.ev:.1f}x",
+        f"  Rating: {s.rating}  (Kelly {s.kelly_fraction:.0%})",
     ])
     if s.market.end_time:
         lines.append(f"  Trading closes: {s.market.end_time.strftime('%Y-%m-%d %H:%M UTC')}")
@@ -131,7 +132,11 @@ def _city_date_block(city: str, target: date, items: list[Signal]) -> str:
     station = head.market.station_hint
     if station:
         header += f"\nResolves at: {station}"
-    body = "\n\n".join(_format_signal_line(s) for s in items)
+    # Sort signals within the block by Kelly desc — best bets first so the
+    # user can scan from the top of each city block and stop when ratings
+    # drop below their personal threshold.
+    sorted_items = sorted(items, key=lambda x: x.kelly_fraction, reverse=True)
+    body = "\n\n".join(_format_signal_line(s) for s in sorted_items)
     return f"{header}\n\n{body}"
 
 
