@@ -38,12 +38,52 @@ def _fmt_temp(value: float) -> str:
     return f"{value:.0f}"
 
 
+def _city_region(city_name: str) -> str:
+    for c in CITIES:
+        if c["name"] == city_name:
+            return c.get("region", "us")
+    return "us"
+
+
+def _f_to_c(value: float) -> float:
+    return (value - 32) * 5 / 9
+
+
+def _format_bracket(s: Signal) -> str:
+    """Format the bracket in the unit Polymarket uses for that city — °F for
+    US, °C for international — so the user can copy the value straight from
+    Telegram into the Polymarket bracket selector."""
+    region = _city_region(s.market.city)
+    lo_f, hi_f = s.market.bracket_low, s.market.bracket_high
+
+    if region == "us":
+        # US format: range like "66–67°F", or bounded by infinity
+        if lo_f == float("-inf"):
+            return f"≤{_fmt_temp(hi_f)}°F"
+        if hi_f == float("inf"):
+            return f"≥{_fmt_temp(lo_f)}°F"
+        return f"{_fmt_temp(lo_f)}–{_fmt_temp(hi_f)}°F"
+
+    # International (°C). Convert back from °F. Internal brackets came from
+    # parsing "be N°C on …" so the °F width is exactly 1.8°F = 1°C wide;
+    # rounding the low-end °C gives the integer the Polymarket question uses.
+    if lo_f == float("-inf"):
+        c_hi = round(_f_to_c(hi_f))
+        return f"≤{c_hi}°C"
+    if hi_f == float("inf"):
+        c_lo = round(_f_to_c(lo_f))
+        return f"≥{c_lo}°C"
+    c_lo = round(_f_to_c(lo_f))
+    # Single-value bin (e.g. "19°C" on Polymarket maps to 66.2–68.0°F here)
+    return f"{c_lo}°C"
+
+
 def _format_signal_line(s: Signal) -> str:
-    lo, hi = _fmt_temp(s.market.bracket_low), _fmt_temp(s.market.bracket_high)
+    bracket = _format_bracket(s)
     price_cents = s.market_price * 100
     implied = s.implied_prob * 100
     lines = [
-        f"  Bracket: {lo}–{hi}°F",
+        f"  Bracket: {bracket}",
         f"  Market price: {price_cents:.1f}¢ ({implied:.1f}% implied)",
         f"  Est. true prob: {s.true_prob:.0%}",
         f"  Expected value: {s.ev:.1f}x",
@@ -57,13 +97,21 @@ def _format_signal_line(s: Signal) -> str:
 def _city_date_block(city: str, target: date, items: list[Signal]) -> str:
     head = items[0]
     primary_label, veto_label = _source_labels(city)
+    is_intl = _city_region(city) == "intl"
+
+    def _fmt_f(value: float) -> str:
+        if is_intl:
+            return f"{_f_to_c(value):.0f}°C"
+        return f"{value:.0f}°F"
+
     if head.forecast_openmeteo is None:
-        forecast_line = f"{primary_label}: {head.forecast_high:.0f}°F ({veto_label}: n/a)"
+        forecast_line = f"{primary_label}: {_fmt_f(head.forecast_high)} ({veto_label}: n/a)"
     else:
+        # Spread is always shown in °F (it's a unit-agnostic threshold)
         spread = head.model_spread or 0.0
         forecast_line = (
-            f"{primary_label}: {head.forecast_high:.0f}°F  |  "
-            f"{veto_label}: {head.forecast_openmeteo:.0f}°F  |  "
+            f"{primary_label}: {_fmt_f(head.forecast_high)}  |  "
+            f"{veto_label}: {_fmt_f(head.forecast_openmeteo)}  |  "
             f"spread: {spread:.1f}°F"
         )
     header = (

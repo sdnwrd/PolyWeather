@@ -54,23 +54,29 @@ RUN_TIME = "08:00"
 # since NWS only covers US points. Dallas/Seattle stay excluded by request
 # (known active trader on those markets).
 CITIES = [
-    # US (NDFD primary, Open-Meteo best_match veto)
-    {"name": "Chicago",       "lat": 41.9786, "lon": -87.9048,  "station": "KORD", "region": "us"},
-    {"name": "Miami",         "lat": 25.7932, "lon": -80.2906,  "station": "KMIA", "region": "us"},
-    {"name": "Denver",        "lat": 39.7017, "lon": -104.7517, "station": "KBKF", "region": "us"},
-    {"name": "Atlanta",       "lat": 33.6407, "lon": -84.4277,  "station": "KATL", "region": "us"},
-    {"name": "Houston",       "lat": 29.6454, "lon": -95.2789,  "station": "KHOU", "region": "us"},
-    {"name": "Los Angeles",   "lat": 33.9425, "lon": -118.4081, "station": "KLAX", "region": "us"},
-    {"name": "San Francisco", "lat": 37.6189, "lon": -122.3750, "station": "KSFO", "region": "us"},
-    {"name": "Austin",        "lat": 30.1944, "lon": -97.6700,  "station": "KAUS", "region": "us"},
-    {"name": "New York",      "lat": 40.7794, "lon": -73.9692,  "station": "KNYC", "region": "us"},
-    # International (Open-Meteo best_match primary, GFS veto)
-    {"name": "Tokyo",         "lat": 35.5523, "lon": 139.7798,  "station": "RJTT", "region": "intl"},
-    {"name": "London",        "lat": 51.4775, "lon": -0.4614,   "station": "EGLL", "region": "intl"},
-    {"name": "Paris",         "lat": 49.0097, "lon": 2.5479,    "station": "LFPG", "region": "intl"},
-    {"name": "Munich",        "lat": 48.3538, "lon": 11.7861,   "station": "EDDM", "region": "intl"},
-    {"name": "Singapore",     "lat": 1.3592,  "lon": 103.9894,  "station": "WSSS", "region": "intl"},
-    {"name": "Shanghai",      "lat": 31.1979, "lon": 121.3364,  "station": "ZSPD", "region": "intl"},
-    {"name": "Toronto",       "lat": 43.6777, "lon": -79.6248,  "station": "CYYZ", "region": "intl"},
-    {"name": "Hong Kong",     "lat": 22.3080, "lon": 113.9185,  "station": "VHHH", "region": "intl"},
+    # US (NDFD primary, Open-Meteo best_match veto, °F display on Polymarket)
+    {"name": "Chicago",       "lat": 41.9786, "lon": -87.9048,  "station": "KORD", "region": "us",   "tz": "America/Chicago"},
+    {"name": "Miami",         "lat": 25.7932, "lon": -80.2906,  "station": "KMIA", "region": "us",   "tz": "America/New_York"},
+    {"name": "Denver",        "lat": 39.7017, "lon": -104.7517, "station": "KBKF", "region": "us",   "tz": "America/Denver"},
+    {"name": "Atlanta",       "lat": 33.6407, "lon": -84.4277,  "station": "KATL", "region": "us",   "tz": "America/New_York"},
+    {"name": "Houston",       "lat": 29.6454, "lon": -95.2789,  "station": "KHOU", "region": "us",   "tz": "America/Chicago"},
+    {"name": "Los Angeles",   "lat": 33.9425, "lon": -118.4081, "station": "KLAX", "region": "us",   "tz": "America/Los_Angeles"},
+    {"name": "San Francisco", "lat": 37.6189, "lon": -122.3750, "station": "KSFO", "region": "us",   "tz": "America/Los_Angeles"},
+    {"name": "Austin",        "lat": 30.1944, "lon": -97.6700,  "station": "KAUS", "region": "us",   "tz": "America/Chicago"},
+    {"name": "New York",      "lat": 40.7794, "lon": -73.9692,  "station": "KNYC", "region": "us",   "tz": "America/New_York"},
+    # International (Open-Meteo best_match primary, GFS veto, °C display on Polymarket)
+    {"name": "Tokyo",         "lat": 35.5523, "lon": 139.7798,  "station": "RJTT", "region": "intl", "tz": "Asia/Tokyo"},
+    {"name": "London",        "lat": 51.4775, "lon": -0.4614,   "station": "EGLL", "region": "intl", "tz": "Europe/London"},
+    {"name": "Paris",         "lat": 49.0097, "lon": 2.5479,    "station": "LFPG", "region": "intl", "tz": "Europe/Paris"},
+    {"name": "Munich",        "lat": 48.3538, "lon": 11.7861,   "station": "EDDM", "region": "intl", "tz": "Europe/Berlin"},
+    {"name": "Singapore",     "lat": 1.3592,  "lon": 103.9894,  "station": "WSSS", "region": "intl", "tz": "Asia/Singapore"},
+    {"name": "Shanghai",      "lat": 31.1979, "lon": 121.3364,  "station": "ZSPD", "region": "intl", "tz": "Asia/Shanghai"},
+    {"name": "Toronto",       "lat": 43.6777, "lon": -79.6248,  "station": "CYYZ", "region": "intl", "tz": "America/Toronto"},
+    {"name": "Hong Kong",     "lat": 22.3080, "lon": 113.9185,  "station": "VHHH", "region": "intl", "tz": "Asia/Hong_Kong"},
 ]
+
+# Skip D+0 for any city whose local time is at or past this hour — the
+# daily max occurs around 14-16:00 local, so by 17:00 the day is essentially
+# locked in. Trading a D+0 bracket against a forecast that's now irrelevant
+# is just gambling on whether the market has caught up yet.
+D0_CUTOFF_LOCAL_HOUR = 17

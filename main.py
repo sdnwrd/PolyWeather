@@ -7,11 +7,12 @@ import logging
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import schedule
 
 import calibration
-from config import CITIES, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
+from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
 from forecast import (
     get_daily_high,
     get_openmeteo_high,
@@ -30,9 +31,35 @@ log = logging.getLogger("weather-signal-bot")
 SCAN_HORIZON_DAYS = 4  # scan today + next 3 days; market may not exist for D+3 yet
 
 
+def _is_d0_too_late(city: dict, target: date) -> bool:
+    """True if the city's local-time day relative to `target` is past
+    actionable — the day's high is essentially locked and a forecast-based
+    signal is just trading reality the market already knows. Two cases:
+      - local date is already past target (local day rolled over)
+      - local date == target AND local hour ≥ D0_CUTOFF_LOCAL_HOUR
+    """
+    tz_name = city.get("tz")
+    if not tz_name:
+        return False
+    try:
+        local_now = datetime.now(ZoneInfo(tz_name))
+    except Exception:
+        return False
+    local_date = local_now.date()
+    if local_date > target:
+        return True
+    if local_date == target and local_now.hour >= D0_CUTOFF_LOCAL_HOUR:
+        return True
+    return False
+
+
 def _scan_city_date(city: dict, target: date) -> list[Signal]:
     """Scan one (city, target_date) combo and return any qualifying signals."""
     name = city["name"]
+    if _is_d0_too_late(city, target):
+        log.info("%s %s: skipping D+0 — past local cutoff (%d:00)",
+                 name, target, D0_CUTOFF_LOCAL_HOUR)
+        return []
     forecast = get_primary_forecast(city, target)
     if forecast is None:
         log.warning("primary forecast unavailable for %s on %s", name, target)
