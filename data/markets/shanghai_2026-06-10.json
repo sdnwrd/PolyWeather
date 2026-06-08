@@ -345,6 +345,176 @@
           "vetoed": false
         }
       ]
+    },
+    {
+      "ts": "2026-06-08T15:18:08+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 89.4,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 90.5,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.0999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Shanghai be 23\u00b0C or below on June 10?",
+          "bracket_low": -Infinity,
+          "bracket_high": 73.4,
+          "bestBid": 0.003,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 239.287466,
+          "accepting_orders": true,
+          "market_id": "2467890",
+          "token_id": "12036673829484768976214971983373134806036380987353183612468179472146562556837"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 24\u00b0C on June 10?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 82.07149999999999,
+          "accepting_orders": true,
+          "market_id": "2467891",
+          "token_id": "68012748651234380826998744095104282306642841521116724279855731758194825122632"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 25\u00b0C on June 10?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.005,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 623.2270000000001,
+          "accepting_orders": true,
+          "market_id": "2467892",
+          "token_id": "56788830322716258264964226087573396454736855011978630420131480404812475321234"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 26\u00b0C on June 10?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.05,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 486.381233,
+          "accepting_orders": true,
+          "market_id": "2467893",
+          "token_id": "104200728392517260769227840787358244233838628411342747825408718627319711152999"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 27\u00b0C on June 10?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.17,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 256.794002,
+          "accepting_orders": true,
+          "market_id": "2467894",
+          "token_id": "70515615079914594072283762648675090779952114797105930464607795042963547323371"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 28\u00b0C on June 10?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.3,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 286.541144,
+          "accepting_orders": true,
+          "market_id": "2467895",
+          "token_id": "79468022192238370215968228824413698994937653291968216025900787429247470618594"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 29\u00b0C on June 10?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.25,
+          "bestAsk": 0.26,
+          "price": 0.26,
+          "volume": 133.98,
+          "accepting_orders": true,
+          "market_id": "2467896",
+          "token_id": "27278603221623619784217526778931912161201014588668933433614811866718916250456"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 30\u00b0C on June 10?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.12,
+          "bestAsk": 0.13,
+          "price": 0.13,
+          "volume": 224.59081,
+          "accepting_orders": true,
+          "market_id": "2467897",
+          "token_id": "42762311995392589756762413746744603645968981252144913788678454874717778235915"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 31\u00b0C on June 10?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.03,
+          "bestAsk": 0.059,
+          "price": 0.059,
+          "volume": 42.842852,
+          "accepting_orders": true,
+          "market_id": "2467898",
+          "token_id": "83824793511464858660778918412947343764676476743062614862944889637630496459149"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 32\u00b0C on June 10?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.008,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 126.699062,
+          "accepting_orders": true,
+          "market_id": "2467899",
+          "token_id": "107394249729422528580295423197418949033681781170606210461168594071997949686079"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 33\u00b0C or higher on June 10?",
+          "bracket_low": 91.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 309.033,
+          "accepting_orders": true,
+          "market_id": "2467900",
+          "token_id": "77126216875827511182932083508968979397438543022663466379727138106562657476235"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 91.4,
+          "bracket_high": Infinity,
+          "market_id": "2467900",
+          "market_price": 0.004,
+          "forecast_high": 89.4,
+          "true_prob": 0.2781871852134534,
+          "ev": 69.54679630336335,
+          "forecast_openmeteo": 90.5,
+          "model_spread": 1.0999999999999943,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "market_id": "2467899",
+          "market_price": 0.01,
+          "forecast_high": 89.4,
+          "true_prob": 0.1983591483602678,
+          "ev": 19.83591483602678,
+          "forecast_openmeteo": 90.5,
+          "model_spread": 1.0999999999999943,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }
