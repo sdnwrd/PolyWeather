@@ -15,11 +15,11 @@ import calibration
 from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
 from forecast import (
     get_daily_high,
+    get_day_max_temp,
     get_openmeteo_high,
     get_primary_forecast,
     get_veto_forecast,
 )
-import intraday
 import journal
 from markets import fetch_prices, find_city_markets, inspect_event, refresh_market_quote
 from notifier import send_signals
@@ -125,7 +125,7 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
         # Day's MAX so far, not latest. A city past its peak (London at
         # 16:20 BST: latest 14°C, day's high 16°C) would falsely pass a
         # latest-reading check while having already busted the bracket.
-        observed = intraday.get_day_max_temp(city)
+        observed = get_day_max_temp(city)
 
     for s in signals:
         s.forecast_openmeteo = veto_forecast

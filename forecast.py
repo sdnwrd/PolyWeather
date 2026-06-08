@@ -1,10 +1,12 @@
-"""NWS + Open-Meteo daily-high forecast fetching."""
+"""NWS + Open-Meteo daily-high forecast fetching, plus current-day METAR
+observations used by the morning scan's bust check."""
 
 from __future__ import annotations
 
 import logging
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Optional
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -15,8 +17,16 @@ log = logging.getLogger(__name__)
 _GRIDPOINT_CACHE: dict[tuple[float, float], dict] = {}
 
 _NWS_BASE = "https://api.weather.gov"
+_NWS_OBS_URL = "https://api.weather.gov/stations/{station}/observations"
 _OPEN_METEO_BASE = "https://api.open-meteo.com/v1/forecast"
+_AVWX_METAR_URL = "https://aviationweather.gov/api/data/metar"
 _TIMEOUT = 15
+
+
+def _to_fahrenheit(value: float, unit_code: str) -> float:
+    if "degC" in unit_code or "celsius" in unit_code.lower():
+        return value * 9 / 5 + 32
+    return value
 
 
 def _headers() -> dict[str, str]:
@@ -186,6 +196,91 @@ def get_observed_high(city: dict, target_date: date) -> Optional[float]:
     if not temps or temps[0] is None:
         return None
     return float(temps[0])
+
+
+# ---------- Current-day METAR for signal-fire bust check ----------
+
+def _local_today_utc_window(city: dict) -> Optional[tuple[datetime, datetime]]:
+    """(start_utc, end_utc) bracketing the city's current local-day so far."""
+    tz_name = city.get("tz")
+    if not tz_name:
+        return None
+    try:
+        tz = ZoneInfo(tz_name)
+    except Exception:
+        return None
+    local_now = datetime.now(tz)
+    local_midnight = local_now.replace(hour=0, minute=0, second=0, microsecond=0)
+    return (local_midnight.astimezone(timezone.utc), local_now.astimezone(timezone.utc))
+
+
+def get_day_max_temp(city: dict) -> Optional[float]:
+    """Highest observed METAR temperature so far today at the city's station,
+    in °F. Mirrors what Wunderground/Polymarket use for resolution. None on
+    any error so a missing reading never blocks the signal flow.
+
+    US: NWS observations endpoint, windowed to city's local-day in UTC.
+    Intl: aviationweather.gov with hours=24, filtered to local-day.
+    """
+    station = city.get("station", "")
+    if not station:
+        return None
+
+    window = _local_today_utc_window(city)
+    if window is None:
+        return None
+    start_utc, end_utc = window
+
+    if city.get("region") == "us":
+        try:
+            resp = requests.get(
+                _NWS_OBS_URL.format(station=station),
+                params={
+                    "start": start_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "end": end_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                },
+                headers={"User-Agent": NWS_USER_AGENT, "Accept": "application/geo+json"},
+                timeout=_TIMEOUT,
+            )
+            resp.raise_for_status()
+            features = resp.json().get("features", []) or []
+            temps_f: list[float] = []
+            for feat in features:
+                props = feat.get("properties", {}) or {}
+                temp_obj = props.get("temperature") or {}
+                value = temp_obj.get("value")
+                if value is None:
+                    continue
+                temps_f.append(_to_fahrenheit(float(value), temp_obj.get("unitCode") or ""))
+            return max(temps_f) if temps_f else None
+        except (requests.RequestException, ValueError) as e:
+            log.warning("NWS day-max fetch failed for %s: %s", station, e)
+            return None
+
+    try:
+        resp = requests.get(
+            _AVWX_METAR_URL,
+            params={"ids": station, "format": "json", "hours": 24},
+            timeout=_TIMEOUT,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        if not isinstance(data, list) or not data:
+            return None
+        temps_f: list[float] = []
+        for m in data:
+            obs_epoch = m.get("obsTime")
+            temp_c = m.get("temp")
+            if obs_epoch is None or temp_c is None:
+                continue
+            obs_dt = datetime.fromtimestamp(obs_epoch, tz=timezone.utc)
+            if not (start_utc <= obs_dt <= end_utc):
+                continue
+            temps_f.append(float(temp_c) * 9 / 5 + 32)
+        return max(temps_f) if temps_f else None
+    except (requests.RequestException, ValueError) as e:
+        log.warning("aviationweather day-max fetch failed for %s: %s", station, e)
+        return None
 
 
 if __name__ == "__main__":
