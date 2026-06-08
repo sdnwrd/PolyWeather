@@ -59,8 +59,20 @@ def _ensure_csv() -> None:
 
 
 def _row_key(row: dict) -> tuple:
-    """Identity for dedup: same date+city+bracket = same signal."""
-    return (row["date"], row["city"], row["bracket_low"], row["bracket_high"])
+    """Identity for dedup: same date+city+bracket = same signal.
+
+    Coerces bracket bounds to string so a fresh Signal (with float
+    bracket_low/high) compares equal to a row read back from CSV (where
+    everything is string). Without this, every manual rerun appends a
+    duplicate row, polluting both the journal counts and any future
+    calibration/backtest math.
+    """
+    return (
+        str(row["date"]),
+        str(row["city"]),
+        str(row["bracket_low"]),
+        str(row["bracket_high"]),
+    )
 
 
 def log_signals(signals: list[Signal], today: date) -> int:
@@ -74,7 +86,22 @@ def log_signals(signals: list[Signal], today: date) -> int:
     with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
-    existing: set[tuple] = {_row_key(r) for r in rows}
+    # One-time dedupe pass: prior versions of _row_key did float-vs-string
+    # comparisons that missed duplicates, so the journal can accumulate
+    # multiple rows for the same (date, city, bracket). Collapse to first
+    # occurrence — same signal, same outcome, only the timing differs.
+    seen: set[tuple] = set()
+    deduped: list[dict] = []
+    for r in rows:
+        k = _row_key(r)
+        if k in seen:
+            continue
+        seen.add(k)
+        deduped.append(r)
+    if len(deduped) != len(rows):
+        log.info("journal dedupe: %d → %d rows", len(rows), len(deduped))
+    rows = deduped
+    existing: set[tuple] = seen
 
     new_rows = 0
     for s in signals:

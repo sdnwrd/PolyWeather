@@ -23,6 +23,7 @@ import requests
 from config import CITIES, NWS_USER_AGENT
 import journal
 import notifier
+from signals import is_bracket_busted
 import snapshots
 
 log = logging.getLogger(__name__)
@@ -194,12 +195,32 @@ def _todays_active_signals(today: date) -> list[dict]:
     ]
 
 
-def _bracket_busted(observed: float, lo: float, hi: float) -> bool:
-    """A signal is 'intraday-busted' if observed temp has already exceeded
-    the bracket's high end. Below the low end doesn't yet bust (temps still
-    rising toward the day's max), but above the high end means the high will
-    only get further away."""
-    return observed > hi
+def _f_to_c(value: float) -> float:
+    return (value - 32) * 5 / 9
+
+
+def _fmt_temp(value: float, region: str) -> str:
+    """Format a F-stored temperature in the unit Polymarket uses for that
+    city — °C for international, °F for US."""
+    if region == "intl":
+        return f"{_f_to_c(value):.1f}°C"
+    return f"{value:.1f}°F"
+
+
+def _fmt_bracket(lo: float, hi: float, region: str) -> str:
+    """Same as notifier._format_bracket but inlined for intraday's use —
+    avoids constructing a full Signal object."""
+    if region == "intl":
+        if lo == float("-inf"):
+            return f"≤{round(_f_to_c(hi))}°C"
+        if hi == float("inf"):
+            return f"≥{round(_f_to_c(lo))}°C"
+        return f"{round(_f_to_c(lo))}°C"
+    if lo == float("-inf"):
+        return f"≤{int(hi)}°F"
+    if hi == float("inf"):
+        return f"≥{int(lo)}°F"
+    return f"{int(lo)}–{int(hi)}°F"
 
 
 def check_intraday_veto(now: Optional[datetime] = None) -> int:
@@ -232,18 +253,20 @@ def check_intraday_veto(now: Optional[datetime] = None) -> int:
             primary_forecast=None, veto_forecast=None,
             markets=[], signals=[], metar_observed=observed,
         )
+        region = city.get("region", "us")
         for row in rows:
             try:
                 lo = float(row["bracket_low"])
                 hi = float(row["bracket_high"])
             except (TypeError, ValueError):
                 continue
-            if _bracket_busted(observed, lo, hi):
+            if is_bracket_busted(observed, lo, hi, region):
                 busts.append({
                     "city": city_name,
-                    "bracket": f"{int(lo)}-{int(hi)}°F",
-                    "observed": observed,
-                    "forecast": row.get("forecast_high", "?"),
+                    "region": region,
+                    "bracket": _fmt_bracket(lo, hi, region),
+                    "observed_f": observed,
+                    "forecast_f": _safe_float(row.get("forecast_high")),
                     "market_price_cents": float(row.get("market_price", 0)) * 100,
                 })
 
@@ -259,19 +282,33 @@ def check_intraday_veto(now: Optional[datetime] = None) -> int:
 
 def _build_intraday_message(busts: list[dict], today: date) -> str:
     header = (
-        f"🚨 <b>INTRADAY VETO</b> — {today.isoformat()}\n"
+        f"💀 <b>INTRADAY VETO</b> — {today.isoformat()}\n"
         f"Observed temperature is already above the bracket. "
         f"These positions will not resolve in your favor:\n"
     )
     lines = []
     for b in busts:
+        observed = _fmt_temp(b["observed_f"], b["region"])
+        forecast = (
+            _fmt_temp(b["forecast_f"], b["region"])
+            if b.get("forecast_f") is not None else "?"
+        )
         lines.append(
             f"\n<b>{b['city']}</b>  ({b['bracket']})\n"
-            f"  Observed now: {b['observed']:.1f}°F\n"
-            f"  Morning forecast: {b['forecast']}°F\n"
+            f"  Observed day-max: {observed}\n"
+            f"  Morning forecast: {forecast}\n"
             f"  Bought at: {b['market_price_cents']:.1f}¢"
         )
     return header + "".join(lines)
+
+
+def _safe_float(value) -> Optional[float]:
+    if value is None or value == "":
+        return None
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
 
 
 if __name__ == "__main__":
