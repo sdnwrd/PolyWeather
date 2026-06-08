@@ -10,9 +10,9 @@ from datetime import date, datetime, timezone
 
 import schedule
 
-from config import CITIES, RUN_TIME, VETO_SPREAD_THRESHOLD
+from config import CITIES, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
 from forecast import get_daily_high, get_openmeteo_high
-from markets import fetch_prices, find_city_markets, inspect_event
+from markets import fetch_prices, find_city_markets, inspect_event, refresh_market_quote
 from notifier import send_signals
 import paper
 from signals import Signal, evaluate_markets
@@ -65,17 +65,25 @@ def _scan() -> list[Signal]:
                 name, len(closed), len(markets),
             )
 
-        signals = evaluate_markets(markets, forecast)
+        # First pass: cheap pre-filter using bulk-search prices. Anything that
+        # qualifies gets a fresh bestAsk re-pull, then is re-evaluated — this
+        # catches the seconds of price drift between scan and signal fire.
+        candidates = evaluate_markets(markets, forecast)
+        refreshed_markets = []
+        for cand in candidates:
+            refreshed_markets.append(refresh_market_quote(cand.market))
+        signals = evaluate_markets(refreshed_markets, forecast) if refreshed_markets else []
         # Attach multi-model context to every fired signal so the Telegram
-        # message + paper-trade log can show both forecasts and the veto state.
+        # message + journal log can show both forecasts and the veto state.
         for s in signals:
             s.forecast_openmeteo = om_forecast
             s.model_spread = spread
             s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
+        dropped = len(candidates) - len(signals)
         vetoed_count = sum(1 for s in signals if s.vetoed)
         log.info(
-            "%s: %d markets, %d signals (%d vetoed)",
-            name, len(markets), len(signals), vetoed_count,
+            "%s: %d markets, %d candidates, %d signals (%d dropped on re-quote, %d vetoed)",
+            name, len(markets), len(candidates), len(signals), dropped, vetoed_count,
         )
         all_signals.extend(signals)
 

@@ -7,7 +7,14 @@ from typing import Optional
 
 import scipy.stats as stats
 
-from config import EV_THRESHOLD, FORECAST_SIGMA, MAX_MARKET_PRICE, MIN_TRUE_PROB
+from config import (
+    EV_THRESHOLD,
+    FORECAST_SIGMA,
+    MAX_BID_ASK_SPREAD,
+    MAX_MARKET_PRICE,
+    MIN_MARKET_VOLUME,
+    MIN_TRUE_PROB,
+)
 from markets import Market
 
 
@@ -73,6 +80,15 @@ def evaluate_markets(
         # the user can't actually trade. `None` means the field was missing,
         # which we treat as "unknown, allow through" rather than block.
         if m.accepting_orders is False:
+            continue
+        # Liquidity guard: avoid signaling on markets where the scanned price
+        # is essentially imaginary (single stale ask, no actual depth).
+        if m.volume is not None and m.volume < MIN_MARKET_VOLUME:
+            continue
+        if (
+            m.best_bid is not None and m.best_ask is not None
+            and (m.best_ask - m.best_bid) > MAX_BID_ASK_SPREAD
+        ):
             continue
         if m.price > max_price:
             continue

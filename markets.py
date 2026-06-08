@@ -55,6 +55,10 @@ class Market:
     resolution_source: str = ""
     end_time: Optional[datetime] = None  # nominal resolution timestamp (NOT trading close)
     accepting_orders: Optional[bool] = None  # true source of "is the book open right now?"
+    best_bid: Optional[float] = None
+    best_ask: Optional[float] = None
+    volume: Optional[float] = None
+    market_id: Optional[str] = None  # for the bestAsk re-fetch right before fire
 
     @property
     def url(self) -> str:
@@ -128,6 +132,15 @@ def _parse_iso_datetime(value: Optional[str]) -> Optional[datetime]:
     try:
         return datetime.fromisoformat(value.replace("Z", "+00:00"))
     except (ValueError, AttributeError):
+        return None
+
+
+def _safe_float(value) -> Optional[float]:
+    if value is None or value == "":
+        return None
+    try:
+        return float(value)
+    except (TypeError, ValueError):
         return None
 
 
@@ -261,6 +274,11 @@ def find_city_markets(city: str, target_date: Optional[date] = None) -> list[Mar
         accepting = m.get("acceptingOrders")
         if not isinstance(accepting, bool):
             accepting = None
+        best_bid = _safe_float(m.get("bestBid"))
+        best_ask = _safe_float(m.get("bestAsk"))
+        volume = _safe_float(m.get("volume"))
+        mid = m.get("id")
+        market_id = str(mid) if mid is not None else None
         out.append(
             Market(
                 city=city,
@@ -275,6 +293,10 @@ def find_city_markets(city: str, target_date: Optional[date] = None) -> list[Mar
                 resolution_source=m_src,
                 end_time=m_end,
                 accepting_orders=accepting,
+                best_bid=best_bid,
+                best_ask=best_ask,
+                volume=volume,
+                market_id=market_id,
             )
         )
     return out
@@ -310,6 +332,41 @@ def inspect_event(city: str, target_date: Optional[date] = None) -> Optional[Eve
 def fetch_prices(markets: Iterable[Market]) -> list[Market]:
     """No-op now — prices are already inline from find_city_markets. Kept for API compat."""
     return list(markets)
+
+
+def refresh_market_quote(market: Market) -> Market:
+    """Re-pull bestBid/bestAsk/volume for this single market right before we
+    fire a signal. Stale prices from the bulk search can drift several cents
+    over the seconds between scan and Telegram, so re-confirm the entry.
+
+    Mutates and returns the same Market instance. Silently no-ops on error so
+    a transient network blip never blocks an otherwise valid signal — caller
+    sees the pre-existing best_ask/best_bid.
+    """
+    if not market.market_id:
+        return market
+    try:
+        resp = requests.get(
+            f"{_GAMMA}/markets/{market.market_id}",
+            timeout=_TIMEOUT,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+    except (requests.RequestException, ValueError) as e:
+        log.warning("bestAsk re-fetch failed for %s: %s", market.market_id, e)
+        return market
+
+    new_ask = _safe_float(data.get("bestAsk"))
+    new_bid = _safe_float(data.get("bestBid"))
+    new_vol = _safe_float(data.get("volume"))
+    if new_ask is not None:
+        market.best_ask = new_ask
+        market.price = new_ask  # price tracks what you'd actually pay to buy YES
+    if new_bid is not None:
+        market.best_bid = new_bid
+    if new_vol is not None:
+        market.volume = new_vol
+    return market
 
 
 if __name__ == "__main__":
