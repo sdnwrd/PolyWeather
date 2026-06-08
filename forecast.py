@@ -79,11 +79,15 @@ def get_daily_high(lat: float, lon: float, target_date: Optional[date] = None) -
 
 
 def get_openmeteo_high(
-    lat: float, lon: float, target_date: Optional[date] = None
+    lat: float,
+    lon: float,
+    target_date: Optional[date] = None,
+    model: str = "best_match",
 ) -> Optional[float]:
-    """Return Open-Meteo's `best_match` blended-ensemble daily max in °F for
-    `target_date` (local timezone of the city). Returns None on any error so
-    a missing Open-Meteo reading never blocks the NDFD-driven signal flow.
+    """Return an Open-Meteo daily-max forecast in °F for `target_date` (local
+    timezone of the city) using `model` (e.g. 'best_match', 'gfs_seamless',
+    'ecmwf_ifs025'). Returns None on any error so a missing reading never
+    blocks the primary signal flow.
     """
     target_date = target_date or date.today()
     params = {
@@ -92,7 +96,7 @@ def get_openmeteo_high(
         "daily": "temperature_2m_max",
         "temperature_unit": "fahrenheit",
         "timezone": "auto",
-        "models": "best_match",
+        "models": model,
         "start_date": target_date.isoformat(),
         "end_date": target_date.isoformat(),
     }
@@ -101,13 +105,85 @@ def get_openmeteo_high(
         resp.raise_for_status()
         data = resp.json()
     except (requests.RequestException, ValueError) as e:
-        log.warning("Open-Meteo fetch failed for (%s, %s): %s", lat, lon, e)
+        log.warning(
+            "Open-Meteo[%s] fetch failed for (%s, %s): %s", model, lat, lon, e
+        )
         return None
 
     daily = data.get("daily") or {}
     temps = daily.get("temperature_2m_max") or []
     if not temps or temps[0] is None:
-        log.warning("Open-Meteo returned no daily max for (%s, %s) on %s", lat, lon, target_date)
+        log.warning(
+            "Open-Meteo[%s] returned no daily max for (%s, %s) on %s",
+            model, lat, lon, target_date,
+        )
+        return None
+    return float(temps[0])
+
+
+def get_primary_forecast(city: dict, target_date: Optional[date] = None) -> Optional[float]:
+    """Primary forecast for a city — NDFD for US, Open-Meteo best_match for
+    international (NDFD is US-only)."""
+    target_date = target_date or date.today()
+    if city.get("region") == "us":
+        try:
+            return get_daily_high(city["lat"], city["lon"], target_date)
+        except Exception as e:
+            log.warning("NDFD primary forecast failed for %s: %s", city["name"], e)
+            return None
+    return get_openmeteo_high(city["lat"], city["lon"], target_date, model="best_match")
+
+
+def get_veto_forecast(city: dict, target_date: Optional[date] = None) -> Optional[float]:
+    """Second source for the spread-based veto. For US cities, Open-Meteo
+    best_match (genuinely different provider from NDFD). For international,
+    GFS via Open-Meteo (different model than best_match, which is
+    ECMWF-weighted)."""
+    target_date = target_date or date.today()
+    if city.get("region") == "us":
+        return get_openmeteo_high(city["lat"], city["lon"], target_date, model="best_match")
+    return get_openmeteo_high(city["lat"], city["lon"], target_date, model="gfs_seamless")
+
+
+def get_observed_high(city: dict, target_date: date) -> Optional[float]:
+    """Observed daily max for journal backfill. NWS observations endpoint for
+    US, Open-Meteo historical-forecast archive (observations sourced from
+    nearby stations) for international."""
+    if city.get("region") == "us":
+        # Imported lazily to avoid a circular import at module load time —
+        # journal imports forecast indirectly via main.
+        from journal import get_observed_high as _nws_obs
+        try:
+            return _nws_obs(city.get("station", ""), target_date)
+        except Exception as e:
+            log.warning("NWS observation fetch failed for %s on %s: %s",
+                        city["name"], target_date, e)
+            return None
+
+    params = {
+        "latitude": city["lat"],
+        "longitude": city["lon"],
+        "daily": "temperature_2m_max",
+        "temperature_unit": "fahrenheit",
+        "timezone": "auto",
+        "start_date": target_date.isoformat(),
+        "end_date": target_date.isoformat(),
+    }
+    try:
+        resp = requests.get(
+            "https://historical-forecast-api.open-meteo.com/v1/forecast",
+            params=params,
+            timeout=_TIMEOUT,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+    except (requests.RequestException, ValueError) as e:
+        log.warning("Open-Meteo archive fetch failed for %s on %s: %s",
+                    city["name"], target_date, e)
+        return None
+    daily = data.get("daily") or {}
+    temps = daily.get("temperature_2m_max") or []
+    if not temps or temps[0] is None:
         return None
     return float(temps[0])
 

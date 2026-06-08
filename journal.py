@@ -162,10 +162,25 @@ def _bracket_contains(low: float, high: float, value: float) -> bool:
     return low <= value <= high
 
 
+def _city_by_name(name: str) -> Optional[dict]:
+    for c in CITIES:
+        if c["name"] == name:
+            return c
+    return None
+
+
 def backfill(today: Optional[date] = None) -> dict[str, int]:
     """Look up actual highs for all PENDING rows whose resolution date is in
     the past. Returns counts: {filled, still_pending, errors}.
+
+    Dispatches observation source by region (NWS for US, Open-Meteo archive
+    for international) via forecast.get_observed_high. Lazy import to avoid
+    a circular dependency at module load.
     """
+    # Lazy import: forecast.py imports get_observed_high from this module
+    # for the US path, so loading at module top would loop.
+    from forecast import get_observed_high as get_obs_for_city
+
     today = today or date.today()
     if not CSV_PATH.exists():
         log.info("no signals.csv yet — nothing to backfill")
@@ -174,6 +189,8 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
     with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
+    # Group PENDING rows by (city_name, date) so we hit the observation
+    # source once per city-day rather than once per row.
     needs_lookup: dict[tuple[str, str], list[dict]] = {}
     counts = {"filled": 0, "still_pending": 0, "errors": 0}
 
@@ -189,24 +206,30 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
         if row_date >= now_utc:
             counts["still_pending"] += 1
             continue
-        needs_lookup.setdefault((row["station"], row["date"]), []).append(row)
+        needs_lookup.setdefault((row["city"], row["date"]), []).append(row)
 
     cache: dict[tuple[str, str], Optional[float]] = {}
-    for (station, date_str), group in needs_lookup.items():
+    for (city_name, date_str), group in needs_lookup.items():
+        city = _city_by_name(city_name)
+        if city is None:
+            log.warning("city %r not found in CITIES — can't backfill", city_name)
+            cache[(city_name, date_str)] = None
+            counts["errors"] += len(group)
+            continue
         try:
-            cache[(station, date_str)] = get_observed_high(
-                station, date.fromisoformat(date_str)
+            cache[(city_name, date_str)] = get_obs_for_city(
+                city, date.fromisoformat(date_str)
             )
         except Exception as e:
-            log.warning("obs lookup failed for %s %s: %s", station, date_str, e)
-            cache[(station, date_str)] = None
+            log.warning("obs lookup failed for %s %s: %s", city_name, date_str, e)
+            cache[(city_name, date_str)] = None
             counts["errors"] += len(group)
 
     now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
     for row in rows:
         if row["outcome"] != "PENDING":
             continue
-        key = (row["station"], row["date"])
+        key = (row["city"], row["date"])
         if key not in cache:
             continue
         actual = cache[key]

@@ -10,8 +10,19 @@ from typing import Iterable
 
 import requests
 
-from config import TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
+from config import CITIES, TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
 from signals import Signal
+
+
+def _source_labels(city_name: str) -> tuple[str, str]:
+    """Return (primary_label, veto_label) for the given city — depends on
+    which forecast routing main.py used for it."""
+    for c in CITIES:
+        if c["name"] == city_name:
+            if c.get("region") == "us":
+                return "NDFD", "Open-Meteo"
+            return "OM-best", "OM-GFS"
+    return "primary", "veto"
 
 log = logging.getLogger(__name__)
 
@@ -45,13 +56,14 @@ def _format_signal_line(s: Signal) -> str:
 
 def _city_block(city: str, items: list[Signal], today: date) -> str:
     head = items[0]
+    primary_label, veto_label = _source_labels(city)
     if head.forecast_openmeteo is None:
-        forecast_line = f"NDFD forecast: {head.forecast_high:.0f}°F (Open-Meteo: n/a)"
+        forecast_line = f"{primary_label}: {head.forecast_high:.0f}°F ({veto_label}: n/a)"
     else:
         spread = head.model_spread or 0.0
         forecast_line = (
-            f"NDFD forecast: {head.forecast_high:.0f}°F  |  "
-            f"Open-Meteo: {head.forecast_openmeteo:.0f}°F  |  "
+            f"{primary_label}: {head.forecast_high:.0f}°F  |  "
+            f"{veto_label}: {head.forecast_openmeteo:.0f}°F  |  "
             f"spread: {spread:.1f}°F"
         )
     header = (

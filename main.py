@@ -11,7 +11,12 @@ from datetime import date, datetime, timezone
 import schedule
 
 from config import CITIES, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
-from forecast import get_daily_high, get_openmeteo_high
+from forecast import (
+    get_daily_high,
+    get_openmeteo_high,
+    get_primary_forecast,
+    get_veto_forecast,
+)
 import journal
 from markets import fetch_prices, find_city_markets, inspect_event, refresh_market_quote
 from notifier import send_signals
@@ -26,21 +31,22 @@ def _scan() -> list[Signal]:
 
     for city in CITIES:
         name = city["name"]
-        try:
-            forecast = get_daily_high(city["lat"], city["lon"], today)
-        except Exception as e:
-            log.warning("forecast fetch failed for %s: %s", name, e)
+        forecast = get_primary_forecast(city, today)
+        if forecast is None:
+            log.warning("primary forecast unavailable for %s", name)
             continue
 
-        om_forecast = get_openmeteo_high(city["lat"], city["lon"], today)
-        if om_forecast is None:
+        veto_forecast = get_veto_forecast(city, today)
+        primary_label = "NDFD" if city.get("region") == "us" else "OM-best"
+        veto_label = "OM-best" if city.get("region") == "us" else "OM-GFS"
+        if veto_forecast is None:
             spread = None
-            log.info("%s NDFD=%.1f°F, Open-Meteo=n/a", name, forecast)
+            log.info("%s %s=%.1f°F, %s=n/a", name, primary_label, forecast, veto_label)
         else:
-            spread = abs(forecast - om_forecast)
+            spread = abs(forecast - veto_forecast)
             log.info(
-                "%s NDFD=%.1f°F, Open-Meteo=%.1f°F (spread %.1f°F)",
-                name, forecast, om_forecast, spread,
+                "%s %s=%.1f°F, %s=%.1f°F (spread %.1f°F)",
+                name, primary_label, forecast, veto_label, veto_forecast, spread,
             )
 
         try:
@@ -76,7 +82,7 @@ def _scan() -> list[Signal]:
         # Attach multi-model context to every fired signal so the Telegram
         # message + journal log can show both forecasts and the veto state.
         for s in signals:
-            s.forecast_openmeteo = om_forecast
+            s.forecast_openmeteo = veto_forecast
             s.model_spread = spread
             s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
         dropped = len(candidates) - len(signals)
