@@ -21,6 +21,7 @@ import journal
 from markets import fetch_prices, find_city_markets, inspect_event, refresh_market_quote
 from notifier import send_signals
 from signals import Signal, evaluate_markets
+import snapshots
 
 log = logging.getLogger("weather-signal-bot")
 
@@ -83,6 +84,15 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
     log.info(
         "%s %s: %d markets, %d candidates, %d signals (%d dropped on re-quote, %d vetoed)",
         name, target, len(markets), len(candidates), len(signals), dropped, vetoed_count,
+    )
+    snapshots.record_snapshot(
+        city=city,
+        target=target,
+        scan_type="morning",
+        primary_forecast=forecast,
+        veto_forecast=veto_forecast,
+        markets=markets,
+        signals=signals,
     )
     return signals
 
