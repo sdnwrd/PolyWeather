@@ -75,7 +75,10 @@ CITIES = [
     {"name": "Paris",         "lat": 48.9694, "lon": 2.4414,    "station": "LFPB", "region": "intl", "tz": "Europe/Paris"},
     {"name": "Munich",        "lat": 48.3538, "lon": 11.7861,   "station": "EDDM", "region": "intl", "tz": "Europe/Berlin"},
     {"name": "Singapore",     "lat": 1.3592,  "lon": 103.9894,  "station": "WSSS", "region": "intl", "tz": "Asia/Singapore"},
-    {"name": "Shanghai",      "lat": 31.1979, "lon": 121.3364,  "station": "ZSPD", "region": "intl", "tz": "Asia/Shanghai"},
+    # Shanghai resolves on Pudong (ZSPD), east coast. Our previous coords
+    # (31.1979, 121.3364) were actually Hongqiao (ZSSS), 30km west and ~4°C
+    # warmer due to inland location. Use the actual ZSPD coords.
+    {"name": "Shanghai",      "lat": 31.1443, "lon": 121.8083,  "station": "ZSPD", "region": "intl", "tz": "Asia/Shanghai"},
     {"name": "Toronto",       "lat": 43.6777, "lon": -79.6248,  "station": "CYYZ", "region": "intl", "tz": "America/Toronto"},
     # Hong Kong dropped: Polymarket resolves on the Hong Kong Observatory
     # (urban King's Park station), not the airport (VHHH). HKO isn't a
