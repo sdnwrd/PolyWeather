@@ -1,0 +1,155 @@
+{
+  "city": "Hong Kong",
+  "date": "2026-06-10",
+  "station": "VHHH",
+  "region": "intl",
+  "lat": 22.308,
+  "lon": 113.9185,
+  "snapshots": [
+    {
+      "ts": "2026-06-08T14:51:02+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 84.6,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 80.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.6999999999999886,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Hong Kong be 24\u00b0C or below on June 10?",
+          "bracket_low": -Infinity,
+          "bracket_high": 75.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 109.35799999999999,
+          "accepting_orders": true,
+          "market_id": "2467879",
+          "token_id": "75114801924149318393325176600531133058125419354659304337062518011403869315671"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 25\u00b0C on June 10?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 208.14000000000001,
+          "accepting_orders": true,
+          "market_id": "2467880",
+          "token_id": "71382408483524696020927376515786823240288329073616677127679194797612102154666"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 26\u00b0C on June 10?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.007,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 390.33504099999993,
+          "accepting_orders": true,
+          "market_id": "2467881",
+          "token_id": "62422821600409057459698301447235282888890577446869542091777011845356809868287"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 27\u00b0C on June 10?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.04,
+          "bestAsk": 0.062,
+          "price": 0.062,
+          "volume": 137.66,
+          "accepting_orders": true,
+          "market_id": "2467882",
+          "token_id": "15718641776411360983478895165289796527836971336383880138777981093993104520784"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 28\u00b0C on June 10?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.1,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 244.01853200000005,
+          "accepting_orders": true,
+          "market_id": "2467883",
+          "token_id": "103952608358463914999985531818907503265383220402407534332311099994541518367084"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 29\u00b0C on June 10?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.27,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 419.58550999999994,
+          "accepting_orders": true,
+          "market_id": "2467884",
+          "token_id": "16397666266689147390934382558167088774462847438957547963956284647658172511927"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 30\u00b0C on June 10?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.27,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 228.27438299999997,
+          "accepting_orders": true,
+          "market_id": "2467885",
+          "token_id": "60695725697130387319209925704743130722245093469702331226851964018970374903889"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 31\u00b0C on June 10?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.17,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 229.919535,
+          "accepting_orders": true,
+          "market_id": "2467886",
+          "token_id": "40310838860668352533543531372481493817226770877756044117440014897812532093092"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 32\u00b0C on June 10?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.05,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 208.930245,
+          "accepting_orders": true,
+          "market_id": "2467887",
+          "token_id": "32060790227972710091841899429607160109976959200365988390236634739725974161146"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 33\u00b0C on June 10?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.017,
+          "bestAsk": 0.018,
+          "price": 0.018,
+          "volume": 609.6117500000001,
+          "accepting_orders": true,
+          "market_id": "2467888",
+          "token_id": "18042873604242480997582327441850239974300322546654386266220557668631403409308"
+        },
+        {
+          "question": "Will the highest temperature in Hong Kong be 34\u00b0C or higher on June 10?",
+          "bracket_low": 93.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.006,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 1093.795666,
+          "accepting_orders": true,
+          "market_id": "2467889",
+          "token_id": "8840898554643784716059101654562265380799762329598945046892743193851375846616"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}

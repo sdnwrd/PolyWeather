@@ -1,0 +1,168 @@
+{
+  "city": "Tokyo",
+  "date": "2026-06-09",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5523,
+  "lon": 139.7798,
+  "snapshots": [
+    {
+      "ts": "2026-06-08T14:49:55+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 71.6,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 69.3,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.299999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 19\u00b0C or below on June 9?",
+          "bracket_low": -Infinity,
+          "bracket_high": 66.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 3249.245555,
+          "accepting_orders": true,
+          "market_id": "2459828",
+          "token_id": "77876839276017916831434631365266173431779634679536488519719238917698402331875"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 20\u00b0C on June 9?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 2164.444967,
+          "accepting_orders": true,
+          "market_id": "2459829",
+          "token_id": "3334456288651261741086042345251351774266224396244677919264756305747673479208"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 21\u00b0C on June 9?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.059,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 1442.29919,
+          "accepting_orders": true,
+          "market_id": "2459830",
+          "token_id": "50326820941069221888482548514582506182577214843762280311356766091770689445725"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 22\u00b0C on June 9?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.26,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 1385.4093450000003,
+          "accepting_orders": true,
+          "market_id": "2459831",
+          "token_id": "13348295607125832916852247074851585294333625450060064569734065141665670029862"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C on June 9?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.44,
+          "bestAsk": 0.45,
+          "price": 0.45,
+          "volume": 1488.7390039999993,
+          "accepting_orders": true,
+          "market_id": "2459832",
+          "token_id": "34503136893717454430564102785276645033921054104214072560077009782859149692494"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on June 9?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.17,
+          "bestAsk": 0.18,
+          "price": 0.18,
+          "volume": 1638.4477589999997,
+          "accepting_orders": true,
+          "market_id": "2459833",
+          "token_id": "69199462311741451791233355666320188740196054207790727530143646547977044899745"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on June 9?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.05,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 1876.9523099999994,
+          "accepting_orders": true,
+          "market_id": "2459834",
+          "token_id": "110291100717671453016379235952858422043037960291717558985524828689717560764590"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on June 9?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 2177.8241970000004,
+          "accepting_orders": true,
+          "market_id": "2459835",
+          "token_id": "10902300502708218602703868896000406727626417968483095357458575231566826166332"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C on June 9?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1377.8379969999996,
+          "accepting_orders": true,
+          "market_id": "2459836",
+          "token_id": "52521667037128873401276208872737991451074229822189529635140054494589877038114"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 28\u00b0C on June 9?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1558.8162810000006,
+          "accepting_orders": true,
+          "market_id": "2459837",
+          "token_id": "100681255242963393959203572929445705437605428833727643075493103788436951204900"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C or higher on June 9?",
+          "bracket_low": 84.2,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 65.73599999999999,
+          "accepting_orders": true,
+          "market_id": "2459838",
+          "token_id": "37640659765895766230270888468649469670248355057025868791499172807104413102233"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "market_id": "2459829",
+          "market_price": 0.01,
+          "forecast_high": 71.6,
+          "true_prob": 0.16128131782105498,
+          "ev": 16.1281317821055,
+          "forecast_openmeteo": 69.3,
+          "model_spread": 2.299999999999997,
+          "vetoed": false
+        }
+      ]
+    }
+  ]
+}

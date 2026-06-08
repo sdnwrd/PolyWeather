@@ -1,0 +1,180 @@
+{
+  "city": "Paris",
+  "date": "2026-06-08",
+  "station": "LFPG",
+  "region": "intl",
+  "lat": 49.0097,
+  "lon": 2.5479,
+  "snapshots": [
+    {
+      "ts": "2026-06-08T14:50:27+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 71.5,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 73.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.200000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 17\u00b0C or below on June 8?",
+          "bracket_low": -Infinity,
+          "bracket_high": 62.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 565.8515,
+          "accepting_orders": true,
+          "market_id": "2456142",
+          "token_id": "36355480293470796568479162205421134158904978837492730739088516918140029484633"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 18\u00b0C on June 8?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 3847.233899,
+          "accepting_orders": true,
+          "market_id": "2456143",
+          "token_id": "49301895149109216551598771257875976442579419075597805893637871730467928644223"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 19\u00b0C on June 8?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 3605.264381999999,
+          "accepting_orders": true,
+          "market_id": "2456144",
+          "token_id": "48994364678630201988982456408647982335234894060115082514630489967210615462904"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 20\u00b0C on June 8?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 9075.018533999993,
+          "accepting_orders": true,
+          "market_id": "2456145",
+          "token_id": "11737482364890217601848524878326319300027478030015037405843708585404720654783"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 21\u00b0C on June 8?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 10148.118273000006,
+          "accepting_orders": true,
+          "market_id": "2456146",
+          "token_id": "21023492097258610370659147779530374628303756654061322374421043807882438237493"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 22\u00b0C on June 8?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.53,
+          "bestAsk": 0.74,
+          "price": 0.74,
+          "volume": 14239.565654999999,
+          "accepting_orders": true,
+          "market_id": "2456147",
+          "token_id": "104522786391645512151460343816804371490469326775312813566671883495233756188526"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 23\u00b0C on June 8?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.18,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 15942.771051999998,
+          "accepting_orders": true,
+          "market_id": "2456148",
+          "token_id": "77604671816165649880193320279872939595250175691723251969237094641211185350049"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C on June 8?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 11790.963500000003,
+          "accepting_orders": true,
+          "market_id": "2456149",
+          "token_id": "107906564883137968843944200560706342056670785671494003129120463649160891192788"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on June 8?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.003,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 7583.426327000004,
+          "accepting_orders": true,
+          "market_id": "2456150",
+          "token_id": "73152987185998189147772687892819025040829379280174658016866031726319603327145"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on June 8?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2651.2513309999995,
+          "accepting_orders": true,
+          "market_id": "2456151",
+          "token_id": "84983262895532165386212941315068951984151109254115434513590095475821940707557"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C or higher on June 8?",
+          "bracket_low": 80.6,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1946.664143,
+          "accepting_orders": true,
+          "market_id": "2456152",
+          "token_id": "105021561031186462174758790797164641265432616995631527504289864346012266340062"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "market_id": "2456146",
+          "market_price": 0.001,
+          "forecast_high": 71.5,
+          "true_prob": 0.32227626271567944,
+          "ev": 322.2762627156794,
+          "forecast_openmeteo": 73.7,
+          "model_spread": 2.200000000000003,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "market_id": "2456145",
+          "market_price": 0.001,
+          "forecast_high": 71.5,
+          "true_prob": 0.15760338625887485,
+          "ev": 157.60338625887485,
+          "forecast_openmeteo": 73.7,
+          "model_spread": 2.200000000000003,
+          "vetoed": false
+        }
+      ]
+    }
+  ]
+}

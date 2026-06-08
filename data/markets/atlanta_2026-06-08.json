@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-08T14:49:31+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 80.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 79.4,
+      "veto_source": "openmeteo-best",
+      "spread": 0.5999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Atlanta be 67\u00b0F or below on June 8?",
+          "bracket_low": -Infinity,
+          "bracket_high": 67.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1571.3518549999997,
+          "accepting_orders": true,
+          "market_id": "2458914",
+          "token_id": "49034735200358514583581629635625994630672525131339833383437249975842349497303"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 68-69\u00b0F on June 8?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 758.2950280000002,
+          "accepting_orders": true,
+          "market_id": "2458915",
+          "token_id": "20693000288828844289817149814542050285258952876658537278449525567152155125042"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 70-71\u00b0F on June 8?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2306.717646,
+          "accepting_orders": true,
+          "market_id": "2458916",
+          "token_id": "107835505450825553625874262567600660823330318024563470714885558439382148884300"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 72-73\u00b0F on June 8?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 8847.000533000006,
+          "accepting_orders": true,
+          "market_id": "2458917",
+          "token_id": "20279393027628782119049467740109071110784427956940973010186218121216590519683"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 74-75\u00b0F on June 8?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.009,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 6093.280904000001,
+          "accepting_orders": true,
+          "market_id": "2458918",
+          "token_id": "43703594063984520500974040591101051022047250360642391319453930292767204946599"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 76-77\u00b0F on June 8?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.043,
+          "bestAsk": 0.049,
+          "price": 0.049,
+          "volume": 5016.699744999999,
+          "accepting_orders": true,
+          "market_id": "2458919",
+          "token_id": "95582135138964564952520838377932271496534181881887547073813159384501832432023"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 78-79\u00b0F on June 8?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.17,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 3747.3115379999995,
+          "accepting_orders": true,
+          "market_id": "2458920",
+          "token_id": "1145962008720674925090490527577188540454379711688725465906051340638426805390"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 80-81\u00b0F on June 8?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.55,
+          "bestAsk": 0.58,
+          "price": 0.58,
+          "volume": 5019.1506970000055,
+          "accepting_orders": true,
+          "market_id": "2458921",
+          "token_id": "67063620827457654726622410609633147496582062667607022497952008798083843859430"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 82-83\u00b0F on June 8?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.138,
+          "bestAsk": 0.224,
+          "price": 0.224,
+          "volume": 5684.020944999998,
+          "accepting_orders": true,
+          "market_id": "2458922",
+          "token_id": "36262367907741723519913878550011665776249182487846777522243490137007036675077"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 84-85\u00b0F on June 8?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.028,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 5073.448980000002,
+          "accepting_orders": true,
+          "market_id": "2458923",
+          "token_id": "29235601469134693775945110406939421027820096517565577706375623683859290943805"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be 86\u00b0F or higher on June 8?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 3881.1464299999993,
+          "accepting_orders": true,
+          "market_id": "2458924",
+          "token_id": "60340812894580165326896751567071408483772828086269251173069654396218060866279"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
