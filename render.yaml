@@ -23,3 +23,28 @@ services:
         sync: false
       - key: GH_TOKEN
         sync: false
+
+  - type: cron
+    name: rainsignal-intraday
+    runtime: python
+    plan: starter
+    # 18:00 UTC = 20:00 CEST / 19:00 CET. Late enough that US-East cities
+    # are past peak (1pm local), Europe is past peak (7pm CEST), and any
+    # bracket already exceeded by the observed METAR can be flagged before
+    # the user goes to bed.
+    schedule: "0 18 * * *"
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash scripts/run_intraday.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: GH_REPO
+        value: sdnwrd/rainsignal
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: NWS_USER_AGENT
+        sync: false
+      - key: GH_TOKEN
+        sync: false
