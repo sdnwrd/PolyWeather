@@ -1,9 +1,17 @@
-"""Paper-trading log: append every fired signal to a CSV, then backfill the
-actual recorded high to compute WIN/LOSS once the day has resolved.
+"""Signal journal: append every fired signal to a CSV, backfill the
+observed daily high once the day has resolved, expose resolved rows for
+sigma calibration.
+
+This replaces the older `paper.py` paper-trading log. Since the user is
+trading live (not on simulated stakes), there's no portfolio P&L math —
+the journal exists only to record predictions vs outcomes so:
+  (a) the strategy can self-calibrate sigma per (city, source) over time
+  (b) the veto threshold can be backtested against real outcomes
 
 Schema (data/signals.csv):
     date, city, station, question, bracket_low, bracket_high,
     market_price, forecast_high, model_true_prob, ev,
+    forecast_openmeteo, model_spread, vetoed,
     actual_high, outcome, checked_at
 
 `outcome` is one of: PENDING, WIN, LOSS, ERROR.
@@ -13,8 +21,6 @@ from __future__ import annotations
 
 import csv
 import logging
-import os
-from dataclasses import asdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -61,8 +67,8 @@ def log_signals(signals: list[Signal], today: date) -> int:
     """Append fired signals to the CSV. Returns count of new rows written.
 
     Always rewrites the whole file so a schema change (new columns added to
-    FIELDS) is migrated transparently — old rows pick up empty values for
-    the new columns instead of desyncing the header.
+    FIELDS) migrates transparently — old rows pick up empty values for the
+    new columns instead of desyncing the header.
     """
     _ensure_csv()
     with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
@@ -121,7 +127,13 @@ def _to_fahrenheit(value: float, unit_code: str) -> float:
 
 
 def get_observed_high(station: str, target_date: date) -> Optional[float]:
-    """Highest observed temperature at NWS station on target_date (UTC day)."""
+    """Highest observed temperature at NWS station on target_date (UTC day).
+
+    Caveat: Polymarket resolves on Wunderground's whole-degree readout for
+    the local-day calendar, which differs from this NWS float by ≤1°F at
+    bracket boundaries. Good enough for calibration; not perfect for true
+    Polymarket-aligned WIN/LOSS on edge-case days.
+    """
     if not station:
         return None
     start = f"{target_date.isoformat()}T00:00:00Z"
@@ -162,7 +174,6 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
     with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
-    # Group PENDING rows by (station, date) to amortize the obs API hits
     needs_lookup: dict[tuple[str, str], list[dict]] = {}
     counts = {"filled": 0, "still_pending": 0, "errors": 0}
 
@@ -174,8 +185,6 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
         except ValueError:
             counts["errors"] += 1
             continue
-        # Polymarket resolves the calendar day in UTC. We must wait until that
-        # day has fully passed in UTC before NWS observations are complete.
         now_utc = datetime.now(timezone.utc).date()
         if row_date >= now_utc:
             counts["still_pending"] += 1
@@ -215,7 +224,7 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
         counts["filled"] += 1
 
     with CSV_PATH.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDS)
+        writer = csv.DictWriter(f, fieldnames=FIELDS, extrasaction="ignore")
         writer.writeheader()
         for row in rows:
             writer.writerow(row)
@@ -223,49 +232,28 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
     return counts
 
 
-def _slice_summary(label: str, rows: list[dict]) -> str:
-    resolved = [r for r in rows if r["outcome"] in ("WIN", "LOSS")]
-    pending = [r for r in rows if r["outcome"] == "PENDING"]
-    if not resolved:
-        return f"{label}: signals={len(rows)}, pending={len(pending)}, resolved=0"
-    wins = [r for r in resolved if r["outcome"] == "WIN"]
-    roi_sum = 0.0
-    for r in resolved:
-        try:
-            price = float(r["market_price"])
-        except (TypeError, ValueError):
-            continue
-        if price <= 0:
-            continue
-        roi_sum += (1 / price - 1) if r["outcome"] == "WIN" else -1
-    win_rate = len(wins) / len(resolved)
-    avg_roi = roi_sum / len(resolved)
-    return (
-        f"{label}: signals={len(rows)}, resolved={len(resolved)}, "
-        f"pending={len(pending)}, win_rate={win_rate:.1%}, "
-        f"avg_unit_ROI={avg_roi:+.2f}x"
-    )
+def read_resolved() -> list[dict]:
+    """Return all resolved (WIN/LOSS) rows for downstream callers like
+    sigma calibration."""
+    if not CSV_PATH.exists():
+        return []
+    with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    return [r for r in rows if r.get("outcome") in ("WIN", "LOSS")]
 
 
-def summary() -> str:
-    """Quick win-rate / EV summary across all resolved rows, split by veto state
-    so the strategy can be evaluated with and without the Open-Meteo veto."""
+def short_status() -> str:
+    """One-line journal status for diagnostic logging only — no P&L framing,
+    since the user trades live. Just counts."""
     if not CSV_PATH.exists():
         return "(no signals logged yet)"
     with CSV_PATH.open("r", newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     if not rows:
         return "(no signals logged yet)"
-
-    # Older rows predate the `vetoed` column and default to "" — treat as
-    # not-vetoed since the veto didn't exist when they were written.
-    traded = [r for r in rows if r.get("vetoed", "") != "true"]
-    vetoed = [r for r in rows if r.get("vetoed", "") == "true"]
-
-    lines = [_slice_summary("ALL", rows), _slice_summary("TRADED (passed veto)", traded)]
-    if vetoed:
-        lines.append(_slice_summary("VETOED (would have fired)", vetoed))
-    return " | ".join(lines)
+    pending = sum(1 for r in rows if r["outcome"] == "PENDING")
+    resolved = sum(1 for r in rows if r["outcome"] in ("WIN", "LOSS"))
+    return f"journal: total={len(rows)}, resolved={resolved}, pending={pending}"
 
 
 if __name__ == "__main__":
@@ -273,11 +261,10 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
     p = argparse.ArgumentParser()
     p.add_argument("--backfill", action="store_true", help="Fill in actual highs for resolved days")
-    p.add_argument("--summary", action="store_true", help="Print win-rate summary")
+    p.add_argument("--status", action="store_true", help="Print short journal status")
     args = p.parse_args()
-
     if args.backfill:
         counts = backfill()
         print(f"backfill: filled={counts['filled']}, still_pending={counts['still_pending']}, errors={counts['errors']}")
-    if args.summary or not args.backfill:
-        print(summary())
+    if args.status or not args.backfill:
+        print(short_status())

@@ -12,9 +12,9 @@ import schedule
 
 from config import CITIES, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
 from forecast import get_daily_high, get_openmeteo_high
+import journal
 from markets import fetch_prices, find_city_markets, inspect_event, refresh_market_quote
 from notifier import send_signals
-import paper
 from signals import Signal, evaluate_markets
 
 log = logging.getLogger("weather-signal-bot")
@@ -142,19 +142,21 @@ def run() -> None:
         log.exception("scan crashed: %s", e)
         return
 
-    # Paper-trade log + backfill yesterday's pending rows on the same run
+    # Journal log + backfill yesterday's pending rows on the same run. No
+    # paper-portfolio P&L — user trades live; this is for sigma calibration
+    # and veto backtesting only.
     try:
-        new_rows = paper.log_signals(signals, today)
-        log.info("paper-trade log: %d new signals appended", new_rows)
+        new_rows = journal.log_signals(signals, today)
+        log.info("journal: %d new signals appended", new_rows)
     except Exception as e:
-        log.exception("paper logging failed: %s", e)
+        log.exception("journal logging failed: %s", e)
     try:
-        counts = paper.backfill()
+        counts = journal.backfill()
         log.info(
             "backfill: filled=%d, still_pending=%d, errors=%d",
             counts["filled"], counts["still_pending"], counts["errors"],
         )
-        log.info("running summary — %s", paper.summary())
+        log.info("status — %s", journal.short_status())
     except Exception as e:
         log.exception("backfill failed: %s", e)
 
