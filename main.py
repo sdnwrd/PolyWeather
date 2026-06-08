@@ -10,6 +10,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import schedule
 
+import calibration
 from config import CITIES, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
 from forecast import (
     get_daily_high,
@@ -72,9 +73,13 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
             name, target, len(closed), len(markets),
         )
 
-    candidates = evaluate_markets(markets, forecast)
+    sigma = calibration.get_sigma(name)
+    candidates = evaluate_markets(markets, forecast, sigma=sigma)
     refreshed_markets = [refresh_market_quote(c.market) for c in candidates]
-    signals = evaluate_markets(refreshed_markets, forecast) if refreshed_markets else []
+    signals = (
+        evaluate_markets(refreshed_markets, forecast, sigma=sigma)
+        if refreshed_markets else []
+    )
     for s in signals:
         s.forecast_openmeteo = veto_forecast
         s.model_spread = spread
@@ -181,6 +186,13 @@ def run() -> None:
         log.info("status — %s", journal.short_status())
     except Exception as e:
         log.exception("backfill failed: %s", e)
+
+    # Recompute per-city sigma now that fresh outcomes are in the journal.
+    # Stays dormant per city until CALIBRATION_MIN (30) resolved samples.
+    try:
+        calibration.run_calibration()
+    except Exception as e:
+        log.exception("calibration crashed: %s", e)
 
     try:
         send_signals(signals, today, len(CITIES))

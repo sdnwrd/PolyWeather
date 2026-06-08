@@ -65,12 +65,16 @@ def evaluate_markets(
     max_price: float = MAX_MARKET_PRICE,
     min_true_prob: float = MIN_TRUE_PROB,
     adjacent_window: float = 3.0,
+    sigma: float = FORECAST_SIGMA,
 ) -> list[Signal]:
     """Score every market against the forecast and return the qualifying signals.
 
     `adjacent_window` widens consideration to the 2–3 adjacent brackets around
     the forecast — any bracket whose nearest edge is within `adjacent_window`
     of the forecast counts as "in scope" for the hedge strategy.
+
+    `sigma` overrides FORECAST_SIGMA — callers can pass a per-city calibrated
+    value from `calibration.get_sigma(city_name)`.
     """
     signals: list[Signal] = []
     for m in markets:
@@ -92,7 +96,7 @@ def evaluate_markets(
             continue
         if m.price > max_price:
             continue
-        true_prob = estimate_true_probability(forecast_high, m.bracket_low, m.bracket_high)
+        true_prob = estimate_true_probability(forecast_high, m.bracket_low, m.bracket_high, sigma=sigma)
         if true_prob < min_true_prob:
             continue
         dist = _bracket_distance(m.bracket_low, m.bracket_high, forecast_high)
