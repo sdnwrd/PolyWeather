@@ -3,12 +3,13 @@ services:
     name: rainsignal-daily
     runtime: python
     plan: starter
-    # 06:00 UTC = 08:00 CEST / 07:00 CET. Sleep-friendly compromise — gives
-    # up roughly 10-20% of the D+0 morning edge premium (vs 04 UTC) for the
-    # user being awake and able to act on signals. Still 6h before US-East
-    # desks wake at ~12 UTC, so most cheap mispricings are intact. D+1..D+3
-    # markets are essentially unaffected by this shift.
-    schedule: "0 6 * * *"
+    # 05:00 UTC = 07:00 CEST / 06:00 CET. Middle ground between 04 UTC
+    # (max D+0 edge but painful wake-up) and 06 UTC (sleep-friendly but
+    # Asian cities at 14:00 local are past peak). At 05 UTC, Asian cities
+    # are at 13:00 local — just before peak. US is asleep. UK/Europe is
+    # pre-workday. Costs the user a 1h earlier alarm vs 06 UTC, gains
+    # ~50% of the edge premium back.
+    schedule: "0 5 * * *"
     buildCommand: pip install -r requirements.txt
     startCommand: bash scripts/run_and_commit.sh
     envVars:
