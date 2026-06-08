@@ -24,21 +24,55 @@ _TIMEOUT = 20
 # Hyphen, hyphen-bullet, figure dash, en, em, horizontal bar, minus
 _DASH_CHARS = r"\-‐-―−"
 
+# International cities use Celsius single-value brackets ("be 19°C on…") with
+# 1°C wide implicit bins; US uses 1°F wide explicit ranges. Parser captures
+# both the number(s) AND the unit so we can convert °C → °F before returning.
+_UNIT = r"(?P<unit>[FCfc])"
+
 # "62-63°F", "62–63°F", "62 to 63°F", "between 62 and 63°F"
 _RANGE_RE = re.compile(
-    rf"(\d{{2,3}})\s*(?:°?F)?\s*(?:[{_DASH_CHARS}]+|to|and)\s*(\d{{2,3}})\s*°?\s*F?",
+    rf"(?P<lo>-?\d{{1,3}}(?:\.\d+)?)\s*(?:°?[FC])?\s*"
+    rf"(?:[{_DASH_CHARS}]+|to|and)\s*"
+    rf"(?P<hi>-?\d{{1,3}}(?:\.\d+)?)\s*°?\s*{_UNIT}?",
     re.IGNORECASE,
 )
-# "above 100°F", "over 100", "≥100"
-_ABOVE_PREFIX_RE = re.compile(r"(?:above|over|≥|>=|>\s*=)\s*(\d{2,3})\s*°?\s*F?", re.IGNORECASE)
-# "100°F or higher", "100 or above", "100 or more"
-_ABOVE_SUFFIX_RE = re.compile(r"(\d{2,3})\s*°?\s*F?\s*or\s+(?:higher|above|more)", re.IGNORECASE)
-# "below 60°F", "under 60"
-_BELOW_PREFIX_RE = re.compile(r"(?:below|under|≤|<=|<\s*=)\s*(\d{2,3})\s*°?\s*F?", re.IGNORECASE)
-# "60°F or below", "60 or lower", "60 or less"
-_BELOW_SUFFIX_RE = re.compile(r"(\d{2,3})\s*°?\s*F?\s*or\s+(?:below|lower|less)", re.IGNORECASE)
-# "exactly 90°F"
-_EXACT_RE = re.compile(r"(?:exactly|equal to)\s*(\d{2,3})\s*°?\s*F?", re.IGNORECASE)
+_ABOVE_PREFIX_RE = re.compile(
+    rf"(?:above|over|≥|>=|>\s*=)\s*(?P<v>-?\d{{1,3}}(?:\.\d+)?)\s*°?\s*{_UNIT}?",
+    re.IGNORECASE,
+)
+_ABOVE_SUFFIX_RE = re.compile(
+    rf"(?P<v>-?\d{{1,3}}(?:\.\d+)?)\s*°?\s*{_UNIT}?\s*or\s+(?:higher|above|more)",
+    re.IGNORECASE,
+)
+_BELOW_PREFIX_RE = re.compile(
+    rf"(?:below|under|≤|<=|<\s*=)\s*(?P<v>-?\d{{1,3}}(?:\.\d+)?)\s*°?\s*{_UNIT}?",
+    re.IGNORECASE,
+)
+_BELOW_SUFFIX_RE = re.compile(
+    rf"(?P<v>-?\d{{1,3}}(?:\.\d+)?)\s*°?\s*{_UNIT}?\s*or\s+(?:below|lower|less)",
+    re.IGNORECASE,
+)
+# Explicit "exactly 90°F" form — distinct from the implicit single-value below
+_EXACT_RE = re.compile(
+    rf"(?:exactly|equal to)\s*(?P<v>-?\d{{1,3}}(?:\.\d+)?)\s*°?\s*{_UNIT}?",
+    re.IGNORECASE,
+)
+# Implicit single-value bracket — international format: "be 19°C on June 8"
+_BE_SINGLE_RE = re.compile(
+    rf"\bbe\s+(?P<v>-?\d{{1,3}}(?:\.\d+)?)\s*°?\s*{_UNIT}\s+on\b",
+    re.IGNORECASE,
+)
+
+
+def _c_to_f(value: float) -> float:
+    return value * 9 / 5 + 32
+
+
+def _normalize_unit(unit: Optional[str], default_unit: str = "F") -> str:
+    """Lower-case the unit; default to F if missing (US convention)."""
+    if not unit:
+        return default_unit.upper()
+    return unit.upper()
 
 
 @dataclass
@@ -90,28 +124,56 @@ class EventInfo:
 
 
 def parse_bracket(text: str) -> Optional[tuple[float, float]]:
-    """Parse a temperature bracket from a question/title string."""
+    """Parse a temperature bracket from a question/title string, returning the
+    bracket in °F. Handles both US format (1°F ranges in F) and international
+    format (1°C single-value bins in C — converted to °F here).
+    """
     if not text:
         return None
 
     m = _RANGE_RE.search(text)
     if m:
-        a, b = float(m.group(1)), float(m.group(2))
+        unit = _normalize_unit(m.group("unit"))
+        a, b = float(m.group("lo")), float(m.group("hi"))
+        if unit == "C":
+            a, b = _c_to_f(a), _c_to_f(b)
         return (min(a, b), max(a, b))
 
     for rx in (_ABOVE_SUFFIX_RE, _ABOVE_PREFIX_RE):
         m = rx.search(text)
         if m:
-            return (float(m.group(1)), float("inf"))
+            unit = _normalize_unit(m.group("unit"))
+            v = float(m.group("v"))
+            if unit == "C":
+                v = _c_to_f(v)
+            return (v, float("inf"))
 
     for rx in (_BELOW_SUFFIX_RE, _BELOW_PREFIX_RE):
         m = rx.search(text)
         if m:
-            return (float("-inf"), float(m.group(1)))
+            unit = _normalize_unit(m.group("unit"))
+            v = float(m.group("v"))
+            if unit == "C":
+                v = _c_to_f(v)
+            return (float("-inf"), v)
 
     m = _EXACT_RE.search(text)
     if m:
-        v = float(m.group(1))
+        unit = _normalize_unit(m.group("unit"))
+        v = float(m.group("v"))
+        if unit == "C":
+            return (_c_to_f(v), _c_to_f(v + 1))
+        return (v, v + 1)
+
+    # Implicit single-value bracket — "be 19°C on June 8" form. International
+    # markets use this for every bin. Bracket width is 1 unit (whole-degree
+    # resolution on the resolution source); convert to °F if needed.
+    m = _BE_SINGLE_RE.search(text)
+    if m:
+        unit = _normalize_unit(m.group("unit"))
+        v = float(m.group("v"))
+        if unit == "C":
+            return (_c_to_f(v), _c_to_f(v + 1))
         return (v, v + 1)
 
     return None
