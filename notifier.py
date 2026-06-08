@@ -165,7 +165,56 @@ def send(text: str) -> bool:
             return False
 
 
+# Telegram hard limit is 4096 chars per message. We chunk well under that so
+# HTML tags can never get split mid-tag — split happens on block separators.
+_TELEGRAM_CHUNK_LIMIT = 3800
+
+
+def _chunk_message(text: str, limit: int = _TELEGRAM_CHUNK_LIMIT) -> list[str]:
+    """Split a long HTML message into chunks ≤ limit chars.
+
+    Splits on block separators (city dividers, then double newlines, then
+    single newlines) to avoid cutting HTML tags. Worst case falls back to
+    hard-slice on character boundaries to never exceed limit.
+    """
+    if len(text) <= limit:
+        return [text]
+
+    separators = ["\n\n═══════════════\n\n", "\n\n———\n\n", "\n\n", "\n"]
+    chunks: list[str] = []
+    remaining = text
+    while len(remaining) > limit:
+        cut = -1
+        for sep in separators:
+            idx = remaining.rfind(sep, 0, limit)
+            if idx > 0:
+                cut = idx + len(sep)
+                break
+        if cut <= 0:
+            # No separator found in window; hard slice.
+            cut = limit
+        chunks.append(remaining[:cut].rstrip())
+        remaining = remaining[cut:].lstrip()
+    if remaining:
+        chunks.append(remaining)
+    return chunks
+
+
 def send_signals(signals: list[Signal], today: date, cities_checked: int) -> bool:
-    if signals:
-        return send(build_signals_message(signals, today))
-    return send(build_empty_message(today, cities_checked))
+    """Build the daily-signals message and send it. Splits into multiple
+    Telegram messages when the combined size exceeds 3800 chars (Telegram's
+    4096-char hard limit). Returns True only if every chunk delivered."""
+    if not signals:
+        return send(build_empty_message(today, cities_checked))
+
+    full = build_signals_message(signals, today)
+    chunks = _chunk_message(full)
+    if len(chunks) > 1:
+        log.info("signals message split into %d Telegram chunks (%d chars total)",
+                 len(chunks), len(full))
+    all_ok = True
+    for i, chunk in enumerate(chunks, 1):
+        header = f"<i>(part {i}/{len(chunks)})</i>\n\n" if len(chunks) > 1 else ""
+        if not send(header + chunk):
+            all_ok = False
+    return all_ok

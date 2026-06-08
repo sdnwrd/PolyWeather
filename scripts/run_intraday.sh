@@ -23,10 +23,26 @@ python -m intraday
 mkdir -p data/markets
 git add -A data/
 
-if ! git diff --cached --quiet; then
-  git commit -m "log: intraday veto $(date -u +%Y-%m-%d)"
-  git push origin HEAD:main
-  echo "pushed updated intraday state"
-else
+if git diff --cached --quiet; then
   echo "no state changes to commit"
+  exit 0
 fi
+
+git commit -m "log: intraday veto $(date -u +%Y-%m-%d)"
+
+for attempt in 1 2 3; do
+  if git pull --rebase --autostash origin main; then
+    if git push origin HEAD:main; then
+      echo "pushed updated intraday state (attempt $attempt)"
+      exit 0
+    fi
+    echo "push rejected on attempt $attempt — retrying"
+  else
+    echo "rebase failed on attempt $attempt — aborting"
+    git rebase --abort 2>/dev/null || true
+    exit 1
+  fi
+done
+
+echo "push failed after 3 attempts"
+exit 1
