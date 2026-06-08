@@ -1,8 +1,5 @@
 date,city,station,question,bracket_low,bracket_high,market_price,forecast_high,model_true_prob,ev,forecast_openmeteo,model_spread,vetoed,actual_high,outcome,checked_at
 2026-06-07,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 7?,66.0,67.0,0.008,68.0,0.1499,18.74,,,,71.6,LOSS,2026-06-08T04:00:36+00:00
-2026-06-07,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 7?,66.0,67.0,0.008,68.0,0.1499,18.74,,,,71.6,LOSS,2026-06-08T04:00:36+00:00
-2026-06-07,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 7?,66.0,67.0,0.01,68.0,0.1499,14.99,,,,71.6,LOSS,2026-06-08T04:00:36+00:00
-2026-06-07,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 7?,66.0,67.0,0.008,68.0,0.1499,18.74,,,,71.6,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Chicago,KORD,Will the highest temperature in Chicago be between 78-79°F on June 7?,78.0,79.0,0.001,79.0,0.1915,191.46,82.5,3.5,true,82.9,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Chicago,KORD,Will the highest temperature in Chicago be between 80-81°F on June 7?,80.0,81.0,0.001,79.0,0.1499,149.88,82.5,3.5,true,82.9,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Chicago,KORD,Will the highest temperature in Chicago be between 76-77°F on June 7?,76.0,77.0,0.001,79.0,0.0918,91.85,82.5,3.5,true,82.9,LOSS,2026-06-08T04:00:36+00:00
@@ -14,14 +11,12 @@ date,city,station,question,bracket_low,bracket_high,market_price,forecast_high,m
 2026-06-07,Atlanta,KATL,Will the highest temperature in Atlanta be between 82-83°F on June 7?,82.0,83.0,0.001,80.0,0.0918,91.85,83.6,3.6,true,84.2,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Houston,KHOU,Will the highest temperature in Houston be between 88-89°F on June 7?,88.0,89.0,0.002,86.0,0.0918,45.92,84.9,1.1,false,86.0,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 68-69°F on June 7?,68.0,69.0,0.001,68.0,0.1915,191.46,71.4,3.4,true,71.6,LOSS,2026-06-08T04:00:36+00:00
-2026-06-07,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 7?,66.0,67.0,0.001,68.0,0.1499,149.88,71.4,3.4,true,71.6,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,San Francisco,KSFO,Will the highest temperature in San Francisco be between 64-65°F on June 7?,64.0,65.0,0.001,65.0,0.1915,191.46,68.7,3.7,true,66.9,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,San Francisco,KSFO,Will the highest temperature in San Francisco be between 62-63°F on June 7?,62.0,63.0,0.001,65.0,0.0918,91.85,68.7,3.7,true,66.9,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Austin,KAUS,Will the highest temperature in Austin be between 86-87°F on June 7?,86.0,87.0,0.001,87.0,0.1915,191.46,89.5,2.5,false,91.4,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Austin,KAUS,Will the highest temperature in Austin be between 88-89°F on June 7?,88.0,89.0,0.001,87.0,0.1499,149.88,89.5,2.5,false,91.4,LOSS,2026-06-08T04:00:36+00:00
 2026-06-07,Austin,KAUS,Will the highest temperature in Austin be between 84-85°F on June 7?,84.0,85.0,0.001,87.0,0.0918,91.85,89.5,2.5,false,91.4,LOSS,2026-06-08T04:00:36+00:00
 2026-06-08,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 8?,66.0,67.0,0.003,69.0,0.0918,30.62,70.8,1.8,false,,PENDING,
-2026-06-08,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 8?,66.0,67.0,0.001,69.0,0.0918,91.85,70.4,1.4,false,,PENDING,
 2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 22°C on June 8?,71.6,73.4,0.001,72.1,0.3409,340.86,72.2,0.1,false,,PENDING,
 2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 21°C on June 8?,69.8,71.6,0.001,72.1,0.2762,276.22,72.2,0.1,false,,PENDING,
 2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 20°C on June 8?,68.0,69.8,0.001,72.1,0.1049,104.89,72.2,0.1,false,,PENDING,
@@ -48,40 +43,4 @@ date,city,station,question,bracket_low,bracket_high,market_price,forecast_high,m
 2026-06-08,Hong Kong,VHHH,Will the highest temperature in Hong Kong be 29°C on June 8?,84.2,86.0,0.001,83.6,0.267,267.02,84.9,1.3,false,,PENDING,
 2026-06-08,Hong Kong,VHHH,Will the highest temperature in Hong Kong be 27°C on June 8?,80.6,82.4,0.001,83.6,0.2074,207.45,84.9,1.3,false,,PENDING,
 2026-06-08,Hong Kong,VHHH,Will the highest temperature in Hong Kong be 26°C on June 8?,78.8,80.6,0.001,83.6,0.0586,58.61,84.9,1.3,false,,PENDING,
-2026-06-08,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 8?,66.0,67.0,0.001,69.0,0.0918,91.85,70.4,1.4,false,,PENDING,
-2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 20°C on June 9?,68.0,69.8,0.008,71.6,0.1613,20.16,69.3,2.3,false,,PENDING,
-2026-06-08,London,EGLL,Will the highest temperature in London be 15°C on June 8?,59.0,60.8,0.001,62.0,0.2074,207.45,60.5,1.5,false,,PENDING,
-2026-06-08,London,EGLL,Will the highest temperature in London be 14°C on June 8?,57.2,59.0,0.001,62.0,0.0586,58.61,60.5,1.5,false,,PENDING,
-2026-06-08,Munich,EDDM,Will the highest temperature in Munich be 15°C on June 9?,59.0,60.8,0.007,62.3,0.1784,25.49,61.9,0.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 9?,82.4,84.2,0.004,85.0,0.2157,53.93,87.4,2.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 27°C on June 9?,80.6,82.4,0.003,85.0,0.1162,38.73,87.4,2.4,false,,PENDING,
-2026-06-08,Shanghai,ZSPD,Will the highest temperature in Shanghai be 33°C or higher on June 10?,91.4,inf,0.004,89.4,0.2782,69.55,90.5,1.1,false,,PENDING,
-2026-06-08,Shanghai,ZSPD,Will the highest temperature in Shanghai be 32°C on June 10?,89.6,91.4,0.01,89.4,0.1984,19.84,90.5,1.1,false,,PENDING,
-2026-06-08,Toronto,CYYZ,Will the highest temperature in Toronto be 30°C on June 9?,86.0,87.8,0.011,83.2,0.1056,9.6,83.2,0.0,false,,PENDING,
-2026-06-08,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 8?,66.0,67.0,0.001,69.0,0.0918,91.85,70.4,1.4,false,,PENDING,
-2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 20°C on June 9?,68.0,69.8,0.002,71.6,0.1613,80.64,69.3,2.3,false,,PENDING,
-2026-06-08,London,EGLL,Will the highest temperature in London be 15°C on June 8?,59.0,60.8,0.001,62.0,0.2074,207.45,60.5,1.5,false,,PENDING,
-2026-06-08,London,EGLL,Will the highest temperature in London be 14°C on June 8?,57.2,59.0,0.001,62.0,0.0586,58.61,60.5,1.5,false,,PENDING,
-2026-06-08,Munich,EDDM,Will the highest temperature in Munich be 15°C on June 9?,59.0,60.8,0.007,62.3,0.1784,25.49,61.9,0.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 9?,82.4,84.2,0.004,85.0,0.2157,53.93,87.4,2.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 27°C on June 9?,80.6,82.4,0.003,85.0,0.1162,38.73,87.4,2.4,false,,PENDING,
-2026-06-08,Shanghai,ZSPD,Will the highest temperature in Shanghai be 33°C or higher on June 10?,91.4,inf,0.004,89.4,0.2782,69.55,90.5,1.1,false,,PENDING,
-2026-06-08,Shanghai,ZSPD,Will the highest temperature in Shanghai be 32°C on June 10?,89.6,91.4,0.01,89.4,0.1984,19.84,90.5,1.1,false,,PENDING,
-2026-06-08,Toronto,CYYZ,Will the highest temperature in Toronto be 30°C on June 9?,86.0,87.8,0.011,83.2,0.1056,9.6,83.2,0.0,false,,PENDING,
-2026-06-08,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 8?,66.0,67.0,0.001,69.0,0.0918,91.85,70.4,1.4,false,,PENDING,
-2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 20°C on June 9?,68.0,69.8,0.001,71.6,0.1613,161.28,69.3,2.3,false,,PENDING,
 2026-06-08,Paris,LFPB,Will the highest temperature in Paris be 22°C on June 9?,71.6,73.4,0.004,68.9,0.1109,27.72,64.7,4.2,true,,PENDING,
-2026-06-08,Munich,EDDM,Will the highest temperature in Munich be 15°C on June 9?,59.0,60.8,0.007,62.3,0.1784,25.49,61.9,0.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 9?,82.4,84.2,0.004,85.0,0.2157,53.93,87.4,2.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 27°C on June 9?,80.6,82.4,0.003,85.0,0.1162,38.73,87.4,2.4,false,,PENDING,
-2026-06-08,Shanghai,ZSPD,Will the highest temperature in Shanghai be 25°C on June 10?,77.0,78.8,0.007,80.9,0.1427,20.39,81.1,0.2,false,,PENDING,
-2026-06-08,Toronto,CYYZ,Will the highest temperature in Toronto be 30°C on June 9?,86.0,87.8,0.011,83.2,0.1056,9.6,83.2,0.0,false,,PENDING,
-2026-06-08,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 66-67°F on June 8?,66.0,67.0,0.001,69.0,0.0918,91.85,70.4,1.4,false,,PENDING,
-2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 20°C on June 9?,68.0,69.8,0.001,71.6,0.1613,161.28,69.3,2.3,false,,PENDING,
-2026-06-08,Tokyo,RJTT,Will the highest temperature in Tokyo be 21°C on June 9?,69.8,71.6,0.004,71.6,0.2475,61.88,69.3,2.3,false,,PENDING,
-2026-06-08,Paris,LFPB,Will the highest temperature in Paris be 22°C on June 9?,71.6,73.4,0.004,68.9,0.1109,27.72,64.7,4.2,true,,PENDING,
-2026-06-08,Munich,EDDM,Will the highest temperature in Munich be 15°C on June 9?,59.0,60.8,0.005,62.3,0.1784,35.69,61.9,0.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 9?,82.4,84.2,0.004,85.0,0.2157,53.93,87.4,2.4,false,,PENDING,
-2026-06-08,Singapore,WSSS,Will the highest temperature in Singapore be 27°C on June 9?,80.6,82.4,0.003,85.0,0.1162,38.73,87.4,2.4,false,,PENDING,
-2026-06-08,Shanghai,ZSPD,Will the highest temperature in Shanghai be 25°C on June 10?,77.0,78.8,0.007,80.9,0.1427,20.39,81.1,0.2,false,,PENDING,
-2026-06-08,Toronto,CYYZ,Will the highest temperature in Toronto be 30°C on June 9?,86.0,87.8,0.011,83.2,0.1056,9.6,83.2,0.0,false,,PENDING,
