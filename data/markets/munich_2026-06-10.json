@@ -875,6 +875,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-09T05:01:41+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 60.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 57.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.1000000000000014,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Munich be 9\u00b0C or below on June 10?",
+          "bracket_low": -Infinity,
+          "bracket_high": 48.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 312.28249999999997,
+          "accepting_orders": true,
+          "market_id": "2467846",
+          "token_id": "5185374868040597924706064562545540812680871091748997169260465673845351653284"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 10\u00b0C on June 10?",
+          "bracket_low": 50.0,
+          "bracket_high": 51.8,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 451.7649,
+          "accepting_orders": true,
+          "market_id": "2467847",
+          "token_id": "14069554937571485798686711563343909266923501348788024413775649843258597455182"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 11\u00b0C on June 10?",
+          "bracket_low": 51.8,
+          "bracket_high": 53.6,
+          "bestBid": 0.005,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 113.79950000000001,
+          "accepting_orders": true,
+          "market_id": "2467848",
+          "token_id": "82839045452780836915083213777260868362877423049998226807832972225528013778015"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 12\u00b0C on June 10?",
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "bestBid": 0.01,
+          "bestAsk": 0.015,
+          "price": 0.015,
+          "volume": 738.4256789999998,
+          "accepting_orders": true,
+          "market_id": "2467849",
+          "token_id": "82273870208122304202752235374039939084949474912386320308729817046948978714575"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 13\u00b0C on June 10?",
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "bestBid": 0.12,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 663.6352939999999,
+          "accepting_orders": true,
+          "market_id": "2467850",
+          "token_id": "94916143258848063151267740265984901947517145691426447620803387879369901422148"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 14\u00b0C on June 10?",
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "bestBid": 0.29,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 515.2383480000001,
+          "accepting_orders": true,
+          "market_id": "2467851",
+          "token_id": "91558974093784907615558446271463608245725896874672515496953446838488871452370"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 15\u00b0C on June 10?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.33,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 645.9121220000001,
+          "accepting_orders": true,
+          "market_id": "2467852",
+          "token_id": "101980877092636002361428208382311941736566270827901487880560165564457701604700"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 16\u00b0C on June 10?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.18,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 1240.122646,
+          "accepting_orders": true,
+          "market_id": "2467853",
+          "token_id": "89831111696556130680771083750065265143728313898211741821028701489216831303911"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 17\u00b0C on June 10?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": 0.033,
+          "bestAsk": 0.036,
+          "price": 0.036,
+          "volume": 925.2966919999997,
+          "accepting_orders": true,
+          "market_id": "2467854",
+          "token_id": "43397158144231063802811990193456267749024523505762099081249643031113382389417"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 18\u00b0C on June 10?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.005,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 980.311512,
+          "accepting_orders": true,
+          "market_id": "2467855",
+          "token_id": "110379521540485935237843917282090238774795405516539815667302981789406138166209"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 19\u00b0C or higher on June 10?",
+          "bracket_low": 66.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 610.710841,
+          "accepting_orders": true,
+          "market_id": "2467856",
+          "token_id": "29306139472653130000048832659688204874911932221563328089861184095802140192717"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
