@@ -36,9 +36,9 @@ DATA_DIR = Path(__file__).parent / "data"
 CSV_PATH = DATA_DIR / "signals.csv"
 
 FIELDS = [
-    "date", "city", "station", "question",
+    "date", "target_date", "days_ahead", "city", "station", "question",
     "bracket_low", "bracket_high",
-    "market_price", "forecast_high", "model_true_prob", "ev",
+    "market_price", "forecast_high", "forecast_high_raw", "model_true_prob", "ev",
     "forecast_openmeteo", "model_spread", "vetoed",
     "actual_high", "outcome", "checked_at",
 ]
@@ -59,7 +59,12 @@ def _ensure_csv() -> None:
 
 
 def _row_key(row: dict) -> tuple:
-    """Identity for dedup: same date+city+bracket = same signal.
+    """Identity for dedup: same target_date+city+bracket = same signal.
+
+    Keyed on `target_date` (the resolution day), NOT the scan date: a D+0 and
+    D+1 signal scanned the same morning for the same bracket are *different*
+    bets that resolve on different days, so they must not collapse. (Falls
+    back to `date` for legacy rows written before target_date existed.)
 
     Coerces bracket bounds to string so a fresh Signal (with float
     bracket_low/high) compares equal to a row read back from CSV (where
@@ -68,7 +73,7 @@ def _row_key(row: dict) -> tuple:
     calibration/backtest math.
     """
     return (
-        str(row["date"]),
+        str(row.get("target_date") or row["date"]),
         str(row["city"]),
         str(row["bracket_low"]),
         str(row["bracket_high"]),
@@ -105,8 +110,15 @@ def log_signals(signals: list[Signal], today: date) -> int:
 
     new_rows = 0
     for s in signals:
+        # Resolution day, not scan day: a signal fired today for a D+2 target
+        # resolves (and must be backfilled) against that future date. Fall back
+        # to the scan day if a market somehow lacks a resolution_date (D+0).
+        target = s.market.resolution_date or today
+        days_ahead = max(0, (target - today).days)
         row = {
             "date": today.isoformat(),
+            "target_date": target.isoformat(),
+            "days_ahead": days_ahead,
             "city": s.market.city,
             "station": _city_station(s.market.city),
             "question": s.market.question,
@@ -114,6 +126,9 @@ def log_signals(signals: list[Signal], today: date) -> int:
             "bracket_high": s.market.bracket_high,
             "market_price": round(s.market_price, 4),
             "forecast_high": round(s.forecast_high, 1),
+            "forecast_high_raw": (
+                round(s.forecast_high_raw, 1) if s.forecast_high_raw is not None else ""
+            ),
             "model_true_prob": round(s.true_prob, 4),
             "ev": round(s.ev, 2),
             "forecast_openmeteo": (
@@ -224,16 +239,18 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
     for row in rows:
         if row["outcome"] != "PENDING":
             continue
+        # Resolve against the target (resolution) day, not the scan day. Legacy
+        # rows without target_date fall back to `date`.
+        target_str = row.get("target_date") or row["date"]
         try:
-            row_date = date.fromisoformat(row["date"])
+            row_target = date.fromisoformat(target_str)
         except ValueError:
             counts["errors"] += 1
             continue
-        now_utc = datetime.now(timezone.utc).date()
-        if row_date >= now_utc:
+        if row_target >= today:
             counts["still_pending"] += 1
             continue
-        needs_lookup.setdefault((row["city"], row["date"]), []).append(row)
+        needs_lookup.setdefault((row["city"], target_str), []).append(row)
 
     cache: dict[tuple[str, str], Optional[float]] = {}
     for (city_name, date_str), group in needs_lookup.items():
@@ -256,7 +273,7 @@ def backfill(today: Optional[date] = None) -> dict[str, int]:
     for row in rows:
         if row["outcome"] != "PENDING":
             continue
-        key = (row["city"], row["date"])
+        key = (row["city"], row.get("target_date") or row["date"])
         if key not in cache:
             continue
         actual = cache[key]

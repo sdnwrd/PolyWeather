@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 
 import schedule
 
+import bias
 import calibration
 from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
 from forecast import (
@@ -30,6 +31,14 @@ log = logging.getLogger("weather-signal-bot")
 
 
 SCAN_HORIZON_DAYS = 4  # scan today + next 3 days; market may not exist for D+3 yet
+
+
+def apply_bias(city_name: str, days_ahead: int, raw_forecast: float) -> tuple[float, float]:
+    """Return (corrected_forecast, correction). The correction is the estimated
+    per-(city, horizon) forecast bias to subtract; 0.0 when no trustworthy
+    estimate exists (see bias.get_bias)."""
+    correction = bias.get_bias(city_name, days_ahead)
+    return raw_forecast - correction, correction
 
 
 def _is_d0_too_late(city: dict, target: date) -> bool:
@@ -109,10 +118,17 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
             "%s %s: sigma=%.2f°F (base %.2f + horizon D+%d)",
             name, target, sigma, sigma_base, days_ahead,
         )
-    candidates = evaluate_markets(markets, forecast, sigma=sigma)
+    # Bias-correct the forecast point before scoring brackets. `forecast` stays
+    # the RAW primary value (used for the veto spread + recorded raw in the
+    # journal); `eval_forecast` is what we actually bet on.
+    eval_forecast, correction = apply_bias(name, days_ahead, forecast)
+    if correction:
+        log.info("%s %s: bias correction %+.1f°F (raw %.1f → %.1f)",
+                 name, target, -correction, forecast, eval_forecast)
+    candidates = evaluate_markets(markets, eval_forecast, sigma=sigma)
     refreshed_markets = [refresh_market_quote(c.market) for c in candidates]
     signals = (
-        evaluate_markets(refreshed_markets, forecast, sigma=sigma)
+        evaluate_markets(refreshed_markets, eval_forecast, sigma=sigma)
         if refreshed_markets else []
     )
 
@@ -128,6 +144,7 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
         observed = get_day_max_temp(city)
 
     for s in signals:
+        s.forecast_high_raw = forecast  # raw primary, pre-correction
         s.forecast_openmeteo = veto_forecast
         s.model_spread = spread
         s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
@@ -252,6 +269,13 @@ def run() -> None:
         calibration.run_calibration()
     except Exception as e:
         log.exception("calibration crashed: %s", e)
+
+    # Recompute per-(city, horizon) forecast bias from snapshots vs station
+    # truth. Stays a no-op per bin until it clears the sample + dead-band gate.
+    try:
+        bias.build_bias_table()
+    except Exception as e:
+        log.exception("bias table build crashed: %s", e)
 
     try:
         send_signals(signals, today, len(CITIES))

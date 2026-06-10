@@ -30,10 +30,13 @@ def sigma_for_horizon(base_sigma: float, days_ahead: int) -> float:
 @dataclass
 class Signal:
     market: Market
-    forecast_high: float
+    forecast_high: float  # bias-corrected forecast point used for true_prob
     true_prob: float
     market_price: float
     ev: float
+    # Raw primary forecast before bias correction — bias is always re-estimated
+    # from the raw value, so we keep it for the journal (plan §8 R5).
+    forecast_high_raw: Optional[float] = None
     forecast_openmeteo: Optional[float] = None
     model_spread: Optional[float] = None
     vetoed: bool = False  # set True when |NDFD - Open-Meteo| ≥ threshold

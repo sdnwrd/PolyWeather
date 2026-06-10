@@ -4,7 +4,7 @@ observations used by the morning scan's bust check."""
 from __future__ import annotations
 
 import logging
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from typing import Optional
 from zoneinfo import ZoneInfo
 
@@ -156,9 +156,19 @@ def get_veto_forecast(city: dict, target_date: Optional[date] = None) -> Optiona
 
 
 def get_observed_high(city: dict, target_date: date) -> Optional[float]:
-    """Observed daily max for journal backfill. NWS observations endpoint for
-    US, Open-Meteo historical-forecast archive (observations sourced from
-    nearby stations) for international."""
+    """Observed daily max for journal backfill, in °F.
+
+    Both paths read the actual **resolution station**, never a model forecast:
+      - US: NWS station observations endpoint.
+      - Intl: aviationweather.gov METAR for the station, filtered to the
+        target's local-day window.
+
+    (Previously the intl path queried the Open-Meteo historical-forecast API,
+    which returns the *model's own archived forecast* at the lat/lon — not an
+    observation. That made intl WIN/LOSS, sigma calibration, and any bias
+    estimate score the forecast against itself, i.e. ~zero error by
+    construction. See plan §8 R1.)
+    """
     if city.get("region") == "us":
         # Imported lazily to avoid a circular import at module load time —
         # journal imports forecast indirectly via main.
@@ -170,32 +180,71 @@ def get_observed_high(city: dict, target_date: date) -> Optional[float]:
                         city["name"], target_date, e)
             return None
 
-    params = {
-        "latitude": city["lat"],
-        "longitude": city["lon"],
-        "daily": "temperature_2m_max",
-        "temperature_unit": "fahrenheit",
-        "timezone": "auto",
-        "start_date": target_date.isoformat(),
-        "end_date": target_date.isoformat(),
-    }
+    window = _local_day_window_utc(city, target_date)
+    if window is None:
+        return None
+    start_utc, end_utc = window
+    return _fetch_metar_day_max(city.get("station", ""), start_utc, end_utc)
+
+
+def _local_day_window_utc(city: dict, target_date: date) -> Optional[tuple[datetime, datetime]]:
+    """(start_utc, end_utc) bracketing the full local calendar day `target_date`
+    in the city's timezone. None if tz missing/invalid."""
+    tz_name = city.get("tz")
+    if not tz_name:
+        return None
+    try:
+        tz = ZoneInfo(tz_name)
+    except Exception:
+        return None
+    start_local = datetime(
+        target_date.year, target_date.month, target_date.day, tzinfo=tz
+    )
+    end_local = start_local + timedelta(days=1)
+    return start_local.astimezone(timezone.utc), end_local.astimezone(timezone.utc)
+
+
+def _metar_max_f_in_window(
+    records: list[dict], start_utc: datetime, end_utc: datetime
+) -> Optional[float]:
+    """Max METAR temperature (°C records → °F) whose obsTime falls within
+    [start_utc, end_utc]. None if no in-window reading."""
+    temps_f: list[float] = []
+    for m in records:
+        epoch = m.get("obsTime")
+        temp_c = m.get("temp")
+        if epoch is None or temp_c is None:
+            continue
+        obs_dt = datetime.fromtimestamp(epoch, tz=timezone.utc)
+        if start_utc <= obs_dt <= end_utc:
+            temps_f.append(float(temp_c) * 9 / 5 + 32)
+    return max(temps_f) if temps_f else None
+
+
+def _fetch_metar_day_max(
+    station: str, start_utc: datetime, end_utc: datetime
+) -> Optional[float]:
+    """Observed daily max in °F from aviationweather METAR for `station` over
+    the given UTC window. `hours` is sized to reach back to start_utc (the API
+    serves a few days of history — enough for next-morning backfill)."""
+    if not station:
+        return None
+    now = datetime.now(timezone.utc)
+    hours = max(1, int((now - start_utc).total_seconds() // 3600) + 2)
     try:
         resp = requests.get(
-            "https://historical-forecast-api.open-meteo.com/v1/forecast",
-            params=params,
+            _AVWX_METAR_URL,
+            params={"ids": station, "format": "json", "hours": hours},
             timeout=_TIMEOUT,
         )
         resp.raise_for_status()
         data = resp.json()
     except (requests.RequestException, ValueError) as e:
-        log.warning("Open-Meteo archive fetch failed for %s on %s: %s",
-                    city["name"], target_date, e)
+        log.warning("aviationweather observed fetch failed for %s: %s", station, e)
         return None
-    daily = data.get("daily") or {}
-    temps = daily.get("temperature_2m_max") or []
-    if not temps or temps[0] is None:
+    if not isinstance(data, list):
         return None
-    return float(temps[0])
+    return _metar_max_f_in_window(data, start_utc, end_utc)
 
 
 # ---------- Current-day METAR for signal-fire bust check ----------
