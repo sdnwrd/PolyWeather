@@ -1,0 +1,313 @@
+{
+  "city": "New York",
+  "date": "2026-06-10",
+  "station": "KLGA",
+  "region": "us",
+  "lat": 40.7773,
+  "lon": -73.8726,
+  "snapshots": [
+    {
+      "ts": "2026-06-09T05:01:13+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 76.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 83.3,
+      "veto_source": "openmeteo-best",
+      "spread": 7.299999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in New York City be 71\u00b0F or below on June 10?",
+          "bracket_low": -Infinity,
+          "bracket_high": 71.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 231.0,
+          "accepting_orders": true,
+          "market_id": "2475647",
+          "token_id": "19769837694226561573977479371025147763035555979417954821123389679569664995452"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 72-73\u00b0F on June 10?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 65.56,
+          "accepting_orders": true,
+          "market_id": "2475648",
+          "token_id": "2637845347641333414137280834227603724021134910134311436633377605334110960743"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 74-75\u00b0F on June 10?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.03,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 74.25493300000001,
+          "accepting_orders": true,
+          "market_id": "2475649",
+          "token_id": "114244014426982029573868262235742134245279267466649775894845234669911341083749"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 76-77\u00b0F on June 10?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 467.892705,
+          "accepting_orders": true,
+          "market_id": "2475650",
+          "token_id": "112913601862746566829862127576865813728029949848543979201604612461381134960759"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 78-79\u00b0F on June 10?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.33,
+          "bestAsk": 0.34,
+          "price": 0.34,
+          "volume": 344.042,
+          "accepting_orders": true,
+          "market_id": "2475651",
+          "token_id": "60684662860579869693407014140299389727717158913158569458725373616260891545308"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 80-81\u00b0F on June 10?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.25,
+          "bestAsk": 0.26,
+          "price": 0.26,
+          "volume": 199.206152,
+          "accepting_orders": true,
+          "market_id": "2475652",
+          "token_id": "75368478749071369922607973436383561387615846634928292472918588261417874674289"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 82-83\u00b0F on June 10?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.14,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 239.55114799999996,
+          "accepting_orders": true,
+          "market_id": "2475653",
+          "token_id": "50619474651670612814505797421950850895864022082202590223167905657878737053409"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 84-85\u00b0F on June 10?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.09,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 178.92183899999998,
+          "accepting_orders": true,
+          "market_id": "2475654",
+          "token_id": "55745187148966220862435723990170120881739652753709885185454745859122431325071"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 86-87\u00b0F on June 10?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 769.0368,
+          "accepting_orders": true,
+          "market_id": "2475655",
+          "token_id": "42889425288376131391832400870493486454178870634248515877679930497933157773556"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 88-89\u00b0F on June 10?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 358.4801999999999,
+          "accepting_orders": true,
+          "market_id": "2475656",
+          "token_id": "52788284980105213632044747525666250609012833361659942200346807455428359679266"
+        },
+        {
+          "question": "Will the highest temperature in New York City be 90\u00b0F or higher on June 10?",
+          "bracket_low": 90.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 92.09,
+          "accepting_orders": true,
+          "market_id": "2475657",
+          "token_id": "76978646509016458592735283422710431323278960386207830373574702405863314098401"
+        }
+      ],
+      "signals_fired": []
+    },
+    {
+      "ts": "2026-06-10T05:01:16+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 76.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 83.4,
+      "veto_source": "openmeteo-best",
+      "spread": 7.400000000000006,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in New York City be 71\u00b0F or below on June 10?",
+          "bracket_low": -Infinity,
+          "bracket_high": 71.0,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1482.7780000000002,
+          "accepting_orders": true,
+          "market_id": "2475647",
+          "token_id": "19769837694226561573977479371025147763035555979417954821123389679569664995452"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 72-73\u00b0F on June 10?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 2353.3509040000004,
+          "accepting_orders": true,
+          "market_id": "2475648",
+          "token_id": "2637845347641333414137280834227603724021134910134311436633377605334110960743"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 74-75\u00b0F on June 10?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.013,
+          "bestAsk": 0.016,
+          "price": 0.016,
+          "volume": 3391.330115,
+          "accepting_orders": true,
+          "market_id": "2475649",
+          "token_id": "114244014426982029573868262235742134245279267466649775894845234669911341083749"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 76-77\u00b0F on June 10?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.04,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 3489.7720110000014,
+          "accepting_orders": true,
+          "market_id": "2475650",
+          "token_id": "112913601862746566829862127576865813728029949848543979201604612461381134960759"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 78-79\u00b0F on June 10?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.14,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 3146.7209150000003,
+          "accepting_orders": true,
+          "market_id": "2475651",
+          "token_id": "60684662860579869693407014140299389727717158913158569458725373616260891545308"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 80-81\u00b0F on June 10?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 2611.451304000001,
+          "accepting_orders": true,
+          "market_id": "2475652",
+          "token_id": "75368478749071369922607973436383561387615846634928292472918588261417874674289"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 82-83\u00b0F on June 10?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.21,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 3294.0801119999996,
+          "accepting_orders": true,
+          "market_id": "2475653",
+          "token_id": "50619474651670612814505797421950850895864022082202590223167905657878737053409"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 84-85\u00b0F on June 10?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.124,
+          "bestAsk": 0.248,
+          "price": 0.248,
+          "volume": 4522.701736999999,
+          "accepting_orders": true,
+          "market_id": "2475654",
+          "token_id": "55745187148966220862435723990170120881739652753709885185454745859122431325071"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 86-87\u00b0F on June 10?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 8665.167885,
+          "accepting_orders": true,
+          "market_id": "2475655",
+          "token_id": "42889425288376131391832400870493486454178870634248515877679930497933157773556"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 88-89\u00b0F on June 10?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": null,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 5360.892586999999,
+          "accepting_orders": true,
+          "market_id": "2475656",
+          "token_id": "52788284980105213632044747525666250609012833361659942200346807455428359679266"
+        },
+        {
+          "question": "Will the highest temperature in New York City be 90\u00b0F or higher on June 10?",
+          "bracket_low": 90.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 608.104,
+          "accepting_orders": true,
+          "market_id": "2475657",
+          "token_id": "76978646509016458592735283422710431323278960386207830373574702405863314098401"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "market_id": "2475649",
+          "market_price": 0.016,
+          "forecast_high": 76.0,
+          "true_prob": 0.1498822847945298,
+          "ev": 9.367642799658112,
+          "forecast_openmeteo": 83.4,
+          "model_spread": 7.400000000000006,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
