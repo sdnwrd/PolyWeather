@@ -38,7 +38,7 @@ CSV_PATH = DATA_DIR / "signals.csv"
 FIELDS = [
     "date", "target_date", "days_ahead", "city", "station", "question",
     "bracket_low", "bracket_high",
-    "market_price", "forecast_high", "model_true_prob", "ev",
+    "market_price", "forecast_high", "forecast_high_raw", "model_true_prob", "ev",
     "forecast_openmeteo", "model_spread", "vetoed",
     "actual_high", "outcome", "checked_at",
 ]
@@ -126,6 +126,9 @@ def log_signals(signals: list[Signal], today: date) -> int:
             "bracket_high": s.market.bracket_high,
             "market_price": round(s.market_price, 4),
             "forecast_high": round(s.forecast_high, 1),
+            "forecast_high_raw": (
+                round(s.forecast_high_raw, 1) if s.forecast_high_raw is not None else ""
+            ),
             "model_true_prob": round(s.true_prob, 4),
             "ev": round(s.ev, 2),
             "forecast_openmeteo": (

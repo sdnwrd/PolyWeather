@@ -18,6 +18,15 @@ MAX_MARKET_PRICE = 0.15
 MIN_TRUE_PROB = 0.05
 FORECAST_SIGMA = 2.0
 
+# Per-city(+horizon) forecast bias correction (see docs/plans bias-correction).
+# The morning forecast point is shifted by the estimated bias before true_prob
+# is computed, but ONLY when an estimate is trustworthy: at least
+# BIAS_MIN_SAMPLES resolved snapshots AND the estimate clears a dead-band of
+# BIAS_DEADBAND_SE standard errors (so we never steer on noise). No hard-coded
+# seed — estimates come only from live station-truth snapshots (plan §8 R4).
+BIAS_MIN_SAMPLES = 15
+BIAS_DEADBAND_SE = 2.0
+
 # NWS daily-max forecast skill degrades roughly linearly with horizon — D+0
 # MAE ~2-3°F, D+3 MAE ~4-5°F. Without accounting for this we'd treat D+3
 # forecasts as confidently as D+0, inflating true_prob estimates on far-out
