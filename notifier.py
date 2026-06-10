@@ -115,13 +115,24 @@ def _city_date_block(city: str, target: date, items: list[Signal]) -> str:
             return f"{_f_to_c(value):.0f}°C"
         return f"{value:.0f}°F"
 
+    # Show the raw (pre-bias-correction) forecast alongside the corrected one
+    # whenever a correction was actually applied — transparency on what shifted
+    # the bet (plan §8 R5).
+    raw_suffix = ""
+    if (
+        head.forecast_high_raw is not None
+        and abs(head.forecast_high_raw - head.forecast_high) >= 0.05
+    ):
+        raw_suffix = f" (raw {_fmt_f(head.forecast_high_raw)})"
+    primary_str = f"{primary_label}: {_fmt_f(head.forecast_high)}{raw_suffix}"
+
     if head.forecast_openmeteo is None:
-        forecast_line = f"{primary_label}: {_fmt_f(head.forecast_high)} ({veto_label}: n/a)"
+        forecast_line = f"{primary_str} ({veto_label}: n/a)"
     else:
         # Spread is always shown in °F (it's a unit-agnostic threshold)
         spread = head.model_spread or 0.0
         forecast_line = (
-            f"{primary_label}: {_fmt_f(head.forecast_high)}  |  "
+            f"{primary_str}  |  "
             f"{veto_label}: {_fmt_f(head.forecast_openmeteo)}  |  "
             f"spread: {spread:.1f}°F"
         )
