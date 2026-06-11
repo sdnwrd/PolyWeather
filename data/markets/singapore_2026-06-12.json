@@ -150,6 +150,176 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-11T05:01:43+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 86.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 80.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 5.299999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Singapore be 25\u00b0C or below on June 12?",
+          "bracket_low": -Infinity,
+          "bracket_high": 77.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 607.2552799999999,
+          "accepting_orders": true,
+          "market_id": "2488108",
+          "token_id": "84452112341194456105840396495326271335024499300721944504595049147121397797554"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 26\u00b0C on June 12?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 369.38007600000003,
+          "accepting_orders": true,
+          "market_id": "2488109",
+          "token_id": "26249777339342282683186474832945386770148256699612217113005876935462148114672"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 27\u00b0C on June 12?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1730.679,
+          "accepting_orders": true,
+          "market_id": "2488110",
+          "token_id": "36820665580066154840688295847338750177605305906400344604375221032544089789505"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 28\u00b0C on June 12?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 8956.633091999996,
+          "accepting_orders": true,
+          "market_id": "2488111",
+          "token_id": "74022682798062399867183518693252803016983127537723354414856629556672284971437"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 29\u00b0C on June 12?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.023,
+          "price": 0.023,
+          "volume": 5485.779241000002,
+          "accepting_orders": true,
+          "market_id": "2488112",
+          "token_id": "2592602757377086282980091814052431450211393908060149004078813667462472017237"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 30\u00b0C on June 12?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.08,
+          "bestAsk": 0.13,
+          "price": 0.13,
+          "volume": 3862.9792070000003,
+          "accepting_orders": true,
+          "market_id": "2488113",
+          "token_id": "42609682353904954342672005924713002957931998896791616781801121807655456262283"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 31\u00b0C on June 12?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.27,
+          "bestAsk": 0.32,
+          "price": 0.32,
+          "volume": 711.1731050000001,
+          "accepting_orders": true,
+          "market_id": "2488114",
+          "token_id": "33430167389547946528925071047613550459606405340396123032748961173221913692055"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 32\u00b0C on June 12?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.37,
+          "bestAsk": 0.38,
+          "price": 0.38,
+          "volume": 925.7303149999999,
+          "accepting_orders": true,
+          "market_id": "2488115",
+          "token_id": "20919966878683089320164619090093147924139240855949608331661387641896617962556"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 33\u00b0C on June 12?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.15,
+          "bestAsk": 0.18,
+          "price": 0.18,
+          "volume": 2625.080722999998,
+          "accepting_orders": true,
+          "market_id": "2488116",
+          "token_id": "25950082815379349792351185737339914786847922058416252094030750269169888811203"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 34\u00b0C on June 12?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.014,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 9357.993746000006,
+          "accepting_orders": true,
+          "market_id": "2488117",
+          "token_id": "29549738189960400352760556121754588225441552389706747068735974695160081282275"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 35\u00b0C or higher on June 12?",
+          "bracket_low": 95.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.007,
+          "bestAsk": 0.014,
+          "price": 0.014,
+          "volume": 3149.99988,
+          "accepting_orders": true,
+          "market_id": "2488118",
+          "token_id": "3297685796521327566492224307583753196692643143485442324737325131655819574338"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "market_id": "2488111",
+          "market_price": 0.003,
+          "forecast_high": 86.0,
+          "true_prob": 0.16128131782105498,
+          "ev": 53.760439273684995,
+          "forecast_openmeteo": 80.7,
+          "model_spread": 5.299999999999997,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "market_id": "2488112",
+          "market_price": 0.023,
+          "forecast_high": 86.0,
+          "true_prob": 0.24750746245307675,
+          "ev": 10.761194019698989,
+          "forecast_openmeteo": 80.7,
+          "model_spread": 5.299999999999997,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }

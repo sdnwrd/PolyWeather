@@ -1,0 +1,155 @@
+{
+  "city": "Los Angeles",
+  "date": "2026-06-12",
+  "station": "KLAX",
+  "region": "us",
+  "lat": 33.9425,
+  "lon": -118.4081,
+  "snapshots": [
+    {
+      "ts": "2026-06-11T05:00:52+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 77.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 76.4,
+      "veto_source": "openmeteo-best",
+      "spread": 0.5999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Los Angeles be 69\u00b0F or below on June 12?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 57.03,
+          "accepting_orders": true,
+          "market_id": "2501701",
+          "token_id": "71228939544707317866256162406835471506825301103569116088662440574253538730542"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 70-71\u00b0F on June 12?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.014,
+          "bestAsk": 0.035,
+          "price": 0.035,
+          "volume": 25.03,
+          "accepting_orders": true,
+          "market_id": "2501702",
+          "token_id": "73986843640289507814236262775496886876407879971751345026445134979370413143473"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 72-73\u00b0F on June 12?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.33,
+          "bestAsk": 0.38,
+          "price": 0.38,
+          "volume": 95.19360699999999,
+          "accepting_orders": true,
+          "market_id": "2501703",
+          "token_id": "30559479786616592650619418061102971743741308898962922524098891920062808500242"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 74-75\u00b0F on June 12?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.4,
+          "price": 0.4,
+          "volume": 192.95177700000002,
+          "accepting_orders": true,
+          "market_id": "2501704",
+          "token_id": "100716103962847813217123501339822986604624238023506559918330964619748067131963"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 76-77\u00b0F on June 12?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.16,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 67.94201399999999,
+          "accepting_orders": true,
+          "market_id": "2501705",
+          "token_id": "93828461509371516010137098335599228611560863191121711833796181448997425881827"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 78-79\u00b0F on June 12?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.04,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 78.35333200000001,
+          "accepting_orders": true,
+          "market_id": "2501706",
+          "token_id": "63590464552710114530233677201239975895678912472786970148519771823075525181161"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 86-87\u00b0F on June 12?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 486.446105,
+          "accepting_orders": true,
+          "market_id": "2501710",
+          "token_id": "32935093117938152529627529441982598177507122167284251038782051754184221530419"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 88\u00b0F or higher on June 12?",
+          "bracket_low": 88.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 55.03,
+          "accepting_orders": true,
+          "market_id": "2501711",
+          "token_id": "75733823269985219204552932457586556013427159952765745162339021324020660363365"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 80-81\u00b0F on June 12?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.02,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 45.246077,
+          "accepting_orders": true,
+          "market_id": "2501707",
+          "token_id": "16858372775594228950500310887134088193666335149728919223447326389547416632890"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 82-83\u00b0F on June 12?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 55.03,
+          "accepting_orders": true,
+          "market_id": "2501708",
+          "token_id": "103915819787938353796958680621912648260248385907928887213048242073935071899141"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 84-85\u00b0F on June 12?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 145.97150000000002,
+          "accepting_orders": true,
+          "market_id": "2501709",
+          "token_id": "7183284438080432015971798772155845144778675953472745867659791248601634096860"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
