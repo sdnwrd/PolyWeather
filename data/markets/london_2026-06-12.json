@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-12T05:01:03+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 70.7,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 70.4,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.29999999999999716,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 15\u00b0C or below on June 12?",
+          "bracket_low": -Infinity,
+          "bracket_high": 59.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1678.57,
+          "accepting_orders": true,
+          "market_id": "2488529",
+          "token_id": "51148536627669353854395619855721908877291886896896392735418388779679337299611"
+        },
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C on June 12?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2668.5699999999997,
+          "accepting_orders": true,
+          "market_id": "2488530",
+          "token_id": "85651710809789049625896967773497817684103369982390540479650477136654390113177"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on June 12?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 11019.972119000005,
+          "accepting_orders": true,
+          "market_id": "2488531",
+          "token_id": "46952236514551251307264938736329475752946130147867923674784770869896042038477"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on June 12?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 2781.700568999999,
+          "accepting_orders": true,
+          "market_id": "2488532",
+          "token_id": "107357716205961148046878405459091418350653042274723192781591458143952124874691"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on June 12?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 4673.477778999999,
+          "accepting_orders": true,
+          "market_id": "2488533",
+          "token_id": "41143376830681044766623638136988536832573328366783607834402373972646121795600"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on June 12?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.09,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 4126.223095000002,
+          "accepting_orders": true,
+          "market_id": "2488534",
+          "token_id": "88617561341865584425329086495150548886127446792334019412048561492801176799640"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on June 12?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.37,
+          "bestAsk": 0.38,
+          "price": 0.38,
+          "volume": 4409.543689999999,
+          "accepting_orders": true,
+          "market_id": "2488535",
+          "token_id": "69390493695744649358324218340394418619443668743854892351771361135651683285358"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on June 12?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.36,
+          "bestAsk": 0.37,
+          "price": 0.37,
+          "volume": 4845.968376000001,
+          "accepting_orders": true,
+          "market_id": "2488536",
+          "token_id": "33606714063302899473261160486236146611415220162454657713842147601413675752255"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on June 12?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.17,
+          "bestAsk": 0.18,
+          "price": 0.18,
+          "volume": 5735.820829000001,
+          "accepting_orders": true,
+          "market_id": "2488537",
+          "token_id": "50120279609672797699032394626900333120183149266416612430544702870591573218427"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on June 12?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.023,
+          "bestAsk": 0.027,
+          "price": 0.027,
+          "volume": 5651.252955000001,
+          "accepting_orders": true,
+          "market_id": "2488538",
+          "token_id": "60385556071426964037739404785227461354031594983443449916861996745196036393523"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C or higher on June 12?",
+          "bracket_low": 77.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1551.9071660000004,
+          "accepting_orders": true,
+          "market_id": "2488539",
+          "token_id": "112038378842810593960564210971040133061239487964611974304426010537186812695459"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "market_id": "2488533",
+          "market_price": 0.005,
+          "forecast_high": 70.7,
+          "true_prob": 0.07628351878235715,
+          "ev": 15.25670375647143,
+          "forecast_openmeteo": 70.4,
+          "model_spread": 0.29999999999999716,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }

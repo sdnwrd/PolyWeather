@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-12T05:01:35+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 79.7,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 79.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Toronto be 20\u00b0C or below on June 12?",
+          "bracket_low": -Infinity,
+          "bracket_high": 68.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 554.490843,
+          "accepting_orders": true,
+          "market_id": "2501584",
+          "token_id": "48209002899010836034202225747489309030938612955055640572691676887702001652945"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 21\u00b0C on June 12?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1457.6605,
+          "accepting_orders": true,
+          "market_id": "2501585",
+          "token_id": "44992695605082023198855205255214966243527942296312522125376914622380243012333"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 22\u00b0C on June 12?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1527.7600479999999,
+          "accepting_orders": true,
+          "market_id": "2501586",
+          "token_id": "23995353140511544741895778650680229150893462909955489419084504842388760028541"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 23\u00b0C on June 12?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 313.88249999999994,
+          "accepting_orders": true,
+          "market_id": "2501587",
+          "token_id": "95408061761096717622359546687943414275113435481220858631695939575459046162601"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 24\u00b0C on June 12?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 507.9581359999999,
+          "accepting_orders": true,
+          "market_id": "2501588",
+          "token_id": "66805472327058079215503406049928635003844764466953286140211364468193909093760"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 25\u00b0C on June 12?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.032,
+          "bestAsk": 0.069,
+          "price": 0.069,
+          "volume": 458.127732,
+          "accepting_orders": true,
+          "market_id": "2501589",
+          "token_id": "88651116033621936984968434490627724310060113443354249037961142308878035328662"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 26\u00b0C on June 12?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.21,
+          "bestAsk": 0.26,
+          "price": 0.26,
+          "volume": 717.1583780000002,
+          "accepting_orders": true,
+          "market_id": "2501590",
+          "token_id": "72624755130977482581957007123438117331518468162466387022539587771732059596706"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 27\u00b0C on June 12?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 780.4084860000002,
+          "accepting_orders": true,
+          "market_id": "2501591",
+          "token_id": "30596563854799912548709278107926717432694858118514772961660936635759449471364"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 28\u00b0C on June 12?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.25,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 870.685845,
+          "accepting_orders": true,
+          "market_id": "2501592",
+          "token_id": "53493310052679881548582003992208953351176681264487079667763150368013224659561"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 29\u00b0C on June 12?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.04,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 775.7455550000001,
+          "accepting_orders": true,
+          "market_id": "2501593",
+          "token_id": "73661268896782928197290247666172873121138224782420794197859521261113538943841"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 30\u00b0C or higher on June 12?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.005,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 1787.32949,
+          "accepting_orders": true,
+          "market_id": "2501594",
+          "token_id": "103398973590498350857283679309135668076052822034606898191987395054823263136425"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "2501588",
+          "market_price": 0.009,
+          "forecast_high": 79.7,
+          "true_prob": 0.07628351878235715,
+          "ev": 8.475946531373017,
+          "forecast_openmeteo": 79.7,
+          "model_spread": 0.0,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }

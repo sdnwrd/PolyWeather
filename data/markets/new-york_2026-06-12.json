@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-12T05:00:53+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 91.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 97.6,
+      "veto_source": "openmeteo-best",
+      "spread": 6.599999999999994,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in New York City be between 94-95\u00b0F on June 12?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 2568.843887,
+          "accepting_orders": true,
+          "market_id": "2501615",
+          "token_id": "41810225147823154088921035580880860072256814335417550805943295104111391341069"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 98-99\u00b0F on June 12?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.061,
+          "bestAsk": 0.078,
+          "price": 0.078,
+          "volume": 2092.0737560000002,
+          "accepting_orders": true,
+          "market_id": "2501620",
+          "token_id": "2597358899587847696639532538706089656052694197262728428034114755454317025221"
+        },
+        {
+          "question": "Will the highest temperature in New York City be 100\u00b0F or higher on June 12?",
+          "bracket_low": 100.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.006,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 1819.7104619999998,
+          "accepting_orders": true,
+          "market_id": "2501621",
+          "token_id": "55087573322708584456860744784033642832044919388293850080131056319596545285662"
+        },
+        {
+          "question": "Will the highest temperature in New York City be 81\u00b0F or below on June 12?",
+          "bracket_low": -Infinity,
+          "bracket_high": 81.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 450.97049999999996,
+          "accepting_orders": true,
+          "market_id": "2501606",
+          "token_id": "109727695445817291749840666873464466974703945769731318269245500007740515807062"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 82-83\u00b0F on June 12?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 450.95950000000005,
+          "accepting_orders": true,
+          "market_id": "2501607",
+          "token_id": "113502008275177466180376225613896208335610922800704493486983109579316433910975"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 84-85\u00b0F on June 12?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2488.062166000001,
+          "accepting_orders": true,
+          "market_id": "2501608",
+          "token_id": "25286402877719407916228265204921773065686946394346079650615431759093396905324"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 86-87\u00b0F on June 12?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1162.3106780000003,
+          "accepting_orders": true,
+          "market_id": "2501609",
+          "token_id": "81937113791176155233554940206423797011858444909169972234186258894612764077789"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 88-89\u00b0F on June 12?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.008,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 2141.00249,
+          "accepting_orders": true,
+          "market_id": "2501610",
+          "token_id": "40263675750130885809534306364321634930885209094616527803021236555577122030373"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 90-91\u00b0F on June 12?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.05,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 2086.412709999999,
+          "accepting_orders": true,
+          "market_id": "2501611",
+          "token_id": "34129310796557869270006915266718555818214408966092256279325173315208676616726"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 92-93\u00b0F on June 12?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.15,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 2164.9055169999997,
+          "accepting_orders": true,
+          "market_id": "2501612",
+          "token_id": "89161627755899394946766297237961304513672420827570970035361023157546089871923"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 96-97\u00b0F on June 12?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.3,
+          "bestAsk": 0.32,
+          "price": 0.32,
+          "volume": 2199.1003170000004,
+          "accepting_orders": true,
+          "market_id": "2501619",
+          "token_id": "28927696195166015177790104507454156001172867608022667758148229679054218897735"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "market_id": "2501610",
+          "market_price": 0.01,
+          "forecast_high": 91.0,
+          "true_prob": 0.091848052662599,
+          "ev": 9.1848052662599,
+          "forecast_openmeteo": 97.6,
+          "model_spread": 6.599999999999994,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
