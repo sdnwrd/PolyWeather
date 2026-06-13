@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-13T05:00:48+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 79.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 83.1,
+      "veto_source": "openmeteo-best",
+      "spread": 4.099999999999994,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in San Francisco be 69\u00b0F or below on June 13?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.0,
+          "bestBid": 0.05,
+          "bestAsk": 0.057,
+          "price": 0.057,
+          "volume": 2730.543548000001,
+          "accepting_orders": true,
+          "market_id": "2512808",
+          "token_id": "67948362583707146491240825499261987072607307466316297872553712031413381421315"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 70-71\u00b0F on June 13?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.052,
+          "bestAsk": 0.069,
+          "price": 0.069,
+          "volume": 1661.7279620000002,
+          "accepting_orders": true,
+          "market_id": "2512809",
+          "token_id": "52774389729384432612813199531502844479093071537737787301223310499418307064641"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 72-73\u00b0F on June 13?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.18,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 1344.8938689999998,
+          "accepting_orders": true,
+          "market_id": "2512810",
+          "token_id": "111126305664303660629533409307449668593727989788898364387939539631402357289436"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 74-75\u00b0F on June 13?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.24,
+          "bestAsk": 0.27,
+          "price": 0.27,
+          "volume": 1047.1661820000002,
+          "accepting_orders": true,
+          "market_id": "2512811",
+          "token_id": "30937284807892268256351766815385507034571079229300181111698826082012917945015"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 76-77\u00b0F on June 13?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.23,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": 917.8061749999999,
+          "accepting_orders": true,
+          "market_id": "2512812",
+          "token_id": "77582007706082539159223832703099909980069419603839238856235215835156438755838"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 78-79\u00b0F on June 13?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.09,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 2224.0539380000005,
+          "accepting_orders": true,
+          "market_id": "2512813",
+          "token_id": "88193397384608409245525233438082356999364449731718406016910577358241820414052"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 80-81\u00b0F on June 13?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.062,
+          "bestAsk": 0.088,
+          "price": 0.088,
+          "volume": 1674.730541999999,
+          "accepting_orders": true,
+          "market_id": "2512814",
+          "token_id": "114290824270330874582154023813289957498484792179440664708260073920092473928266"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 82-83\u00b0F on June 13?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 2357.1991440000006,
+          "accepting_orders": true,
+          "market_id": "2512815",
+          "token_id": "89714744928791192615408249300448661414146434671850889548961603161396082044212"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 84-85\u00b0F on June 13?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.016,
+          "price": 0.016,
+          "volume": 4498.105772,
+          "accepting_orders": true,
+          "market_id": "2512816",
+          "token_id": "9039240730699223035113832739198203655540726865914450074021128602246392800968"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 86-87\u00b0F on June 13?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 2895.317766999999,
+          "accepting_orders": true,
+          "market_id": "2512817",
+          "token_id": "32447312994672337820356732958183427949376623873120570302783706751256018020364"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be 88\u00b0F or higher on June 13?",
+          "bracket_low": 88.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 3090.815933,
+          "accepting_orders": true,
+          "market_id": "2512818",
+          "token_id": "76216901440133100034295663041627890967522163449500113764831094514631053243572"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

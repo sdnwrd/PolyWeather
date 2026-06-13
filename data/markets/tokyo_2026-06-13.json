@@ -150,6 +150,188 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-13T05:01:01+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 79.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 78.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.29999999999999716,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 21\u00b0C or below on June 13?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1503.781829,
+          "accepting_orders": true,
+          "market_id": "2502507",
+          "token_id": "81346261757201134766699802816203256153890251333396373657517712437557775435039"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 22\u00b0C on June 13?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1623.1224439999999,
+          "accepting_orders": true,
+          "market_id": "2502508",
+          "token_id": "94445985814556678941783029920129290623316199636486362731765607400222761859201"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C on June 13?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1859.6479399999998,
+          "accepting_orders": true,
+          "market_id": "2502509",
+          "token_id": "110987761432306120701019206413071690655581684498323067264769457507085773977944"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on June 13?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 10493.740977000001,
+          "accepting_orders": true,
+          "market_id": "2502510",
+          "token_id": "27911709522075386495822734520172389944172142856845853666696853887408013420879"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on June 13?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 12884.324182999997,
+          "accepting_orders": true,
+          "market_id": "2502511",
+          "token_id": "112187656358874929298964391081169632659965928375327649679224658000071904422170"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on June 13?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 8895.532300000003,
+          "accepting_orders": true,
+          "market_id": "2502512",
+          "token_id": "94747118493997424670242284077409284765429596895873881692863313610232504142602"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C on June 13?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.89,
+          "bestAsk": 0.92,
+          "price": 0.92,
+          "volume": 5737.038186000001,
+          "accepting_orders": true,
+          "market_id": "2502513",
+          "token_id": "37254258443316504461899019806309724868084574948537338175855098908709590057975"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 28\u00b0C on June 13?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.09,
+          "bestAsk": 0.11,
+          "price": 0.11,
+          "volume": 7734.330303000003,
+          "accepting_orders": true,
+          "market_id": "2502514",
+          "token_id": "60156883589047780322393879643541627206858290368268185984610594190424260763635"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C on June 13?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 8623.974999000002,
+          "accepting_orders": true,
+          "market_id": "2502515",
+          "token_id": "101729134909416515458512952731172843942271220844747391400354079340205810703138"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 30\u00b0C on June 13?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 6500.895183000002,
+          "accepting_orders": true,
+          "market_id": "2502516",
+          "token_id": "5888806692806968546869203128610598909709766709573501653375390646199950116884"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 31\u00b0C or higher on June 13?",
+          "bracket_low": 87.8,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2734.665504,
+          "accepting_orders": true,
+          "market_id": "2502517",
+          "token_id": "108513622629024886279878164626198122840608817678231945451583042517805286756583"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "market_id": "2502512",
+          "market_price": 0.001,
+          "forecast_high": 79.2,
+          "true_prob": 0.3372960572160298,
+          "ev": 337.2960572160298,
+          "forecast_openmeteo": 78.9,
+          "model_spread": 0.29999999999999716,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "market_id": "2502511",
+          "market_price": 0.001,
+          "forecast_high": 79.2,
+          "true_prob": 0.2850742296145134,
+          "ev": 285.0742296145134,
+          "forecast_openmeteo": 78.9,
+          "model_spread": 0.29999999999999716,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "2502510",
+          "market_price": 0.001,
+          "forecast_high": 79.2,
+          "true_prob": 0.11291592899820325,
+          "ev": 112.91592899820326,
+          "forecast_openmeteo": 78.9,
+          "model_spread": 0.29999999999999716,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }
