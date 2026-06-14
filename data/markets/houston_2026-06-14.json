@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-14T05:00:52+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 90.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 88.2,
+      "veto_source": "openmeteo-best",
+      "spread": 1.7999999999999972,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Houston be between 98-99\u00b0F on June 14?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 476.0210000000001,
+          "accepting_orders": true,
+          "market_id": "2527070",
+          "token_id": "78673818016223455653098261072678744920507019247789094410445293396173034803696"
+        },
+        {
+          "question": "Will the highest temperature in Houston be 100\u00b0F or higher on June 14?",
+          "bracket_low": 100.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 494.029,
+          "accepting_orders": true,
+          "market_id": "2527071",
+          "token_id": "87927473044954033897733929703257743019808091274573007581541352512631632413804"
+        },
+        {
+          "question": "Will the highest temperature in Houston be 81\u00b0F or below on June 14?",
+          "bracket_low": -Infinity,
+          "bracket_high": 81.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 607.369847,
+          "accepting_orders": true,
+          "market_id": "2527061",
+          "token_id": "22139676143701768090707119185866285793749009984814460447805013340683076758981"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 82-83\u00b0F on June 14?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1037.8735710000003,
+          "accepting_orders": true,
+          "market_id": "2527062",
+          "token_id": "105481565679873874182544118631162911905362507269197326748306274984470796135413"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 84-85\u00b0F on June 14?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.016,
+          "price": 0.016,
+          "volume": 2065.3413519999995,
+          "accepting_orders": true,
+          "market_id": "2527063",
+          "token_id": "21564902589110044424277948121318199118588449801683704791423792087818149421178"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 86-87\u00b0F on June 14?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.14,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 943.0897000000001,
+          "accepting_orders": true,
+          "market_id": "2527064",
+          "token_id": "41309713997370405837204274649951004558217781142600325329441645607629640761365"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 88-89\u00b0F on June 14?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.33,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 796.4022530000002,
+          "accepting_orders": true,
+          "market_id": "2527065",
+          "token_id": "110681923176264486718503688571451903884107870553441846412464943156833875456313"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 90-91\u00b0F on June 14?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 1221.032853,
+          "accepting_orders": true,
+          "market_id": "2527066",
+          "token_id": "101865635107263603642083610245098589676598815542939743643520014420780149051083"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 92-93\u00b0F on June 14?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.12,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 1121.423168,
+          "accepting_orders": true,
+          "market_id": "2527067",
+          "token_id": "54622071159810595708259644485014531968386475695665114358570086023947382713885"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 94-95\u00b0F on June 14?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.018,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 1361.3499999999997,
+          "accepting_orders": true,
+          "market_id": "2527068",
+          "token_id": "23747605927114401902018133102119350155561031872324727329265990207717890730164"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 96-97\u00b0F on June 14?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 536.667646,
+          "accepting_orders": true,
+          "market_id": "2527069",
+          "token_id": "109314603923614740793896994556558720462683111758614267315481200470936758687270"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

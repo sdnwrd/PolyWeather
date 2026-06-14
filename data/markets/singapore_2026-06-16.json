@@ -1,0 +1,155 @@
+{
+  "city": "Singapore",
+  "date": "2026-06-16",
+  "station": "WSSS",
+  "region": "intl",
+  "lat": 1.3592,
+  "lon": 103.9894,
+  "snapshots": [
+    {
+      "ts": "2026-06-14T05:01:41+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 85.7,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 84.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.7999999999999972,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Singapore be 26\u00b0C on June 16?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2539155",
+          "token_id": "42900860783330263411709270645783380270522722449709946485625073122808285601682"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 27\u00b0C on June 16?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2539156",
+          "token_id": "61365829012829953681214101450395641577235866839834399792769008631949496649654"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 28\u00b0C on June 16?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.05,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 10.0,
+          "accepting_orders": true,
+          "market_id": "2539157",
+          "token_id": "66954819663417093785924709031267616263097247504013597301108849033482365385042"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 29\u00b0C on June 16?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.06,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2539158",
+          "token_id": "89641921091951007999455348846084691698243305308793304493642991452132256187196"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 30\u00b0C on June 16?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.07,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2539159",
+          "token_id": "89542253249222595139011001173026322914006272229358152250888781965904226309186"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 31\u00b0C on June 16?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.09,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 27.68108,
+          "accepting_orders": true,
+          "market_id": "2539160",
+          "token_id": "76166729050856316740152944104225964129155722270746631282833417745045192710"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 32\u00b0C on June 16?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.06,
+          "bestAsk": 0.18,
+          "price": 0.18,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2539161",
+          "token_id": "91676873582112738156070345203459220187469679686589745143187998343303663276696"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 33\u00b0C on June 16?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.05,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2539162",
+          "token_id": "12801928611320765326661777838560575130519072532252764287437265675861720163724"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 34\u00b0C on June 16?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.02,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 20.0,
+          "accepting_orders": true,
+          "market_id": "2539163",
+          "token_id": "24785911160858009407048298181720761123759637475345708344773211567543982999122"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 35\u00b0C or higher on June 16?",
+          "bracket_low": 95.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2539164",
+          "token_id": "46033227101770395584128257321029323830119692993390222191946026174219414644028"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 25\u00b0C or below on June 16?",
+          "bracket_low": -Infinity,
+          "bracket_high": 77.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 150.0,
+          "accepting_orders": true,
+          "market_id": "2539154",
+          "token_id": "15140366061916817054126150749973552487728463352623096571944696512360106691995"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
