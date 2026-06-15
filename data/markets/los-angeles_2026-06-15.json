@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-15T05:01:32+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 69.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 69.4,
+      "veto_source": "openmeteo-best",
+      "spread": 0.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Los Angeles be between 66-67\u00b0F on June 15?",
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "bestBid": 0.007,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 1644.6151690000002,
+          "accepting_orders": true,
+          "market_id": "2537943",
+          "token_id": "106816940167486685385509830245656459666272891223078546266882269220904873938415"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 61\u00b0F or below on June 15?",
+          "bracket_low": -Infinity,
+          "bracket_high": 61.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 816.979,
+          "accepting_orders": true,
+          "market_id": "2537940",
+          "token_id": "67558215354473591647029171521251613980356725275547250272615686853074007515394"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 62-63\u00b0F on June 15?",
+          "bracket_low": 62.0,
+          "bracket_high": 63.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2261.885241,
+          "accepting_orders": true,
+          "market_id": "2537941",
+          "token_id": "78677949789588150783728367408142658102968974961452254454085783746681893578091"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 64-65\u00b0F on June 15?",
+          "bracket_low": 64.0,
+          "bracket_high": 65.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2975.070437,
+          "accepting_orders": true,
+          "market_id": "2537942",
+          "token_id": "13746492544210771561925351020067852055635025566450526800027049384369469669151"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 68-69\u00b0F on June 15?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.041,
+          "bestAsk": 0.073,
+          "price": 0.073,
+          "volume": 1114.737198,
+          "accepting_orders": true,
+          "market_id": "2537944",
+          "token_id": "37785773990823111075594892040620912877526462621575505326751924246589768690566"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 70-71\u00b0F on June 15?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.37,
+          "bestAsk": 0.39,
+          "price": 0.39,
+          "volume": 1346.7120300000001,
+          "accepting_orders": true,
+          "market_id": "2537945",
+          "token_id": "32102159322538070479482571446152480169080939822091239380626069034593553000644"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 72-73\u00b0F on June 15?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 817.0378380000001,
+          "accepting_orders": true,
+          "market_id": "2537946",
+          "token_id": "114436948854513891125655028297216115466458586891989362442266657970953345654803"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 74-75\u00b0F on June 15?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 1101.0993019999999,
+          "accepting_orders": true,
+          "market_id": "2537947",
+          "token_id": "55287798189343873569945577949989658933556941695580221274286670570341840531225"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 76-77\u00b0F on June 15?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 1300.0278739999994,
+          "accepting_orders": true,
+          "market_id": "2537948",
+          "token_id": "89247272229253711947668364495739807009185691055407823148655321651404706268890"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 78-79\u00b0F on June 15?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 1860.5143669999993,
+          "accepting_orders": true,
+          "market_id": "2537949",
+          "token_id": "102172186896463831223246483474779942986170224087383391750797555146445052261328"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 80\u00b0F or higher on June 15?",
+          "bracket_low": 80.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1335.8167839999999,
+          "accepting_orders": true,
+          "market_id": "2537950",
+          "token_id": "58648019376702686885949954583179294341126759974290613187727946252929160579225"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "market_id": "2537943",
+          "market_price": 0.01,
+          "forecast_high": 69.0,
+          "true_prob": 0.091848052662599,
+          "ev": 9.1848052662599,
+          "forecast_openmeteo": 69.4,
+          "model_spread": 0.4000000000000057,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }

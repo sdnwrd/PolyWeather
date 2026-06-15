@@ -1,0 +1,155 @@
+{
+  "city": "Atlanta",
+  "date": "2026-06-16",
+  "station": "KATL",
+  "region": "us",
+  "lat": 33.6407,
+  "lon": -84.4277,
+  "snapshots": [
+    {
+      "ts": "2026-06-15T05:01:24+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 80.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 76.6,
+      "veto_source": "openmeteo-best",
+      "spread": 3.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Atlanta be between 66-67\u00b0F on June 16?",
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2548260",
+          "token_id": "2780151671163619046445784153017262826540824232582388377009408299357318915813"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 68-69\u00b0F on June 16?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2548261",
+          "token_id": "65925972364425848339062223514237646594387318726099049034141780100417963398695"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 70-71\u00b0F on June 16?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2548262",
+          "token_id": "94570041669982170756235310920275002913374150776768231024514890807756226736604"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 72-73\u00b0F on June 16?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.046,
+          "bestAsk": 0.078,
+          "price": 0.078,
+          "volume": 35.0,
+          "accepting_orders": true,
+          "market_id": "2548263",
+          "token_id": "78656065587881370883158491028088277893649364028663967219212338635452269510568"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 74-75\u00b0F on June 16?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.15,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 105.293317,
+          "accepting_orders": true,
+          "market_id": "2548264",
+          "token_id": "55588632763056332342425729124855657146244565501929955884156607837304424327788"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 76-77\u00b0F on June 16?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.27,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 133.43766399999998,
+          "accepting_orders": true,
+          "market_id": "2548265",
+          "token_id": "37661992047143992268963761207768438258742159843771047630444923607597914860186"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 78-79\u00b0F on June 16?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.22,
+          "bestAsk": 0.25,
+          "price": 0.25,
+          "volume": 468.810696,
+          "accepting_orders": true,
+          "market_id": "2548266",
+          "token_id": "9260434737693116529394767227596983782162404423269562331738603433725623261450"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 80-81\u00b0F on June 16?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.06,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 541.5874999999999,
+          "accepting_orders": true,
+          "market_id": "2548267",
+          "token_id": "54456260098684196353699984229887727607719805015143808412078527018575285074778"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 82-83\u00b0F on June 16?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.041,
+          "bestAsk": 0.049,
+          "price": 0.049,
+          "volume": 256.892,
+          "accepting_orders": true,
+          "market_id": "2548268",
+          "token_id": "70081096068660621915483685092428975801907861586985121740868275580934285335128"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be 84\u00b0F or higher on June 16?",
+          "bracket_low": 84.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.012,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 113.455828,
+          "accepting_orders": true,
+          "market_id": "2548269",
+          "token_id": "28658075453585922045805317924596276236530857320265540077696985265434842523579"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be 65\u00b0F or below on June 16?",
+          "bracket_low": -Infinity,
+          "bracket_high": 65.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 9.994,
+          "accepting_orders": true,
+          "market_id": "2548259",
+          "token_id": "12516926423341831817087174787703701551334506183652769296358411672416201411294"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
