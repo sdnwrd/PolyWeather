@@ -1,0 +1,192 @@
+{
+  "city": "Munich",
+  "date": "2026-06-17",
+  "station": "EDDM",
+  "region": "intl",
+  "lat": 48.3538,
+  "lon": 11.7861,
+  "snapshots": [
+    {
+      "ts": "2026-06-16T05:01:44+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 75.8,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 78.6,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.799999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Munich be 21\u00b0C or below on June 17?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 627.4264659999999,
+          "accepting_orders": true,
+          "market_id": "2549460",
+          "token_id": "41771261595823831888900482854358978908016251604362744717258185155501105041882"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 22\u00b0C on June 17?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.002,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1698.984,
+          "accepting_orders": true,
+          "market_id": "2549461",
+          "token_id": "67196482093803726473629215614132104111431302453220948933898584762071761319655"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 23\u00b0C on June 17?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.006,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 2554.329974,
+          "accepting_orders": true,
+          "market_id": "2549462",
+          "token_id": "63217990684668086796697339011075142828428555852849243227577372522356978901148"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 24\u00b0C on June 17?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.014,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 3464.7092140000013,
+          "accepting_orders": true,
+          "market_id": "2549463",
+          "token_id": "33159316511103199262209646332416640702615408253591991606330326190209528745301"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 25\u00b0C on June 17?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.11,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 1879.525755,
+          "accepting_orders": true,
+          "market_id": "2549464",
+          "token_id": "99019810494284075717509209548696317881101504861133349314112499518693124246677"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 26\u00b0C on June 17?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.3,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 1328.284997,
+          "accepting_orders": true,
+          "market_id": "2549465",
+          "token_id": "52450362779763347231803490056802582857557955726962770813005872690746583258171"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 27\u00b0C on June 17?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.35,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 1827.6589869999996,
+          "accepting_orders": true,
+          "market_id": "2549466",
+          "token_id": "57772100519466912379001189095891267315797164412735619965342990575095796115585"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 28\u00b0C on June 17?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.1,
+          "bestAsk": 0.11,
+          "price": 0.11,
+          "volume": 2169.4996559999995,
+          "accepting_orders": true,
+          "market_id": "2549467",
+          "token_id": "67030893652333450843061625024835183167611834072358884641489245864670848042540"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 29\u00b0C on June 17?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.016,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 854.5871469999997,
+          "accepting_orders": true,
+          "market_id": "2549468",
+          "token_id": "82305761112855315843848027980416207424589238220536433654849828004052541114412"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 30\u00b0C on June 17?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.009,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 618.107405,
+          "accepting_orders": true,
+          "market_id": "2549469",
+          "token_id": "69088515870030462687577387722528283925894634237685693788837757541575299819495"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 31\u00b0C or higher on June 17?",
+          "bracket_low": 87.8,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 409.90200000000016,
+          "accepting_orders": true,
+          "market_id": "2549470",
+          "token_id": "19087330177052782519094071970377154976667076091664636114397252500704779341320"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "market_id": "2549461",
+          "market_price": 0.005,
+          "forecast_high": 75.8,
+          "true_prob": 0.12712449164267028,
+          "ev": 25.424898328534056,
+          "forecast_openmeteo": 78.6,
+          "model_spread": 2.799999999999997,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "market_id": "2549462",
+          "market_price": 0.01,
+          "forecast_high": 75.8,
+          "true_prob": 0.22503904912550132,
+          "ev": 22.50390491255013,
+          "forecast_openmeteo": 78.6,
+          "model_spread": 2.799999999999997,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "2549463",
+          "market_price": 0.02,
+          "forecast_high": 75.8,
+          "true_prob": 0.25956890884717176,
+          "ev": 12.978445442358588,
+          "forecast_openmeteo": 78.6,
+          "model_spread": 2.799999999999997,
+          "vetoed": false
+        }
+      ]
+    }
+  ]
+}
