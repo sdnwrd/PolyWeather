@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-06-18",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-06-17T05:03:17+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 80.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 83.4,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.200000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C or below on June 18?",
+          "bracket_low": -Infinity,
+          "bracket_high": 71.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 656.9439999999998,
+          "accepting_orders": true,
+          "market_id": "2561716",
+          "token_id": "37294670172539667747363227666140404284102438832016511807003152320879324015289"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on June 18?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 327.86000000000007,
+          "accepting_orders": true,
+          "market_id": "2561717",
+          "token_id": "54701237296039656283331958502735242057193213021820005293664437495193776984472"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on June 18?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 946.0976539999998,
+          "accepting_orders": true,
+          "market_id": "2561718",
+          "token_id": "58848049449722922469535156121289165966281748349252593251987534370215443696487"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on June 18?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.01,
+          "bestAsk": 0.017,
+          "price": 0.017,
+          "volume": 1151.4847109999998,
+          "accepting_orders": true,
+          "market_id": "2561719",
+          "token_id": "68824861130730858595915211020548771531299439645180387986308085415425852454462"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on June 18?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.11,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 1167.7100169999999,
+          "accepting_orders": true,
+          "market_id": "2561720",
+          "token_id": "80729478581359293031850109131946667667456157568836372920134834224009614546239"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on June 18?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.31,
+          "bestAsk": 0.32,
+          "price": 0.32,
+          "volume": 1717.520073,
+          "accepting_orders": true,
+          "market_id": "2561721",
+          "token_id": "66371551522651526054628129134779245657581257589793253521440980539211345181033"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C on June 18?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.35,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 1191.9978839999999,
+          "accepting_orders": true,
+          "market_id": "2561722",
+          "token_id": "105047214341685957493811494592296906968867895057777274904174563103893711061781"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C on June 18?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.19,
+          "bestAsk": 0.21,
+          "price": 0.21,
+          "volume": 1220.3344729999997,
+          "accepting_orders": true,
+          "market_id": "2561723",
+          "token_id": "79045480080186846678510160504779128697036883404263572303366346509573465216144"
+        },
+        {
+          "question": "Will the highest temperature in London be 30\u00b0C on June 18?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.034,
+          "price": 0.034,
+          "volume": 870.527195,
+          "accepting_orders": true,
+          "market_id": "2561724",
+          "token_id": "22299643364695268185794661195075553137352471379497046461815389505329129676965"
+        },
+        {
+          "question": "Will the highest temperature in London be 31\u00b0C on June 18?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.006,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 1177.7931670000003,
+          "accepting_orders": true,
+          "market_id": "2561725",
+          "token_id": "91588485344178499103332500545670906708866937498056349625678778274693642017942"
+        },
+        {
+          "question": "Will the highest temperature in London be 32\u00b0C or higher on June 18?",
+          "bracket_low": 89.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.004,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 637.1880339999999,
+          "accepting_orders": true,
+          "market_id": "2561726",
+          "token_id": "107304058997791347253634276104586578141038189363418053157035624655862443272494"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "market_id": "2561719",
+          "market_price": 0.017,
+          "forecast_high": 80.2,
+          "true_prob": 0.18407615341733718,
+          "ev": 10.828009024549246,
+          "forecast_openmeteo": 83.4,
+          "model_spread": 3.200000000000003,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
