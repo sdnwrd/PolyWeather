@@ -1,0 +1,155 @@
+{
+  "city": "Paris",
+  "date": "2026-06-21",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-06-19T05:01:16+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 101.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 97.8,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.200000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 32\u00b0C or below on June 21?",
+          "bracket_low": -Infinity,
+          "bracket_high": 89.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 70.0,
+          "accepting_orders": true,
+          "market_id": "2603486",
+          "token_id": "60942980037012368873687891399046452515614364130040975914640453091982083149757"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 33\u00b0C on June 21?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2603487",
+          "token_id": "107367163008736982075433736942565508808353428415741145403222033415110204955456"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 34\u00b0C on June 21?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.02,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2603488",
+          "token_id": "109240548567431056457109960771183218900422137606883411673289497003498323824083"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 35\u00b0C on June 21?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.08,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 7.25,
+          "accepting_orders": true,
+          "market_id": "2603489",
+          "token_id": "43787340496185363928556835225249368725304597088707541215656445572300584836805"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 36\u00b0C on June 21?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.27,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 23.794200999999997,
+          "accepting_orders": true,
+          "market_id": "2603490",
+          "token_id": "30793265889120807124883998878181120997690434072760200081913794095019984805872"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 37\u00b0C on June 21?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.26,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 32.144841,
+          "accepting_orders": true,
+          "market_id": "2603491",
+          "token_id": "39143450345432534865324003353691940756278526615936774587994287836208751940718"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 38\u00b0C on June 21?",
+          "bracket_low": 100.4,
+          "bracket_high": 102.2,
+          "bestBid": 0.23,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 19.261110000000002,
+          "accepting_orders": true,
+          "market_id": "2603492",
+          "token_id": "75399101219574943006234692267538452232919604596824938518759537000937281848606"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 39\u00b0C on June 21?",
+          "bracket_low": 102.2,
+          "bracket_high": 104.0,
+          "bestBid": 0.02,
+          "bestAsk": 0.25,
+          "price": 0.25,
+          "volume": 20.39,
+          "accepting_orders": true,
+          "market_id": "2603493",
+          "token_id": "76981761514149877829193072071788547616359637926521933378891173691254925728413"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 40\u00b0C on June 21?",
+          "bracket_low": 104.0,
+          "bracket_high": 105.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2603494",
+          "token_id": "111192299334007208065039998252643410878887273255941071969145819323293880596750"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 41\u00b0C on June 21?",
+          "bracket_low": 105.8,
+          "bracket_high": 107.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 10.0505,
+          "accepting_orders": true,
+          "market_id": "2603495",
+          "token_id": "1368718513197395114700437255288315249292757615807665395070572253701385083410"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 42\u00b0C or higher on June 21?",
+          "bracket_low": 107.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 21.8078,
+          "accepting_orders": true,
+          "market_id": "2603496",
+          "token_id": "104860800591050525978777008187872049982640008067755233174692477243990907087204"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}

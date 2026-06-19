@@ -47,14 +47,18 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-06-16,2026-06-17,1,Munich,EDDM,Will the highest temperature in Munich be 24°C on June 17?,75.2,77.0,0.02,75.8,75.8,0.2596,12.98,78.6,2.8,false,80.6,LOSS,2026-06-18T05:02:29+00:00
 2026-06-16,2026-06-17,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 17?,82.4,84.2,0.018,86.1,85.0,0.1559,8.66,86.8,1.8,false,89.6,LOSS,2026-06-18T05:02:29+00:00
 2026-06-17,2026-06-17,0,New York,KLGA,Will the highest temperature in New York City be between 82-83°F on June 17?,82.0,83.0,0.011,80.0,80.0,0.0918,8.35,79.0,1.0,false,78.8,LOSS,2026-06-18T05:02:29+00:00
-2026-06-17,2026-06-18,1,London,EGLC,Will the highest temperature in London be 25°C on June 18?,77.0,78.8,0.017,80.2,80.2,0.1841,10.83,83.4,3.2,true,,PENDING,
-2026-06-17,2026-06-18,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 18?,82.4,84.2,0.01,86.3,85.1,0.1468,14.68,85.6,0.5,false,,PENDING,
-2026-06-17,2026-06-18,1,Singapore,WSSS,Will the highest temperature in Singapore be 29°C on June 18?,84.2,86.0,0.02,86.3,85.1,0.2392,11.96,85.6,0.5,false,,PENDING,
-2026-06-17,2026-06-18,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 25°C on June 18?,77.0,78.8,0.006,81.1,81.1,0.1327,22.12,82.0,0.9,false,,PENDING,
+2026-06-17,2026-06-18,1,London,EGLC,Will the highest temperature in London be 25°C on June 18?,77.0,78.8,0.017,80.2,80.2,0.1841,10.83,83.4,3.2,true,78.8,WIN,2026-06-19T05:01:43+00:00
+2026-06-17,2026-06-18,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 18?,82.4,84.2,0.01,86.3,85.1,0.1468,14.68,85.6,0.5,false,87.8,LOSS,2026-06-19T05:01:43+00:00
+2026-06-17,2026-06-18,1,Singapore,WSSS,Will the highest temperature in Singapore be 29°C on June 18?,84.2,86.0,0.02,86.3,85.1,0.2392,11.96,85.6,0.5,false,87.8,LOSS,2026-06-19T05:01:43+00:00
+2026-06-17,2026-06-18,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 25°C on June 18?,77.0,78.8,0.006,81.1,81.1,0.1327,22.12,82.0,0.9,false,82.4,LOSS,2026-06-19T05:01:43+00:00
 2026-06-18,2026-06-19,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 25°C on June 19?,77.0,78.8,0.01,81.3,80.3,0.1201,12.01,81.7,1.4,false,,PENDING,
-2026-06-18,2026-06-18,0,London,EGLC,Will the highest temperature in London be 24°C on June 18?,75.2,77.0,0.001,78.0,78.0,0.2278,227.78,81.6,3.6,true,,PENDING,
-2026-06-18,2026-06-18,0,London,EGLC,Will the highest temperature in London be 23°C on June 18?,73.4,75.2,0.001,78.0,78.0,0.07,70.03,81.6,3.6,true,,PENDING,
-2026-06-18,2026-06-18,0,Munich,EDDM,Will the highest temperature in Munich be 28°C on June 18?,82.4,84.2,0.018,85.5,85.5,0.1973,10.96,81.0,4.5,true,,PENDING,
+2026-06-18,2026-06-18,0,London,EGLC,Will the highest temperature in London be 24°C on June 18?,75.2,77.0,0.001,78.0,78.0,0.2278,227.78,81.6,3.6,true,78.8,LOSS,2026-06-19T05:01:43+00:00
+2026-06-18,2026-06-18,0,London,EGLC,Will the highest temperature in London be 23°C on June 18?,73.4,75.2,0.001,78.0,78.0,0.07,70.03,81.6,3.6,true,78.8,LOSS,2026-06-19T05:01:43+00:00
+2026-06-18,2026-06-18,0,Munich,EDDM,Will the highest temperature in Munich be 28°C on June 18?,82.4,84.2,0.018,85.5,85.5,0.1973,10.96,81.0,4.5,true,86.0,LOSS,2026-06-19T05:01:43+00:00
 2026-06-18,2026-06-19,1,Munich,EDDM,Will the highest temperature in Munich be 30°C on June 19?,86.0,87.8,0.005,90.1,90.1,0.1327,26.54,84.8,5.3,true,,PENDING,
 2026-06-18,2026-06-19,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 19?,82.4,84.2,0.01,84.9,83.6,0.2203,22.03,87.6,4.0,true,,PENDING,
 2026-06-18,2026-06-19,1,Singapore,WSSS,Will the highest temperature in Singapore be 27°C on June 19?,80.6,82.4,0.007,84.9,83.6,0.1214,17.34,87.6,4.0,true,,PENDING,
+2026-06-19,2026-06-21,2,Tokyo,RJTT,Will the highest temperature in Tokyo be 21°C on June 21?,69.8,71.6,0.018,72.8,71.3,0.1733,9.63,81.6,10.3,true,,PENDING,
+2026-06-19,2026-06-19,0,London,EGLC,Will the highest temperature in London be 27°C on June 19?,80.6,82.4,0.008,84.9,84.9,0.0899,11.23,85.9,1.0,false,,PENDING,
+2026-06-19,2026-06-19,0,Munich,EDDM,Will the highest temperature in Munich be 36°C on June 19?,96.8,98.6,0.007,93.9,91.7,0.0641,9.16,85.1,6.6,true,,PENDING,
+2026-06-19,2026-06-20,1,Munich,EDDM,Will the highest temperature in Munich be 35°C on June 20?,95.0,96.8,0.02,93.7,91.5,0.1896,9.48,85.1,6.4,true,,PENDING,
