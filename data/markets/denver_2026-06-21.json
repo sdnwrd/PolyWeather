@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-21T05:00:58+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 89.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 89.2,
+      "veto_source": "openmeteo-best",
+      "spread": 0.20000000000000284,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Denver be 81\u00b0F or below on June 21?",
+          "bracket_low": -Infinity,
+          "bracket_high": 81.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.013,
+          "price": 0.013,
+          "volume": 541.591999,
+          "accepting_orders": true,
+          "market_id": "2613704",
+          "token_id": "30768379552189435790093344563630385033884533318066279150983891709170061582868"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 82-83\u00b0F on June 21?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 608.108675,
+          "accepting_orders": true,
+          "market_id": "2613705",
+          "token_id": "56446207713746803549246066058944202450387099007657634420477285477152170912077"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 84-85\u00b0F on June 21?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.041,
+          "bestAsk": 0.099,
+          "price": 0.099,
+          "volume": 513.588923,
+          "accepting_orders": true,
+          "market_id": "2613706",
+          "token_id": "65250500673288414695865165296924746370201148332336828235399593515369879909852"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 86-87\u00b0F on June 21?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.18,
+          "bestAsk": 0.21,
+          "price": 0.21,
+          "volume": 776.0955630000001,
+          "accepting_orders": true,
+          "market_id": "2613707",
+          "token_id": "101161430092516423296141043920517255864779742922045020226208821093910240133958"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 88-89\u00b0F on June 21?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.37,
+          "price": 0.37,
+          "volume": 1453.0371340000002,
+          "accepting_orders": true,
+          "market_id": "2613708",
+          "token_id": "6135120003053593039561976572982078103297916089828514210619907124983206597580"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 90-91\u00b0F on June 21?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.283,
+          "bestAsk": 0.313,
+          "price": 0.313,
+          "volume": 916.1647079999999,
+          "accepting_orders": true,
+          "market_id": "2613709",
+          "token_id": "33565284994981324813106771753216525503008793788797349599190386200008282374679"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 92-93\u00b0F on June 21?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.04,
+          "bestAsk": 0.074,
+          "price": 0.074,
+          "volume": 367.381488,
+          "accepting_orders": true,
+          "market_id": "2613710",
+          "token_id": "18824430163125769918507425970832613845161557879285378480142083981149663264012"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 94-95\u00b0F on June 21?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 1190.6842419999998,
+          "accepting_orders": true,
+          "market_id": "2613711",
+          "token_id": "47296579212947824152579365911830783703079140681456760105522834221362993970695"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 96-97\u00b0F on June 21?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1140.318501,
+          "accepting_orders": true,
+          "market_id": "2613712",
+          "token_id": "62419042666491213405704383089902315617026346396472806469554866118717472395580"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 98-99\u00b0F on June 21?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 207.929,
+          "accepting_orders": true,
+          "market_id": "2613713",
+          "token_id": "20727281541305189199254657429455678336304285812674059123209706226444530217774"
+        },
+        {
+          "question": "Will the highest temperature in Denver be 100\u00b0F or higher on June 21?",
+          "bracket_low": 100.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 86.025,
+          "accepting_orders": true,
+          "market_id": "2613714",
+          "token_id": "77873196383666620599865027863688171683902846531733179450335172598756722171180"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
