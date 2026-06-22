@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-22T05:00:24+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 91.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 90.9,
+      "veto_source": "openmeteo-best",
+      "spread": 0.09999999999999432,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Miami be between 94-95\u00b0F on June 22?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.12,
+          "bestAsk": 0.138,
+          "price": 0.138,
+          "volume": 2123.185777999999,
+          "accepting_orders": true,
+          "market_id": "2624365",
+          "token_id": "50678362336757309949221711387900270873055153855989239503954718727208043934921"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 96-97\u00b0F on June 22?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 1395.429632,
+          "accepting_orders": true,
+          "market_id": "2624366",
+          "token_id": "99842130229167545270019804330290595691794965208495147529204697001267805796466"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 98-99\u00b0F on June 22?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 216.19467799999995,
+          "accepting_orders": true,
+          "market_id": "2624367",
+          "token_id": "101022847027096216033755216010229069529645521280152936842578989095816667631082"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 100-101\u00b0F on June 22?",
+          "bracket_low": 100.0,
+          "bracket_high": 101.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 429.78000000000003,
+          "accepting_orders": true,
+          "market_id": "2624368",
+          "token_id": "54265700456360789126781659994130139129387000446473528705081629357093768927876"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 102-103\u00b0F on June 22?",
+          "bracket_low": 102.0,
+          "bracket_high": 103.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 180.9915,
+          "accepting_orders": true,
+          "market_id": "2624369",
+          "token_id": "19444916265941782893958295572572270940119425738640913483134877479822373728308"
+        },
+        {
+          "question": "Will the highest temperature in Miami be 104\u00b0F or higher on June 22?",
+          "bracket_low": 104.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 206.98000000000002,
+          "accepting_orders": true,
+          "market_id": "2624370",
+          "token_id": "50773990530413334952536623468368892308297375370274056265635058963206947506784"
+        },
+        {
+          "question": "Will the highest temperature in Miami be 85\u00b0F or below on June 22?",
+          "bracket_low": -Infinity,
+          "bracket_high": 85.0,
+          "bestBid": null,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1687.7257499999996,
+          "accepting_orders": true,
+          "market_id": "2624360",
+          "token_id": "43119157196357249467395297222525299041844298778783845031208427977432429361111"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 86-87\u00b0F on June 22?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1826.002974,
+          "accepting_orders": true,
+          "market_id": "2624361",
+          "token_id": "99030637490070662776896480728122308895304563477193409829033159166716468964515"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 88-89\u00b0F on June 22?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 907.6482179999999,
+          "accepting_orders": true,
+          "market_id": "2624362",
+          "token_id": "6703035586209290803724238287200133989253740717849307046436518393143473320062"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 90-91\u00b0F on June 22?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.26,
+          "bestAsk": 0.27,
+          "price": 0.27,
+          "volume": 2111.1308940000004,
+          "accepting_orders": true,
+          "market_id": "2624363",
+          "token_id": "65770635453249561531514351985386307350169578002237374127714009714450462988705"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 92-93\u00b0F on June 22?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.62,
+          "bestAsk": 0.64,
+          "price": 0.64,
+          "volume": 1895.833252,
+          "accepting_orders": true,
+          "market_id": "2624364",
+          "token_id": "106383005816256154647779302735697203221292303829796940289657744863352110569241"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "market_id": "2624362",
+          "market_price": 0.002,
+          "forecast_high": 91.0,
+          "true_prob": 0.091848052662599,
+          "ev": 45.9240263312995,
+          "forecast_openmeteo": 90.9,
+          "model_spread": 0.09999999999999432,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }
