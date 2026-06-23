@@ -150,6 +150,176 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-23T05:02:39+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 74.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 74.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Toronto be 20\u00b0C or below on June 23?",
+          "bracket_low": -Infinity,
+          "bracket_high": 68.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 750.9566739999999,
+          "accepting_orders": true,
+          "market_id": "2635061",
+          "token_id": "114666894417698754948791328740536181889689586528395358236204649191474431843170"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 21\u00b0C on June 23?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 734.8268329999999,
+          "accepting_orders": true,
+          "market_id": "2635062",
+          "token_id": "981535299797437594374519719191699062447514696594820465433754891789893938442"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 22\u00b0C on June 23?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 915.4295409999999,
+          "accepting_orders": true,
+          "market_id": "2635063",
+          "token_id": "59947621586494626315828846060637951967472607551912620322011432704611781745745"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 23\u00b0C on June 23?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.3,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 1412.1918470000005,
+          "accepting_orders": true,
+          "market_id": "2635064",
+          "token_id": "112177425661865872712827781245302642134914299392491014782185722405430788567072"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 27\u00b0C on June 23?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.005,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 263.64008,
+          "accepting_orders": true,
+          "market_id": "2635068",
+          "token_id": "58667012079560022206501410807114855406022766440966262805403278397723775389203"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 28\u00b0C on June 23?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 268.988423,
+          "accepting_orders": true,
+          "market_id": "2635069",
+          "token_id": "60124342056232638198112156517982542385378563516259727581718451534422561134397"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 29\u00b0C on June 23?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 297.2185,
+          "accepting_orders": true,
+          "market_id": "2635070",
+          "token_id": "62906578870203593619717887926576491881193974575835617339595539746682553352720"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 24\u00b0C on June 23?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.44,
+          "bestAsk": 0.46,
+          "price": 0.46,
+          "volume": 1214.2350840000001,
+          "accepting_orders": true,
+          "market_id": "2635065",
+          "token_id": "855301838594185197805251066688343698338604589549247359993093682134527188333"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 25\u00b0C on June 23?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.17,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 1046.9725679999997,
+          "accepting_orders": true,
+          "market_id": "2635066",
+          "token_id": "78532715218773174302438923879130183356948952176193773822057666845400878666644"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 26\u00b0C on June 23?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.03,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 361.07157500000005,
+          "accepting_orders": true,
+          "market_id": "2635067",
+          "token_id": "102348535895894515956587212148718109498605614364039728494038868673031057218592"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 30\u00b0C or higher on June 23?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 204.00566599999996,
+          "accepting_orders": true,
+          "market_id": "2635071",
+          "token_id": "10443853462425762256559421706920544777764133068400705097040568038092048980100"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "market_id": "2635062",
+          "market_price": 0.004,
+          "forecast_high": 74.2,
+          "true_prob": 0.08289703707211113,
+          "ev": 20.724259268027783,
+          "forecast_openmeteo": 74.2,
+          "model_spread": 0.0,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "market_id": "2635063",
+          "market_price": 0.02,
+          "forecast_high": 74.2,
+          "true_prob": 0.24777777380406674,
+          "ev": 12.388888690203336,
+          "forecast_openmeteo": 74.2,
+          "model_spread": 0.0,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }

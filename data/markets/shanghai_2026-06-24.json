@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-23T05:02:32+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 77.3,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 77.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.20000000000000284,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Shanghai be 21\u00b0C or below on June 24?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 307.9958,
+          "accepting_orders": true,
+          "market_id": "2636692",
+          "token_id": "36658579492214862229070153241259059531340400727792070437780343557773051723443"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 22\u00b0C on June 24?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 779.238,
+          "accepting_orders": true,
+          "market_id": "2636693",
+          "token_id": "83883195406682751219597805516858869540080745875859776254467277031660769235129"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 23\u00b0C on June 24?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.13,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 1305.4660119999994,
+          "accepting_orders": true,
+          "market_id": "2636694",
+          "token_id": "100147242111952533393004817026715125521477178573669022205479016536886806309576"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 24\u00b0C on June 24?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.24,
+          "bestAsk": 0.25,
+          "price": 0.25,
+          "volume": 3513.327732,
+          "accepting_orders": true,
+          "market_id": "2636695",
+          "token_id": "97968849128884032080520196142938567905254597859357995401227464526422015093720"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 25\u00b0C on June 24?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.35,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 535.6679819999999,
+          "accepting_orders": true,
+          "market_id": "2636696",
+          "token_id": "61327374086784727358134980072784425075751510289534321328883875230803072144635"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 26\u00b0C on June 24?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.23,
+          "bestAsk": 0.25,
+          "price": 0.25,
+          "volume": 1156.851565,
+          "accepting_orders": true,
+          "market_id": "2636697",
+          "token_id": "97354094946715340274543821022344846205151156883964525637663265635760200624037"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 27\u00b0C on June 24?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.046,
+          "bestAsk": 0.058,
+          "price": 0.058,
+          "volume": 633.5172019999999,
+          "accepting_orders": true,
+          "market_id": "2636698",
+          "token_id": "69812873691883181974758838591051871397744074312549880145197896869631805019010"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 28\u00b0C on June 24?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.006,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 284.056761,
+          "accepting_orders": true,
+          "market_id": "2636699",
+          "token_id": "22973585011742415130219929428066913031149406501007423390937403170991601437525"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 29\u00b0C on June 24?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 445.817,
+          "accepting_orders": true,
+          "market_id": "2636700",
+          "token_id": "40905198670972549446694264416428134770174882268020493662034625979022475968688"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 30\u00b0C on June 24?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 281.797,
+          "accepting_orders": true,
+          "market_id": "2636701",
+          "token_id": "47447213127907263878426791677232154336870091976173764712932046843777421693070"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 31\u00b0C or higher on June 24?",
+          "bracket_low": 87.8,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 271.4,
+          "accepting_orders": true,
+          "market_id": "2636702",
+          "token_id": "55377930739006416155057759400917012562462168567471150758004459172244455155428"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

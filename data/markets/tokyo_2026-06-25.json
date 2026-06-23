@@ -1,0 +1,155 @@
+{
+  "city": "Tokyo",
+  "date": "2026-06-25",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5523,
+  "lon": 139.7798,
+  "snapshots": [
+    {
+      "ts": "2026-06-23T05:02:03+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 70.5,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 75.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 4.599999999999994,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 17\u00b0C or below on June 25?",
+          "bracket_low": -Infinity,
+          "bracket_high": 62.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.018,
+          "price": 0.018,
+          "volume": 14.994,
+          "accepting_orders": true,
+          "market_id": "2647473",
+          "token_id": "26264088747308726077122403095810489161639969166640123253044253091332785422072"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 18\u00b0C on June 25?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.018,
+          "price": 0.018,
+          "volume": 10.0,
+          "accepting_orders": true,
+          "market_id": "2647474",
+          "token_id": "115701532746326233375664303031033706415671602841150252319931452867927778926484"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 19\u00b0C on June 25?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 15.0,
+          "accepting_orders": true,
+          "market_id": "2647475",
+          "token_id": "23797438322712166067152491886409689486214607176208017793254262479775192277672"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 20\u00b0C on June 25?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.13,
+          "price": 0.13,
+          "volume": 32.269999999999996,
+          "accepting_orders": true,
+          "market_id": "2647476",
+          "token_id": "16845614278355767354199934421428210299366318751709791654130808479579329739300"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 21\u00b0C on June 25?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.11,
+          "bestAsk": 0.18,
+          "price": 0.18,
+          "volume": 11.33,
+          "accepting_orders": true,
+          "market_id": "2647477",
+          "token_id": "78645924934283784984176639834115779669342687600575622319738979763247652349438"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 22\u00b0C on June 25?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.23,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2647478",
+          "token_id": "42315961756965065494581324561187696520522767156802631791493323510953721755542"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C on June 25?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.15,
+          "bestAsk": 0.3,
+          "price": 0.3,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2647479",
+          "token_id": "81832921362078435009511405442340832104650049537484196883153544258270543844556"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on June 25?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.1,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2647480",
+          "token_id": "39413639444748636111865329106376258304426690016684929111909654030591682495838"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on June 25?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.09,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2647481",
+          "token_id": "695300468071789762444992626759087049201561388893069811026781180372957481825"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on June 25?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.003,
+          "bestAsk": 0.059,
+          "price": 0.059,
+          "volume": 64.988988,
+          "accepting_orders": true,
+          "market_id": "2647482",
+          "token_id": "18974307314474897177678332724752934028249422412254155834796541423222216888770"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C or higher on June 25?",
+          "bracket_low": 80.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 14.994,
+          "accepting_orders": true,
+          "market_id": "2647483",
+          "token_id": "107992349455381631322727399338309691883807668045751007302076266247413230391787"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}

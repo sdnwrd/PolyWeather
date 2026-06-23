@@ -63,19 +63,22 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-06-19,2026-06-19,0,Munich,EDDM,Will the highest temperature in Munich be 36°C on June 19?,96.8,98.6,0.007,93.9,91.7,0.0641,9.16,85.1,6.6,true,91.4,LOSS,2026-06-20T05:02:06+00:00
 2026-06-19,2026-06-20,1,Munich,EDDM,Will the highest temperature in Munich be 35°C on June 20?,95.0,96.8,0.02,93.7,91.5,0.1896,9.48,85.1,6.4,true,91.4,LOSS,2026-06-21T05:02:09+00:00
 2026-06-20,2026-06-21,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 24°C on June 21?,75.2,77.0,0.009,79.7,77.9,0.1122,12.47,83.9,6.0,true,78.8,LOSS,2026-06-22T05:01:35+00:00
-2026-06-20,2026-06-22,2,Tokyo,RJTT,Will the highest temperature in Tokyo be 22°C on June 22?,71.6,73.4,0.02,70.5,68.7,0.1756,8.78,86.1,17.4,true,,PENDING,
+2026-06-20,2026-06-22,2,Tokyo,RJTT,Will the highest temperature in Tokyo be 22°C on June 22?,71.6,73.4,0.02,70.5,68.7,0.1756,8.78,86.1,17.4,true,82.4,LOSS,2026-06-23T05:02:46+00:00
 2026-06-20,2026-06-20,0,London,EGLC,Will the highest temperature in London be 24°C on June 20?,75.2,77.0,0.009,78.6,78.6,0.1673,18.59,79.2,0.6,false,78.8,LOSS,2026-06-21T05:02:09+00:00
 2026-06-20,2026-06-20,0,Munich,EDDM,Will the highest temperature in Munich be 34°C on June 20?,93.2,95.0,0.008,90.3,90.3,0.0641,8.02,86.7,3.6,true,91.4,LOSS,2026-06-21T05:02:09+00:00
 2026-06-20,2026-06-21,1,Singapore,WSSS,Will the highest temperature in Singapore be 27°C on June 21?,80.6,82.4,0.009,85.1,84.0,0.1098,12.19,87.2,3.2,true,89.6,LOSS,2026-06-22T05:01:35+00:00
 2026-06-20,2026-06-21,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 21?,82.4,84.2,0.019,85.1,84.0,0.2097,11.04,87.2,3.2,true,89.6,LOSS,2026-06-22T05:01:35+00:00
 2026-06-20,2026-06-20,0,Shanghai,ZSPD,Will the highest temperature in Shanghai be 31°C on June 20?,87.8,89.6,0.018,86.5,86.5,0.1973,10.96,84.9,1.6,false,84.2,LOSS,2026-06-21T05:02:09+00:00
-2026-06-21,2026-06-22,1,Paris,LFPB,Will the highest temperature in Paris be 41°C on June 22?,105.8,107.6,0.001,103.4,102.3,0.1288,128.79,96.5,5.8,true,,PENDING,
+2026-06-21,2026-06-22,1,Paris,LFPB,Will the highest temperature in Paris be 41°C on June 22?,105.8,107.6,0.001,103.4,102.3,0.1288,128.79,96.5,5.8,true,98.6,LOSS,2026-06-23T05:02:46+00:00
 2026-06-21,2026-06-21,0,Munich,EDDM,Will the highest temperature in Munich be 31°C on June 21?,87.8,89.6,0.01,90.7,90.7,0.2176,21.76,88.2,2.5,false,93.2,LOSS,2026-06-22T05:01:35+00:00
 2026-06-21,2026-06-21,0,Munich,EDDM,Will the highest temperature in Munich be 30°C on June 21?,86.0,87.8,0.007,90.7,90.7,0.0641,9.16,88.2,2.5,false,93.2,LOSS,2026-06-22T05:01:35+00:00
-2026-06-21,2026-06-22,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 21°C on June 22?,69.8,71.6,0.006,74.1,74.1,0.1216,20.27,73.5,0.6,false,,PENDING,
-2026-06-21,2026-06-22,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 22°C on June 22?,71.6,73.4,0.019,74.1,74.1,0.2205,11.6,73.5,0.6,false,,PENDING,
-2026-06-22,2026-06-22,0,Miami,KMIA,Will the highest temperature in Miami be between 88-89°F on June 22?,88.0,89.0,0.002,91.0,91.0,0.0918,45.92,90.9,0.1,false,,PENDING,
+2026-06-21,2026-06-22,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 21°C on June 22?,69.8,71.6,0.006,74.1,74.1,0.1216,20.27,73.5,0.6,false,75.2,LOSS,2026-06-23T05:02:46+00:00
+2026-06-21,2026-06-22,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 22°C on June 22?,71.6,73.4,0.019,74.1,74.1,0.2205,11.6,73.5,0.6,false,75.2,LOSS,2026-06-23T05:02:46+00:00
+2026-06-22,2026-06-22,0,Miami,KMIA,Will the highest temperature in Miami be between 88-89°F on June 22?,88.0,89.0,0.002,91.0,91.0,0.0918,45.92,90.9,0.1,false,93.2,LOSS,2026-06-23T05:02:46+00:00
 2026-06-22,2026-06-24,2,Tokyo,RJTT,Will the highest temperature in Tokyo be 21°C on June 24?,69.8,71.6,0.008,74.4,72.4,0.1157,14.47,76.3,3.9,true,,PENDING,
-2026-06-22,2026-06-22,0,London,EGLC,Will the highest temperature in London be 25°C on June 22?,77.0,78.8,0.021,79.7,79.7,0.2378,11.33,80.7,1.0,false,,PENDING,
+2026-06-22,2026-06-22,0,London,EGLC,Will the highest temperature in London be 25°C on June 22?,77.0,78.8,0.021,79.7,79.7,0.2378,11.33,80.7,1.0,false,80.6,LOSS,2026-06-23T05:02:46+00:00
 2026-06-22,2026-06-23,1,Paris,LFPB,Will the highest temperature in Paris be 36°C on June 23?,96.8,98.6,0.005,101.5,101.5,0.1005,20.11,104.1,2.6,false,,PENDING,
 2026-06-22,2026-06-23,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on June 23?,82.4,84.2,0.004,87.2,84.6,0.0972,24.3,84.0,0.6,false,,PENDING,
+2026-06-23,2026-06-23,0,Munich,EDDM,Will the highest temperature in Munich be 29°C on June 23?,84.2,86.0,0.007,88.3,88.3,0.1049,14.98,82.8,5.5,true,,PENDING,
+2026-06-23,2026-06-23,0,Toronto,CYYZ,Will the highest temperature in Toronto be 21°C on June 23?,69.8,71.6,0.004,74.2,74.2,0.0829,20.72,74.2,0.0,false,,PENDING,
+2026-06-23,2026-06-23,0,Toronto,CYYZ,Will the highest temperature in Toronto be 22°C on June 23?,71.6,73.4,0.02,74.2,74.2,0.2478,12.39,74.2,0.0,false,,PENDING,
