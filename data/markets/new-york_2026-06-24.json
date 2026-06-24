@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-24T05:00:58+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 81.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 84.4,
+      "veto_source": "openmeteo-best",
+      "spread": 3.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in New York City be 73\u00b0F or below on June 24?",
+          "bracket_low": -Infinity,
+          "bracket_high": 73.0,
+          "bestBid": null,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 782.201353,
+          "accepting_orders": true,
+          "market_id": "2646624",
+          "token_id": "115517676241908524000849452686313923136260724158744479674923420669779967890952"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 74-75\u00b0F on June 24?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 792.8783650000001,
+          "accepting_orders": true,
+          "market_id": "2646625",
+          "token_id": "20728894281713804370116056206653490476164229718642172725477966190338843318736"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 76-77\u00b0F on June 24?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.008,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 4005.27257,
+          "accepting_orders": true,
+          "market_id": "2646626",
+          "token_id": "87227896460393450512424515888480398413463797435640962826229498782276179027117"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 78-79\u00b0F on June 24?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.012,
+          "bestAsk": 0.029,
+          "price": 0.029,
+          "volume": 5895.042903,
+          "accepting_orders": true,
+          "market_id": "2646627",
+          "token_id": "91427293151133932942530183091343768767412227065653115149908107645938900415816"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 80-81\u00b0F on June 24?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.25,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 4116.2999119999995,
+          "accepting_orders": true,
+          "market_id": "2646628",
+          "token_id": "9733703339409666854674008412017382740482981639504831363976635754690321508825"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 82-83\u00b0F on June 24?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.49,
+          "bestAsk": 0.5,
+          "price": 0.5,
+          "volume": 2682.2145690000007,
+          "accepting_orders": true,
+          "market_id": "2646629",
+          "token_id": "44368752159121122344283929462078807523864165533847757201743535356975849883422"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 84-85\u00b0F on June 24?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.2,
+          "bestAsk": 0.21,
+          "price": 0.21,
+          "volume": 2715.666938,
+          "accepting_orders": true,
+          "market_id": "2646630",
+          "token_id": "66112354145277621773282614585087966418629560683859085559341708065736395479689"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 86-87\u00b0F on June 24?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.023,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 9678.266806,
+          "accepting_orders": true,
+          "market_id": "2646631",
+          "token_id": "18975568550505914293221291963992320836754119610676299477670898600876121466388"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 88-89\u00b0F on June 24?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 1782.4099359999996,
+          "accepting_orders": true,
+          "market_id": "2646632",
+          "token_id": "70338192042328008220387367015218354261574964734483610730480648114449575496420"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 90-91\u00b0F on June 24?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 971.8052610000001,
+          "accepting_orders": true,
+          "market_id": "2646633",
+          "token_id": "76133442233948107747281088812955252854720709752269566764635221943942150786504"
+        },
+        {
+          "question": "Will the highest temperature in New York City be 92\u00b0F or higher on June 24?",
+          "bracket_low": 92.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 8978.665719,
+          "accepting_orders": true,
+          "market_id": "2646634",
+          "token_id": "29916885123724499400118194693181748495108656660363633325708770009090402308800"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

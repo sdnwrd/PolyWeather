@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-24T05:00:28+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 78.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 78.7,
+      "veto_source": "openmeteo-best",
+      "spread": 0.7000000000000028,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Chicago be 69\u00b0F or below on June 24?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2653.582286,
+          "accepting_orders": true,
+          "market_id": "2646668",
+          "token_id": "55725482407191515654409601860717351328135775501610500603972904261438284985295"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 70-71\u00b0F on June 24?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 2459.656704,
+          "accepting_orders": true,
+          "market_id": "2646669",
+          "token_id": "35266254569100713915840747389634471543350891889471487370846267971026051310544"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 72-73\u00b0F on June 24?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.021,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 1879.067958,
+          "accepting_orders": true,
+          "market_id": "2646670",
+          "token_id": "65619406877213036174926235422000448659218405431632658441965885791566566555433"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 74-75\u00b0F on June 24?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.16,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 2297.477511999999,
+          "accepting_orders": true,
+          "market_id": "2646671",
+          "token_id": "86001502952005769666626033459090425047908491544137922861726026577766765163069"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 76-77\u00b0F on June 24?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.44,
+          "bestAsk": 0.45,
+          "price": 0.45,
+          "volume": 1604.1490769999991,
+          "accepting_orders": true,
+          "market_id": "2646672",
+          "token_id": "67575680759775950720140664592012979574223027088517817731026508618805759735011"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 78-79\u00b0F on June 24?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.27,
+          "bestAsk": 0.3,
+          "price": 0.3,
+          "volume": 1456.9594399999999,
+          "accepting_orders": true,
+          "market_id": "2646673",
+          "token_id": "47276636275632806381386245803589234531078977803740249950598364686338931116426"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 80-81\u00b0F on June 24?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.08,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 1401.2149949999996,
+          "accepting_orders": true,
+          "market_id": "2646674",
+          "token_id": "26969710967591680864769795160837652020787548512386217784291320563585710774270"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 82-83\u00b0F on June 24?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 578.5473629999999,
+          "accepting_orders": true,
+          "market_id": "2646675",
+          "token_id": "54936635054606555189957773335902278207638821740209792763973029150780342873497"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 84-85\u00b0F on June 24?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 627.152167,
+          "accepting_orders": true,
+          "market_id": "2646676",
+          "token_id": "30928950601031151619805012708406345669243586875490615927188356037667371035632"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 86-87\u00b0F on June 24?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 415.7769,
+          "accepting_orders": true,
+          "market_id": "2646677",
+          "token_id": "34476030408045966807804413582920030322685723896969357217995688643448930174472"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be 88\u00b0F or higher on June 24?",
+          "bracket_low": 88.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 235.08572400000003,
+          "accepting_orders": true,
+          "market_id": "2646678",
+          "token_id": "60978278040255843993623992247681364287933608652846116123414155957313101236726"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

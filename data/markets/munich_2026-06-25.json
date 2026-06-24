@@ -1,0 +1,168 @@
+{
+  "city": "Munich",
+  "date": "2026-06-25",
+  "station": "EDDM",
+  "region": "intl",
+  "lat": 48.3538,
+  "lon": 11.7861,
+  "snapshots": [
+    {
+      "ts": "2026-06-24T05:01:24+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 91.4,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 85.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 6.300000000000011,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Munich be 29\u00b0C or below on June 25?",
+          "bracket_low": -Infinity,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1391.5209739999996,
+          "accepting_orders": true,
+          "market_id": "2648843",
+          "token_id": "100641052906461995361283755853608339098030790428479988398731031363968792386491"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 30\u00b0C on June 25?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 931.097352,
+          "accepting_orders": true,
+          "market_id": "2648844",
+          "token_id": "75219761778645932994549239341420974981659775689294755604927915160419884013471"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 31\u00b0C on June 25?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 861.7062880000001,
+          "accepting_orders": true,
+          "market_id": "2648845",
+          "token_id": "14452539058997032074720202244430978446264602739895545138230105227786821227460"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 32\u00b0C on June 25?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.1,
+          "bestAsk": 0.11,
+          "price": 0.11,
+          "volume": 3462.8447820000015,
+          "accepting_orders": true,
+          "market_id": "2648846",
+          "token_id": "23958660456795843092201867863377606187928534424247033292230186770127729780732"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 33\u00b0C on June 25?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 5672.049644999999,
+          "accepting_orders": true,
+          "market_id": "2648847",
+          "token_id": "100494161949857049514811826583821328848065640977103386648784329627819121022855"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 34\u00b0C on June 25?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 1732.1482760000001,
+          "accepting_orders": true,
+          "market_id": "2648848",
+          "token_id": "68962056437449678888220223287099983239070618605458591463101704283166748327573"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 35\u00b0C on June 25?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.061,
+          "bestAsk": 0.074,
+          "price": 0.074,
+          "volume": 1920.6581500000002,
+          "accepting_orders": true,
+          "market_id": "2648849",
+          "token_id": "35626294871566144395854473482053412013713849174761014673361690389370954680869"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 36\u00b0C on June 25?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": null,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 582.256631,
+          "accepting_orders": true,
+          "market_id": "2648850",
+          "token_id": "46746669827110165823628539964050563367019188785157204220595924641080054922121"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 37\u00b0C on June 25?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 365.3634,
+          "accepting_orders": true,
+          "market_id": "2648851",
+          "token_id": "80779611519151849519578902382893543772435095229111675746677124993557157350206"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 38\u00b0C on June 25?",
+          "bracket_low": 100.4,
+          "bracket_high": 102.2,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 497.96799999999996,
+          "accepting_orders": true,
+          "market_id": "2648852",
+          "token_id": "98274639106209249520623654913711582297712396222311610494886217899697041260902"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 39\u00b0C or higher on June 25?",
+          "bracket_low": 102.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 2387.1322120000004,
+          "accepting_orders": true,
+          "market_id": "2648853",
+          "token_id": "14967453521674092666504569898183090187309711553915684752470385500072798211012"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "market_id": "2648845",
+          "market_price": 0.002,
+          "forecast_high": 91.4,
+          "true_prob": 0.16128131782105415,
+          "ev": 80.64065891052708,
+          "forecast_openmeteo": 85.1,
+          "model_spread": 6.300000000000011,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "city": "Austin",
+  "date": "2026-06-25",
+  "station": "KAUS",
+  "region": "us",
+  "lat": 30.1944,
+  "lon": -97.67,
+  "snapshots": [
+    {
+      "ts": "2026-06-24T05:00:55+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 95.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 93.5,
+      "veto_source": "openmeteo-best",
+      "spread": 1.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Austin be 87\u00b0F or below on June 25?",
+          "bracket_low": -Infinity,
+          "bracket_high": 87.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 86.013,
+          "accepting_orders": true,
+          "market_id": "2661859",
+          "token_id": "17369588297792165310520210395144783141908655540890399372380660842804159211111"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 88-89\u00b0F on June 25?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.007,
+          "bestAsk": 0.027,
+          "price": 0.027,
+          "volume": 100.16805900000001,
+          "accepting_orders": true,
+          "market_id": "2661860",
+          "token_id": "81576477989657469187064006921783793478688234288286822308483271392883659078812"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 90-91\u00b0F on June 25?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.023,
+          "bestAsk": 0.068,
+          "price": 0.068,
+          "volume": 66.051823,
+          "accepting_orders": true,
+          "market_id": "2661861",
+          "token_id": "90352108850153107902741763887743814371908886457356081316815740034800593742794"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 92-93\u00b0F on June 25?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.19,
+          "bestAsk": 0.23,
+          "price": 0.23,
+          "volume": 158.50743999999997,
+          "accepting_orders": true,
+          "market_id": "2661862",
+          "token_id": "3246941228652351100676357904447909876306059566115062853915131074770230706287"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 94-95\u00b0F on June 25?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.39,
+          "bestAsk": 0.41,
+          "price": 0.41,
+          "volume": 349.83000000000004,
+          "accepting_orders": true,
+          "market_id": "2661863",
+          "token_id": "110883981237001464798059123139400683847686782440253516514251582823802863292783"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 96-97\u00b0F on June 25?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.21,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": 285.243113,
+          "accepting_orders": true,
+          "market_id": "2661864",
+          "token_id": "17507896026032099805098219942687399262953570087489266753704877640826444534166"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 98-99\u00b0F on June 25?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 157.32468,
+          "accepting_orders": true,
+          "market_id": "2661865",
+          "token_id": "25433960162931656099100968459305191820743672971262330974634344364988605996543"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 100-101\u00b0F on June 25?",
+          "bracket_low": 100.0,
+          "bracket_high": 101.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 85.02,
+          "accepting_orders": true,
+          "market_id": "2661866",
+          "token_id": "40182779325432503992780963813023690436168910535955412531204635436126798129827"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 102-103\u00b0F on June 25?",
+          "bracket_low": 102.0,
+          "bracket_high": 103.0,
+          "bestBid": 0.007,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 150.37400000000002,
+          "accepting_orders": true,
+          "market_id": "2661867",
+          "token_id": "63460973436539160744793013483865321422561065038905932668176388241974042930880"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 104-105\u00b0F on June 25?",
+          "bracket_low": 104.0,
+          "bracket_high": 105.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 245.18124699999998,
+          "accepting_orders": true,
+          "market_id": "2661868",
+          "token_id": "89796829836764927577074064445896595348647996504360195282740323590818539435917"
+        },
+        {
+          "question": "Will the highest temperature in Austin be 106\u00b0F or higher on June 25?",
+          "bracket_low": 106.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 138.015,
+          "accepting_orders": true,
+          "market_id": "2661869",
+          "token_id": "52117671203177094322315873905081596126104489669711538201579239424862887061020"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
