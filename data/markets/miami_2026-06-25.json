@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-25T05:00:31+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 91.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 90.0,
+      "veto_source": "openmeteo-best",
+      "spread": 1.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Miami be 81\u00b0F or below on June 25?",
+          "bracket_low": -Infinity,
+          "bracket_high": 81.0,
+          "bestBid": 0.007,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 21947.020178999996,
+          "accepting_orders": true,
+          "market_id": "2661837",
+          "token_id": "94503261826282015367665292695311393963514664582461816754330518607755822288573"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 82-83\u00b0F on June 25?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 1784.8116509999998,
+          "accepting_orders": true,
+          "market_id": "2661838",
+          "token_id": "17445150592432266170242001341239193373747500420164217443133813011727280103196"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 84-85\u00b0F on June 25?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.015,
+          "price": 0.015,
+          "volume": 3985.7768950000022,
+          "accepting_orders": true,
+          "market_id": "2661839",
+          "token_id": "47660637946802214776860041622946033192178627927080610776633154590966712157570"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 86-87\u00b0F on June 25?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 2004.1274910000002,
+          "accepting_orders": true,
+          "market_id": "2661840",
+          "token_id": "104409889535381972205949395740310173021127107702831794339731678999374959105675"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 88-89\u00b0F on June 25?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.12,
+          "bestAsk": 0.13,
+          "price": 0.13,
+          "volume": 3040.350352999999,
+          "accepting_orders": true,
+          "market_id": "2661841",
+          "token_id": "6640835122708474680081951529340008214388001233960255362065418174429323305562"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 90-91\u00b0F on June 25?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.4,
+          "bestAsk": 0.41,
+          "price": 0.41,
+          "volume": 10389.087972000007,
+          "accepting_orders": true,
+          "market_id": "2661842",
+          "token_id": "25788211811823075827133303692020162245021486959996333410208896303958198142411"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 92-93\u00b0F on June 25?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.4,
+          "bestAsk": 0.43,
+          "price": 0.43,
+          "volume": 5559.477913000003,
+          "accepting_orders": true,
+          "market_id": "2661843",
+          "token_id": "70245123150697062041292195833234399399936033718777216724377795980502040960081"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 94-95\u00b0F on June 25?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.014,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 3506.5806520000006,
+          "accepting_orders": true,
+          "market_id": "2661844",
+          "token_id": "89502853851820344320347433635025239245064079711173269505630338774121871862166"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 96-97\u00b0F on June 25?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.016,
+          "price": 0.016,
+          "volume": 2851.160551000001,
+          "accepting_orders": true,
+          "market_id": "2661845",
+          "token_id": "32885429764075235421664895715329301633921831339816867619240987978301321981712"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 98-99\u00b0F on June 25?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 1562.9400769999997,
+          "accepting_orders": true,
+          "market_id": "2661846",
+          "token_id": "31604969394796931907213158902880913853157314833029659828423814800632042411890"
+        },
+        {
+          "question": "Will the highest temperature in Miami be 100\u00b0F or higher on June 25?",
+          "bracket_low": 100.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 7071.976499000005,
+          "accepting_orders": true,
+          "market_id": "2661847",
+          "token_id": "7172028378413341493265014656857414760442539582112647464699653977311223659467"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
