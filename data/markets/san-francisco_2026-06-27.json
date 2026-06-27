@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-27T05:00:52+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 63.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 64.2,
+      "veto_source": "openmeteo-best",
+      "spread": 1.2000000000000028,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in San Francisco be 55\u00b0F or below on June 27?",
+          "bracket_low": -Infinity,
+          "bracket_high": 55.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 506.2042389999999,
+          "accepting_orders": true,
+          "market_id": "2687247",
+          "token_id": "34490493921453246442873021719443032393766718280253303224105851179538677384287"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 56-57\u00b0F on June 27?",
+          "bracket_low": 56.0,
+          "bracket_high": 57.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 395.55699500000003,
+          "accepting_orders": true,
+          "market_id": "2687248",
+          "token_id": "96057311123901412575482148794987655480277151910414911858851943994449911830594"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 58-59\u00b0F on June 27?",
+          "bracket_low": 58.0,
+          "bracket_high": 59.0,
+          "bestBid": 0.007,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 1107.7057899999995,
+          "accepting_orders": true,
+          "market_id": "2687249",
+          "token_id": "103417956905058950205910643276730106805068510819345650777692321520318350743235"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 60-61\u00b0F on June 27?",
+          "bracket_low": 60.0,
+          "bracket_high": 61.0,
+          "bestBid": 0.016,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 531.94403,
+          "accepting_orders": true,
+          "market_id": "2687250",
+          "token_id": "101893728548939252943087292326006125978599993329189015539746503643213507045763"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 62-63\u00b0F on June 27?",
+          "bracket_low": 62.0,
+          "bracket_high": 63.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 655.3230699999999,
+          "accepting_orders": true,
+          "market_id": "2687251",
+          "token_id": "100484375663995615138419439870581794735078823189122070518598381015739508837254"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 64-65\u00b0F on June 27?",
+          "bracket_low": 64.0,
+          "bracket_high": 65.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 858.3258549999998,
+          "accepting_orders": true,
+          "market_id": "2687252",
+          "token_id": "109494729282878848606329623165048700955814567557108112135976374306673149279335"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 66-67\u00b0F on June 27?",
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "bestBid": 0.31,
+          "bestAsk": 0.34,
+          "price": 0.34,
+          "volume": 2389.4795330000006,
+          "accepting_orders": true,
+          "market_id": "2687253",
+          "token_id": "44402617175498193382939832753647342414655458157766498037427552641844269848756"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 68-69\u00b0F on June 27?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 1915.6259689999997,
+          "accepting_orders": true,
+          "market_id": "2687254",
+          "token_id": "113100535052826779595547484605283971623834682557696377473987643732341233777162"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 70-71\u00b0F on June 27?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.012,
+          "bestAsk": 0.015,
+          "price": 0.015,
+          "volume": 1646.642547,
+          "accepting_orders": true,
+          "market_id": "2687255",
+          "token_id": "45589250689164340339470590129101717593410601894926900635451287956658038608202"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 72-73\u00b0F on June 27?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 339.93666600000006,
+          "accepting_orders": true,
+          "market_id": "2687256",
+          "token_id": "1124276748042904561945981314344352859038452230174906763269303390783892239744"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be 74\u00b0F or higher on June 27?",
+          "bracket_low": 74.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 442.8999999999999,
+          "accepting_orders": true,
+          "market_id": "2687257",
+          "token_id": "65576786148824942250004425834321375442031823177115359553068739465853764482899"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
