@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-29T05:00:19+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 94.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 95.8,
+      "veto_source": "openmeteo-best",
+      "spread": 1.7999999999999972,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Chicago be 85\u00b0F or below on June 29?",
+          "bracket_low": -Infinity,
+          "bracket_high": 85.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 3596.161237,
+          "accepting_orders": true,
+          "market_id": "2714220",
+          "token_id": "101353930966620609820111780126114527448400877274967145314686543305607169478382"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 86-87\u00b0F on June 29?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 1506.8347109999995,
+          "accepting_orders": true,
+          "market_id": "2714221",
+          "token_id": "79561094009772381777851051850600286809764024491013526797552052037654496565477"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 88-89\u00b0F on June 29?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.023,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 2141.4579169999993,
+          "accepting_orders": true,
+          "market_id": "2714222",
+          "token_id": "23555065348577059247042225894207015095380514421430697664327823695186511693007"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 90-91\u00b0F on June 29?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.15,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 2319.457341,
+          "accepting_orders": true,
+          "market_id": "2714223",
+          "token_id": "18385365154548150254644281692350733291699528740276888643579387067252210651177"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 92-93\u00b0F on June 29?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 1735.7031409999995,
+          "accepting_orders": true,
+          "market_id": "2714224",
+          "token_id": "104731151991775829530898867001308797559508505585986273054939511693211358463775"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 94-95\u00b0F on June 29?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.29,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 1888.2348939999995,
+          "accepting_orders": true,
+          "market_id": "2714225",
+          "token_id": "2996175528052775252961440670542452065190237051658159974858558370945900268872"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 96-97\u00b0F on June 29?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.17,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 2028.0693970000004,
+          "accepting_orders": true,
+          "market_id": "2714226",
+          "token_id": "63600876162893386335794519019528930703577940260991586773625866857259106248347"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 98-99\u00b0F on June 29?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.017,
+          "bestAsk": 0.034,
+          "price": 0.034,
+          "volume": 1052.012599,
+          "accepting_orders": true,
+          "market_id": "2714227",
+          "token_id": "58430972077331611593265687462037430114953539160658973203166158791414432871553"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 100-101\u00b0F on June 29?",
+          "bracket_low": 100.0,
+          "bracket_high": 101.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 915.7933330000001,
+          "accepting_orders": true,
+          "market_id": "2714228",
+          "token_id": "32366348722637859377170119840145351283224974871770391773318388233861324479219"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 102-103\u00b0F on June 29?",
+          "bracket_low": 102.0,
+          "bracket_high": 103.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 763.2181159999999,
+          "accepting_orders": true,
+          "market_id": "2714229",
+          "token_id": "14120221485919178042089272069973550466116871463171871190158831275334759942436"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be 104\u00b0F or higher on June 29?",
+          "bracket_low": 104.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 2509.857882999999,
+          "accepting_orders": true,
+          "market_id": "2714230",
+          "token_id": "1717848493056259478556201493245906813994957763447769096695947177671433245070"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

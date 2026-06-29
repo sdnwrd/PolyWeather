@@ -99,16 +99,22 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-06-26,2026-06-26,0,Paris,LFPB,Will the highest temperature in Paris be 36°C on June 26?,96.8,98.6,0.024,97.1,99.2,0.3348,13.95,99.0,0.2,false,98.6,WIN,2026-06-27T05:01:48+00:00
 2026-06-26,2026-06-26,0,Munich,EDDM,Will the highest temperature in Munich be 33°C on June 26?,91.4,93.2,0.018,94.3,94.3,0.2176,12.09,87.6,6.7,true,93.2,WIN,2026-06-27T05:01:48+00:00
 2026-06-26,2026-06-27,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 24°C on June 27?,75.2,77.0,0.008,78.6,78.6,0.1728,21.59,79.5,0.9,false,80.6,LOSS,2026-06-28T05:01:39+00:00
-2026-06-26,2026-06-28,2,Shanghai,ZSPD,Will the highest temperature in Shanghai be 25°C on June 28?,77.0,78.8,0.016,79.0,79.0,0.1984,12.4,80.9,1.9,false,,PENDING,
-2026-06-27,2026-06-28,1,New York,KLGA,Will the highest temperature in New York City be between 88-89°F on June 28?,88.0,89.0,0.009,86.0,86.0,0.0962,10.69,76.6,9.4,true,,PENDING,
+2026-06-26,2026-06-28,2,Shanghai,ZSPD,Will the highest temperature in Shanghai be 25°C on June 28?,77.0,78.8,0.016,79.0,79.0,0.1984,12.4,80.9,1.9,false,86.0,LOSS,2026-06-29T05:01:43+00:00
+2026-06-27,2026-06-28,1,New York,KLGA,Will the highest temperature in New York City be between 88-89°F on June 28?,88.0,89.0,0.009,86.0,86.0,0.0962,10.69,76.6,9.4,true,82.4,LOSS,2026-06-29T05:01:43+00:00
 2026-06-27,2026-06-27,0,Tokyo,RJTT,Will the highest temperature in Tokyo be 26°C on June 27?,78.8,80.6,0.009,77.0,74.6,0.1522,16.91,76.2,1.6,false,73.4,LOSS,2026-06-28T05:01:39+00:00
-2026-06-27,2026-06-28,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 27°C on June 28?,80.6,82.4,0.01,77.6,75.2,0.0977,9.77,73.1,2.1,false,,PENDING,
-2026-06-27,2026-06-28,1,London,EGLC,Will the highest temperature in London be 23°C on June 28?,73.4,75.2,0.02,75.9,78.1,0.2181,10.91,82.8,4.7,true,,PENDING,
+2026-06-27,2026-06-28,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 27°C on June 28?,80.6,82.4,0.01,77.6,75.2,0.0977,9.77,73.1,2.1,false,75.2,LOSS,2026-06-29T05:01:43+00:00
+2026-06-27,2026-06-28,1,London,EGLC,Will the highest temperature in London be 23°C on June 28?,73.4,75.2,0.02,75.9,78.1,0.2181,10.91,82.8,4.7,true,78.8,LOSS,2026-06-29T05:01:43+00:00
 2026-06-27,2026-06-27,0,Munich,EDDM,Will the highest temperature in Munich be 34°C on June 27?,93.2,95.0,0.005,96.9,96.9,0.1389,27.78,90.0,6.9,true,96.8,LOSS,2026-06-28T05:01:39+00:00
 2026-06-27,2026-06-27,0,Singapore,WSSS,Will the highest temperature in Singapore be 34°C or higher on June 27?,93.2,inf,0.029,92.4,89.5,0.34,11.72,89.0,0.5,false,91.4,LOSS,2026-06-28T05:01:39+00:00
-2026-06-27,2026-06-28,1,Singapore,WSSS,Will the highest temperature in Singapore be 29°C on June 28?,84.2,86.0,0.004,88.9,86.0,0.1018,25.45,88.5,2.5,false,,PENDING,
+2026-06-27,2026-06-28,1,Singapore,WSSS,Will the highest temperature in Singapore be 29°C on June 28?,84.2,86.0,0.004,88.9,86.0,0.1018,25.45,88.5,2.5,false,89.6,LOSS,2026-06-29T05:01:43+00:00
 2026-06-28,2026-06-29,1,London,EGLC,Will the highest temperature in London be 22°C on June 29?,71.6,73.4,0.015,73.5,75.8,0.2443,16.28,79.6,3.8,true,,PENDING,
 2026-06-28,2026-06-29,1,Paris,LFPB,Will the highest temperature in Paris be 24°C or below on June 29?,-inf,75.2,0.019,77.9,81.2,0.1556,8.19,84.3,3.1,true,,PENDING,
-2026-06-28,2026-06-28,0,Munich,EDDM,Will the highest temperature in Munich be 34°C on June 28?,93.2,95.0,0.012,97.3,97.3,0.1049,8.74,90.5,6.8,true,,PENDING,
-2026-06-28,2026-06-28,0,Singapore,WSSS,Will the highest temperature in Singapore be 35°C or higher on June 28?,95.0,inf,0.007,92.2,89.2,0.0796,11.38,88.8,0.4,false,,PENDING,
+2026-06-28,2026-06-28,0,Munich,EDDM,Will the highest temperature in Munich be 34°C on June 28?,93.2,95.0,0.012,97.3,97.3,0.1049,8.74,90.5,6.8,true,95.0,WIN,2026-06-29T05:01:43+00:00
+2026-06-28,2026-06-28,0,Singapore,WSSS,Will the highest temperature in Singapore be 35°C or higher on June 28?,95.0,inf,0.007,92.2,89.2,0.0796,11.38,88.8,0.4,false,89.6,LOSS,2026-06-29T05:01:43+00:00
 2026-06-28,2026-06-29,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 25°C on June 29?,77.0,78.8,0.008,80.9,80.9,0.144,18.01,80.0,0.9,false,,PENDING,
+2026-06-29,2026-06-29,0,Los Angeles,KLAX,Will the highest temperature in Los Angeles be between 74-75°F on June 29?,74.0,75.0,0.01,72.0,72.0,0.0918,9.18,70.1,1.9,false,,PENDING,
+2026-06-29,2026-06-29,0,Paris,LFPB,Will the highest temperature in Paris be 25°C on June 29?,77.0,78.8,0.018,78.5,81.4,0.3342,18.57,84.1,2.7,false,,PENDING,
+2026-06-29,2026-06-30,1,Paris,LFPB,Will the highest temperature in Paris be 25°C on June 30?,77.0,78.8,0.01,80.6,83.5,0.1628,16.28,87.2,3.7,true,,PENDING,
+2026-06-29,2026-06-29,0,Singapore,WSSS,Will the highest temperature in Singapore be 34°C or higher on June 29?,93.2,inf,0.005,91.5,88.5,0.203,40.6,87.9,0.6,false,,PENDING,
+2026-06-29,2026-06-30,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 23°C on June 30?,73.4,75.2,0.004,77.5,77.5,0.1327,33.18,78.0,0.5,false,,PENDING,
+2026-06-29,2026-06-30,1,Toronto,CYYZ,Will the highest temperature in Toronto be 29°C or below on June 30?,-inf,84.2,0.054,82.5,83.7,0.7355,13.62,83.7,0.0,false,,PENDING,

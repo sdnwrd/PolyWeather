@@ -1,0 +1,168 @@
+{
+  "city": "Paris",
+  "date": "2026-06-30",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-06-29T05:01:08+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 83.5,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 87.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.700000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C or below on June 30?",
+          "bracket_low": -Infinity,
+          "bracket_high": 75.2,
+          "bestBid": 0.004,
+          "bestAsk": 0.017,
+          "price": 0.017,
+          "volume": 1389.1039029999997,
+          "accepting_orders": true,
+          "market_id": "2716812",
+          "token_id": "98573026299768798606972569677939699270146369181990665598496058906890812006593"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on June 30?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.003,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 765.8074540000002,
+          "accepting_orders": true,
+          "market_id": "2716813",
+          "token_id": "32474847220446873274485261619569438198854176987895212531610637335868587052859"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on June 30?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.032,
+          "bestAsk": 0.067,
+          "price": 0.067,
+          "volume": 1674.0364100000002,
+          "accepting_orders": true,
+          "market_id": "2716819",
+          "token_id": "112289000227508440541631330991588064246632064062013689162023227371238630926543"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on June 30?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.14,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 2670.219635,
+          "accepting_orders": true,
+          "market_id": "2716824",
+          "token_id": "5352897911822218838779067770240160129399378480932061864256574805533559487001"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C on June 30?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.29,
+          "bestAsk": 0.3,
+          "price": 0.3,
+          "volume": 7442.822629000001,
+          "accepting_orders": true,
+          "market_id": "2716829",
+          "token_id": "55324846610834330907502007055708835480550334387149224746323563606522450168655"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C on June 30?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 8203.463700999999,
+          "accepting_orders": true,
+          "market_id": "2716831",
+          "token_id": "76480980379940416973580692306126504769228593601524881434620979666267173187963"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C on June 30?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.12,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 3025.7363510000014,
+          "accepting_orders": true,
+          "market_id": "2716832",
+          "token_id": "103993193977912644842533518744453157254472194596088956322421036945900734029212"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 31\u00b0C on June 30?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.04,
+          "bestAsk": 0.041,
+          "price": 0.041,
+          "volume": 1781.6742130000002,
+          "accepting_orders": true,
+          "market_id": "2716833",
+          "token_id": "11675784390877517393475334426380324133786928279465185623485333947014556889667"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 32\u00b0C on June 30?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.004,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 979.05422,
+          "accepting_orders": true,
+          "market_id": "2716834",
+          "token_id": "74113087379114987066750253810136803131055070337461707724885514101977301253120"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 33\u00b0C on June 30?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 898.69505,
+          "accepting_orders": true,
+          "market_id": "2716840",
+          "token_id": "21021916182693864555511680082384445281696228381104982903012627949332166281378"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 34\u00b0C or higher on June 30?",
+          "bracket_low": 93.2,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 450.613,
+          "accepting_orders": true,
+          "market_id": "2716845",
+          "token_id": "90710090626202350366087675590284482138537962396827444705091849157266009139772"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "market_id": "2716813",
+          "market_price": 0.01,
+          "forecast_high": 80.5739,
+          "true_prob": 0.16278357145661326,
+          "ev": 16.278357145661325,
+          "forecast_openmeteo": 87.2,
+          "model_spread": 3.700000000000003,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
