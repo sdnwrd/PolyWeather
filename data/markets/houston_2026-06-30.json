@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-06-30T05:00:37+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 93.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 94.1,
+      "veto_source": "openmeteo-best",
+      "spread": 1.0999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Houston be 81\u00b0F or below on June 30?",
+          "bracket_low": -Infinity,
+          "bracket_high": 81.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 7863.147021999999,
+          "accepting_orders": true,
+          "market_id": "2725298",
+          "token_id": "59476635863943939987811112388057909978281989701492761630422482656647478745820"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 82-83\u00b0F on June 30?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 454.04800000000006,
+          "accepting_orders": true,
+          "market_id": "2725299",
+          "token_id": "70553814465047549288856891430717028253117101628704011790304476589634116262863"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 84-85\u00b0F on June 30?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 523.288256,
+          "accepting_orders": true,
+          "market_id": "2725300",
+          "token_id": "114019815390011115942646068639357411896469387341195538093847372186432614502938"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 86-87\u00b0F on June 30?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 1133.3123310000003,
+          "accepting_orders": true,
+          "market_id": "2725301",
+          "token_id": "1696017268222791083866158995815454189823666552055449372224465988854051895626"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 88-89\u00b0F on June 30?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.018,
+          "price": 0.018,
+          "volume": 853.8840750000002,
+          "accepting_orders": true,
+          "market_id": "2725302",
+          "token_id": "67258416802042875679584990196455948648831914654231133324031669157877334200350"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 90-91\u00b0F on June 30?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.06,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 1039.574223,
+          "accepting_orders": true,
+          "market_id": "2725303",
+          "token_id": "34355989739300816327708362171963203883936542690664755545527886717073216317498"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 92-93\u00b0F on June 30?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.65,
+          "bestAsk": 0.68,
+          "price": 0.68,
+          "volume": 1980.073294999998,
+          "accepting_orders": true,
+          "market_id": "2725304",
+          "token_id": "89922626759039259503073659190538567156871307885130482686622221214871401637470"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 94-95\u00b0F on June 30?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.2,
+          "bestAsk": 0.23,
+          "price": 0.23,
+          "volume": 1895.2573579999992,
+          "accepting_orders": true,
+          "market_id": "2725305",
+          "token_id": "73421957452188800429238219975025022055296524385277307079213263153842247777675"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 96-97\u00b0F on June 30?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.012,
+          "bestAsk": 0.029,
+          "price": 0.029,
+          "volume": 1149.8594570000002,
+          "accepting_orders": true,
+          "market_id": "2725306",
+          "token_id": "8392274696124396794564206160399693082623804388628011106970933777779187282334"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 98-99\u00b0F on June 30?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.011,
+          "price": 0.011,
+          "volume": 884.6502570000001,
+          "accepting_orders": true,
+          "market_id": "2725307",
+          "token_id": "23003703236819156377193265694155842798130912570875111992755737542951744820446"
+        },
+        {
+          "question": "Will the highest temperature in Houston be 100\u00b0F or higher on June 30?",
+          "bracket_low": 100.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1222.302932,
+          "accepting_orders": true,
+          "market_id": "2725308",
+          "token_id": "14447629232660517925254243864183435633757933674636130697593966197293903656088"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
