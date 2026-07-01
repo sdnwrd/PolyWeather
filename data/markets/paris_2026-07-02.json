@@ -1,0 +1,180 @@
+{
+  "city": "Paris",
+  "date": "2026-07-02",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-07-01T05:04:49+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 75.6,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 82.3,
+      "veto_source": "openmeteo-gfs",
+      "spread": 6.700000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 21\u00b0C or below on July 2?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 528.1693329999999,
+          "accepting_orders": true,
+          "market_id": "2739328",
+          "token_id": "30329804094370963831725661637240146923604027745732743241432879710524953113903"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 22\u00b0C on July 2?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.012,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 2213.0770999999995,
+          "accepting_orders": true,
+          "market_id": "2739329",
+          "token_id": "67095684424659762502826765429339667785213751723659879831437219945265860090133"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 23\u00b0C on July 2?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.05,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 1525.035799,
+          "accepting_orders": true,
+          "market_id": "2739330",
+          "token_id": "64992623487043804266887630551269686276252147661555430969621105402979361227628"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C on July 2?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.156,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 1371.0050580000002,
+          "accepting_orders": true,
+          "market_id": "2739331",
+          "token_id": "7823464475350187449810444911002768291277395692957990528434159798522806632087"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on July 2?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.37,
+          "bestAsk": 0.38,
+          "price": 0.38,
+          "volume": 7735.534973999999,
+          "accepting_orders": true,
+          "market_id": "2739332",
+          "token_id": "84731498395878463156104718402531975679025700418744586165411499614993879092434"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on July 2?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.28,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 2174.4554119999993,
+          "accepting_orders": true,
+          "market_id": "2739333",
+          "token_id": "41784885432702606548543681729329761860938178629443631029805489366504036611718"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on July 2?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.04,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 4740.0949359999995,
+          "accepting_orders": true,
+          "market_id": "2739334",
+          "token_id": "18798044912492049102641393101063637431995315971682275894553282480569696850699"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C on July 2?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.02,
+          "bestAsk": 0.022,
+          "price": 0.022,
+          "volume": 1905.666708,
+          "accepting_orders": true,
+          "market_id": "2739335",
+          "token_id": "66597700791419402183236496263411716744447110212160360078312232262792231993451"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C on July 2?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.011,
+          "price": 0.011,
+          "volume": 2390.3465469999996,
+          "accepting_orders": true,
+          "market_id": "2739336",
+          "token_id": "105548601739097418503906623659804548478696794672699100287525132573561982538000"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C on July 2?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.005,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 1507.1369499999998,
+          "accepting_orders": true,
+          "market_id": "2739337",
+          "token_id": "79699382878329841970306564281999850315290359119349977587816861824331699204268"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 31\u00b0C or higher on July 2?",
+          "bracket_low": 87.8,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 2095.963595,
+          "accepting_orders": true,
+          "market_id": "2739338",
+          "token_id": "113130320832269825325718264249819488729105698884802735766572589948442320997597"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": -Infinity,
+          "bracket_high": 69.8,
+          "market_id": "2739328",
+          "market_price": 0.005,
+          "forecast_high": 72.69579999999999,
+          "true_prob": 0.14174360038782546,
+          "ev": 28.34872007756509,
+          "forecast_openmeteo": 82.3,
+          "model_spread": 6.700000000000003,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "market_id": "2739329",
+          "market_price": 0.02,
+          "forecast_high": 72.69579999999999,
+          "true_prob": 0.260456611784547,
+          "ev": 13.022830589227349,
+          "forecast_openmeteo": 82.3,
+          "model_spread": 6.700000000000003,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}

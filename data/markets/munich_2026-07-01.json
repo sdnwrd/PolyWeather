@@ -295,6 +295,176 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-01T05:04:54+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 69.6,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 65.5,
+      "veto_source": "openmeteo-gfs",
+      "spread": 4.099999999999994,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Munich be 18\u00b0C or below on July 1?",
+          "bracket_low": -Infinity,
+          "bracket_high": 64.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 13810.686134000001,
+          "accepting_orders": true,
+          "market_id": "2725836",
+          "token_id": "88083743160649841700477307176855684372138354170150186704304020070401979543421"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 19\u00b0C on July 1?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 24136.386946,
+          "accepting_orders": true,
+          "market_id": "2725837",
+          "token_id": "46454143179460043610710233914885843809833603505464243352134287472920634154864"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 20\u00b0C on July 1?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.004,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 31145.03660399999,
+          "accepting_orders": true,
+          "market_id": "2725838",
+          "token_id": "90160326910075165444296272690175347440446345477283444969534672147950164012684"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 21\u00b0C on July 1?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.78,
+          "bestAsk": 0.83,
+          "price": 0.83,
+          "volume": 12934.582779000006,
+          "accepting_orders": true,
+          "market_id": "2725839",
+          "token_id": "7799899357488301097173120417596737182842278760437561945593420102875379736977"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 22\u00b0C on July 1?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.14,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 10400.966822000006,
+          "accepting_orders": true,
+          "market_id": "2725840",
+          "token_id": "17091594316570983169711193906923029261008495119894944556358705849362217093540"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 23\u00b0C on July 1?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.021,
+          "bestAsk": 0.035,
+          "price": 0.035,
+          "volume": 8576.571914000004,
+          "accepting_orders": true,
+          "market_id": "2725841",
+          "token_id": "62979186546812900116694990993070069177393100687264064473467019323537386701267"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 24\u00b0C on July 1?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.017,
+          "price": 0.017,
+          "volume": 9473.495763000003,
+          "accepting_orders": true,
+          "market_id": "2725842",
+          "token_id": "2763772467676597356211718467159330829969539600520991646890347886814127406906"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 25\u00b0C on July 1?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 10408.309929000001,
+          "accepting_orders": true,
+          "market_id": "2725843",
+          "token_id": "81551282943098548128963169419601565944049976075589314700453647242090547340189"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 26\u00b0C on July 1?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 7339.4430520000005,
+          "accepting_orders": true,
+          "market_id": "2725844",
+          "token_id": "51886555773730873479099075182497136545378492204905257998635918571720282625766"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 27\u00b0C on July 1?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 5206.126688000002,
+          "accepting_orders": true,
+          "market_id": "2725845",
+          "token_id": "27041446042275049145342156711399264022611280309329272793691488475504135059227"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 28\u00b0C or higher on July 1?",
+          "bracket_low": 82.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 5969.276551,
+          "accepting_orders": true,
+          "market_id": "2725846",
+          "token_id": "8854085797075349438296350753407500057935056788524104291708245421780983036473"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "market_id": "2725837",
+          "market_price": 0.004,
+          "forecast_high": 69.6,
+          "true_prob": 0.16728993582485407,
+          "ev": 41.82248395621352,
+          "forecast_openmeteo": 65.5,
+          "model_spread": 4.099999999999994,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "market_id": "2725838",
+          "market_price": 0.01,
+          "forecast_high": 69.6,
+          "true_prob": 0.327972438693632,
+          "ev": 32.7972438693632,
+          "forecast_openmeteo": 65.5,
+          "model_spread": 4.099999999999994,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
