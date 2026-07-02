@@ -1,0 +1,180 @@
+{
+  "city": "London",
+  "date": "2026-07-03",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-07-02T05:02:13+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 78.7,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 79.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C or below on July 3?",
+          "bracket_low": -Infinity,
+          "bracket_high": 71.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 497.93899999999996,
+          "accepting_orders": true,
+          "market_id": "2751067",
+          "token_id": "115512141165165870700793530413624108159745316607221783425557098368473637565513"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on July 3?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 423.8605,
+          "accepting_orders": true,
+          "market_id": "2751068",
+          "token_id": "68805890737935412142722010384539001651961865493972646821062042198317362311366"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on July 3?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.017,
+          "price": 0.017,
+          "volume": 502.347796,
+          "accepting_orders": true,
+          "market_id": "2751069",
+          "token_id": "103888621091031658147403883275616608594630971830523142100765099436074905651056"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on July 3?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.13,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 1324.0689519999999,
+          "accepting_orders": true,
+          "market_id": "2751070",
+          "token_id": "68531513724967647037028909725944276950300528885664212459272290728701927639828"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on July 3?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 1513.716213,
+          "accepting_orders": true,
+          "market_id": "2751071",
+          "token_id": "16992232989892564997572450884975622494087999051647050574458161983818850580650"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on July 3?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.36,
+          "bestAsk": 0.37,
+          "price": 0.37,
+          "volume": 3418.7125719999995,
+          "accepting_orders": true,
+          "market_id": "2751072",
+          "token_id": "55999130300201133335876685587034826047539603481005581570405683937634801971546"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C on July 3?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.07,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 1285.7745479999999,
+          "accepting_orders": true,
+          "market_id": "2751073",
+          "token_id": "19439469091585548695716797144457784151633067350498373099395760567730641136227"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C on July 3?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 970.243327,
+          "accepting_orders": true,
+          "market_id": "2751074",
+          "token_id": "74064654549543938979209250304346025442461613520192720297054619658184324408042"
+        },
+        {
+          "question": "Will the highest temperature in London be 30\u00b0C on July 3?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 687.1745999999999,
+          "accepting_orders": true,
+          "market_id": "2751075",
+          "token_id": "10806381233716055436785936625377075415250628320531751034729716265499211825216"
+        },
+        {
+          "question": "Will the highest temperature in London be 31\u00b0C on July 3?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 878.9972829999999,
+          "accepting_orders": true,
+          "market_id": "2751076",
+          "token_id": "107530573130786511251430036552895333017388083535400117521308958201676471777029"
+        },
+        {
+          "question": "Will the highest temperature in London be 32\u00b0C or higher on July 3?",
+          "bracket_low": 89.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 713.0400000000001,
+          "accepting_orders": true,
+          "market_id": "2751077",
+          "token_id": "93718238752394095490604437160949283389288398826528040917013387124914512495420"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "market_id": "2751068",
+          "market_price": 0.006,
+          "forecast_high": 76.3158,
+          "true_prob": 0.19962075413004648,
+          "ev": 33.27012568834108,
+          "forecast_openmeteo": 79.2,
+          "model_spread": 0.5,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "2751069",
+          "market_price": 0.017,
+          "forecast_high": 76.3158,
+          "true_prob": 0.26031496019679545,
+          "ev": 15.312644717458555,
+          "forecast_openmeteo": 79.2,
+          "model_spread": 0.5,
+          "vetoed": false
+        }
+      ]
+    }
+  ]
+}

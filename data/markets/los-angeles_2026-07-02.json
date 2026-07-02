@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-02T05:01:47+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 68.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 71.0,
+      "veto_source": "openmeteo-best",
+      "spread": 3.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Los Angeles be 61\u00b0F or below on July 2?",
+          "bracket_low": -Infinity,
+          "bracket_high": 61.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 3457.9865179999997,
+          "accepting_orders": true,
+          "market_id": "2749995",
+          "token_id": "92028078441126769227579906652406524159990626380125030228065730149636248469010"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 62-63\u00b0F on July 2?",
+          "bracket_low": 62.0,
+          "bracket_high": 63.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 5717.390063000002,
+          "accepting_orders": true,
+          "market_id": "2749996",
+          "token_id": "111356692411893184477704409971474304756938248817859644250823751235099658454872"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 64-65\u00b0F on July 2?",
+          "bracket_low": 64.0,
+          "bracket_high": 65.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1032.967467,
+          "accepting_orders": true,
+          "market_id": "2749997",
+          "token_id": "50942711789203795079228803855400052876156934443683365304149342674296849550632"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 66-67\u00b0F on July 2?",
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 3258.3363650000006,
+          "accepting_orders": true,
+          "market_id": "2749998",
+          "token_id": "76741810570469221377825370998025097716077724803876187762248645529731163103443"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 68-69\u00b0F on July 2?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.1,
+          "bestAsk": 0.18,
+          "price": 0.18,
+          "volume": 5063.0535660000005,
+          "accepting_orders": true,
+          "market_id": "2749999",
+          "token_id": "10200299239569967110050769813139054045096795377081690473688791677761807047028"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 70-71\u00b0F on July 2?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.37,
+          "bestAsk": 0.42,
+          "price": 0.42,
+          "volume": 6392.850283999999,
+          "accepting_orders": true,
+          "market_id": "2750000",
+          "token_id": "107234922803179256399547833942913339902166783816899679011445345481612084027952"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 72-73\u00b0F on July 2?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.46,
+          "bestAsk": 0.47,
+          "price": 0.47,
+          "volume": 7900.648279,
+          "accepting_orders": true,
+          "market_id": "2750001",
+          "token_id": "73741829457736951045743020859532709647557230393131772078979503207977849747115"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 74-75\u00b0F on July 2?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.013,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 2304.483331,
+          "accepting_orders": true,
+          "market_id": "2750002",
+          "token_id": "19125227028664827288507159154611134215612294257591832908067842928640429012623"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 76-77\u00b0F on July 2?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": null,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 1496.217385,
+          "accepting_orders": true,
+          "market_id": "2750003",
+          "token_id": "19906996558178673397479509828899980494136292615634901927296725314032717232567"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 78-79\u00b0F on July 2?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 1853.502649,
+          "accepting_orders": true,
+          "market_id": "2750004",
+          "token_id": "79349402814214172333310397722687283482410098409119803361266736481544005388769"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 80\u00b0F or higher on July 2?",
+          "bracket_low": 80.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1983.580791999999,
+          "accepting_orders": true,
+          "market_id": "2750005",
+          "token_id": "28270388769210058391565077657035595345708428085890589181386713733164867982552"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "market_id": "2749998",
+          "market_price": 0.001,
+          "forecast_high": 68.0,
+          "true_prob": 0.1498822847945298,
+          "ev": 149.8822847945298,
+          "forecast_openmeteo": 71.0,
+          "model_spread": 3.0,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
