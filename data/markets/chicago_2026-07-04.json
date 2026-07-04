@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-04T05:00:40+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 88.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 80.9,
+      "veto_source": "openmeteo-best",
+      "spread": 7.099999999999994,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Chicago be 75\u00b0F or below on July 4?",
+          "bracket_low": -Infinity,
+          "bracket_high": 75.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 3559.842447,
+          "accepting_orders": true,
+          "market_id": "2777781",
+          "token_id": "97612088363318995731725261607570345982290668263040340520891974393429857461288"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 76-77\u00b0F on July 4?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1457.5800849999996,
+          "accepting_orders": true,
+          "market_id": "2777782",
+          "token_id": "83358227254660800616956545446888810058908525794597870461402348149781935537873"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 78-79\u00b0F on July 4?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.012,
+          "bestAsk": 0.025,
+          "price": 0.025,
+          "volume": 3316.5396630000005,
+          "accepting_orders": true,
+          "market_id": "2777783",
+          "token_id": "58352176831105636519645173181930389517432582909528920947855176065657904675985"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 80-81\u00b0F on July 4?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.1,
+          "bestAsk": 0.134,
+          "price": 0.134,
+          "volume": 3333.6481860000004,
+          "accepting_orders": true,
+          "market_id": "2777784",
+          "token_id": "91681679307007629809853387350949908173745152238104945090662667052408571867710"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 82-83\u00b0F on July 4?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.31,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 6144.883749999999,
+          "accepting_orders": true,
+          "market_id": "2777785",
+          "token_id": "44367071558813947947929353158969928384715066312103785061356018361655339797798"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 84-85\u00b0F on July 4?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.33,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 11898.927150000012,
+          "accepting_orders": true,
+          "market_id": "2777786",
+          "token_id": "56887786980867119256595278612344092512975252260740015038137674362449823420780"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 86-87\u00b0F on July 4?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.11,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 2864.082944999999,
+          "accepting_orders": true,
+          "market_id": "2777787",
+          "token_id": "49986597830542403579439296628870859544796863266147528242412610916942287248194"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 88-89\u00b0F on July 4?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.02,
+          "bestAsk": 0.078,
+          "price": 0.078,
+          "volume": 4077.241213999999,
+          "accepting_orders": true,
+          "market_id": "2777788",
+          "token_id": "21922326092187949146436720096289432308109106968291516668493803341804355484383"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 90-91\u00b0F on July 4?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 2344.373903,
+          "accepting_orders": true,
+          "market_id": "2777789",
+          "token_id": "52450728878431453159557868758591000883949550141299942218358374206306287891117"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 92-93\u00b0F on July 4?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1746.0680429999995,
+          "accepting_orders": true,
+          "market_id": "2777790",
+          "token_id": "9776332824164245048474959827666892103558968550493869030064162234902397635933"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be 94\u00b0F or higher on July 4?",
+          "bracket_low": 94.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1401.0804990000008,
+          "accepting_orders": true,
+          "market_id": "2777791",
+          "token_id": "45703764776889859003449755512138326180111980608608713954642480335792167293203"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "market_id": "2777789",
+          "market_price": 0.005,
+          "forecast_high": 88.0,
+          "true_prob": 0.09184805266259899,
+          "ev": 18.369610532519797,
+          "forecast_openmeteo": 80.9,
+          "model_spread": 7.099999999999994,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }

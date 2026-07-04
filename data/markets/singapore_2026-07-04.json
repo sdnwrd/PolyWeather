@@ -150,6 +150,176 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-04T05:01:45+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 89.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 87.6,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Singapore be 25\u00b0C or below on July 4?",
+          "bracket_low": -Infinity,
+          "bracket_high": 77.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 750.5,
+          "accepting_orders": true,
+          "market_id": "2764611",
+          "token_id": "82926494618463325106363992662921373642202942480936181197576358639100601304083"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 26\u00b0C on July 4?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1588.879,
+          "accepting_orders": true,
+          "market_id": "2764612",
+          "token_id": "39477670272718091064390395744630443481840071372462015492612017914484230382138"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 27\u00b0C on July 4?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1352.9850000000001,
+          "accepting_orders": true,
+          "market_id": "2764613",
+          "token_id": "76800316836634127108357177057245278898681176746410353270027255879269422964480"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 28\u00b0C on July 4?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 4500.051482999999,
+          "accepting_orders": true,
+          "market_id": "2764614",
+          "token_id": "84087446281134915624417441382896671498587173612477455777976514347484797315992"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 29\u00b0C on July 4?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 4851.592167,
+          "accepting_orders": true,
+          "market_id": "2764615",
+          "token_id": "3859292561395584127462440370608732292148968164051033770758315835884691425099"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 30\u00b0C on July 4?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 4886.176576999999,
+          "accepting_orders": true,
+          "market_id": "2764616",
+          "token_id": "115299455351138573916936559722214758686217687480679890794802318262884540409008"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 31\u00b0C on July 4?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 7373.156514999999,
+          "accepting_orders": true,
+          "market_id": "2764617",
+          "token_id": "86318399940760838429324562093722676888867660740415149475071814636636390967836"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 32\u00b0C on July 4?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.59,
+          "bestAsk": 0.63,
+          "price": 0.63,
+          "volume": 12027.598523000006,
+          "accepting_orders": true,
+          "market_id": "2764618",
+          "token_id": "46037677842190296350494265082590315544693311371108178199223482090709182823789"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 33\u00b0C on July 4?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.28,
+          "bestAsk": 0.37,
+          "price": 0.37,
+          "volume": 4632.2869610000025,
+          "accepting_orders": true,
+          "market_id": "2764619",
+          "token_id": "103923991221372947803323150260122068403145002236996137829477928615433141056253"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 34\u00b0C on July 4?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 8128.078439,
+          "accepting_orders": true,
+          "market_id": "2764620",
+          "token_id": "76478042083556651074707083408015385538964026678246427925062185854369800666975"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 35\u00b0C or higher on July 4?",
+          "bracket_low": 95.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 2105.6971460000004,
+          "accepting_orders": true,
+          "market_id": "2764621",
+          "token_id": "100790469718396287765729593732267820060029631285786655023376515249384393724245"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "market_id": "2764617",
+          "market_price": 0.001,
+          "forecast_high": 90.6458,
+          "true_prob": 0.22313934918034056,
+          "ev": 223.13934918034056,
+          "forecast_openmeteo": 87.6,
+          "model_spread": 1.4000000000000057,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "market_id": "2764616",
+          "market_price": 0.001,
+          "forecast_high": 90.6458,
+          "true_prob": 0.06729031055633267,
+          "ev": 67.29031055633267,
+          "forecast_openmeteo": 87.6,
+          "model_spread": 1.4000000000000057,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }

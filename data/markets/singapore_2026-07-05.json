@@ -1,0 +1,168 @@
+{
+  "city": "Singapore",
+  "date": "2026-07-05",
+  "station": "WSSS",
+  "region": "intl",
+  "lat": 1.3592,
+  "lon": 103.9894,
+  "snapshots": [
+    {
+      "ts": "2026-07-04T05:01:47+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 86.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 87.6,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.5999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Singapore be 25\u00b0C or below on July 5?",
+          "bracket_low": -Infinity,
+          "bracket_high": 77.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 779.9200000000002,
+          "accepting_orders": true,
+          "market_id": "2778783",
+          "token_id": "104403583542742702215827141809446922506740873790193630390004240188787914508762"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 26\u00b0C on July 5?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 146.118,
+          "accepting_orders": true,
+          "market_id": "2778784",
+          "token_id": "61114800609290602266869872984029811309795851650996421557180766017462889403332"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 27\u00b0C on July 5?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 210.3405,
+          "accepting_orders": true,
+          "market_id": "2778785",
+          "token_id": "53662365102046557235565976206815548914951179541689812426044107610118603925774"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 28\u00b0C on July 5?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.005,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 209.91625000000005,
+          "accepting_orders": true,
+          "market_id": "2778786",
+          "token_id": "27955689351104622807430224165648756451138726536940971203132235449149454272517"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 29\u00b0C on July 5?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.009,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 499.237658,
+          "accepting_orders": true,
+          "market_id": "2778787",
+          "token_id": "30099879577609097980116029793337745522721703070879803745319991914312596327976"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 30\u00b0C on July 5?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.032,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 806.808031,
+          "accepting_orders": true,
+          "market_id": "2778788",
+          "token_id": "113470049523094455545981756340937619019156486245263455537888986518359144617634"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 31\u00b0C on July 5?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.31,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 655.1230459999998,
+          "accepting_orders": true,
+          "market_id": "2778789",
+          "token_id": "63235402195500130939922075355381552795969523571810621529151710016300668562323"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 32\u00b0C on July 5?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.48,
+          "bestAsk": 0.5,
+          "price": 0.5,
+          "volume": 1007.5804419999998,
+          "accepting_orders": true,
+          "market_id": "2778790",
+          "token_id": "34632205518326498743882369659824991480999982891913490693224769104591213114084"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 33\u00b0C on July 5?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.13,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 1201.292228,
+          "accepting_orders": true,
+          "market_id": "2778791",
+          "token_id": "25484296505392080580749447182213097827070730430259110308598226512649262297537"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 34\u00b0C on July 5?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.012,
+          "bestAsk": 0.024,
+          "price": 0.024,
+          "volume": 117.175779,
+          "accepting_orders": true,
+          "market_id": "2778792",
+          "token_id": "23543250363152267600759230265215469682944371248171585211525899056505777724697"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 35\u00b0C or higher on July 5?",
+          "bracket_low": 95.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 161.40300000000002,
+          "accepting_orders": true,
+          "market_id": "2778793",
+          "token_id": "96677563291458070071270176745233649091085027003945324201693695656927637367757"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "market_id": "2778787",
+          "market_price": 0.019,
+          "forecast_high": 87.6458,
+          "true_prob": 0.17013964262406656,
+          "ev": 8.954718032845609,
+          "forecast_openmeteo": 87.6,
+          "model_spread": 1.5999999999999943,
+          "vetoed": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "city": "Chicago",
+  "date": "2026-07-05",
+  "station": "KORD",
+  "region": "us",
+  "lat": 41.9786,
+  "lon": -87.9048,
+  "snapshots": [
+    {
+      "ts": "2026-07-04T05:00:41+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 84.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 77.1,
+      "veto_source": "openmeteo-best",
+      "spread": 6.900000000000006,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Chicago be 71\u00b0F or below on July 5?",
+          "bracket_low": -Infinity,
+          "bracket_high": 71.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 50.647000000000006,
+          "accepting_orders": true,
+          "market_id": "2790127",
+          "token_id": "27333216707117768310034736170606339804581766326033806081680561586047784804736"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 72-73\u00b0F on July 5?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.007,
+          "bestAsk": 0.013,
+          "price": 0.013,
+          "volume": 205.52519999999998,
+          "accepting_orders": true,
+          "market_id": "2790128",
+          "token_id": "58886966910848697113110127050033582405295650774424702377559411256734576622404"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 74-75\u00b0F on July 5?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 532.3768580000001,
+          "accepting_orders": true,
+          "market_id": "2790129",
+          "token_id": "86452935475302537636619873891965058846017599119021501788759473645434219066177"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 76-77\u00b0F on July 5?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.22,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 307.18293,
+          "accepting_orders": true,
+          "market_id": "2790130",
+          "token_id": "4591773082612696104572561805608105860043367318520103233705530245865200099604"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 78-79\u00b0F on July 5?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.32,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 401.98940400000004,
+          "accepting_orders": true,
+          "market_id": "2790131",
+          "token_id": "58736769926067222098703451402889444291444380759289566259991925655080330443849"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 80-81\u00b0F on July 5?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.15,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 323.8827600000001,
+          "accepting_orders": true,
+          "market_id": "2790132",
+          "token_id": "18802218484360611800167321673923576188561190102338595494527152784424623028555"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 82-83\u00b0F on July 5?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.021,
+          "bestAsk": 0.034,
+          "price": 0.034,
+          "volume": 154.157238,
+          "accepting_orders": true,
+          "market_id": "2790133",
+          "token_id": "98697988582491206637058164842532768200620743913665952789124898798185311843290"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 84-85\u00b0F on July 5?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.021,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 241.003006,
+          "accepting_orders": true,
+          "market_id": "2790134",
+          "token_id": "29397277934850266025147596336915577908764721979889765302138169020989241872149"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 86-87\u00b0F on July 5?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 365.2552,
+          "accepting_orders": true,
+          "market_id": "2790135",
+          "token_id": "62832797556352568276531221074245379993005782437817601504769456085735372470030"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 88-89\u00b0F on July 5?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 896.86275,
+          "accepting_orders": true,
+          "market_id": "2790136",
+          "token_id": "1520233377592874509549459688389593270586449322172336081994410010455403393717"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be 90\u00b0F or higher on July 5?",
+          "bracket_low": 90.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 3383.323332,
+          "accepting_orders": true,
+          "market_id": "2790137",
+          "token_id": "28220089451068933899266668620041545972658519158314044075000434459493087419748"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "market_id": "2790135",
+          "market_price": 0.005,
+          "forecast_high": 84.0,
+          "true_prob": 0.09616506306222816,
+          "ev": 19.23301261244563,
+          "forecast_openmeteo": 77.1,
+          "model_spread": 6.900000000000006,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
