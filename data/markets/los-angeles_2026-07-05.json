@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-05T05:00:43+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 72.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 72.2,
+      "veto_source": "openmeteo-best",
+      "spread": 0.20000000000000284,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Los Angeles be 61\u00b0F or below on July 5?",
+          "bracket_low": -Infinity,
+          "bracket_high": 61.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 444.995,
+          "accepting_orders": true,
+          "market_id": "2790178",
+          "token_id": "79236584940449864690139847534325628177844374626352878861469935628002219261542"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 62-63\u00b0F on July 5?",
+          "bracket_low": 62.0,
+          "bracket_high": 63.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 410.072,
+          "accepting_orders": true,
+          "market_id": "2790179",
+          "token_id": "80024387002558647355236407234488206774855936159204733192837904854346723750074"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 64-65\u00b0F on July 5?",
+          "bracket_low": 64.0,
+          "bracket_high": 65.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 581.0409999999999,
+          "accepting_orders": true,
+          "market_id": "2790180",
+          "token_id": "66973986786672393639210179156588491063788325015868738360714635413927518433106"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 66-67\u00b0F on July 5?",
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1181.4934280000002,
+          "accepting_orders": true,
+          "market_id": "2790181",
+          "token_id": "81601024740628927984849777786307643733183239724878144992183434348722841401084"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 68-69\u00b0F on July 5?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1263.3815319999999,
+          "accepting_orders": true,
+          "market_id": "2790182",
+          "token_id": "33290136145643520222036334152096218888627191556234002405286880000495484242797"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 70-71\u00b0F on July 5?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.042,
+          "bestAsk": 0.044,
+          "price": 0.044,
+          "volume": 2426.2995039999987,
+          "accepting_orders": true,
+          "market_id": "2790183",
+          "token_id": "52445752122528453663292289204919667735768548079134546401175701568997584861709"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 72-73\u00b0F on July 5?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 6072.162402999998,
+          "accepting_orders": true,
+          "market_id": "2790184",
+          "token_id": "8648784475680997947779397680734319304927488644650034215463342854116357314754"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 74-75\u00b0F on July 5?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.67,
+          "bestAsk": 0.7,
+          "price": 0.7,
+          "volume": 10522.064746999997,
+          "accepting_orders": true,
+          "market_id": "2790185",
+          "token_id": "31541224067680218786516921149745561276404546694606061581228653882938179861252"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 76-77\u00b0F on July 5?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.062,
+          "bestAsk": 0.099,
+          "price": 0.099,
+          "volume": 1801.317608,
+          "accepting_orders": true,
+          "market_id": "2790186",
+          "token_id": "108175935720548718399990460023447558702991890886925524734264046304389766585620"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 78-79\u00b0F on July 5?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 989.9217060000001,
+          "accepting_orders": true,
+          "market_id": "2790187",
+          "token_id": "71958009822589246429441285273237221895305074224250874718920885887486287121160"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 80\u00b0F or higher on July 5?",
+          "bracket_low": 80.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 863.053908,
+          "accepting_orders": true,
+          "market_id": "2790188",
+          "token_id": "51396205242102193392194259338593167958173996160351312334899173308931071977044"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

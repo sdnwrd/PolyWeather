@@ -1,0 +1,155 @@
+{
+  "city": "London",
+  "date": "2026-07-07",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-07-05T05:01:10+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 87.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 91.6,
+      "veto_source": "openmeteo-gfs",
+      "spread": 4.599999999999994,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C or below on July 7?",
+          "bracket_low": -Infinity,
+          "bracket_high": 77.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2801955",
+          "token_id": "112431817351110953004369761543403203304414347047740248528125129008975613278300"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on July 7?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.003,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 20.0,
+          "accepting_orders": true,
+          "market_id": "2801956",
+          "token_id": "55458781402548766812532781801896878188487543337050495182149280086828256736955"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on July 7?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.009,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 58.0,
+          "accepting_orders": true,
+          "market_id": "2801957",
+          "token_id": "63833322241551033456818650734327858565673782923027751665801837137685868282935"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C on July 7?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.04,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 286.33,
+          "accepting_orders": true,
+          "market_id": "2801958",
+          "token_id": "19581327861848053171493270467555370129925251034366773465554894282377217590918"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C on July 7?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.07,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 8.191483,
+          "accepting_orders": true,
+          "market_id": "2801959",
+          "token_id": "91234255153912117583751052412898202448739591111510747139435340502578256085808"
+        },
+        {
+          "question": "Will the highest temperature in London be 30\u00b0C on July 7?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.3,
+          "bestAsk": 0.38,
+          "price": 0.38,
+          "volume": 90.044375,
+          "accepting_orders": true,
+          "market_id": "2801960",
+          "token_id": "106065410446868646366537768160412997384736837041374700682980349531404947017276"
+        },
+        {
+          "question": "Will the highest temperature in London be 31\u00b0C on July 7?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.31,
+          "bestAsk": 0.39,
+          "price": 0.39,
+          "volume": 77.756652,
+          "accepting_orders": true,
+          "market_id": "2801961",
+          "token_id": "109638641362370760670368252764952474947278011162228055625186763811664050165034"
+        },
+        {
+          "question": "Will the highest temperature in London be 32\u00b0C on July 7?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.09,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2801962",
+          "token_id": "90027005478780540504690054770733966086843089111877744814417040769472547407825"
+        },
+        {
+          "question": "Will the highest temperature in London be 33\u00b0C on July 7?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.03,
+          "bestAsk": 0.18,
+          "price": 0.18,
+          "volume": 28.29,
+          "accepting_orders": true,
+          "market_id": "2801963",
+          "token_id": "43741071110282355498243061522732893670005109553023091667041415289024098188690"
+        },
+        {
+          "question": "Will the highest temperature in London be 34\u00b0C on July 7?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.085,
+          "price": 0.085,
+          "volume": 10.0,
+          "accepting_orders": true,
+          "market_id": "2801964",
+          "token_id": "61022732440945602656610298077451942407994919288067675229709004511642294377657"
+        },
+        {
+          "question": "Will the highest temperature in London be 35\u00b0C or higher on July 7?",
+          "bracket_low": 95.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.004,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 33.78,
+          "accepting_orders": true,
+          "market_id": "2801965",
+          "token_id": "5718605966568564436985663569003510836822349984505618336011139161953162821208"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
