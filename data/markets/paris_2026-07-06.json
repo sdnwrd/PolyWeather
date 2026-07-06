@@ -163,6 +163,151 @@
           "vetoed": false
         }
       ]
+    },
+    {
+      "ts": "2026-07-06T05:01:08+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 93.4,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 93.5,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.09999999999999432,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C or below on July 6?",
+          "bracket_low": -Infinity,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1025.6101729999998,
+          "accepting_orders": true,
+          "market_id": "2791806",
+          "token_id": "24128481210178511637588353242786604691343604119107035727356689945831840671487"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C on July 6?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1505.3962630000003,
+          "accepting_orders": true,
+          "market_id": "2791807",
+          "token_id": "7835768478421209953552458290424959628969488565954115674876687457710124353776"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 31\u00b0C on July 6?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.005,
+          "bestAsk": 0.011,
+          "price": 0.011,
+          "volume": 3412.539666,
+          "accepting_orders": true,
+          "market_id": "2791808",
+          "token_id": "29231671072359592197329473263744408884495205041254566862257193937349120132060"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 32\u00b0C on July 6?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.018,
+          "bestAsk": 0.033,
+          "price": 0.033,
+          "volume": 7382.461089000001,
+          "accepting_orders": true,
+          "market_id": "2791809",
+          "token_id": "31534829553712701377788851154172670925762122249046704380931493444805457570579"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 33\u00b0C on July 6?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.18,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 8479.978062,
+          "accepting_orders": true,
+          "market_id": "2791810",
+          "token_id": "32784619356654043441757984125792751953306312583178926317335435759008837481010"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 34\u00b0C on July 6?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.47,
+          "bestAsk": 0.48,
+          "price": 0.48,
+          "volume": 13412.55131799999,
+          "accepting_orders": true,
+          "market_id": "2791811",
+          "token_id": "90434965436924481246354545437398574745962771985475565896743542176397942603099"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 35\u00b0C on July 6?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.246,
+          "bestAsk": 0.288,
+          "price": 0.288,
+          "volume": 2964.4220129999985,
+          "accepting_orders": true,
+          "market_id": "2791812",
+          "token_id": "101478138255579815263716429199112056641294519953512672115384980927155522851641"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 36\u00b0C on July 6?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.052,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 4782.233078000002,
+          "accepting_orders": true,
+          "market_id": "2791813",
+          "token_id": "97503535075377713584107815633112135035510696557021041906610534223900456689208"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 37\u00b0C on July 6?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.006,
+          "bestAsk": 0.013,
+          "price": 0.013,
+          "volume": 4052.554564,
+          "accepting_orders": true,
+          "market_id": "2791814",
+          "token_id": "34356169985684605683699885882672000729930904538785827048436980507143359694673"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 38\u00b0C on July 6?",
+          "bracket_low": 100.4,
+          "bracket_high": 102.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 3175.469798,
+          "accepting_orders": true,
+          "market_id": "2791815",
+          "token_id": "58498011702448554685700582033945511032350611604752853773308905681728507225744"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 39\u00b0C or higher on July 6?",
+          "bracket_low": 102.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 855.0139999999999,
+          "accepting_orders": true,
+          "market_id": "2791816",
+          "token_id": "60779410393378107884564688374885541467235627055705092236721197133152781765485"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
