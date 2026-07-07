@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-07T05:00:23+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 89.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 86.8,
+      "veto_source": "openmeteo-best",
+      "spread": 2.200000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Miami be 79\u00b0F or below on July 7?",
+          "bracket_low": -Infinity,
+          "bracket_high": 79.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 759.962,
+          "accepting_orders": true,
+          "market_id": "2811607",
+          "token_id": "107202318090737831435038996548163002317760771303964204723950829238131820223111"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 80-81\u00b0F on July 7?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 744.969,
+          "accepting_orders": true,
+          "market_id": "2811608",
+          "token_id": "14554801740882011325812625484653024082084254525158471347809425055426868576448"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 82-83\u00b0F on July 7?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 854.2403329999999,
+          "accepting_orders": true,
+          "market_id": "2811609",
+          "token_id": "67631943466931996335088141911636249344121008772240585614633301789865105937287"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 84-85\u00b0F on July 7?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 703.5365830000001,
+          "accepting_orders": true,
+          "market_id": "2811610",
+          "token_id": "49703800355388849041267649430173681417931664212303088816672638013317662006246"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 86-87\u00b0F on July 7?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.02,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 1331.602893,
+          "accepting_orders": true,
+          "market_id": "2811611",
+          "token_id": "59418351193263014726774815063339455723005152965657455690902225164107624811444"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 88-89\u00b0F on July 7?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.24,
+          "bestAsk": 0.27,
+          "price": 0.27,
+          "volume": 3040.9305840000006,
+          "accepting_orders": true,
+          "market_id": "2811612",
+          "token_id": "113338267369671188860231057853201430542183695891268661093770244584282373117214"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 90-91\u00b0F on July 7?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.44,
+          "bestAsk": 0.45,
+          "price": 0.45,
+          "volume": 2429.0368539999977,
+          "accepting_orders": true,
+          "market_id": "2811613",
+          "token_id": "111494581524155826768877704999437564762164236994206085506544291157306454591772"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 92-93\u00b0F on July 7?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.25,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 3364.0635300000026,
+          "accepting_orders": true,
+          "market_id": "2811614",
+          "token_id": "70530620610524246010765710817119712836903891192212244482393453006460358441397"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 94-95\u00b0F on July 7?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.018,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 2217.4149659999994,
+          "accepting_orders": true,
+          "market_id": "2811615",
+          "token_id": "106359342281388517742964419978336526655104956528964408870111477614991955757219"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 96-97\u00b0F on July 7?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 666.1734539999999,
+          "accepting_orders": true,
+          "market_id": "2811616",
+          "token_id": "6713347795756458819485408592270312325799031407796314314860243692578234146152"
+        },
+        {
+          "question": "Will the highest temperature in Miami be 98\u00b0F or higher on July 7?",
+          "bracket_low": 98.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 746.3215,
+          "accepting_orders": true,
+          "market_id": "2811617",
+          "token_id": "109502410809047781023300360064851152622765964204498613648429908803120766402590"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

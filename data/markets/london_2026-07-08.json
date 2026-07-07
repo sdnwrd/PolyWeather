@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-07-08",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-07-07T05:01:05+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 87.9,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 92.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 4.299999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C or below on July 8?",
+          "bracket_low": -Infinity,
+          "bracket_high": 82.4,
+          "bestBid": 0.004,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 2479.969674999999,
+          "accepting_orders": true,
+          "market_id": "2812607",
+          "token_id": "50424245204564177450316675691362434231414761201466422078016341817579705789040"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C on July 8?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.014,
+          "price": 0.014,
+          "volume": 1024.311777,
+          "accepting_orders": true,
+          "market_id": "2812608",
+          "token_id": "45957399091738760816017743855983587801452045521379444478641343014261142139397"
+        },
+        {
+          "question": "Will the highest temperature in London be 30\u00b0C on July 8?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.09,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 1784.0219540000003,
+          "accepting_orders": true,
+          "market_id": "2812609",
+          "token_id": "10384545379329713933858952249934416035194605614667822088047775708242412056125"
+        },
+        {
+          "question": "Will the highest temperature in London be 31\u00b0C on July 8?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.32,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 2524.5254590000004,
+          "accepting_orders": true,
+          "market_id": "2812610",
+          "token_id": "106645689519265829271089861225505248962433121042513367686833934293269331700729"
+        },
+        {
+          "question": "Will the highest temperature in London be 32\u00b0C on July 8?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.4,
+          "bestAsk": 0.42,
+          "price": 0.42,
+          "volume": 2035.0739309999988,
+          "accepting_orders": true,
+          "market_id": "2812611",
+          "token_id": "31250144667835243968928134370934916169708163514501194041504570110715739287424"
+        },
+        {
+          "question": "Will the highest temperature in London be 33\u00b0C on July 8?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.15,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 1990.8425779999998,
+          "accepting_orders": true,
+          "market_id": "2812612",
+          "token_id": "81390893468706376576844287210082130117046430358567919855231388820700686070686"
+        },
+        {
+          "question": "Will the highest temperature in London be 34\u00b0C on July 8?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.021,
+          "bestAsk": 0.053,
+          "price": 0.053,
+          "volume": 1023.3526200000001,
+          "accepting_orders": true,
+          "market_id": "2812613",
+          "token_id": "66077867493533843486794864593287662329904140936905134780839187870571114480974"
+        },
+        {
+          "question": "Will the highest temperature in London be 35\u00b0C on July 8?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.005,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 705.45077,
+          "accepting_orders": true,
+          "market_id": "2812614",
+          "token_id": "16234688518351530179131532251301979168558345492910904774775520171626623545891"
+        },
+        {
+          "question": "Will the highest temperature in London be 36\u00b0C on July 8?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1216.2941499999997,
+          "accepting_orders": true,
+          "market_id": "2812615",
+          "token_id": "111569660892700053422021650486947125400060067888819351868081008257120491221175"
+        },
+        {
+          "question": "Will the highest temperature in London be 37\u00b0C on July 8?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1215.7636659999998,
+          "accepting_orders": true,
+          "market_id": "2812616",
+          "token_id": "65736449461893915668738481527485414692051523192013375246691422857444891703895"
+        },
+        {
+          "question": "Will the highest temperature in London be 38\u00b0C or higher on July 8?",
+          "bracket_low": 100.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 874.7305,
+          "accepting_orders": true,
+          "market_id": "2812617",
+          "token_id": "35797342703192259380857055350941823619770851736467541042371616626172241318745"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "market_id": "2812608",
+          "market_price": 0.014,
+          "forecast_high": 87.9,
+          "true_prob": 0.15552299848718126,
+          "ev": 11.108785606227233,
+          "forecast_openmeteo": 92.2,
+          "model_spread": 4.299999999999997,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}

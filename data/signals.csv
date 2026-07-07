@@ -151,11 +151,17 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-07-04,2026-07-04,0,Munich,EDDM,Will the highest temperature in Munich be 22°C on July 4?,71.6,73.4,0.005,75.6,75.6,0.1363,27.25,74.1,1.5,false,80.6,LOSS,2026-07-05T05:01:57+00:00
 2026-07-04,2026-07-05,1,Singapore,WSSS,Will the highest temperature in Singapore be 29°C on July 5?,84.2,86.0,0.019,87.6,86.0,0.1701,8.95,87.6,1.6,false,91.4,LOSS,2026-07-06T05:01:39+00:00
 2026-07-05,2026-07-05,0,London,EGLC,Will the highest temperature in London be 26°C on July 5?,78.8,80.6,0.005,83.4,83.4,0.07,14.01,85.5,2.1,false,82.4,LOSS,2026-07-06T05:01:39+00:00
-2026-07-05,2026-07-06,1,Paris,LFPB,Will the highest temperature in Paris be 31°C on July 6?,87.8,89.6,0.01,92.1,92.1,0.1216,12.16,94.0,1.9,false,,PENDING,
-2026-07-05,2026-07-06,1,Singapore,WSSS,Will the highest temperature in Singapore be 29°C on July 6?,84.2,86.0,0.007,86.8,85.0,0.217,31.0,87.7,2.7,false,,PENDING,
-2026-07-05,2026-07-06,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on July 6?,82.4,84.2,0.006,86.8,85.0,0.1176,19.6,87.7,2.7,false,,PENDING,
-2026-07-05,2026-07-06,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 36°C on July 6?,96.8,98.6,0.014,94.6,91.9,0.1393,9.95,88.8,3.1,true,,PENDING,
+2026-07-05,2026-07-06,1,Paris,LFPB,Will the highest temperature in Paris be 31°C on July 6?,87.8,89.6,0.01,92.1,92.1,0.1216,12.16,94.0,1.9,false,93.2,LOSS,2026-07-07T05:01:41+00:00
+2026-07-05,2026-07-06,1,Singapore,WSSS,Will the highest temperature in Singapore be 29°C on July 6?,84.2,86.0,0.007,86.8,85.0,0.217,31.0,87.7,2.7,false,89.6,LOSS,2026-07-07T05:01:41+00:00
+2026-07-05,2026-07-06,1,Singapore,WSSS,Will the highest temperature in Singapore be 28°C on July 6?,82.4,84.2,0.006,86.8,85.0,0.1176,19.6,87.7,2.7,false,89.6,LOSS,2026-07-07T05:01:41+00:00
+2026-07-05,2026-07-06,1,Shanghai,ZSPD,Will the highest temperature in Shanghai be 36°C on July 6?,96.8,98.6,0.014,94.6,91.9,0.1393,9.95,88.8,3.1,true,96.8,WIN,2026-07-07T05:01:41+00:00
 2026-07-06,2026-07-07,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 22°C or below on July 7?,-inf,71.6,0.004,73.2,72.3,0.2739,68.48,83.9,11.6,true,,PENDING,
 2026-07-06,2026-07-07,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 23°C on July 7?,73.4,75.2,0.005,73.2,72.3,0.2418,48.37,83.9,11.6,true,,PENDING,
 2026-07-06,2026-07-07,1,London,EGLC,Will the highest temperature in London be 27°C on July 7?,80.6,82.4,0.008,85.3,85.3,0.1005,12.57,88.9,3.6,true,,PENDING,
-2026-07-06,2026-07-06,0,Toronto,CYYZ,Will the highest temperature in Toronto be 29°C on July 6?,84.2,86.0,0.012,82.0,82.0,0.1129,9.41,82.0,0.0,false,,PENDING,
+2026-07-06,2026-07-06,0,Toronto,CYYZ,Will the highest temperature in Toronto be 29°C on July 6?,84.2,86.0,0.012,82.0,82.0,0.1129,9.41,82.0,0.0,false,78.8,LOSS,2026-07-07T05:01:41+00:00
+2026-07-07,2026-07-08,1,Los Angeles,KLAX,Will the highest temperature in Los Angeles be 71°F or below on July 8?,-inf,71.0,0.009,73.0,73.0,0.2294,25.49,76.2,3.2,true,,PENDING,
+2026-07-07,2026-07-08,1,London,EGLC,Will the highest temperature in London be 29°C on July 8?,84.2,86.0,0.014,87.9,87.9,0.1555,11.11,92.2,4.3,true,,PENDING,
+2026-07-07,2026-07-07,0,Paris,LFPB,Will the highest temperature in Paris be 32°C on July 7?,89.6,91.4,0.013,92.6,92.6,0.2074,15.96,94.5,1.9,false,,PENDING,
+2026-07-07,2026-07-08,1,Paris,LFPB,Will the highest temperature in Paris be 31°C on July 8?,87.8,89.6,0.01,91.7,91.7,0.144,14.4,96.0,4.3,true,,PENDING,
+2026-07-07,2026-07-07,0,Munich,EDDM,Will the highest temperature in Munich be 27°C on July 7?,80.6,82.4,0.01,84.8,84.8,0.1274,12.74,79.9,4.9,true,,PENDING,
+2026-07-07,2026-07-08,1,Munich,EDDM,Will the highest temperature in Munich be 21°C or below on July 8?,-inf,69.8,0.004,70.3,70.3,0.4577,114.42,71.1,0.8,false,,PENDING,
