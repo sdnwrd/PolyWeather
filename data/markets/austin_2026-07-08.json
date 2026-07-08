@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-08T05:00:51+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 96.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 98.6,
+      "veto_source": "openmeteo-best",
+      "spread": 2.5999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Austin be 89\u00b0F or below on July 8?",
+          "bracket_low": -Infinity,
+          "bracket_high": 89.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 654.943804,
+          "accepting_orders": true,
+          "market_id": "2824888",
+          "token_id": "51882431505414145157043718030370736708149698726868660981570100486613858542494"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 90-91\u00b0F on July 8?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 319.48,
+          "accepting_orders": true,
+          "market_id": "2824889",
+          "token_id": "68280055721537888515316674411848123503440989870934034742878205215161088706978"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 92-93\u00b0F on July 8?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 852.7360480000001,
+          "accepting_orders": true,
+          "market_id": "2824890",
+          "token_id": "52856278088664316383321464378782962733948892366303718569360793831191600493294"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 94-95\u00b0F on July 8?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.1,
+          "bestAsk": 0.11,
+          "price": 0.11,
+          "volume": 1653.1462450000001,
+          "accepting_orders": true,
+          "market_id": "2824891",
+          "token_id": "41433317912767095907211791523246521882847800324854717844990431383016306082578"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 96-97\u00b0F on July 8?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.38,
+          "bestAsk": 0.39,
+          "price": 0.39,
+          "volume": 1520.6016590000002,
+          "accepting_orders": true,
+          "market_id": "2824892",
+          "token_id": "60441874982213284412369846442163928094995500468800894775208312071309939652939"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 98-99\u00b0F on July 8?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.41,
+          "bestAsk": 0.42,
+          "price": 0.42,
+          "volume": 7227.311348000004,
+          "accepting_orders": true,
+          "market_id": "2824893",
+          "token_id": "55721635748190074035263453855225189325049436309684227341372684422261886721508"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 100-101\u00b0F on July 8?",
+          "bracket_low": 100.0,
+          "bracket_high": 101.0,
+          "bestBid": 0.08,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 1884.93489,
+          "accepting_orders": true,
+          "market_id": "2824894",
+          "token_id": "38676110358615483729747501222439940488613188356112884249912944932321279953671"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 102-103\u00b0F on July 8?",
+          "bracket_low": 102.0,
+          "bracket_high": 103.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 703.884212,
+          "accepting_orders": true,
+          "market_id": "2824895",
+          "token_id": "19359612585808576828371537536957983212008261382844086055312427728016384539978"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 104-105\u00b0F on July 8?",
+          "bracket_low": 104.0,
+          "bracket_high": 105.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 488.45980000000003,
+          "accepting_orders": true,
+          "market_id": "2824896",
+          "token_id": "2842531852966791019771376157068511429772681868634928625644718052249946070086"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 106-107\u00b0F on July 8?",
+          "bracket_low": 106.0,
+          "bracket_high": 107.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 383.139,
+          "accepting_orders": true,
+          "market_id": "2824897",
+          "token_id": "99366840757301321261809647666378304970334870660759416420690811228422955177948"
+        },
+        {
+          "question": "Will the highest temperature in Austin be 108\u00b0F or higher on July 8?",
+          "bracket_low": 108.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 688.5200000000001,
+          "accepting_orders": true,
+          "market_id": "2824898",
+          "token_id": "102591587931228226494288872697325350047704562132631322300268907679709978817024"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

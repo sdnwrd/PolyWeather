@@ -308,6 +308,151 @@
           "vetoed": false
         }
       ]
+    },
+    {
+      "ts": "2026-07-08T05:01:35+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 73.1,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 72.3,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.7999999999999972,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Munich be 21\u00b0C or below on July 8?",
+          "bracket_low": -Infinity,
+          "bracket_high": 69.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 7404.5019489999995,
+          "accepting_orders": true,
+          "market_id": "2812673",
+          "token_id": "78302009508652040708354888577906647504662530033102209249846271041006743343731"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 22\u00b0C on July 8?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.071,
+          "bestAsk": 0.093,
+          "price": 0.093,
+          "volume": 5033.716041999999,
+          "accepting_orders": true,
+          "market_id": "2812674",
+          "token_id": "7403536894545088445316458645650493521008817643075863796968025191642581994427"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 23\u00b0C on July 8?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.347,
+          "bestAsk": 0.348,
+          "price": 0.348,
+          "volume": 6580.877941000001,
+          "accepting_orders": true,
+          "market_id": "2812675",
+          "token_id": "58987740146083174749169924499566689792916287893124768897048497359451881023112"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 24\u00b0C on July 8?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.38,
+          "bestAsk": 0.4,
+          "price": 0.4,
+          "volume": 3996.708461,
+          "accepting_orders": true,
+          "market_id": "2812676",
+          "token_id": "10263266278611255425246853839471617342684979265438356380194732048360134984589"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 25\u00b0C on July 8?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.15,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 3973.3583090000025,
+          "accepting_orders": true,
+          "market_id": "2812677",
+          "token_id": "3668041582328983580507353494212205981769687648942543459846247049157929480949"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 26\u00b0C on July 8?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.02,
+          "bestAsk": 0.037,
+          "price": 0.037,
+          "volume": 6108.918875999996,
+          "accepting_orders": true,
+          "market_id": "2812678",
+          "token_id": "41772752657439216117878217470328068159834034668101739093160102212326141532050"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 27\u00b0C on July 8?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.005,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 6805.0901749999975,
+          "accepting_orders": true,
+          "market_id": "2812679",
+          "token_id": "25893580612257058563758357091654297863336940751117881930144273739276168008619"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 28\u00b0C on July 8?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 2786.5094579999986,
+          "accepting_orders": true,
+          "market_id": "2812680",
+          "token_id": "3961604844005253410612497599487063322014956264903742135099973804386433483323"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 29\u00b0C on July 8?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1537.6089249999995,
+          "accepting_orders": true,
+          "market_id": "2812681",
+          "token_id": "2482111063878815203129461270745037421950744916737327110509854180898779610751"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 30\u00b0C on July 8?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1441.271853,
+          "accepting_orders": true,
+          "market_id": "2812682",
+          "token_id": "31393333619567248920412332516432025587927687240739909577875800553396474784207"
+        },
+        {
+          "question": "Will the highest temperature in Munich be 31\u00b0C or higher on July 8?",
+          "bracket_low": 87.8,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1301.883,
+          "accepting_orders": true,
+          "market_id": "2812683",
+          "token_id": "82283782241905707822348001325828751542422460072853542827169596026930529551789"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
