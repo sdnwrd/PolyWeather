@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-09T05:00:47+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 75.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 77.4,
+      "veto_source": "openmeteo-best",
+      "spread": 2.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Los Angeles be 67\u00b0F or below on July 9?",
+          "bracket_low": -Infinity,
+          "bracket_high": 67.0,
+          "bestBid": null,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 728.3062600000002,
+          "accepting_orders": true,
+          "market_id": "2840335",
+          "token_id": "62299922871399612586795350944056787784767463210713004816423347125197885022536"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 68-69\u00b0F on July 9?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 728.413642,
+          "accepting_orders": true,
+          "market_id": "2840336",
+          "token_id": "6487973526776704595258642731678626288510045486896706795080284201601112702662"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 70-71\u00b0F on July 9?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 2662.302506999999,
+          "accepting_orders": true,
+          "market_id": "2840337",
+          "token_id": "9271607293392133445501510846355679862501499042233360122061745128215823673119"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 72-73\u00b0F on July 9?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 3950.079731,
+          "accepting_orders": true,
+          "market_id": "2840338",
+          "token_id": "76618416609610662426069304827404367042505036151804230493100848301116515726162"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 74-75\u00b0F on July 9?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.48,
+          "bestAsk": 0.5,
+          "price": 0.5,
+          "volume": 10629.148662,
+          "accepting_orders": true,
+          "market_id": "2840339",
+          "token_id": "55734739166609746298051562156035587832818140737555880127724635019878695781535"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 76-77\u00b0F on July 9?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.42,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 9313.685338000005,
+          "accepting_orders": true,
+          "market_id": "2840340",
+          "token_id": "73269703440761318283417922333761881800848931579820629769318588010001279127281"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 78-79\u00b0F on July 9?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.03,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 2893.685968,
+          "accepting_orders": true,
+          "market_id": "2840341",
+          "token_id": "23217496665730883440199023532996517708753028296759590446531543916450984901362"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 80-81\u00b0F on July 9?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 1946.610146,
+          "accepting_orders": true,
+          "market_id": "2840342",
+          "token_id": "62405234127743483579885585207848317625516863690643946305567202953600148677729"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 82-83\u00b0F on July 9?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 841.5658940000001,
+          "accepting_orders": true,
+          "market_id": "2840343",
+          "token_id": "47465685203890982869549292297644017217822818905241735602016679998906904834140"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 84-85\u00b0F on July 9?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 2109.97451,
+          "accepting_orders": true,
+          "market_id": "2840344",
+          "token_id": "90862774330976482472823859051047316482673277104372806434798695215354301917868"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 86\u00b0F or higher on July 9?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 8537.625221000006,
+          "accepting_orders": true,
+          "market_id": "2840345",
+          "token_id": "68232319330270909532752904000314198315939510329658090355389377453089691868414"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "market_id": "2840338",
+          "market_price": 0.01,
+          "forecast_high": 75.0,
+          "true_prob": 0.091848052662599,
+          "ev": 9.1848052662599,
+          "forecast_openmeteo": 77.4,
+          "model_spread": 2.4000000000000057,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }

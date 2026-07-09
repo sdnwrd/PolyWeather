@@ -1,0 +1,155 @@
+{
+  "city": "Paris",
+  "date": "2026-07-11",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-07-09T05:01:22+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 97.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 98.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.9000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C or below on July 11?",
+          "bracket_low": -Infinity,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2854421",
+          "token_id": "58478294106305798222621142069755522062610453171801479714828249859000003731127"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C on July 11?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2854422",
+          "token_id": "11464853839375898114501993350122637445132233749952853119732428987197389184011"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 31\u00b0C on July 11?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.012,
+          "price": 0.012,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2854423",
+          "token_id": "11560620351981913943756864365635708571918091335730480408269529713484004761247"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 32\u00b0C on July 11?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.002,
+          "bestAsk": 0.012,
+          "price": 0.012,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2854424",
+          "token_id": "48001765912422107201161411735722476070868743385522725233039325537424152053726"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 33\u00b0C on July 11?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.184,
+          "price": 0.184,
+          "volume": 26.81,
+          "accepting_orders": true,
+          "market_id": "2854425",
+          "token_id": "47904780992718784850246867883316179562521054679851837583142928486391343443416"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 34\u00b0C on July 11?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.09,
+          "bestAsk": 0.26,
+          "price": 0.26,
+          "volume": 5.0,
+          "accepting_orders": true,
+          "market_id": "2854426",
+          "token_id": "27672932341664811079610432693049470606433152882645969433141074794514761125675"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 35\u00b0C on July 11?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.32,
+          "bestAsk": 0.34,
+          "price": 0.34,
+          "volume": 3.666665,
+          "accepting_orders": true,
+          "market_id": "2854427",
+          "token_id": "82695020364219908850856076253000640600658063612251385148338145186697428435353"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 36\u00b0C on July 11?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.28,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 27.697139999999997,
+          "accepting_orders": true,
+          "market_id": "2854428",
+          "token_id": "17254315380088148944512878253114256166753396517307640121194243142283854988826"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 37\u00b0C on July 11?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.11,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": 13.78875,
+          "accepting_orders": true,
+          "market_id": "2854429",
+          "token_id": "22675691729147219960108587880942289174104947034263146386049504165689228073717"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 38\u00b0C on July 11?",
+          "bracket_low": 100.4,
+          "bracket_high": 102.2,
+          "bestBid": 0.011,
+          "bestAsk": 0.198,
+          "price": 0.198,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2854430",
+          "token_id": "27283156523119944586322465565256304409131422920205046533796613348717524660021"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 39\u00b0C or higher on July 11?",
+          "bracket_low": 102.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.01,
+          "bestAsk": 0.198,
+          "price": 0.198,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "2854431",
+          "token_id": "68111613562282342319486468759440804441328039980614011947435379423379948108597"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}

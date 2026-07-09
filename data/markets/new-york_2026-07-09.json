@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-09T05:00:59+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 83.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 85.1,
+      "veto_source": "openmeteo-best",
+      "spread": 2.0999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in New York City be 75\u00b0F or below on July 9?",
+          "bracket_low": -Infinity,
+          "bracket_high": 75.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1578.8376319999998,
+          "accepting_orders": true,
+          "market_id": "2840247",
+          "token_id": "76380609714362036796735649751095834791383935749268465692680878011792455535974"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 76-77\u00b0F on July 9?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1064.6325000000002,
+          "accepting_orders": true,
+          "market_id": "2840248",
+          "token_id": "74832449433324777098522987740378905166005293086023775734011347692044665082141"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 78-79\u00b0F on July 9?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.008,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 2464.7553940000003,
+          "accepting_orders": true,
+          "market_id": "2840249",
+          "token_id": "31746284662441224602311738470613133852473112137881913600234295260580298632089"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 80-81\u00b0F on July 9?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.03,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 3048.45393,
+          "accepting_orders": true,
+          "market_id": "2840250",
+          "token_id": "29631294074184419823535108096765115919320259270806013163881760607281858140209"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 82-83\u00b0F on July 9?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.16,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 5512.115600000001,
+          "accepting_orders": true,
+          "market_id": "2840251",
+          "token_id": "80739632090977429061129027080908762144104322080208424591167890445826386801583"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 84-85\u00b0F on July 9?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.39,
+          "bestAsk": 0.4,
+          "price": 0.4,
+          "volume": 5270.071081000002,
+          "accepting_orders": true,
+          "market_id": "2840252",
+          "token_id": "61945359264594521597435754851967263941758736178275652875549653374280373185172"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 86-87\u00b0F on July 9?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.32,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 2590.0012620000007,
+          "accepting_orders": true,
+          "market_id": "2840253",
+          "token_id": "88938188381591374473700876821799526063877605109273754047067718393560957582723"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 88-89\u00b0F on July 9?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.07,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 2429.8797729999997,
+          "accepting_orders": true,
+          "market_id": "2840254",
+          "token_id": "23461436258130880670870163964281003113822652085174587727538543894860490866900"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 90-91\u00b0F on July 9?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.014,
+          "price": 0.014,
+          "volume": 1387.8386799999998,
+          "accepting_orders": true,
+          "market_id": "2840255",
+          "token_id": "99974354102266491063734989457852725704871623705597277400991008597553101811658"
+        },
+        {
+          "question": "Will the highest temperature in New York City be between 92-93\u00b0F on July 9?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1352.305899,
+          "accepting_orders": true,
+          "market_id": "2840256",
+          "token_id": "75610746086725194402587465638474124540326092205458228490417677978291094485948"
+        },
+        {
+          "question": "Will the highest temperature in New York City be 94\u00b0F or higher on July 9?",
+          "bracket_low": 94.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 4077.627832,
+          "accepting_orders": true,
+          "market_id": "2840257",
+          "token_id": "36645591165741271949284224023193536551743147133126261705745117692378388682120"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
