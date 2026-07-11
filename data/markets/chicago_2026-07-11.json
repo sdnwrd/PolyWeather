@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-11T05:00:23+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 83.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 83.1,
+      "veto_source": "openmeteo-best",
+      "spread": 0.09999999999999432,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Chicago be 77\u00b0F or below on July 11?",
+          "bracket_low": -Infinity,
+          "bracket_high": 77.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1158.7831429999999,
+          "accepting_orders": true,
+          "market_id": "2865611",
+          "token_id": "76676113686579152469144454541960812675114013259645384137330507865750277268203"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 78-79\u00b0F on July 11?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.008,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 938.76824,
+          "accepting_orders": true,
+          "market_id": "2865612",
+          "token_id": "12338241434510620981315593432401575935633432287367762069484372174810498834535"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 80-81\u00b0F on July 11?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.162,
+          "bestAsk": 0.183,
+          "price": 0.183,
+          "volume": 834.5444119999999,
+          "accepting_orders": true,
+          "market_id": "2865613",
+          "token_id": "65274188591462831745090947483833672569855327510359716488931566260992022966012"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 82-83\u00b0F on July 11?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.5,
+          "bestAsk": 0.53,
+          "price": 0.53,
+          "volume": 1174.8937990000002,
+          "accepting_orders": true,
+          "market_id": "2865614",
+          "token_id": "33411421678683424693493967524332344382832038919088176935523147062194663148889"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 84-85\u00b0F on July 11?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.18,
+          "bestAsk": 0.22,
+          "price": 0.22,
+          "volume": 1578.1470550000004,
+          "accepting_orders": true,
+          "market_id": "2865615",
+          "token_id": "64897830970524099407875040669039773398129593906846395818011958980299197799232"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 86-87\u00b0F on July 11?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.05,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 776.830267,
+          "accepting_orders": true,
+          "market_id": "2865616",
+          "token_id": "108230114752220886252920343925507816274912275134919014652509084399538224400206"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 88-89\u00b0F on July 11?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 842.482399,
+          "accepting_orders": true,
+          "market_id": "2865617",
+          "token_id": "8232814002975161408402373986857164696546907732102814662256902613573774889123"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 90-91\u00b0F on July 11?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 342.7682,
+          "accepting_orders": true,
+          "market_id": "2865618",
+          "token_id": "23923078785125518044676714036025540222027306757994766937591780289915751539698"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 92-93\u00b0F on July 11?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 810.164596,
+          "accepting_orders": true,
+          "market_id": "2865619",
+          "token_id": "23057542980417069428499635646000997426066898439311780564797435076639354962975"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be between 94-95\u00b0F on July 11?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 785.0,
+          "accepting_orders": true,
+          "market_id": "2865620",
+          "token_id": "45940194587383347235780860087623979513982025266707848855686096982867553927757"
+        },
+        {
+          "question": "Will the highest temperature in Chicago be 96\u00b0F or higher on July 11?",
+          "bracket_low": 96.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 579.999,
+          "accepting_orders": true,
+          "market_id": "2865621",
+          "token_id": "76314335150751877037648988852599783051598028821709847070693093440137959400407"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
