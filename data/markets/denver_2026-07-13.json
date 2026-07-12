@@ -1,0 +1,155 @@
+{
+  "city": "Denver",
+  "date": "2026-07-13",
+  "station": "KBKF",
+  "region": "us",
+  "lat": 39.7017,
+  "lon": -104.7517,
+  "snapshots": [
+    {
+      "ts": "2026-07-12T05:00:39+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 96.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 94.5,
+      "veto_source": "openmeteo-best",
+      "spread": 1.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Denver be 87\u00b0F or below on July 13?",
+          "bracket_low": -Infinity,
+          "bracket_high": 87.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 97.009,
+          "accepting_orders": true,
+          "market_id": "2887971",
+          "token_id": "22218263385734756448220014969053707599784604835418964437968775447489208386713"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 88-89\u00b0F on July 13?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 70.535,
+          "accepting_orders": true,
+          "market_id": "2887972",
+          "token_id": "46509919290135787871534595450724860627299903188525410018973833435333201466880"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 90-91\u00b0F on July 13?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.014,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 15.118538,
+          "accepting_orders": true,
+          "market_id": "2887973",
+          "token_id": "27922599355673523205876218781999561187235210894389141205458968734538365124560"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 92-93\u00b0F on July 13?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.053,
+          "bestAsk": 0.094,
+          "price": 0.094,
+          "volume": 3.067454,
+          "accepting_orders": true,
+          "market_id": "2887974",
+          "token_id": "41536781031334485134933609397638131573092747107751642100780852413014848212150"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 94-95\u00b0F on July 13?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.28,
+          "bestAsk": 0.3,
+          "price": 0.3,
+          "volume": 206.60850499999998,
+          "accepting_orders": true,
+          "market_id": "2887975",
+          "token_id": "1016842627327046601159885714081241579316088220073126163825063601065243797981"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 96-97\u00b0F on July 13?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.35,
+          "bestAsk": 0.39,
+          "price": 0.39,
+          "volume": 62.769999999999996,
+          "accepting_orders": true,
+          "market_id": "2887976",
+          "token_id": "55401426617420726024492873984988488221989876116352786521494508914007984591137"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 98-99\u00b0F on July 13?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.225,
+          "bestAsk": 0.377,
+          "price": 0.377,
+          "volume": 172.819769,
+          "accepting_orders": true,
+          "market_id": "2887977",
+          "token_id": "23363289930933287355142485981063272521655351290276718351666308198218734082778"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 100-101\u00b0F on July 13?",
+          "bracket_low": 100.0,
+          "bracket_high": 101.0,
+          "bestBid": 0.021,
+          "bestAsk": 0.052,
+          "price": 0.052,
+          "volume": 143.49605000000003,
+          "accepting_orders": true,
+          "market_id": "2887978",
+          "token_id": "58295564514934522573583722981115129069490585836215263161768673848026181505239"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 102-103\u00b0F on July 13?",
+          "bracket_low": 102.0,
+          "bracket_high": 103.0,
+          "bestBid": 0.016,
+          "bestAsk": 0.059,
+          "price": 0.059,
+          "volume": 27.633817,
+          "accepting_orders": true,
+          "market_id": "2887979",
+          "token_id": "40142773439997767668188856700388277417368033789290114383682325693799948887732"
+        },
+        {
+          "question": "Will the highest temperature in Denver be between 104-105\u00b0F on July 13?",
+          "bracket_low": 104.0,
+          "bracket_high": 105.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 55.221,
+          "accepting_orders": true,
+          "market_id": "2887980",
+          "token_id": "61215458572365773427213458205367019534242509586890003101659097684750826288869"
+        },
+        {
+          "question": "Will the highest temperature in Denver be 106\u00b0F or higher on July 13?",
+          "bracket_low": 106.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 72.545,
+          "accepting_orders": true,
+          "market_id": "2887981",
+          "token_id": "38439635920520071915653268009300234176959884533741218801089873483576480298118"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}

@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-12T05:00:34+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 93.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 91.5,
+      "veto_source": "openmeteo-best",
+      "spread": 1.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Miami be 81\u00b0F or below on July 12?",
+          "bracket_low": -Infinity,
+          "bracket_high": 81.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 535.017,
+          "accepting_orders": true,
+          "market_id": "2876636",
+          "token_id": "37300171509722107531979626459769316969033405838504643782310605404632934782575"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 82-83\u00b0F on July 12?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1375.2019999999998,
+          "accepting_orders": true,
+          "market_id": "2876637",
+          "token_id": "58934018001875888951295834825785674095857372539234198940755323713725794910227"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 84-85\u00b0F on July 12?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1072.750013,
+          "accepting_orders": true,
+          "market_id": "2876638",
+          "token_id": "32441861834892327119898745397233606873853114162554838997465078519623157116721"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 86-87\u00b0F on July 12?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 842.5562929999999,
+          "accepting_orders": true,
+          "market_id": "2876639",
+          "token_id": "8747090040677371284453970649730885903241593718493989020106611216843175722200"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 88-89\u00b0F on July 12?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.008,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 1856.991098,
+          "accepting_orders": true,
+          "market_id": "2876640",
+          "token_id": "27143086254441607751510670472222844690584462408816225987808294019025603854748"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 90-91\u00b0F on July 12?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.18,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 2413.713922,
+          "accepting_orders": true,
+          "market_id": "2876641",
+          "token_id": "68014660904823766817185339579745689856330479770042330833749087611618993068633"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 92-93\u00b0F on July 12?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.52,
+          "bestAsk": 0.56,
+          "price": 0.56,
+          "volume": 1708.0766310000004,
+          "accepting_orders": true,
+          "market_id": "2876642",
+          "token_id": "20044650846693939148475816362836455892157187906303903465022249385727123745586"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 94-95\u00b0F on July 12?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.28,
+          "bestAsk": 0.3,
+          "price": 0.3,
+          "volume": 1494.661869000001,
+          "accepting_orders": true,
+          "market_id": "2876643",
+          "token_id": "53747051426268353636718687430434491323362881675609688693033611060886451790437"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 96-97\u00b0F on July 12?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.017,
+          "price": 0.017,
+          "volume": 1741.6153220000003,
+          "accepting_orders": true,
+          "market_id": "2876644",
+          "token_id": "92688479167027912093907778182961650505455480534324777849940373545514884168597"
+        },
+        {
+          "question": "Will the highest temperature in Miami be between 98-99\u00b0F on July 12?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 811.2968699999999,
+          "accepting_orders": true,
+          "market_id": "2876645",
+          "token_id": "3875062414876510379177927517479381426022588516698039968333525788186406445530"
+        },
+        {
+          "question": "Will the highest temperature in Miami be 100\u00b0F or higher on July 12?",
+          "bracket_low": 100.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 528.216,
+          "accepting_orders": true,
+          "market_id": "2876646",
+          "token_id": "69053977714899592639506154817468873153193152461687932853453357697042598037393"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
