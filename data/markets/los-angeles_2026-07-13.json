@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-13T05:00:58+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 73.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 75.4,
+      "veto_source": "openmeteo-best",
+      "spread": 2.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Los Angeles be 67\u00b0F or below on July 13?",
+          "bracket_low": -Infinity,
+          "bracket_high": 67.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 361.17,
+          "accepting_orders": true,
+          "market_id": "2887993",
+          "token_id": "97910702179139416641644635615014149529570308140197263411090955829921099253003"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 68-69\u00b0F on July 13?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": null,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 524.206108,
+          "accepting_orders": true,
+          "market_id": "2887994",
+          "token_id": "54643451934325013286035536635454434398322870974452590250214420287509254787375"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 70-71\u00b0F on July 13?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1008.4285899999998,
+          "accepting_orders": true,
+          "market_id": "2887995",
+          "token_id": "92700783919864637808071863689234011041011537177360072949589924202066221588243"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 72-73\u00b0F on July 13?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.029,
+          "bestAsk": 0.048,
+          "price": 0.048,
+          "volume": 2161.767854,
+          "accepting_orders": true,
+          "market_id": "2887996",
+          "token_id": "51614626238517430821255533982000960149678311557510814861619046850824487346230"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 74-75\u00b0F on July 13?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.46,
+          "bestAsk": 0.48,
+          "price": 0.48,
+          "volume": 3454.734776999999,
+          "accepting_orders": true,
+          "market_id": "2887997",
+          "token_id": "113882933548653828173584982801615005857935644252732669036009855842451202069226"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 76-77\u00b0F on July 13?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.42,
+          "bestAsk": 0.45,
+          "price": 0.45,
+          "volume": 789.9361319999999,
+          "accepting_orders": true,
+          "market_id": "2887998",
+          "token_id": "94761798608147570576622270379860185984690918909592709893631985480128887914972"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 78-79\u00b0F on July 13?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.039,
+          "bestAsk": 0.066,
+          "price": 0.066,
+          "volume": 1313.5107029999997,
+          "accepting_orders": true,
+          "market_id": "2887999",
+          "token_id": "111131483516436679880227722177793694753125891967780649069591880518505491281820"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 80-81\u00b0F on July 13?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 1540.572176,
+          "accepting_orders": true,
+          "market_id": "2888000",
+          "token_id": "71243953379582872075990688657066523397353501130635413513984629453869363464631"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 82-83\u00b0F on July 13?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 3421.113351000001,
+          "accepting_orders": true,
+          "market_id": "2888001",
+          "token_id": "74671906997973721212200820523348872050719267649805603572926413235363068715142"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 84-85\u00b0F on July 13?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 406.83199999999994,
+          "accepting_orders": true,
+          "market_id": "2888002",
+          "token_id": "31660867830519615660518277966906801527099314391837375213058044548367072271372"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 86\u00b0F or higher on July 13?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1039.862019,
+          "accepting_orders": true,
+          "market_id": "2888003",
+          "token_id": "98746059745080306954344847739153137701751408019560488495788932469509816866402"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "market_id": "2887995",
+          "market_price": 0.003,
+          "forecast_high": 73.0,
+          "true_prob": 0.091848052662599,
+          "ev": 30.61601755419967,
+          "forecast_openmeteo": 75.4,
+          "model_spread": 2.4000000000000057,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }

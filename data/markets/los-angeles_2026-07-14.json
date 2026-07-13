@@ -1,0 +1,155 @@
+{
+  "city": "Los Angeles",
+  "date": "2026-07-14",
+  "station": "KLAX",
+  "region": "us",
+  "lat": 33.9425,
+  "lon": -118.4081,
+  "snapshots": [
+    {
+      "ts": "2026-07-13T05:00:59+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 76.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 75.6,
+      "veto_source": "openmeteo-best",
+      "spread": 0.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Los Angeles be 67\u00b0F or below on July 14?",
+          "bracket_low": -Infinity,
+          "bracket_high": 67.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 141.429,
+          "accepting_orders": true,
+          "market_id": "2901255",
+          "token_id": "112460481138499570187614768548202053991476209983580083685685807181728232060338"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 68-69\u00b0F on July 14?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 36.046,
+          "accepting_orders": true,
+          "market_id": "2901256",
+          "token_id": "79492204558575425335539609542870418678563629423990061943956833609586163482378"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 70-71\u00b0F on July 14?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 49.596933,
+          "accepting_orders": true,
+          "market_id": "2901257",
+          "token_id": "112004372632371834011188944013998930697678468828821038465599071641726089841366"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 72-73\u00b0F on July 14?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.03,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 22.443593,
+          "accepting_orders": true,
+          "market_id": "2901258",
+          "token_id": "77638004602984427746684255964673925366416109728874943342982315763553970614790"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 74-75\u00b0F on July 14?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.16,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 23.964022,
+          "accepting_orders": true,
+          "market_id": "2901259",
+          "token_id": "4926413194726678253915466626877792185632089224477163288305696987843243724208"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 76-77\u00b0F on July 14?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.37,
+          "bestAsk": 0.4,
+          "price": 0.4,
+          "volume": 135.4625,
+          "accepting_orders": true,
+          "market_id": "2901260",
+          "token_id": "109288025952712517040450523101955678674267211184014979817373057823883274652296"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 78-79\u00b0F on July 14?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.3,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 38.843332,
+          "accepting_orders": true,
+          "market_id": "2901261",
+          "token_id": "60148536180458504032690276431861859089042001405464652397079947240112691953710"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 80-81\u00b0F on July 14?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.052,
+          "bestAsk": 0.083,
+          "price": 0.083,
+          "volume": 23.132694,
+          "accepting_orders": true,
+          "market_id": "2901262",
+          "token_id": "109438277692308201345976031771263580481608941184547983749255649940995625636767"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 82-83\u00b0F on July 14?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.035,
+          "price": 0.035,
+          "volume": 60.065846,
+          "accepting_orders": true,
+          "market_id": "2901263",
+          "token_id": "17602956203819704443638750113719743141370715513058028640554906102443593257884"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be between 84-85\u00b0F on July 14?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.015,
+          "price": 0.015,
+          "volume": 190.69786499999998,
+          "accepting_orders": true,
+          "market_id": "2901264",
+          "token_id": "75754759648873650064323971332610933129551975500040183526763953439408684821254"
+        },
+        {
+          "question": "Will the highest temperature in Los Angeles be 86\u00b0F or higher on July 14?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 485.4620000000002,
+          "accepting_orders": true,
+          "market_id": "2901265",
+          "token_id": "73520737994012693024467004126870667497676351955345535493878138234283529193781"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
