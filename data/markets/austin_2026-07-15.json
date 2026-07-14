@@ -1,0 +1,168 @@
+{
+  "city": "Austin",
+  "date": "2026-07-15",
+  "station": "KAUS",
+  "region": "us",
+  "lat": 30.1944,
+  "lon": -97.67,
+  "snapshots": [
+    {
+      "ts": "2026-07-14T05:00:52+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 85.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 80.3,
+      "veto_source": "openmeteo-best",
+      "spread": 4.700000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Austin be 75\u00b0F or below on July 15?",
+          "bracket_low": -Infinity,
+          "bracket_high": 75.0,
+          "bestBid": 0.014,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 28.301181,
+          "accepting_orders": true,
+          "market_id": "2916024",
+          "token_id": "19252533216771493092082419875044234140258448695568759636198878518591408940377"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 76-77\u00b0F on July 15?",
+          "bracket_low": 76.0,
+          "bracket_high": 77.0,
+          "bestBid": 0.06,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 23.487966,
+          "accepting_orders": true,
+          "market_id": "2916025",
+          "token_id": "48799861771528288865247997403164380064771271823788352990578348754145881212457"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 78-79\u00b0F on July 15?",
+          "bracket_low": 78.0,
+          "bracket_high": 79.0,
+          "bestBid": 0.3,
+          "bestAsk": 0.32,
+          "price": 0.32,
+          "volume": 124.781021,
+          "accepting_orders": true,
+          "market_id": "2916026",
+          "token_id": "26919492014615486690789103603661961418785344921536099200476978634214323468619"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 80-81\u00b0F on July 15?",
+          "bracket_low": 80.0,
+          "bracket_high": 81.0,
+          "bestBid": 0.38,
+          "bestAsk": 0.41,
+          "price": 0.41,
+          "volume": 122.950257,
+          "accepting_orders": true,
+          "market_id": "2916027",
+          "token_id": "65354056609557602852538917095944540822204610057613770056910140642405024617829"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 82-83\u00b0F on July 15?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": 0.15,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 104.70245299999999,
+          "accepting_orders": true,
+          "market_id": "2916028",
+          "token_id": "91938409460818235195850451530746683736420071536855673950022295422801595419768"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 84-85\u00b0F on July 15?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.04,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 200.233073,
+          "accepting_orders": true,
+          "market_id": "2916029",
+          "token_id": "23449926884474748968392259388802636509655135090111287967383634955784282851943"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 86-87\u00b0F on July 15?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.043,
+          "price": 0.043,
+          "volume": 171.8646,
+          "accepting_orders": true,
+          "market_id": "2916030",
+          "token_id": "94399445411339033216119942009982108759282524724278293589424739368111380538115"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 88-89\u00b0F on July 15?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1346.1461669999999,
+          "accepting_orders": true,
+          "market_id": "2916031",
+          "token_id": "112157009381429267748057100324351719321868090922815960430104267981399253516058"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 90-91\u00b0F on July 15?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1878.14512,
+          "accepting_orders": true,
+          "market_id": "2916032",
+          "token_id": "30853390276782910661611344876230473051799651415011460293682269505825438450292"
+        },
+        {
+          "question": "Will the highest temperature in Austin be between 92-93\u00b0F on July 15?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 838.719499,
+          "accepting_orders": true,
+          "market_id": "2916033",
+          "token_id": "77348712856970503267081422939775648486069978507115464161349149932669091680775"
+        },
+        {
+          "question": "Will the highest temperature in Austin be 94\u00b0F or higher on July 15?",
+          "bracket_low": 94.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 585.24,
+          "accepting_orders": true,
+          "market_id": "2916034",
+          "token_id": "70524542724477228050440003009908603809566438894569217157136267792498559777627"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "market_id": "2916031",
+          "market_price": 0.004,
+          "forecast_high": 85.0,
+          "true_prob": 0.06402110486909518,
+          "ev": 16.005276217273796,
+          "forecast_openmeteo": 80.3,
+          "model_spread": 4.700000000000003,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
