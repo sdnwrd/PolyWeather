@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-15T05:01:44+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 86.1,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 86.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Toronto be 28\u00b0C or below on July 15?",
+          "bracket_low": -Infinity,
+          "bracket_high": 82.4,
+          "bestBid": 0.01,
+          "bestAsk": 0.018,
+          "price": 0.018,
+          "volume": 1828.3289869999999,
+          "accepting_orders": true,
+          "market_id": "2915947",
+          "token_id": "105356438290863280446410218653495870939233089338357491128947159003621915651046"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 29\u00b0C on July 15?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.016,
+          "bestAsk": 0.018,
+          "price": 0.018,
+          "volume": 4655.784222,
+          "accepting_orders": true,
+          "market_id": "2915948",
+          "token_id": "53834176925286572435585337497718742244527149569329767465506065658680398442846"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 30\u00b0C on July 15?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.031,
+          "bestAsk": 0.054,
+          "price": 0.054,
+          "volume": 1814.6868589999995,
+          "accepting_orders": true,
+          "market_id": "2915949",
+          "token_id": "81154847214797276723052109794315110129733767178998164960408588584773122289080"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 31\u00b0C on July 15?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.18,
+          "bestAsk": 0.21,
+          "price": 0.21,
+          "volume": 1171.3760439999999,
+          "accepting_orders": true,
+          "market_id": "2915950",
+          "token_id": "60828187113093360339181393837972621681350634021922831565191826866026174514704"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 32\u00b0C on July 15?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.43,
+          "bestAsk": 0.46,
+          "price": 0.46,
+          "volume": 1794.2361490000005,
+          "accepting_orders": true,
+          "market_id": "2915951",
+          "token_id": "26208033538651042356955399156861652092898437227893312890848025012768350353572"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 33\u00b0C on July 15?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.26,
+          "bestAsk": 0.27,
+          "price": 0.27,
+          "volume": 1196.4593329999998,
+          "accepting_orders": true,
+          "market_id": "2915952",
+          "token_id": "58471509090731321600181409445936384260063938341661763720156402869729647859473"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 34\u00b0C on July 15?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.06,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 903.577428,
+          "accepting_orders": true,
+          "market_id": "2915953",
+          "token_id": "23459836843070675532893635150995422717556757615437686414247357761080714343997"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 35\u00b0C on July 15?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.006,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 1843.023512,
+          "accepting_orders": true,
+          "market_id": "2915954",
+          "token_id": "86973554573247355414074756124062928852025892712786506658720188988058057233496"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 36\u00b0C on July 15?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 389.597,
+          "accepting_orders": true,
+          "market_id": "2915955",
+          "token_id": "27977945485111133808981392389625439406821540611702488330779927511039763360460"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 37\u00b0C on July 15?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 885.4520000000001,
+          "accepting_orders": true,
+          "market_id": "2915956",
+          "token_id": "62515228046497847734874687523794515935925931242637827272428031232737831379880"
+        },
+        {
+          "question": "Will the highest temperature in Toronto be 38\u00b0C or higher on July 15?",
+          "bracket_low": 100.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1074.2010000000002,
+          "accepting_orders": true,
+          "market_id": "2915957",
+          "token_id": "38203370427875692830602060756311517301024059561614905398638331858416887716586"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "market_id": "2915948",
+          "market_price": 0.018,
+          "forecast_high": 86.1,
+          "true_prob": 0.3090050678531458,
+          "ev": 17.166948214063655,
+          "forecast_openmeteo": 86.1,
+          "model_spread": 0.0,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }
