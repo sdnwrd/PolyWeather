@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-16T05:00:57+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 70.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 66.9,
+      "veto_source": "openmeteo-best",
+      "spread": 3.0999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in San Francisco be 57\u00b0F or below on July 16?",
+          "bracket_low": -Infinity,
+          "bracket_high": 57.0,
+          "bestBid": null,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 2506.6059999999998,
+          "accepting_orders": true,
+          "market_id": "2929534",
+          "token_id": "17159589330225509042195828190611390650209594561210901285931937245202293271474"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 58-59\u00b0F on July 16?",
+          "bracket_low": 58.0,
+          "bracket_high": 59.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1105.6413999999995,
+          "accepting_orders": true,
+          "market_id": "2929535",
+          "token_id": "22382624899868273105492686437592464691159068110485699446184011966736432506468"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 60-61\u00b0F on July 16?",
+          "bracket_low": 60.0,
+          "bracket_high": 61.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 265.206047,
+          "accepting_orders": true,
+          "market_id": "2929536",
+          "token_id": "35823017652668664830873931700511835576075602495528259783457911432461422097274"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 62-63\u00b0F on July 16?",
+          "bracket_low": 62.0,
+          "bracket_high": 63.0,
+          "bestBid": 0.007,
+          "bestAsk": 0.014,
+          "price": 0.014,
+          "volume": 294.44332599999996,
+          "accepting_orders": true,
+          "market_id": "2929537",
+          "token_id": "41780780887220183076839534609532137778031608663467204656361098285632600966538"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 64-65\u00b0F on July 16?",
+          "bracket_low": 64.0,
+          "bracket_high": 65.0,
+          "bestBid": 0.037,
+          "bestAsk": 0.056,
+          "price": 0.056,
+          "volume": 543.608264,
+          "accepting_orders": true,
+          "market_id": "2929538",
+          "token_id": "5761394492644444129476274053205381348700464987672216966231599252238644681605"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 66-67\u00b0F on July 16?",
+          "bracket_low": 66.0,
+          "bracket_high": 67.0,
+          "bestBid": 0.22,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": 1182.1577320000004,
+          "accepting_orders": true,
+          "market_id": "2929539",
+          "token_id": "108022852984681887787726541055669399828580613001242053630961502878061207518418"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 68-69\u00b0F on July 16?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.0,
+          "bestBid": 0.39,
+          "bestAsk": 0.4,
+          "price": 0.4,
+          "volume": 3365.731306999999,
+          "accepting_orders": true,
+          "market_id": "2929540",
+          "token_id": "100033787402424220335306292072962583778909708134108581130857093630969680918808"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 70-71\u00b0F on July 16?",
+          "bracket_low": 70.0,
+          "bracket_high": 71.0,
+          "bestBid": 0.27,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 2078.294279,
+          "accepting_orders": true,
+          "market_id": "2929541",
+          "token_id": "94720091981294700984510900743296449457117973183252697630032454728400196293921"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 72-73\u00b0F on July 16?",
+          "bracket_low": 72.0,
+          "bracket_high": 73.0,
+          "bestBid": 0.05,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 627.0716309999998,
+          "accepting_orders": true,
+          "market_id": "2929542",
+          "token_id": "48336502213527021861723230021215270882200980454029586688600995212884713330745"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be between 74-75\u00b0F on July 16?",
+          "bracket_low": 74.0,
+          "bracket_high": 75.0,
+          "bestBid": 0.02,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 450.40073600000005,
+          "accepting_orders": true,
+          "market_id": "2929543",
+          "token_id": "27993931380387772392183100289887758420429483281023674823503493848355176158579"
+        },
+        {
+          "question": "Will the highest temperature in San Francisco be 76\u00b0F or higher on July 16?",
+          "bracket_low": 76.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 560.3251929999999,
+          "accepting_orders": true,
+          "market_id": "2929544",
+          "token_id": "4969606029123450504162479739659793452588532164242382459982902829053239556288"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }

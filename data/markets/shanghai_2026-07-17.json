@@ -1,0 +1,155 @@
+{
+  "city": "Shanghai",
+  "date": "2026-07-17",
+  "station": "ZSPD",
+  "region": "intl",
+  "lat": 31.1443,
+  "lon": 121.8083,
+  "snapshots": [
+    {
+      "ts": "2026-07-16T05:01:48+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 99.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 97.8,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Shanghai be 32\u00b0C or below on July 17?",
+          "bracket_low": -Infinity,
+          "bracket_high": 89.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 217.372,
+          "accepting_orders": true,
+          "market_id": "2930670",
+          "token_id": "72823730622934525160448514647040304833665545743756128953096010692264838043010"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 33\u00b0C on July 17?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 466.7609999999999,
+          "accepting_orders": true,
+          "market_id": "2930671",
+          "token_id": "82615781638105861645345035696752497995809777993061815979992758976335874644861"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 34\u00b0C on July 17?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 1067.338379,
+          "accepting_orders": true,
+          "market_id": "2930672",
+          "token_id": "38352310116372992123977928911192323127299152605857098751973676720018570396554"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 35\u00b0C on July 17?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.031,
+          "bestAsk": 0.042,
+          "price": 0.042,
+          "volume": 634.8749769999998,
+          "accepting_orders": true,
+          "market_id": "2930673",
+          "token_id": "55805069252738677193797247197473519944800326276459844327663766181149237989933"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 36\u00b0C on July 17?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.11,
+          "bestAsk": 0.13,
+          "price": 0.13,
+          "volume": 2187.9098400000007,
+          "accepting_orders": true,
+          "market_id": "2930674",
+          "token_id": "40972850463978270585079678969604193087112586824322988263717562442321995113341"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 37\u00b0C on July 17?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.28,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 3603.3550619999974,
+          "accepting_orders": true,
+          "market_id": "2930675",
+          "token_id": "97232134809677672785087444372581241723500482165837048484541972276370787697785"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 38\u00b0C on July 17?",
+          "bracket_low": 100.4,
+          "bracket_high": 102.2,
+          "bestBid": 0.4,
+          "bestAsk": 0.41,
+          "price": 0.41,
+          "volume": 2503.3888340000003,
+          "accepting_orders": true,
+          "market_id": "2930676",
+          "token_id": "88764881757033945163918005197222296021513727055484556246185755005253040321121"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 39\u00b0C on July 17?",
+          "bracket_low": 102.2,
+          "bracket_high": 104.0,
+          "bestBid": 0.158,
+          "bestAsk": 0.167,
+          "price": 0.167,
+          "volume": 1615.5307509999989,
+          "accepting_orders": true,
+          "market_id": "2930677",
+          "token_id": "110626107792855139832234195678250428948974307679691618785180812796208342625558"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 40\u00b0C on July 17?",
+          "bracket_low": 104.0,
+          "bracket_high": 105.8,
+          "bestBid": 0.031,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 751.5123910000004,
+          "accepting_orders": true,
+          "market_id": "2930678",
+          "token_id": "33924669449778054028781424974225878634881506718074269017227780325414935032727"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 41\u00b0C on July 17?",
+          "bracket_low": 105.8,
+          "bracket_high": 107.6,
+          "bestBid": 0.004,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 1385.2624250000001,
+          "accepting_orders": true,
+          "market_id": "2930679",
+          "token_id": "60034519696935260251769560931885845169919186987343079229230724306279525245204"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 42\u00b0C or higher on July 17?",
+          "bracket_low": 107.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 529.381996,
+          "accepting_orders": true,
+          "market_id": "2930680",
+          "token_id": "7742617917808276013588154964158369620439425574781519180520769460247361814856"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}

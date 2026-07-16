@@ -295,6 +295,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-16T05:01:09+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 90.3,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 93.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.799999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 28\u00b0C or below on July 16?",
+          "bracket_low": -Infinity,
+          "bracket_high": 82.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 3122.419,
+          "accepting_orders": true,
+          "market_id": "2917043",
+          "token_id": "104267030333765325860323589902087985446770445457206352293275417010048128752732"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C on July 16?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 7197.191124999999,
+          "accepting_orders": true,
+          "market_id": "2917044",
+          "token_id": "28549243048739202737739726608159899664838056897384481718262088901881918591458"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 30\u00b0C on July 16?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 20246.32738000001,
+          "accepting_orders": true,
+          "market_id": "2917045",
+          "token_id": "101437727789706951147715722052843171282082295563321110043016345263127946569335"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 31\u00b0C on July 16?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.038,
+          "bestAsk": 0.11,
+          "price": 0.11,
+          "volume": 7447.390949999997,
+          "accepting_orders": true,
+          "market_id": "2917046",
+          "token_id": "17896945942651927802791337284642616624204516752312622924523561279974426102327"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 32\u00b0C on July 16?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.67,
+          "bestAsk": 0.81,
+          "price": 0.81,
+          "volume": 4733.4683129999985,
+          "accepting_orders": true,
+          "market_id": "2917047",
+          "token_id": "91866051362580693362177461574650742440807747075211815270269208829350212541201"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 33\u00b0C on July 16?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.04,
+          "bestAsk": 0.13,
+          "price": 0.13,
+          "volume": 6574.091948999999,
+          "accepting_orders": true,
+          "market_id": "2917048",
+          "token_id": "61151404609894308743203763949568967395005213544531187234672052646785447792056"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 34\u00b0C on July 16?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.039,
+          "price": 0.039,
+          "volume": 5064.385868000004,
+          "accepting_orders": true,
+          "market_id": "2917049",
+          "token_id": "72265681676825303052669731440890224577078251352571427554984147663460676981960"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 35\u00b0C on July 16?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.013,
+          "price": 0.013,
+          "volume": 7926.121806000005,
+          "accepting_orders": true,
+          "market_id": "2917050",
+          "token_id": "56082093680782930239669323772104524872851190834562267935499570244244640785656"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 36\u00b0C on July 16?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 9264.604807999998,
+          "accepting_orders": true,
+          "market_id": "2917051",
+          "token_id": "110132309142908835765142096189812696182912174520837643794781559363874889129214"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 37\u00b0C on July 16?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 5799.2208599999985,
+          "accepting_orders": true,
+          "market_id": "2917052",
+          "token_id": "3727879210795273226647346884931379394093446998349120012012234842243058754213"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 38\u00b0C or higher on July 16?",
+          "bracket_low": 100.4,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2284.8560489999995,
+          "accepting_orders": true,
+          "market_id": "2917053",
+          "token_id": "62056872187782701717638257956703571248914353007325176379385308329469076987045"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
