@@ -1,0 +1,155 @@
+{
+  "city": "Houston",
+  "date": "2026-07-18",
+  "station": "KHOU",
+  "region": "us",
+  "lat": 29.6454,
+  "lon": -95.2789,
+  "snapshots": [
+    {
+      "ts": "2026-07-17T05:00:45+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 95.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 95.8,
+      "veto_source": "openmeteo-best",
+      "spread": 0.7999999999999972,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Houston be 83\u00b0F or below on July 18?",
+          "bracket_low": -Infinity,
+          "bracket_high": 83.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 178.77999799999998,
+          "accepting_orders": true,
+          "market_id": "2954259",
+          "token_id": "98961602340334922551556306382218822460584926622669491424865803677544530091441"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 84-85\u00b0F on July 18?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 330.56300000000005,
+          "accepting_orders": true,
+          "market_id": "2954260",
+          "token_id": "109965639616469512226195319500365812016734116798522432380877377482587064687724"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 86-87\u00b0F on July 18?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 66.027,
+          "accepting_orders": true,
+          "market_id": "2954261",
+          "token_id": "72318629126805163109707589644364958250249116256869806048091061698696189827780"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 88-89\u00b0F on July 18?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 61.3013,
+          "accepting_orders": true,
+          "market_id": "2954262",
+          "token_id": "24679968609515358168993239612829834662803993127349123739628488100083229102129"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 90-91\u00b0F on July 18?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.1,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 453.5398760000001,
+          "accepting_orders": true,
+          "market_id": "2954263",
+          "token_id": "48967219220044950593097504976908442906457883305700023553140531318356044817062"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 92-93\u00b0F on July 18?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.38,
+          "bestAsk": 0.4,
+          "price": 0.4,
+          "volume": 87.17891300000001,
+          "accepting_orders": true,
+          "market_id": "2954264",
+          "token_id": "71443478460000607199579457230343367152182246492872371086600878609094562755830"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 94-95\u00b0F on July 18?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.34,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 102.26380700000001,
+          "accepting_orders": true,
+          "market_id": "2954265",
+          "token_id": "50192172255443517681752520737887407853363655582904762444139800429809977246556"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 96-97\u00b0F on July 18?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 67.585407,
+          "accepting_orders": true,
+          "market_id": "2954266",
+          "token_id": "93211193474037394329270148671933144023575033791536337282694004591344362439145"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 98-99\u00b0F on July 18?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 308.26924,
+          "accepting_orders": true,
+          "market_id": "2954267",
+          "token_id": "37046655747677443428241719661694184636250484654324371784923675651859235294233"
+        },
+        {
+          "question": "Will the highest temperature in Houston be between 100-101\u00b0F on July 18?",
+          "bracket_low": 100.0,
+          "bracket_high": 101.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 104.038,
+          "accepting_orders": true,
+          "market_id": "2954268",
+          "token_id": "31208148851114819160749897854849795396814759982695972267058072165532898019052"
+        },
+        {
+          "question": "Will the highest temperature in Houston be 102\u00b0F or higher on July 18?",
+          "bracket_low": 102.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 78.051,
+          "accepting_orders": true,
+          "market_id": "2954269",
+          "token_id": "84065230581700642587130053950445315382415809009739665626366545977286220829844"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
