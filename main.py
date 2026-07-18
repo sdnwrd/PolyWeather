@@ -277,11 +277,14 @@ def run() -> None:
         log.exception("calibration crashed: %s", e)
 
     # Recompute per-(city, horizon) forecast bias from snapshots vs station
-    # truth. Stays a no-op per bin until it clears the sample + dead-band gate.
-    try:
-        bias.build_bias_table()
-    except Exception as e:
-        log.exception("bias table build crashed: %s", e)
+    # truth. Skipped while the correction is disabled — the table feeds nothing
+    # then, and rescanning weeks of snapshots hammers the METAR endpoint for
+    # old dates it can't serve. Re-enabling the flag brings the build back.
+    if config.BIAS_CORRECTION_ENABLED:
+        try:
+            bias.build_bias_table()
+        except Exception as e:
+            log.exception("bias table build crashed: %s", e)
 
     try:
         send_signals(signals, today, len(CITIES))
