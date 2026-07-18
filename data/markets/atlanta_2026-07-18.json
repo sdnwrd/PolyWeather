@@ -150,6 +150,151 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-18T05:00:47+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 91.0,
+      "primary_source": "ndfd",
+      "veto_forecast": 93.0,
+      "veto_source": "openmeteo-best",
+      "spread": 2.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Atlanta be 81\u00b0F or below on July 18?",
+          "bracket_low": -Infinity,
+          "bracket_high": 81.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 493.00000000000006,
+          "accepting_orders": true,
+          "market_id": "2954204",
+          "token_id": "15123918473516286631553236148996809895455624104297271525615415159780910992184"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 82-83\u00b0F on July 18?",
+          "bracket_low": 82.0,
+          "bracket_high": 83.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 596.743168,
+          "accepting_orders": true,
+          "market_id": "2954205",
+          "token_id": "53571345443696305044995886624188487583426133126715786468173824411062230713296"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 84-85\u00b0F on July 18?",
+          "bracket_low": 84.0,
+          "bracket_high": 85.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 216.652099,
+          "accepting_orders": true,
+          "market_id": "2954206",
+          "token_id": "6411922472646666573239224394160197526261081575848446064783157851879462597798"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 86-87\u00b0F on July 18?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 334.051492,
+          "accepting_orders": true,
+          "market_id": "2954207",
+          "token_id": "112492904853177569883621566792788371351664669499756949536401813473908170640111"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 88-89\u00b0F on July 18?",
+          "bracket_low": 88.0,
+          "bracket_high": 89.0,
+          "bestBid": 0.032,
+          "bestAsk": 0.059,
+          "price": 0.059,
+          "volume": 1310.8864420000004,
+          "accepting_orders": true,
+          "market_id": "2954208",
+          "token_id": "69235387151580791430318343454996110278355600617989859476137260796537889553336"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 90-91\u00b0F on July 18?",
+          "bracket_low": 90.0,
+          "bracket_high": 91.0,
+          "bestBid": 0.27,
+          "bestAsk": 0.3,
+          "price": 0.3,
+          "volume": 2503.5968490000014,
+          "accepting_orders": true,
+          "market_id": "2954209",
+          "token_id": "92704367161664368468638363023177858521800999760851872944538508683516122856404"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 92-93\u00b0F on July 18?",
+          "bracket_low": 92.0,
+          "bracket_high": 93.0,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 1331.3249280000005,
+          "accepting_orders": true,
+          "market_id": "2954210",
+          "token_id": "112889918506593041145858328772873774283922340757372283497118725093240265157615"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 94-95\u00b0F on July 18?",
+          "bracket_low": 94.0,
+          "bracket_high": 95.0,
+          "bestBid": 0.21,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": 1549.3725879999993,
+          "accepting_orders": true,
+          "market_id": "2954211",
+          "token_id": "9342989416408082618398514666790115017213476990467441923277084468099934644126"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 96-97\u00b0F on July 18?",
+          "bracket_low": 96.0,
+          "bracket_high": 97.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 929.5054089999998,
+          "accepting_orders": true,
+          "market_id": "2954212",
+          "token_id": "108442906211777380161642225291969616542455012541142393924322791866634565032499"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be between 98-99\u00b0F on July 18?",
+          "bracket_low": 98.0,
+          "bracket_high": 99.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1269.2013180000004,
+          "accepting_orders": true,
+          "market_id": "2954213",
+          "token_id": "69196801703440123066118009596873354386160053986612621800068494538541008791308"
+        },
+        {
+          "question": "Will the highest temperature in Atlanta be 100\u00b0F or higher on July 18?",
+          "bracket_low": 100.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 615.107,
+          "accepting_orders": true,
+          "market_id": "2954214",
+          "token_id": "101541940984804006875510998200892135421384871514899327956989751769069355521444"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
