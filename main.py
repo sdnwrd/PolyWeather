@@ -13,6 +13,7 @@ import schedule
 
 import bias
 import calibration
+import config
 from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
 from forecast import (
     get_daily_high,
@@ -36,7 +37,12 @@ SCAN_HORIZON_DAYS = 4  # scan today + next 3 days; market may not exist for D+3 
 def apply_bias(city_name: str, days_ahead: int, raw_forecast: float) -> tuple[float, float]:
     """Return (corrected_forecast, correction). The correction is the estimated
     per-(city, horizon) forecast bias to subtract; 0.0 when no trustworthy
-    estimate exists (see bias.get_bias)."""
+    estimate exists (see bias.get_bias).
+
+    Disabled via config.BIAS_CORRECTION_ENABLED (2026-07-18): live data showed
+    the correction fights the tail we bet, so we trade the RAW forecast."""
+    if not config.BIAS_CORRECTION_ENABLED:
+        return raw_forecast, 0.0
     correction = bias.get_bias(city_name, days_ahead)
     return raw_forecast - correction, correction
 

@@ -70,7 +70,8 @@ def test_backfill_resolves_against_target_date_not_scan_date(tmp_journal, monkey
     # Scanned several days ago for a target that has since resolved. The
     # observation lookup must use the TARGET date, not the scan date.
     scan_day = date(2026, 6, 4)
-    sig = _signal(resolution_date=date(2026, 6, 6), low=80.0, high=81.0)
+    # Use a city that's still in CITIES (backfill skips unknown cities).
+    sig = _signal(resolution_date=date(2026, 6, 6), low=80.0, high=81.0, city="Paris")
     journal.log_signals([sig], scan_day)
 
     seen_dates = []
