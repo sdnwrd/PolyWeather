@@ -21,6 +21,11 @@ _NWS_OBS_URL = "https://api.weather.gov/stations/{station}/observations"
 _OPEN_METEO_BASE = "https://api.open-meteo.com/v1/forecast"
 _AVWX_METAR_URL = "https://aviationweather.gov/api/data/metar"
 _TIMEOUT = 15
+# aviationweather's METAR endpoint rejects `hours` above ~720 (30 days) with a
+# 400, and only serves recent history anyway. Legit next-morning backfill needs
+# <72h; anything past this is an unresolvable old date — skip it quietly rather
+# than fire a doomed request (and flood the log).
+_MAX_METAR_HOURS = 720
 
 
 def _to_fahrenheit(value: float, unit_code: str) -> float:
@@ -231,6 +236,11 @@ def _fetch_metar_day_max(
         return None
     now = datetime.now(timezone.utc)
     hours = max(1, int((now - start_utc).total_seconds() // 3600) + 2)
+    if hours > _MAX_METAR_HOURS:
+        # Window predates what the METAR endpoint serves — not retrievable here.
+        log.debug("METAR window for %s is %dh back (> %dh max) — skipping",
+                  station, hours, _MAX_METAR_HOURS)
+        return None
     try:
         resp = requests.get(
             _AVWX_METAR_URL,
