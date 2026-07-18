@@ -24,6 +24,17 @@ FORECAST_SIGMA = 2.0
 # BIAS_MIN_SAMPLES resolved snapshots AND the estimate clears a dead-band of
 # BIAS_DEADBAND_SE standard errors (so we never steer on noise). No hard-coded
 # seed — estimates come only from live station-truth snapshots (plan §8 R4).
+#
+# DISABLED 2026-07-18: live METAR data (5 weeks, 53 corrected bets) showed the
+# correction moved the forecast AWAY from the actual 38/53 times (72%) and hurt
+# win rate (6.4% off → 5.7% on). Root cause: bias is estimated over ALL days,
+# but we only BET the tail (heatwaves); subtracting the seasonal mean on a
+# hot-tail day pulls the forecast toward center, away from the tail we trade.
+# The ERA5 spring falsification sim didn't catch this (grid truth, wrong season,
+# no tail selection). The bias TABLE is still built for diagnostics, but the
+# correction is not applied while this flag is False. Re-enable only after a
+# tail-aware redesign (see docs/plans). Keep raw forecast = the real edge.
+BIAS_CORRECTION_ENABLED = False
 BIAS_MIN_SAMPLES = 15
 BIAS_DEADBAND_SE = 2.0
 
@@ -62,38 +73,31 @@ RUN_TIME = "07:00"
 # Open-Meteo's best_match as primary (with GFS as the veto cross-check),
 # since NWS only covers US points. Dallas/Seattle stay excluded by request
 # (known active trader on those markets).
+# Trimmed 2026-07-18 to the international thin-market tail basket. Over 5 live
+# weeks (Jun 11 – Jul 18, 131 non-vetoed resolved bets) the only cities that
+# produced wins were Paris (5), Shanghai / London / Singapore (1 each). Every
+# US city plus Munich, Tokyo and Toronto went 0-for and were pure drag — the
+# edge lives in low-liquidity intl tail markets, not US NDFD markets. Cut list
+# preserved below in case we revisit. All survivors are region "intl"
+# (Open-Meteo best_match primary, GFS veto, °C display on Polymarket).
 CITIES = [
-    # US (NDFD primary, Open-Meteo best_match veto, °F display on Polymarket)
-    {"name": "Chicago",       "lat": 41.9786, "lon": -87.9048,  "station": "KORD", "region": "us",   "tz": "America/Chicago"},
-    {"name": "Miami",         "lat": 25.7932, "lon": -80.2906,  "station": "KMIA", "region": "us",   "tz": "America/New_York"},
-    {"name": "Denver",        "lat": 39.7017, "lon": -104.7517, "station": "KBKF", "region": "us",   "tz": "America/Denver"},
-    {"name": "Atlanta",       "lat": 33.6407, "lon": -84.4277,  "station": "KATL", "region": "us",   "tz": "America/New_York"},
-    {"name": "Houston",       "lat": 29.6454, "lon": -95.2789,  "station": "KHOU", "region": "us",   "tz": "America/Chicago"},
-    {"name": "Los Angeles",   "lat": 33.9425, "lon": -118.4081, "station": "KLAX", "region": "us",   "tz": "America/Los_Angeles"},
-    {"name": "San Francisco", "lat": 37.6189, "lon": -122.3750, "station": "KSFO", "region": "us",   "tz": "America/Los_Angeles"},
-    {"name": "Austin",        "lat": 30.1944, "lon": -97.6700,  "station": "KAUS", "region": "us",   "tz": "America/Chicago"},
-    # NYC market resolves on LaGuardia, not Central Park — confirmed via
-    # Polymarket description: "LaGuardia Airport Station".
-    {"name": "New York",      "lat": 40.7773, "lon": -73.8726,  "station": "KLGA", "region": "us",   "tz": "America/New_York"},
-    # International (Open-Meteo best_match primary, GFS veto, °C display on Polymarket)
-    {"name": "Tokyo",         "lat": 35.5523, "lon": 139.7798,  "station": "RJTT", "region": "intl", "tz": "Asia/Tokyo"},
     # London market resolves on London City Airport (EGLC), NOT Heathrow.
     # EGLC is 30km east of EGLL and runs a different microclimate.
     {"name": "London",        "lat": 51.5053, "lon": 0.0553,    "station": "EGLC", "region": "intl", "tz": "Europe/London"},
     # Paris market resolves on Le Bourget (LFPB), NOT Charles-de-Gaulle.
     {"name": "Paris",         "lat": 48.9694, "lon": 2.4414,    "station": "LFPB", "region": "intl", "tz": "Europe/Paris"},
-    {"name": "Munich",        "lat": 48.3538, "lon": 11.7861,   "station": "EDDM", "region": "intl", "tz": "Europe/Berlin"},
     {"name": "Singapore",     "lat": 1.3592,  "lon": 103.9894,  "station": "WSSS", "region": "intl", "tz": "Asia/Singapore"},
     # Shanghai resolves on Pudong (ZSPD), east coast. Our previous coords
     # (31.1979, 121.3364) were actually Hongqiao (ZSSS), 30km west and ~4°C
     # warmer due to inland location. Use the actual ZSPD coords.
     {"name": "Shanghai",      "lat": 31.1443, "lon": 121.8083,  "station": "ZSPD", "region": "intl", "tz": "Asia/Shanghai"},
-    {"name": "Toronto",       "lat": 43.6777, "lon": -79.6248,  "station": "CYYZ", "region": "intl", "tz": "America/Toronto"},
-    # Hong Kong dropped: Polymarket resolves on the Hong Kong Observatory
-    # (urban King's Park station), not the airport (VHHH). HKO isn't a
-    # standard METAR station, so we can't reliably get the day's max for
-    # the bust check or backfill. Re-add only if/when we wire up an HKO
-    # data source.
+    # --- Cut 2026-07-18 (0 wins / pure drag over 5 weeks) — re-add if revisited:
+    # US (NDFD primary): Chicago KORD, Miami KMIA, Denver KBKF, Atlanta KATL,
+    #   Houston KHOU, Los Angeles KLAX, San Francisco KSFO, Austin KAUS,
+    #   New York KLGA.
+    # Intl: Tokyo RJTT, Munich EDDM, Toronto CYYZ.
+    # Hong Kong stays dropped separately (resolves on HKO King's Park, not a
+    # standard METAR station — no reliable day-max source).
 ]
 
 # Skip D+0 for any city whose local time is at or past this hour — the

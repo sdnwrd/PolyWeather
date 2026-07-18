@@ -6,6 +6,7 @@ from datetime import date
 
 import pytest
 
+import config
 import journal
 import main
 from markets import Market
@@ -13,10 +14,27 @@ from signals import Signal
 
 
 def test_apply_bias_subtracts_estimated_bias(monkeypatch):
+    # The subtract path only runs when the correction is enabled (disabled by
+    # default since 2026-07-18 — see config.BIAS_CORRECTION_ENABLED).
+    monkeypatch.setattr(config, "BIAS_CORRECTION_ENABLED", True)
     monkeypatch.setattr(main.bias, "get_bias", lambda c, d: 1.6)
     corrected, correction = main.apply_bias("Paris", 0, 74.0)
     assert correction == 1.6
     assert corrected == pytest.approx(72.4)
+
+
+def test_apply_bias_disabled_returns_raw(monkeypatch):
+    # When disabled, apply_bias is a pure passthrough and never consults the
+    # bias table — we trade the raw forecast.
+    monkeypatch.setattr(config, "BIAS_CORRECTION_ENABLED", False)
+
+    def _boom(*a, **k):
+        raise AssertionError("get_bias must not be called when disabled")
+
+    monkeypatch.setattr(main.bias, "get_bias", _boom)
+    corrected, correction = main.apply_bias("Paris", 0, 82.6)
+    assert correction == 0.0
+    assert corrected == 82.6
 
 
 def test_apply_bias_noop_when_no_estimate(monkeypatch):
