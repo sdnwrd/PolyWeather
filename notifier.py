@@ -161,54 +161,26 @@ def _group_by_city_date(signals: list[Signal]) -> "dict[tuple[str, date], list[S
 
 
 def build_signals_message(signals: list[Signal], today: date) -> str:
-    # Three buckets, mutually exclusive:
-    #   - BUSTED: observed METAR has already exceeded the bracket — definitive loss
-    #   - VETOED: model spread too large — risky
-    #   - TRADE THESE: everything else
-    # BUSTED takes precedence over VETOED so the user always knows reality
-    # beats the model-disagreement filter.
-    busted = [s for s in signals if s.bracket_busted]
-    vetoed = [s for s in signals if not s.bracket_busted and s.vetoed]
+    # Only actionable signals are shown. Busted (observed METAR already past the
+    # bracket) and vetoed (forecast sources disagree too much) signals are
+    # filtered out silently — they're still computed and journaled, just not
+    # cluttering the alert.
     traded = [s for s in signals if not s.bracket_busted and not s.vetoed]
 
-    sections: list[str] = []
-
-    if traded:
-        traded_blocks = [
-            _city_date_block(c, d, items)
-            for (c, d), items in _group_by_city_date(traded).items()
-        ]
-        sections.append(
-            "⚡ <b>TRADE THESE</b> (passed Open-Meteo veto + METAR check)\n\n"
-            + "\n\n———\n\n".join(traded_blocks)
-        )
-    else:
-        sections.append(
+    if not traded:
+        return (
             "⚡ <b>TRADE THESE</b>\n\n"
-            "(none — all signals vetoed/busted or no signals fired)"
+            "(none — no actionable signals fired)"
         )
 
-    if vetoed:
-        vetoed_blocks = [
-            _city_date_block(c, d, items)
-            for (c, d), items in _group_by_city_date(vetoed).items()
-        ]
-        sections.append(
-            "🚫 <b>VETOED</b> (forecast sources disagree too much — risky)\n\n"
-            + "\n\n———\n\n".join(vetoed_blocks)
-        )
-
-    if busted:
-        busted_blocks = [
-            _city_date_block(c, d, items)
-            for (c, d), items in _group_by_city_date(busted).items()
-        ]
-        sections.append(
-            "💀 <b>BUSTED</b> (observed METAR already exceeded bracket — definitive loss)\n\n"
-            + "\n\n———\n\n".join(busted_blocks)
-        )
-
-    return "\n\n═══════════════\n\n".join(sections)
+    traded_blocks = [
+        _city_date_block(c, d, items)
+        for (c, d), items in _group_by_city_date(traded).items()
+    ]
+    return (
+        "⚡ <b>TRADE THESE</b>\n\n"
+        + "\n\n———\n\n".join(traded_blocks)
+    )
 
 
 def build_empty_message(today: date, cities_checked: int) -> str:
