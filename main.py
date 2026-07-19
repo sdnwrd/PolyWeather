@@ -31,7 +31,12 @@ import snapshots
 log = logging.getLogger("weather-signal-bot")
 
 
-SCAN_HORIZON_DAYS = 4  # scan today + next 3 days; market may not exist for D+3 yet
+# D+0 only. Live data (Jun–Jul 2026): D+0 non-vetoed hit 10.4% (7/8 wins, +$668
+# at $1 flat) vs D+1 at 1.8% (one lucky tail) and D+2 at 0%. Forecast skill
+# decays too fast for the 1¢ tail bets past same-day, and on a small bankroll a
+# ~0-edge D+1 bet just burns runway a D+0 bet needs. Raise this to scan further
+# horizons again only if later data shows real D+1+ edge.
+SCAN_HORIZON_DAYS = 1  # D+0 only (was 4)
 
 
 def apply_bias(city_name: str, days_ahead: int, raw_forecast: float) -> tuple[float, float]:
