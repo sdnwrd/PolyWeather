@@ -308,6 +308,151 @@
           "vetoed": false
         }
       ]
+    },
+    {
+      "ts": "2026-07-19T05:00:35+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 91.9,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 87.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 4.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Singapore be 26\u00b0C or below on July 19?",
+          "bracket_low": -Infinity,
+          "bracket_high": 78.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 266.635,
+          "accepting_orders": true,
+          "market_id": "2955590",
+          "token_id": "3182171508455312242592754951235003780591708676143448006865650766991266649517"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 27\u00b0C on July 19?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 482.22499999999997,
+          "accepting_orders": true,
+          "market_id": "2955591",
+          "token_id": "45147058706169584614437461374632137666355461953197009935272587342668215156642"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 28\u00b0C on July 19?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1303.2613350000001,
+          "accepting_orders": true,
+          "market_id": "2955592",
+          "token_id": "64837854843861083362437079684780836615281468562871254470389058369167633628097"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 29\u00b0C on July 19?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 3806.819936000001,
+          "accepting_orders": true,
+          "market_id": "2955593",
+          "token_id": "42769925462492951178259543748786704307544792502393128327607325562093019328233"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 30\u00b0C on July 19?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 5375.218375999999,
+          "accepting_orders": true,
+          "market_id": "2955594",
+          "token_id": "97257041653246780475070258773704222785457402149773878843340278539962374796170"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 31\u00b0C on July 19?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.041,
+          "bestAsk": 0.059,
+          "price": 0.059,
+          "volume": 5678.862784999999,
+          "accepting_orders": true,
+          "market_id": "2955595",
+          "token_id": "68998018167144626468641515565632685426020131038898143890254052980613150763909"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 32\u00b0C on July 19?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.53,
+          "bestAsk": 0.54,
+          "price": 0.54,
+          "volume": 15009.652084000012,
+          "accepting_orders": true,
+          "market_id": "2955596",
+          "token_id": "63957048479580922182357719580506234259728274777663259507625188329654733546135"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 33\u00b0C on July 19?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.35,
+          "bestAsk": 0.4,
+          "price": 0.4,
+          "volume": 5661.604687000002,
+          "accepting_orders": true,
+          "market_id": "2955597",
+          "token_id": "37538855036069121348745285779790051772402941661935645380477617918418333690703"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 34\u00b0C on July 19?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.022,
+          "bestAsk": 0.034,
+          "price": 0.034,
+          "volume": 4807.156476000001,
+          "accepting_orders": true,
+          "market_id": "2955598",
+          "token_id": "72109482576472985001498517374760751003032562526244533280675929201400691656735"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 35\u00b0C on July 19?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1953.6694810000001,
+          "accepting_orders": true,
+          "market_id": "2955599",
+          "token_id": "1593370880643375401079359056223644601641213251200164485613423272522935073192"
+        },
+        {
+          "question": "Will the highest temperature in Singapore be 36\u00b0C or higher on July 19?",
+          "bracket_low": 96.8,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1093.2760000000003,
+          "accepting_orders": true,
+          "market_id": "2955600",
+          "token_id": "5541639532810325752670555670540097856642987051307260134700031049410019855569"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
