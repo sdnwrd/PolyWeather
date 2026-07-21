@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-07-21",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-07-21T05:00:39+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 75.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 80.8,
+      "veto_source": "openmeteo-gfs",
+      "spread": 5.799999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C or below on July 21?",
+          "bracket_low": -Infinity,
+          "bracket_high": 66.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 3979.0437559999996,
+          "accepting_orders": true,
+          "market_id": "2980688",
+          "token_id": "83655527511918525250483458465475851293974890395432359292942487993915810482885"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on July 21?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 2208.3616009999996,
+          "accepting_orders": true,
+          "market_id": "2980689",
+          "token_id": "94070486663632075042977014770095947303486454567111460044965612680197861714174"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on July 21?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 2144.9253439999998,
+          "accepting_orders": true,
+          "market_id": "2980690",
+          "token_id": "49293264917812224000600469162884606168057862572020280047136858006623040122936"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on July 21?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.005,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 11771.928663000006,
+          "accepting_orders": true,
+          "market_id": "2980691",
+          "token_id": "75599058683624158916659005066350004378068735293099244358207310377981097537276"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on July 21?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.06,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 11981.260199000008,
+          "accepting_orders": true,
+          "market_id": "2980692",
+          "token_id": "52896074273035730021043433351600379925834895748151357090341182998119864355735"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on July 21?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.38,
+          "bestAsk": 0.39,
+          "price": 0.39,
+          "volume": 12680.214659999994,
+          "accepting_orders": true,
+          "market_id": "2980693",
+          "token_id": "48181939538430478110675383606368672080718066467814148434657545645846243639110"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on July 21?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.45,
+          "bestAsk": 0.46,
+          "price": 0.46,
+          "volume": 6926.711752000005,
+          "accepting_orders": true,
+          "market_id": "2980694",
+          "token_id": "50666215643718943240389922220666613652225367304418880373810008485453855474074"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on July 21?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.09,
+          "bestAsk": 0.11,
+          "price": 0.11,
+          "volume": 9516.025860000005,
+          "accepting_orders": true,
+          "market_id": "2980695",
+          "token_id": "9467357753772549959722704879955977340236133877844479139872461790619956597978"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on July 21?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.013,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 11527.044296000004,
+          "accepting_orders": true,
+          "market_id": "2980696",
+          "token_id": "67546981933885173068739014042872966957846400803055248729550283308211572530095"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C on July 21?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 2558.1158380000006,
+          "accepting_orders": true,
+          "market_id": "2980697",
+          "token_id": "61606826236813630735235798692681122237023020711706613211338418089925943359726"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C or higher on July 21?",
+          "bracket_low": 84.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 4960.686600000001,
+          "accepting_orders": true,
+          "market_id": "2980698",
+          "token_id": "8285835826444062409250559522763257484537086407746058169954837482787643521394"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "market_id": "2980691",
+          "market_price": 0.006,
+          "forecast_high": 75.0,
+          "true_prob": 0.16728993582485474,
+          "ev": 27.881655970809124,
+          "forecast_openmeteo": 80.8,
+          "model_spread": 5.799999999999997,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}

@@ -150,6 +150,188 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-21T05:00:47+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 89.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 89.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Shanghai be 28\u00b0C or below on July 21?",
+          "bracket_low": -Infinity,
+          "bracket_high": 82.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1257.0476109999995,
+          "accepting_orders": true,
+          "market_id": "2980831",
+          "token_id": "95473210259604792109483475315111191702222031507821531966882724140030917886208"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 29\u00b0C on July 21?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 9846.300165999999,
+          "accepting_orders": true,
+          "market_id": "2980832",
+          "token_id": "53769838182312778356280673076505260643111240426239453805280211816488179780029"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 30\u00b0C on July 21?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 18910.568581000003,
+          "accepting_orders": true,
+          "market_id": "2980833",
+          "token_id": "24835852624583223286572389127477403422505270148836308403477238774154408499140"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 31\u00b0C on July 21?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 13203.163461999999,
+          "accepting_orders": true,
+          "market_id": "2980834",
+          "token_id": "91991380540544127495222361366692759328523437920025032308439198093111501718932"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 32\u00b0C on July 21?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 27651.419736,
+          "accepting_orders": true,
+          "market_id": "2980835",
+          "token_id": "26937555861440555823857239469858172459264259105643021563117674655416037868827"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 33\u00b0C on July 21?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.89,
+          "bestAsk": 0.95,
+          "price": 0.95,
+          "volume": 31292.61782399997,
+          "accepting_orders": true,
+          "market_id": "2980836",
+          "token_id": "100696955487521150192413270020962975518186427384326919871818617639341463239477"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 34\u00b0C on July 21?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.06,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 11306.034736000001,
+          "accepting_orders": true,
+          "market_id": "2980837",
+          "token_id": "21251614857369868432188579806916050546622845483630508365194574037682580194922"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 35\u00b0C on July 21?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 11668.038586000008,
+          "accepting_orders": true,
+          "market_id": "2980838",
+          "token_id": "48780639450799826542812380410411730596741071208791837088142121801442266475810"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 36\u00b0C on July 21?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 8119.7806070000015,
+          "accepting_orders": true,
+          "market_id": "2980839",
+          "token_id": "75255865122855844963537393731512408015238631305827977441483931014975126387886"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 37\u00b0C on July 21?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1575.4341999999997,
+          "accepting_orders": true,
+          "market_id": "2980840",
+          "token_id": "9634867465043839089800351340848086917074199890532147431109238183499373108001"
+        },
+        {
+          "question": "Will the highest temperature in Shanghai be 38\u00b0C or higher on July 21?",
+          "bracket_low": 100.4,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1818.3306649999997,
+          "accepting_orders": true,
+          "market_id": "2980841",
+          "token_id": "61428290739240979095188717789482281480828634782193811666063102459283655529403"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "market_id": "2980834",
+          "market_price": 0.001,
+          "forecast_high": 89.2,
+          "true_prob": 0.3372960572160292,
+          "ev": 337.29605721602917,
+          "forecast_openmeteo": 89.7,
+          "model_spread": 0.5,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "market_id": "2980835",
+          "market_price": 0.001,
+          "forecast_high": 89.2,
+          "true_prob": 0.28507422961451623,
+          "ev": 285.07422961451624,
+          "forecast_openmeteo": 89.7,
+          "model_spread": 0.5,
+          "vetoed": false
+        },
+        {
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "market_id": "2980833",
+          "market_price": 0.001,
+          "forecast_high": 89.2,
+          "true_prob": 0.18716436052351432,
+          "ev": 187.16436052351432,
+          "forecast_openmeteo": 89.7,
+          "model_spread": 0.5,
+          "vetoed": false
+        }
+      ]
     }
   ]
 }
