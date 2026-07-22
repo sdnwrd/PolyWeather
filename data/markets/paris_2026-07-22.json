@@ -1,0 +1,168 @@
+{
+  "city": "Paris",
+  "date": "2026-07-22",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-07-22T05:00:39+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 78.9,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 82.5,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.5999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 20\u00b0C or below on July 22?",
+          "bracket_low": -Infinity,
+          "bracket_high": 68.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 275.995,
+          "accepting_orders": true,
+          "market_id": "2996491",
+          "token_id": "43561716022826889184706412576279308029417553876671330453784198032398727753664"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 21\u00b0C on July 22?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 119.991,
+          "accepting_orders": true,
+          "market_id": "2996492",
+          "token_id": "60260104101730840546311667645656006011342732029611101657586346644371778986710"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 22\u00b0C on July 22?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 644.5070000000001,
+          "accepting_orders": true,
+          "market_id": "2996493",
+          "token_id": "80195012834204128572180284357777294636925594452964468193158985228181846096939"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 23\u00b0C on July 22?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.005,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 1768.0046500000003,
+          "accepting_orders": true,
+          "market_id": "2996494",
+          "token_id": "103673244709914253970946967100684967307507430691869020717698981112436676666121"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C on July 22?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.006,
+          "bestAsk": 0.014,
+          "price": 0.014,
+          "volume": 2820.195288,
+          "accepting_orders": true,
+          "market_id": "2996495",
+          "token_id": "3416843606461017630309140053205906805560004892385161692813254004612277866166"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on July 22?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.2,
+          "bestAsk": 0.22,
+          "price": 0.22,
+          "volume": 9434.079665999989,
+          "accepting_orders": true,
+          "market_id": "2996496",
+          "token_id": "78136622576973690262572862797480057201031442343833685456981168447896177147153"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on July 22?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.55,
+          "bestAsk": 0.57,
+          "price": 0.57,
+          "volume": 10233.164161000013,
+          "accepting_orders": true,
+          "market_id": "2996518",
+          "token_id": "60573534198924265923850660565464047491309722877423650995111375513583974906069"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on July 22?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.21,
+          "bestAsk": 0.22,
+          "price": 0.22,
+          "volume": 4363.074572000001,
+          "accepting_orders": true,
+          "market_id": "2996519",
+          "token_id": "42324967290540766225959022574869615833617552115486837643844531055239400258630"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C on July 22?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.01,
+          "bestAsk": 0.017,
+          "price": 0.017,
+          "volume": 5825.550208000002,
+          "accepting_orders": true,
+          "market_id": "2996520",
+          "token_id": "50602421489509627168519480247086987846519640512126031019568160934334182465177"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C on July 22?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 1985.3706270000007,
+          "accepting_orders": true,
+          "market_id": "2996521",
+          "token_id": "82062393689264615174108582496787282775269169749839383742862656191806608836683"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C or higher on July 22?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1848.856285,
+          "accepting_orders": true,
+          "market_id": "2996522",
+          "token_id": "82588314573446083290720600012309737648123021572755741470141910645588220583278"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "2996495",
+          "market_price": 0.014,
+          "forecast_high": 78.9,
+          "true_prob": 0.1543725828035417,
+          "ev": 11.026613057395837,
+          "forecast_openmeteo": 82.5,
+          "model_spread": 3.5999999999999943,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
