@@ -102,8 +102,17 @@ CITIES = [
     # standard METAR station — no reliable day-max source).
 ]
 
+# How many calendar days ahead to scan (D+0 = today, D+1 = tomorrow, ...).
+# Raised to 2 (2026-07-22): high-disagreement strategy needs D+0 AND D+1.
+# Tokyo D+0 is gated separately by D0_CUTOFF_LOCAL_HOUR.
+SCAN_HORIZON_DAYS = 2  # D+0 + D+1 (>=5F strategy; Tokyo D+0 gated by cutoff)
+
 # Skip D+0 for any city whose local time is at or past this hour — the
 # daily max occurs around 14-16:00 local, so by 17:00 the day is essentially
 # locked in. Trading a D+0 bracket against a forecast that's now irrelevant
 # is just gambling on whether the market has caught up yet.
-D0_CUTOFF_LOCAL_HOUR = 17
+#
+# Lowered to 14 (2026-07-22): user trades at scan time (05:00 UTC), so a city
+# already at peak-onset (~14:00 local) at scan has no forecast lead. Skips
+# Tokyo D+0 (14:00 JST) while keeping London (06:00) and Paris (07:00).
+D0_CUTOFF_LOCAL_HOUR = 14
