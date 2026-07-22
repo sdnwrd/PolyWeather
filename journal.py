@@ -200,8 +200,12 @@ def get_observed_high(station: str, target_date: date) -> Optional[float]:
 
 
 def _bracket_contains(low: float, high: float, value: float) -> bool:
-    # Polymarket brackets are inclusive at both ends per market language
-    return low <= value <= high
+    # Polymarket "be N°C" == whole-degree high == N == half-open [N, N+1).
+    # High endpoint is EXCLUSIVE: adjacent brackets share a boundary
+    # (34°C high == 35°C low == 95.0°F), so a value exactly on it must belong
+    # ONLY to the upper bracket. Inclusive-high double-counted boundary values,
+    # inflating wins and creating impossible two-winner city-days.
+    return low <= value < high
 
 
 def _city_by_name(name: str) -> Optional[dict]:
