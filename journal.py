@@ -6,7 +6,12 @@ This replaces the older `paper.py` paper-trading log. Since the user is
 trading live (not on simulated stakes), there's no portfolio P&L math —
 the journal exists only to record predictions vs outcomes so:
   (a) the strategy can self-calibrate sigma per (city, source) over time
-  (b) the veto threshold can be backtested against real outcomes
+  (b) the disagreement threshold can be backtested against real outcomes
+
+NOTE: the `vetoed` column is regime-mixed. Before 2026-07-22 `vetoed=true` meant
+disagreement was too HIGH (old veto, threshold 3°F); from 2026-07-22 it means
+disagreement was too LOW to trade (< MIN_DISAGREEMENT_SPREAD 5°F). Slice the
+column by date, not blindly, when backtesting.
 
 Schema (data/signals.csv):
     date, city, station, question, bracket_low, bracket_high,
@@ -200,8 +205,12 @@ def get_observed_high(station: str, target_date: date) -> Optional[float]:
 
 
 def _bracket_contains(low: float, high: float, value: float) -> bool:
-    # Polymarket brackets are inclusive at both ends per market language
-    return low <= value <= high
+    # Polymarket "be N°C" == whole-degree high == N == half-open [N, N+1).
+    # High endpoint is EXCLUSIVE: adjacent brackets share a boundary
+    # (34°C high == 35°C low == 95.0°F), so a value exactly on it must belong
+    # ONLY to the upper bracket. Inclusive-high double-counted boundary values,
+    # inflating wins and creating impossible two-winner city-days.
+    return low <= value < high
 
 
 def _city_by_name(name: str) -> Optional[dict]:

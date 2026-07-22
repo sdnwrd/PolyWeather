@@ -7,6 +7,7 @@ import logging
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
+from typing import Optional
 from zoneinfo import ZoneInfo
 
 import schedule
@@ -14,7 +15,7 @@ import schedule
 import bias
 import calibration
 import config
-from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
+from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, MIN_DISAGREEMENT_SPREAD, RUN_TIME, SCAN_HORIZON_DAYS
 from forecast import (
     get_daily_high,
     get_day_max_temp,
@@ -31,12 +32,7 @@ import snapshots
 log = logging.getLogger("weather-signal-bot")
 
 
-# D+0 only. Live data (Jun–Jul 2026): D+0 non-vetoed hit 10.4% (7/8 wins, +$668
-# at $1 flat) vs D+1 at 1.8% (one lucky tail) and D+2 at 0%. Forecast skill
-# decays too fast for the 1¢ tail bets past same-day, and on a small bankroll a
-# ~0-edge D+1 bet just burns runway a D+0 bet needs. Raise this to scan further
-# horizons again only if later data shows real D+1+ edge.
-SCAN_HORIZON_DAYS = 1  # D+0 only (was 4)
+# SCAN_HORIZON_DAYS is now defined in config.py and imported above.
 
 
 def apply_bias(city_name: str, days_ahead: int, raw_forecast: float) -> tuple[float, float]:
@@ -52,18 +48,28 @@ def apply_bias(city_name: str, days_ahead: int, raw_forecast: float) -> tuple[fl
     return raw_forecast - correction, correction
 
 
-def _is_d0_too_late(city: dict, target: date) -> bool:
+def _is_vetoed(spread: Optional[float]) -> bool:
+    """True when we must NOT trade. New strategy trades ONLY high-disagreement
+    (>= MIN_DISAGREEMENT_SPREAD) tails, so a missing spread or one below the
+    threshold is vetoed."""
+    return not (spread is not None and spread >= MIN_DISAGREEMENT_SPREAD)
+
+
+def _is_d0_too_late(city: dict, target: date, now_utc: Optional[datetime] = None) -> bool:
     """True if the city's local-time day relative to `target` is past
     actionable — the day's high is essentially locked and a forecast-based
     signal is just trading reality the market already knows. Two cases:
       - local date is already past target (local day rolled over)
       - local date == target AND local hour ≥ D0_CUTOFF_LOCAL_HOUR
+
+    `now_utc` defaults to the current UTC time; injectable for testing.
     """
     tz_name = city.get("tz")
     if not tz_name:
         return False
+    now_utc = now_utc or datetime.now(timezone.utc)
     try:
-        local_now = datetime.now(ZoneInfo(tz_name))
+        local_now = now_utc.astimezone(ZoneInfo(tz_name))
     except Exception:
         return False
     local_date = local_now.date()
@@ -158,7 +164,7 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
         s.forecast_high_raw = forecast  # raw primary, pre-correction
         s.forecast_openmeteo = veto_forecast
         s.model_spread = spread
-        s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
+        s.vetoed = _is_vetoed(spread)
         s.metar_observed = observed
         if observed is not None:
             s.bracket_busted = is_bracket_busted(

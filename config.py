@@ -44,9 +44,11 @@ BIAS_DEADBAND_SE = 2.0
 # horizons. Effective sigma = base + HORIZON_SIGMA_GROWTH * days_ahead.
 HORIZON_SIGMA_GROWTH = 0.7  # °F per day past today
 
-# If |NDFD - Open-Meteo| forecast spread ≥ this, the city's signals are
-# flagged as vetoed — shown for visibility but not actionable.
-VETO_SPREAD_THRESHOLD = 3.0
+# Minimum |primary - veto| forecast disagreement required to TRADE a bracket.
+# Strategy (2026-07-22): the edge lives in extreme model disagreement — corrected
+# live data shows winrate ~2% at <3°F, 0% at [3,5)°F, ~10.5% at >=5°F. Below this
+# threshold (and when the veto model is unavailable) we do not trade.
+MIN_DISAGREEMENT_SPREAD = 5.0
 
 # Liquidity guards — skip markets that can't be filled cleanly at the
 # scanned price. Borrowed from weatherbet's MIN_VOLUME/MAX_SLIPPAGE.
@@ -86,22 +88,32 @@ CITIES = [
     {"name": "London",        "lat": 51.5053, "lon": 0.0553,    "station": "EGLC", "region": "intl", "tz": "Europe/London"},
     # Paris market resolves on Le Bourget (LFPB), NOT Charles-de-Gaulle.
     {"name": "Paris",         "lat": 48.9694, "lon": 2.4414,    "station": "LFPB", "region": "intl", "tz": "Europe/Paris"},
-    {"name": "Singapore",     "lat": 1.3592,  "lon": 103.9894,  "station": "WSSS", "region": "intl", "tz": "Asia/Singapore"},
-    # Shanghai resolves on Pudong (ZSPD), east coast. Our previous coords
-    # (31.1979, 121.3364) were actually Hongqiao (ZSSS), 30km west and ~4°C
-    # warmer due to inland location. Use the actual ZSPD coords.
-    {"name": "Shanghai",      "lat": 31.1443, "lon": 121.8083,  "station": "ZSPD", "region": "intl", "tz": "Asia/Shanghai"},
-    # --- Cut 2026-07-18 (0 wins / pure drag over 5 weeks) — re-add if revisited:
+    # Tokyo re-added 2026-07-22 for the >=5F strategy — high continental-summer
+    # variance where models disagree on the peak. D+1 only (D+0 gated by the
+    # 14:00 local cutoff, since 05:00 UTC scan == 14:00 JST == at peak).
+    # Resolves on Haneda (RJTT).
+    {"name": "Tokyo",         "lat": 35.5533, "lon": 139.7811,  "station": "RJTT", "region": "intl", "tz": "Asia/Tokyo"},
+    # --- Not traded under the >=5F strategy (maritime/tropical, ~0 disagreement,
+    # 0/2 in the >=5F band) — re-add if revisited:
+    # Singapore WSSS (Asia/Singapore), Shanghai ZSPD (Asia/Shanghai).
+    # --- Cut 2026-07-18 (0 wins / pure drag over 5 weeks):
     # US (NDFD primary): Chicago KORD, Miami KMIA, Denver KBKF, Atlanta KATL,
     #   Houston KHOU, Los Angeles KLAX, San Francisco KSFO, Austin KAUS,
-    #   New York KLGA.
-    # Intl: Tokyo RJTT, Munich EDDM, Toronto CYYZ.
-    # Hong Kong stays dropped separately (resolves on HKO King's Park, not a
-    # standard METAR station — no reliable day-max source).
+    #   New York KLGA. Intl: Munich EDDM, Toronto CYYZ.
+    # Hong Kong stays dropped (resolves on HKO King's Park, no standard METAR).
 ]
+
+# How many calendar days ahead to scan (D+0 = today, D+1 = tomorrow, ...).
+# Raised to 2 (2026-07-22): high-disagreement strategy needs D+0 AND D+1.
+# Tokyo D+0 is gated separately by D0_CUTOFF_LOCAL_HOUR.
+SCAN_HORIZON_DAYS = 2  # D+0 + D+1 (>=5F strategy; Tokyo D+0 gated by cutoff)
 
 # Skip D+0 for any city whose local time is at or past this hour — the
 # daily max occurs around 14-16:00 local, so by 17:00 the day is essentially
 # locked in. Trading a D+0 bracket against a forecast that's now irrelevant
 # is just gambling on whether the market has caught up yet.
-D0_CUTOFF_LOCAL_HOUR = 17
+#
+# Lowered to 14 (2026-07-22): user trades at scan time (05:00 UTC), so a city
+# already at peak-onset (~14:00 local) at scan has no forecast lead. Skips
+# Tokyo D+0 (14:00 JST) while keeping London (06:00) and Paris (07:00).
+D0_CUTOFF_LOCAL_HOUR = 14
