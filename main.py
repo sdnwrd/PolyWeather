@@ -7,6 +7,7 @@ import logging
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
+from typing import Optional
 from zoneinfo import ZoneInfo
 
 import schedule
@@ -14,7 +15,7 @@ import schedule
 import bias
 import calibration
 import config
-from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, RUN_TIME, VETO_SPREAD_THRESHOLD
+from config import CITIES, D0_CUTOFF_LOCAL_HOUR, MAX_MARKET_PRICE, MIN_DISAGREEMENT_SPREAD, RUN_TIME
 from forecast import (
     get_daily_high,
     get_day_max_temp,
@@ -50,6 +51,13 @@ def apply_bias(city_name: str, days_ahead: int, raw_forecast: float) -> tuple[fl
         return raw_forecast, 0.0
     correction = bias.get_bias(city_name, days_ahead)
     return raw_forecast - correction, correction
+
+
+def _is_vetoed(spread: Optional[float]) -> bool:
+    """True when we must NOT trade. New strategy trades ONLY high-disagreement
+    (>= MIN_DISAGREEMENT_SPREAD) tails, so a missing spread or one below the
+    threshold is vetoed."""
+    return not (spread is not None and spread >= MIN_DISAGREEMENT_SPREAD)
 
 
 def _is_d0_too_late(city: dict, target: date) -> bool:
@@ -158,7 +166,7 @@ def _scan_city_date(city: dict, target: date) -> list[Signal]:
         s.forecast_high_raw = forecast  # raw primary, pre-correction
         s.forecast_openmeteo = veto_forecast
         s.model_spread = spread
-        s.vetoed = spread is not None and spread >= VETO_SPREAD_THRESHOLD
+        s.vetoed = _is_vetoed(spread)
         s.metar_observed = observed
         if observed is not None:
             s.bracket_busted = is_bracket_busted(

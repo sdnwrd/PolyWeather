@@ -44,9 +44,11 @@ BIAS_DEADBAND_SE = 2.0
 # horizons. Effective sigma = base + HORIZON_SIGMA_GROWTH * days_ahead.
 HORIZON_SIGMA_GROWTH = 0.7  # °F per day past today
 
-# If |NDFD - Open-Meteo| forecast spread ≥ this, the city's signals are
-# flagged as vetoed — shown for visibility but not actionable.
-VETO_SPREAD_THRESHOLD = 3.0
+# Minimum |primary - veto| forecast disagreement required to TRADE a bracket.
+# Strategy (2026-07-22): the edge lives in extreme model disagreement — corrected
+# live data shows winrate ~2% at <3°F, 0% at [3,5)°F, ~10.5% at >=5°F. Below this
+# threshold (and when the veto model is unavailable) we do not trade.
+MIN_DISAGREEMENT_SPREAD = 5.0
 
 # Liquidity guards — skip markets that can't be filled cleanly at the
 # scanned price. Borrowed from weatherbet's MIN_VOLUME/MAX_SLIPPAGE.
