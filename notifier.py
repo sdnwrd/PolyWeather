@@ -162,9 +162,9 @@ def _group_by_city_date(signals: list[Signal]) -> "dict[tuple[str, date], list[S
 
 def build_signals_message(signals: list[Signal], today: date) -> str:
     # Only actionable signals are shown. Busted (observed METAR already past the
-    # bracket) and vetoed (forecast sources disagree too much) signals are
-    # filtered out silently — they're still computed and journaled, just not
-    # cluttering the alert.
+    # bracket) and vetoed (model disagreement below MIN_DISAGREEMENT_SPREAD — the
+    # >=5F strategy trades ONLY high-disagreement tails) signals are filtered out
+    # silently — they're still computed and journaled, just not cluttering the alert.
     traded = [s for s in signals if not s.bracket_busted and not s.vetoed]
 
     if not traded:
