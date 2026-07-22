@@ -88,18 +88,19 @@ CITIES = [
     {"name": "London",        "lat": 51.5053, "lon": 0.0553,    "station": "EGLC", "region": "intl", "tz": "Europe/London"},
     # Paris market resolves on Le Bourget (LFPB), NOT Charles-de-Gaulle.
     {"name": "Paris",         "lat": 48.9694, "lon": 2.4414,    "station": "LFPB", "region": "intl", "tz": "Europe/Paris"},
-    {"name": "Singapore",     "lat": 1.3592,  "lon": 103.9894,  "station": "WSSS", "region": "intl", "tz": "Asia/Singapore"},
-    # Shanghai resolves on Pudong (ZSPD), east coast. Our previous coords
-    # (31.1979, 121.3364) were actually Hongqiao (ZSSS), 30km west and ~4°C
-    # warmer due to inland location. Use the actual ZSPD coords.
-    {"name": "Shanghai",      "lat": 31.1443, "lon": 121.8083,  "station": "ZSPD", "region": "intl", "tz": "Asia/Shanghai"},
-    # --- Cut 2026-07-18 (0 wins / pure drag over 5 weeks) — re-add if revisited:
+    # Tokyo re-added 2026-07-22 for the >=5F strategy — high continental-summer
+    # variance where models disagree on the peak. D+1 only (D+0 gated by the
+    # 14:00 local cutoff, since 05:00 UTC scan == 14:00 JST == at peak).
+    # Resolves on Haneda (RJTT).
+    {"name": "Tokyo",         "lat": 35.5533, "lon": 139.7811,  "station": "RJTT", "region": "intl", "tz": "Asia/Tokyo"},
+    # --- Not traded under the >=5F strategy (maritime/tropical, ~0 disagreement,
+    # 0/2 in the >=5F band) — re-add if revisited:
+    # Singapore WSSS (Asia/Singapore), Shanghai ZSPD (Asia/Shanghai).
+    # --- Cut 2026-07-18 (0 wins / pure drag over 5 weeks):
     # US (NDFD primary): Chicago KORD, Miami KMIA, Denver KBKF, Atlanta KATL,
     #   Houston KHOU, Los Angeles KLAX, San Francisco KSFO, Austin KAUS,
-    #   New York KLGA.
-    # Intl: Tokyo RJTT, Munich EDDM, Toronto CYYZ.
-    # Hong Kong stays dropped separately (resolves on HKO King's Park, not a
-    # standard METAR station — no reliable day-max source).
+    #   New York KLGA. Intl: Munich EDDM, Toronto CYYZ.
+    # Hong Kong stays dropped (resolves on HKO King's Park, no standard METAR).
 ]
 
 # How many calendar days ahead to scan (D+0 = today, D+1 = tomorrow, ...).
