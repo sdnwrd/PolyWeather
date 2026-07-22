@@ -39,7 +39,7 @@ class Signal:
     forecast_high_raw: Optional[float] = None
     forecast_openmeteo: Optional[float] = None
     model_spread: Optional[float] = None
-    vetoed: bool = False  # set True when |NDFD - Open-Meteo| ≥ threshold
+    vetoed: bool = False  # set by main._is_vetoed: True = do NOT trade (disagreement < MIN_DISAGREEMENT_SPREAD, or veto model unavailable)
     # D+0 reality check: latest METAR temp at scan time, and whether observed
     # has already exceeded the bracket (definitive loss, don't trade).
     metar_observed: Optional[float] = None
