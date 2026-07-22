@@ -1,0 +1,168 @@
+{
+  "city": "Tokyo",
+  "date": "2026-07-23",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5533,
+  "lon": 139.7811,
+  "snapshots": [
+    {
+      "ts": "2026-07-22T12:57:16+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 94.8,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 96.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.9000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C or below on July 23?",
+          "bracket_low": -Infinity,
+          "bracket_high": 84.2,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 2116.963021,
+          "accepting_orders": true,
+          "market_id": "3010488",
+          "token_id": "81961629399360899317667157228327360364553359533792741827190648347537082571224"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 30\u00b0C on July 23?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1677.30574,
+          "accepting_orders": true,
+          "market_id": "3010489",
+          "token_id": "68263845443394239672930890522241175459395880432520155420474809635785264092306"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 31\u00b0C on July 23?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 794.41432,
+          "accepting_orders": true,
+          "market_id": "3010490",
+          "token_id": "61147559844433575039290811838842908620239582485068495243593537933518336443029"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 32\u00b0C on July 23?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.003,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 162.4232,
+          "accepting_orders": true,
+          "market_id": "3010491",
+          "token_id": "66734121672412093176867184239147864028140066829579732212529126012910632118982"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 33\u00b0C on July 23?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": 0.01,
+          "bestAsk": 0.017,
+          "price": 0.017,
+          "volume": 891.417897,
+          "accepting_orders": true,
+          "market_id": "3010492",
+          "token_id": "67391047685759771060679765527789075790212516072904813527332674814493337541805"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 34\u00b0C on July 23?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.13,
+          "bestAsk": 0.15,
+          "price": 0.15,
+          "volume": 1559.8602800000003,
+          "accepting_orders": true,
+          "market_id": "3010493",
+          "token_id": "74095979024964355040657332380170068255710415119463266827515425483768808145883"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 35\u00b0C on July 23?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.32,
+          "bestAsk": 0.34,
+          "price": 0.34,
+          "volume": 865.8054300000001,
+          "accepting_orders": true,
+          "market_id": "3010494",
+          "token_id": "62525027256651515895588001202395213763922224789156242797594632851980474945111"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 36\u00b0C on July 23?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.35,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 1778.9407479999995,
+          "accepting_orders": true,
+          "market_id": "3010495",
+          "token_id": "61382383450634114056674279504539297555192738587773158518173357493415191857000"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 37\u00b0C on July 23?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.15,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 1397.494828,
+          "accepting_orders": true,
+          "market_id": "3010496",
+          "token_id": "103066728166764938169315207016893469026862009615824066967847605259685614227421"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 38\u00b0C on July 23?",
+          "bracket_low": 100.4,
+          "bracket_high": 102.2,
+          "bestBid": 0.032,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 3902.2492400000006,
+          "accepting_orders": true,
+          "market_id": "3010497",
+          "token_id": "114073812845858423623867577964149251631098081126061854048301162743589914322093"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 39\u00b0C or higher on July 23?",
+          "bracket_low": 102.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.006,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 4430.152247000002,
+          "accepting_orders": true,
+          "market_id": "3010498",
+          "token_id": "65644041645726414255981484658888846967977275895479367194583084435705201741336"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "market_id": "3010492",
+          "market_price": 0.017,
+          "forecast_high": 94.8,
+          "true_prob": 0.1727585670597408,
+          "ev": 10.162268650572987,
+          "forecast_openmeteo": 96.7,
+          "model_spread": 1.9000000000000057,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
