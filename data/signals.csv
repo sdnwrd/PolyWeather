@@ -231,8 +231,9 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-07-22,2026-07-22,0,Paris,LFPB,Will the highest temperature in Paris be 24°C on July 22?,75.2,77.0,0.014,78.9,78.9,0.1544,11.03,82.5,3.6,true,78.8,LOSS,2026-07-23T05:00:36+00:00
 2026-07-22,2026-07-22,0,Singapore,WSSS,Will the highest temperature in Singapore be 32°C on July 22?,89.6,91.4,0.005,88.0,88.0,0.1547,30.93,87.9,0.1,false,,PENDING,
 2026-07-22,2026-07-22,0,Singapore,WSSS,Will the highest temperature in Singapore be 31°C on July 22?,87.8,89.6,0.009,88.0,88.0,0.191,21.23,87.9,0.1,false,,PENDING,
-2026-07-22,2026-07-23,1,Paris,LFPB,Will the highest temperature in Paris be 23°C on July 23?,73.4,75.2,0.007,77.5,77.5,0.1333,19.04,81.6,4.1,true,,PENDING,
-2026-07-22,2026-07-23,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 33°C on July 23?,91.4,93.2,0.017,94.8,94.8,0.1728,10.16,96.7,1.9,true,,PENDING,
+2026-07-22,2026-07-23,1,Paris,LFPB,Will the highest temperature in Paris be 23°C on July 23?,73.4,75.2,0.007,77.5,77.5,0.1333,19.04,81.6,4.1,true,77.0,LOSS,2026-07-24T05:00:57+00:00
+2026-07-22,2026-07-23,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 33°C on July 23?,91.4,93.2,0.017,94.8,94.8,0.1728,10.16,96.7,1.9,true,95.0,LOSS,2026-07-24T05:00:57+00:00
 2026-07-23,2026-07-24,1,London,EGLC,Will the highest temperature in London be 26°C on July 24?,78.8,80.6,0.019,82.0,82.0,0.1841,9.69,87.0,5.0,false,,PENDING,
 2026-07-23,2026-07-24,1,Paris,LFPB,Will the highest temperature in Paris be 25°C on July 24?,77.0,78.8,0.008,79.8,79.8,0.1693,21.16,85.4,5.6,false,,PENDING,
 2026-07-23,2026-07-24,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 29°C on July 24?,84.2,86.0,0.01,88.4,88.4,0.1271,12.71,90.6,2.2,true,,PENDING,
+2026-07-24,2026-07-25,1,Paris,LFPB,Will the highest temperature in Paris be 27°C on July 25?,80.6,82.4,0.009,85.0,85.0,0.1242,13.8,92.0,7.0,false,,PENDING,
