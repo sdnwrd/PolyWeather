@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-07-29T05:00:42+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 99.0,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 101.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.700000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 32\u00b0C or below on July 29?",
+          "bracket_low": -Infinity,
+          "bracket_high": 89.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 6777.992080000001,
+          "accepting_orders": true,
+          "market_id": "3124742",
+          "token_id": "17224140004884789855040426378030184624075043050587301315129837036751735561192"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 33\u00b0C on July 29?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1760.3218270000002,
+          "accepting_orders": true,
+          "market_id": "3124743",
+          "token_id": "114541843726067868294563678488296983914376055307098863767888831351662839557980"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 34\u00b0C on July 29?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 2563.3395979999996,
+          "accepting_orders": true,
+          "market_id": "3124744",
+          "token_id": "65507031144316552158289917366444068594313558331959187191974027418225491581860"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 35\u00b0C on July 29?",
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "bestBid": 0.006,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 4849.469467000002,
+          "accepting_orders": true,
+          "market_id": "3124745",
+          "token_id": "14990694306469515539001088095969009497365621349870727548980686376493387145987"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 36\u00b0C on July 29?",
+          "bracket_low": 96.8,
+          "bracket_high": 98.6,
+          "bestBid": 0.04,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 5323.625115000001,
+          "accepting_orders": true,
+          "market_id": "3124746",
+          "token_id": "85959961801729850516144510965455548209032952448015997131891494771753102570592"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 37\u00b0C on July 29?",
+          "bracket_low": 98.6,
+          "bracket_high": 100.4,
+          "bestBid": 0.29,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 9991.773932,
+          "accepting_orders": true,
+          "market_id": "3124747",
+          "token_id": "111778521317762130204542620883355560741395485017570348824448069228591449138263"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 38\u00b0C on July 29?",
+          "bracket_low": 100.4,
+          "bracket_high": 102.2,
+          "bestBid": 0.5,
+          "bestAsk": 0.51,
+          "price": 0.51,
+          "volume": 11641.589951000004,
+          "accepting_orders": true,
+          "market_id": "3124748",
+          "token_id": "68718544928737383217517071773782287737950218107339134021826759408667733692453"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 39\u00b0C on July 29?",
+          "bracket_low": 102.2,
+          "bracket_high": 104.0,
+          "bestBid": 0.11,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 6911.592165000004,
+          "accepting_orders": true,
+          "market_id": "3124749",
+          "token_id": "19226666463909967177002060398156563737026182120650125267213579310973070209269"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 40\u00b0C on July 29?",
+          "bracket_low": 104.0,
+          "bracket_high": 105.8,
+          "bestBid": 0.003,
+          "bestAsk": 0.011,
+          "price": 0.011,
+          "volume": 6871.413490000003,
+          "accepting_orders": true,
+          "market_id": "3124750",
+          "token_id": "7650991684701926078737107898778571475165710075032876910844629894577300212509"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 41\u00b0C on July 29?",
+          "bracket_low": 105.8,
+          "bracket_high": 107.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 2881.3799759999993,
+          "accepting_orders": true,
+          "market_id": "3124751",
+          "token_id": "8789250080336988177866797112535969239470021142927963124454050713986892870894"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 42\u00b0C or higher on July 29?",
+          "bracket_low": 107.6,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 2134.3914499999996,
+          "accepting_orders": true,
+          "market_id": "3124752",
+          "token_id": "113750936825213430141282469409064431357949319426251948721924691485999587639720"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 95.0,
+          "bracket_high": 96.8,
+          "market_id": "3124745",
+          "market_price": 0.009,
+          "forecast_high": 99.0,
+          "true_prob": 0.13941798362309404,
+          "ev": 15.490887069232672,
+          "forecast_openmeteo": 101.7,
+          "model_spread": 2.700000000000003,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
