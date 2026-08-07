@@ -163,6 +163,176 @@
           "vetoed": true
         }
       ]
+    },
+    {
+      "ts": "2026-08-07T05:00:34+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 79.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 81.4,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.200000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 23\u00b0C or below on August 7?",
+          "bracket_low": -Infinity,
+          "bracket_high": 73.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1582.7298300000002,
+          "accepting_orders": true,
+          "market_id": "3352321",
+          "token_id": "78786655115914214676499140270838685384691284500253896534264672835996974139126"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C on August 7?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 2121.1684449999993,
+          "accepting_orders": true,
+          "market_id": "3352322",
+          "token_id": "13355915920507296223563525520816209620806692127735188390561657402767417026447"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on August 7?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 5004.054713000001,
+          "accepting_orders": true,
+          "market_id": "3352323",
+          "token_id": "92104915647413160657280418715458634055724112645500514528164181693063279469285"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on August 7?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.27,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 4581.836618,
+          "accepting_orders": true,
+          "market_id": "3352324",
+          "token_id": "45099705746807226936027968815060974430919364071592929479790760442965859872521"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on August 7?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.59,
+          "bestAsk": 0.6,
+          "price": 0.6,
+          "volume": 7946.808144000001,
+          "accepting_orders": true,
+          "market_id": "3352325",
+          "token_id": "3905988371824789100153164523082057690177284781573368708213625463438344959376"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C on August 7?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.06,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 3318.272399000001,
+          "accepting_orders": true,
+          "market_id": "3352327",
+          "token_id": "30808467592474836706975721705271119718748013707143691635792683204560042070475"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C on August 7?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.012,
+          "price": 0.012,
+          "volume": 3543.0557510000003,
+          "accepting_orders": true,
+          "market_id": "3352329",
+          "token_id": "56250274447861855819394093729702187775571444833722702943979072282440960292242"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C on August 7?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 3129.018257000001,
+          "accepting_orders": true,
+          "market_id": "3352330",
+          "token_id": "6969548868166688495921479617337271260345670395692233897820890225243629995762"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 31\u00b0C on August 7?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1360.517354,
+          "accepting_orders": true,
+          "market_id": "3352331",
+          "token_id": "72718594661514273861206333050005268856746518755194426425538253987643441186178"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 32\u00b0C on August 7?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 515.977,
+          "accepting_orders": true,
+          "market_id": "3352332",
+          "token_id": "95369728551848764231086259541171839660682269437919549488230569643984869968661"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 33\u00b0C or higher on August 7?",
+          "bracket_low": 91.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 652.968766,
+          "accepting_orders": true,
+          "market_id": "3352333",
+          "token_id": "105015221639218315124743666340903671148361667032342354420949686018331335057866"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "3352322",
+          "market_price": 0.005,
+          "forecast_high": 79.2,
+          "true_prob": 0.1384680303192905,
+          "ev": 27.6936060638581,
+          "forecast_openmeteo": 81.4,
+          "model_spread": 2.200000000000003,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "market_id": "3352323",
+          "market_price": 0.02,
+          "forecast_high": 79.2,
+          "true_prob": 0.23294225192072637,
+          "ev": 11.647112596036319,
+          "forecast_openmeteo": 81.4,
+          "model_spread": 2.200000000000003,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
