@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-08-11",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-08-10T05:00:31+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 76.4,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 77.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.7999999999999972,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C or below on August 11?",
+          "bracket_low": -Infinity,
+          "bracket_high": 68.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 4427.985,
+          "accepting_orders": true,
+          "market_id": "3435780",
+          "token_id": "21504124282092621147365021711848528247271592290510953694999221347035382393269"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on August 11?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 742.6227000000001,
+          "accepting_orders": true,
+          "market_id": "3435781",
+          "token_id": "3651093532773100516544338187698057077770014289664408577048955718526992258280"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on August 11?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 1235.6504160000002,
+          "accepting_orders": true,
+          "market_id": "3435782",
+          "token_id": "41104927065053480932904583273906682276509034608439070479408955987024667316470"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on August 11?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.04,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 2340.5680500000003,
+          "accepting_orders": true,
+          "market_id": "3435783",
+          "token_id": "7437407582407982993556238989294712567031894344427510100945004012141884215012"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on August 11?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.38,
+          "bestAsk": 0.39,
+          "price": 0.39,
+          "volume": 3714.8660029999996,
+          "accepting_orders": true,
+          "market_id": "3435784",
+          "token_id": "32757646869726090962528616594949579700642961578189186050146177774007035199303"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on August 11?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.48,
+          "bestAsk": 0.49,
+          "price": 0.49,
+          "volume": 3305.669449,
+          "accepting_orders": true,
+          "market_id": "3435785",
+          "token_id": "103800097793902082097091332114122191490073435203525995912417531618443648001833"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on August 11?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.09,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 2555.8426000000004,
+          "accepting_orders": true,
+          "market_id": "3435786",
+          "token_id": "19868260886056270038309278045978690171033090793123967048941439198486751764061"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on August 11?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 1719.2403840000002,
+          "accepting_orders": true,
+          "market_id": "3435787",
+          "token_id": "101717925608264685569743618427915430947824181245911589679963649549583056593277"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C on August 11?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 1541.1549000000002,
+          "accepting_orders": true,
+          "market_id": "3435788",
+          "token_id": "17182849670044927768595600366947743834036279028864916511201629737767922095697"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C on August 11?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1266.9299,
+          "accepting_orders": true,
+          "market_id": "3435789",
+          "token_id": "84758818206527924520100817208240909893642926544725557682631653014117020452185"
+        },
+        {
+          "question": "Will the highest temperature in London be 30\u00b0C or higher on August 11?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 616.9749999999999,
+          "accepting_orders": true,
+          "market_id": "3435790",
+          "token_id": "53945444507350024351635681966771528433484823668385689211077264427570496598178"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "market_id": "3435782",
+          "market_price": 0.005,
+          "forecast_high": 76.4,
+          "true_prob": 0.11156421320906768,
+          "ev": 22.312842641813535,
+          "forecast_openmeteo": 77.2,
+          "model_spread": 0.7999999999999972,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
