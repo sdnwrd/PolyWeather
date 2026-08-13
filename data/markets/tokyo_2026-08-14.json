@@ -1,0 +1,168 @@
+{
+  "city": "Tokyo",
+  "date": "2026-08-14",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5533,
+  "lon": 139.7811,
+  "snapshots": [
+    {
+      "ts": "2026-08-13T05:00:42+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 79.1,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 84.4,
+      "veto_source": "openmeteo-gfs",
+      "spread": 5.300000000000011,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 22\u00b0C or below on August 14?",
+          "bracket_low": -Infinity,
+          "bracket_high": 71.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 384.995,
+          "accepting_orders": true,
+          "market_id": "3533856",
+          "token_id": "4762032109311764648721272759431544428271731443518189465928509815638096473855"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C on August 14?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 372.99199999999996,
+          "accepting_orders": true,
+          "market_id": "3533857",
+          "token_id": "77308294530340825506173598503386648350495422110877754715694244061075994273533"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on August 14?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 247.14620000000002,
+          "accepting_orders": true,
+          "market_id": "3533858",
+          "token_id": "68608668829769138234691270660572475805235202417510894318645608083400301958162"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on August 14?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 724.7769659999998,
+          "accepting_orders": true,
+          "market_id": "3533859",
+          "token_id": "42426362025819175263452495964478239276272529453459734468366083502690140009173"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on August 14?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.08,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 1164.309939,
+          "accepting_orders": true,
+          "market_id": "3533860",
+          "token_id": "50556435162250516479311260745561517400774228518322695358698092090066816624984"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C on August 14?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.31,
+          "bestAsk": 0.32,
+          "price": 0.32,
+          "volume": 1176.079661,
+          "accepting_orders": true,
+          "market_id": "3533861",
+          "token_id": "83942511636395916703664659016928213454464237531539376557590001670233703697195"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 28\u00b0C on August 14?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.31,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 3498.7375289999995,
+          "accepting_orders": true,
+          "market_id": "3533862",
+          "token_id": "15554940868922540274793003423602048962942700492684840277872217006606789736209"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C on August 14?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.21,
+          "bestAsk": 0.22,
+          "price": 0.22,
+          "volume": 3336.4024360000003,
+          "accepting_orders": true,
+          "market_id": "3533863",
+          "token_id": "57586355760948836110153530866300760165453933511514983422901003834901163358916"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 30\u00b0C on August 14?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.05,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 969.3594529999999,
+          "accepting_orders": true,
+          "market_id": "3533864",
+          "token_id": "66764571415672437267226385341751844891507773284082738135829485355038666678240"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 31\u00b0C on August 14?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 657.8353320000001,
+          "accepting_orders": true,
+          "market_id": "3533865",
+          "token_id": "96705988165757390769142022435758556683515038209277545915541419592988578097412"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 32\u00b0C or higher on August 14?",
+          "bracket_low": 89.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.005,
+          "bestAsk": 0.011,
+          "price": 0.011,
+          "volume": 368.1552,
+          "accepting_orders": true,
+          "market_id": "3533866",
+          "token_id": "27105861283112057557381175894228728278763533861024118227884362152381920451590"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "3533858",
+          "market_price": 0.009,
+          "forecast_high": 79.1,
+          "true_prob": 0.11420983429581316,
+          "ev": 12.689981588423686,
+          "forecast_openmeteo": 84.4,
+          "model_spread": 5.300000000000011,
+          "vetoed": false
+        }
+      ]
+    }
+  ]
+}
