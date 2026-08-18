@@ -284,8 +284,9 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-08-15,2026-08-15,0,Paris,LFPB,Will the highest temperature in Paris be 31°C on August 15?,87.8,89.6,0.005,91.9,91.9,0.1277,25.54,93.6,1.7,true,87.8,WIN,2026-08-16T05:00:39+00:00
 2026-08-15,2026-08-16,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 25°C on August 16?,77.0,78.8,0.003,78.6,78.6,0.1323,44.09,85.0,6.4,false,78.8,LOSS,2026-08-17T05:00:43+00:00
 2026-08-15,2026-08-16,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 26°C on August 16?,78.8,80.6,0.009,78.6,78.6,0.1306,14.52,85.0,6.4,false,78.8,WIN,2026-08-17T05:00:43+00:00
-2026-08-16,2026-08-17,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 26°C on August 17?,78.8,80.6,0.01,83.2,83.2,0.1065,10.65,85.0,1.8,true,,PENDING,
-2026-08-17,2026-08-17,0,London,EGLC,Will the highest temperature in London be 23°C on August 17?,73.4,75.2,0.001,77.6,77.6,0.1288,128.8,79.4,1.8,true,,PENDING,
-2026-08-17,2026-08-17,0,Paris,LFPB,Will the highest temperature in Paris be 26°C on August 17?,78.8,80.6,0.006,82.3,82.3,0.1675,27.91,85.9,3.6,true,,PENDING,
+2026-08-16,2026-08-17,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 26°C on August 17?,78.8,80.6,0.01,83.2,83.2,0.1065,10.65,85.0,1.8,true,84.2,LOSS,2026-08-18T05:00:57+00:00
+2026-08-17,2026-08-17,0,London,EGLC,Will the highest temperature in London be 23°C on August 17?,73.4,75.2,0.001,77.6,77.6,0.1288,128.8,79.4,1.8,true,80.6,LOSS,2026-08-18T05:00:57+00:00
+2026-08-17,2026-08-17,0,Paris,LFPB,Will the highest temperature in Paris be 26°C on August 17?,78.8,80.6,0.006,82.3,82.3,0.1675,27.91,85.9,3.6,true,84.2,LOSS,2026-08-18T05:00:57+00:00
 2026-08-17,2026-08-18,1,Paris,LFPB,Will the highest temperature in Paris be 25°C or below on August 18?,-inf,77.0,0.03,78.4,78.4,0.3307,11.02,82.3,3.9,true,,PENDING,
 2026-08-17,2026-08-18,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 27°C on August 18?,80.6,82.4,0.01,85.2,85.2,0.104,10.4,87.9,2.7,true,,PENDING,
+2026-08-18,2026-08-19,1,Paris,LFPB,Will the highest temperature in Paris be 20°C on August 19?,68.0,69.8,0.008,72.1,72.1,0.1361,17.01,71.7,0.4,true,,PENDING,

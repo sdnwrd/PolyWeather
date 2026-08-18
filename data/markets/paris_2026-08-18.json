@@ -163,6 +163,151 @@
           "vetoed": true
         }
       ]
+    },
+    {
+      "ts": "2026-08-18T05:00:46+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 77.9,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 81.4,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C or below on August 18?",
+          "bracket_low": -Infinity,
+          "bracket_high": 77.0,
+          "bestBid": 0.17,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 8480.730393999997,
+          "accepting_orders": true,
+          "market_id": "3624030",
+          "token_id": "91155446582797220631364198894667318144952056755142019987856950244814282613794"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on August 18?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.32,
+          "bestAsk": 0.38,
+          "price": 0.38,
+          "volume": 9614.536478000002,
+          "accepting_orders": true,
+          "market_id": "3624031",
+          "token_id": "5709919726848492292408681289721127570983256965935482199511923242866272475420"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on August 18?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.33,
+          "bestAsk": 0.36,
+          "price": 0.36,
+          "volume": 10415.003775999998,
+          "accepting_orders": true,
+          "market_id": "3624032",
+          "token_id": "23297806189553251542834540836023875529585249055179934423824544262695177702207"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C on August 18?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.06,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 9480.258292999999,
+          "accepting_orders": true,
+          "market_id": "3624033",
+          "token_id": "2770548510544423228999406853051486660259733726956082501947944885151400640183"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C on August 18?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 6015.508324000001,
+          "accepting_orders": true,
+          "market_id": "3624034",
+          "token_id": "109088390261683212301888750622757186753825316527542480736564790249277442015441"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C on August 18?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 3048.7433220000003,
+          "accepting_orders": true,
+          "market_id": "3624035",
+          "token_id": "39058756726488616740733944012971266071313452687599384130481879327411352250545"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 31\u00b0C on August 18?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1543.780777,
+          "accepting_orders": true,
+          "market_id": "3624036",
+          "token_id": "9063414447538299710000854006845510534004553828963731283752969030268522161083"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 32\u00b0C on August 18?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 310.98199999999997,
+          "accepting_orders": true,
+          "market_id": "3624037",
+          "token_id": "6923678530744852566498591938476371049739962102931595055915012507541850928686"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 33\u00b0C on August 18?",
+          "bracket_low": 91.4,
+          "bracket_high": 93.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 329.572,
+          "accepting_orders": true,
+          "market_id": "3624038",
+          "token_id": "85828820020722857315471857481527868511012594462285108199143017762084976083180"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 34\u00b0C on August 18?",
+          "bracket_low": 93.2,
+          "bracket_high": 95.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 451.99499999999995,
+          "accepting_orders": true,
+          "market_id": "3624039",
+          "token_id": "112499437808602141656270843568199006569853212763088640712856556853847589979730"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 35\u00b0C or higher on August 18?",
+          "bracket_low": 95.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 451.99899999999997,
+          "accepting_orders": true,
+          "market_id": "3624040",
+          "token_id": "21459669760667443533215365110248519085994065243227328930704567167073144078704"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
