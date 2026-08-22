@@ -1,0 +1,155 @@
+{
+  "city": "London",
+  "date": "2026-08-23",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-08-22T05:00:41+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 73.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 76.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C or below on August 23?",
+          "bracket_low": -Infinity,
+          "bracket_high": 68.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 581.8779999999999,
+          "accepting_orders": true,
+          "market_id": "3756751",
+          "token_id": "107386669468920745292898096663717667477211356446516720828492275564922156195720"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on August 23?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 545.0107,
+          "accepting_orders": true,
+          "market_id": "3756752",
+          "token_id": "54099420190150273289275080371594470621963033576906807567152413058912332360664"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on August 23?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.09,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 736.9602930000001,
+          "accepting_orders": true,
+          "market_id": "3756753",
+          "token_id": "107838802746096901320319029024487119920073578009172366540590160372361264301378"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on August 23?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.31,
+          "bestAsk": 0.32,
+          "price": 0.32,
+          "volume": 1926.187387,
+          "accepting_orders": true,
+          "market_id": "3756754",
+          "token_id": "51490815772131102715958253810337486015648422476857594749416529097760153036711"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on August 23?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 2665.603912000001,
+          "accepting_orders": true,
+          "market_id": "3756755",
+          "token_id": "24436205113295878934327355173854476787536350369721160289213948283250435055433"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on August 23?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.12,
+          "bestAsk": 0.13,
+          "price": 0.13,
+          "volume": 1472.919789,
+          "accepting_orders": true,
+          "market_id": "3756756",
+          "token_id": "83175842470492298676841739715905555231372423919082956853575820635169611084326"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on August 23?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 956.591761,
+          "accepting_orders": true,
+          "market_id": "3756757",
+          "token_id": "115018242202884216543111426601656072976590554738920130216000379944057629097444"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on August 23?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.003,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 331.42900000000003,
+          "accepting_orders": true,
+          "market_id": "3756758",
+          "token_id": "70713463488703641367346385665649713098227986911109901440971537253693449429515"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C on August 23?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 341.218,
+          "accepting_orders": true,
+          "market_id": "3756759",
+          "token_id": "69705368936788602969248737706399644388440166460720022767900529671191715177000"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C on August 23?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 259.981,
+          "accepting_orders": true,
+          "market_id": "3756760",
+          "token_id": "10474511099902293714820675595125294602167177418570697356461068244673161677628"
+        },
+        {
+          "question": "Will the highest temperature in London be 30\u00b0C or higher on August 23?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 525.649,
+          "accepting_orders": true,
+          "market_id": "3756761",
+          "token_id": "76337787692648574718283724532397694900465368844502775113192365890550116677152"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
