@@ -303,7 +303,9 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-08-23,2026-08-23,0,London,EGLC,Will the highest temperature in London be 21°C on August 23?,69.8,71.6,0.006,73.4,73.4,0.1608,26.8,76.7,3.3,true,75.2,LOSS,2026-08-24T05:00:47+00:00
 2026-08-23,2026-08-23,0,Paris,LFPB,Will the highest temperature in Paris be 22°C on August 23?,71.6,73.4,0.005,74.9,74.9,0.1785,35.71,77.6,2.7,true,75.2,LOSS,2026-08-24T05:00:47+00:00
 2026-08-24,2026-08-24,0,London,EGLC,Will the highest temperature in London be 19°C on August 24?,66.2,68.0,0.002,70.6,70.6,0.1187,59.37,70.9,0.3,true,71.6,LOSS,2026-08-25T05:00:56+00:00
-2026-08-24,2026-08-25,1,London,EGLC,Will the highest temperature in London be 26°C on August 25?,78.8,80.6,0.014,76.0,76.0,0.1175,8.39,76.0,0.0,true,,PENDING,
+2026-08-24,2026-08-25,1,London,EGLC,Will the highest temperature in London be 26°C on August 25?,78.8,80.6,0.014,76.0,76.0,0.1175,8.39,76.0,0.0,true,75.2,LOSS,2026-08-26T05:00:50+00:00
 2026-08-24,2026-08-24,0,Paris,LFPB,Will the highest temperature in Paris be 24°C on August 24?,75.2,77.0,0.007,78.8,78.8,0.1612,23.03,80.9,2.1,true,80.6,LOSS,2026-08-25T05:00:56+00:00
 2026-08-24,2026-08-24,0,Paris,LFPB,Will the highest temperature in Paris be 25°C on August 24?,77.0,78.8,0.02,78.8,78.8,0.2446,12.23,80.9,2.1,true,80.6,LOSS,2026-08-25T05:00:56+00:00
 2026-08-25,2026-08-26,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 30°C on August 26?,86.0,87.8,0.008,89.3,89.3,0.1211,15.14,94.5,5.2,false,,PENDING,
+2026-08-26,2026-08-26,0,London,EGLC,Will the highest temperature in London be 23°C on August 26?,73.4,75.2,0.03,75.2,75.2,0.2425,8.08,82.8,7.6,false,,PENDING,
+2026-08-26,2026-08-27,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 27°C or below on August 27?,-inf,80.6,0.021,81.8,81.8,0.4111,19.58,87.9,6.1,false,,PENDING,
