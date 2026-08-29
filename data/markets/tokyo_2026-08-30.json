@@ -1,0 +1,168 @@
+{
+  "city": "Tokyo",
+  "date": "2026-08-30",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5533,
+  "lon": 139.7811,
+  "snapshots": [
+    {
+      "ts": "2026-08-29T05:00:42+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 78.5,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 81.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.4000000000000057,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C or below on August 30?",
+          "bracket_low": -Infinity,
+          "bracket_high": 73.4,
+          "bestBid": 0.002,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 876.5878,
+          "accepting_orders": true,
+          "market_id": "3945537",
+          "token_id": "68346429099937893512854129908509717949087201681984979753728412661129981101584"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on August 30?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.004,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 335.55668199999997,
+          "accepting_orders": true,
+          "market_id": "3945538",
+          "token_id": "45305188916175535317890827369974305109104963245055269696250110548489092588389"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on August 30?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.03,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 768.910952,
+          "accepting_orders": true,
+          "market_id": "3945539",
+          "token_id": "83174455390725236458703863744658329031956975003197837874618565049571160033794"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on August 30?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.11,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 1238.4019999999998,
+          "accepting_orders": true,
+          "market_id": "3945540",
+          "token_id": "78303385004748988156478148835754635080361884487936643159107711749863467460860"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C on August 30?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.32,
+          "bestAsk": 0.34,
+          "price": 0.34,
+          "volume": 1154.3798459999998,
+          "accepting_orders": true,
+          "market_id": "3945541",
+          "token_id": "26411754875470377586214556416356643854624506932816561032683521452444987213253"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 28\u00b0C on August 30?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.29,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 2205.23326,
+          "accepting_orders": true,
+          "market_id": "3945542",
+          "token_id": "5306824361457713726842691118913610828967394029017961085818486894620639419963"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C on August 30?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.09,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 1987.969004,
+          "accepting_orders": true,
+          "market_id": "3945543",
+          "token_id": "93377728799880584434319821865120113593001500358641881392248994253301270464041"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 30\u00b0C on August 30?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 941.2746109999999,
+          "accepting_orders": true,
+          "market_id": "3945544",
+          "token_id": "55218372332273371496016192945547406926295958447669232943904934698662220128774"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 31\u00b0C on August 30?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 289.638,
+          "accepting_orders": true,
+          "market_id": "3945545",
+          "token_id": "39082349960492622885710794029372321256051833878487389115503484677929759335808"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 32\u00b0C on August 30?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 761.050752,
+          "accepting_orders": true,
+          "market_id": "3945546",
+          "token_id": "50809233106068951648647737145488613077475645569169493530600977497266307349900"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 33\u00b0C or higher on August 30?",
+          "bracket_low": 91.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 426.198,
+          "accepting_orders": true,
+          "market_id": "3945547",
+          "token_id": "97420519923828890695258343773720090595185320155825281694980639060865980169031"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "3945538",
+          "market_price": 0.01,
+          "forecast_high": 78.5,
+          "true_prob": 0.12153140719533856,
+          "ev": 12.153140719533855,
+          "forecast_openmeteo": 81.9,
+          "model_spread": 3.4000000000000057,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
