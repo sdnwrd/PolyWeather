@@ -1,0 +1,168 @@
+{
+  "city": "Paris",
+  "date": "2026-08-31",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-08-30T05:00:57+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 73.1,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 71.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.1999999999999886,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 19\u00b0C or below on August 31?",
+          "bracket_low": -Infinity,
+          "bracket_high": 66.2,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 148.37199999999999,
+          "accepting_orders": true,
+          "market_id": "3967378",
+          "token_id": "51383627904163206462060057142778618660384382769425968389000515727027575405672"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 20\u00b0C on August 31?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 181.5762,
+          "accepting_orders": true,
+          "market_id": "3967379",
+          "token_id": "103270485819019185118337397202860634916052813322094255766253835712734280336524"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 21\u00b0C on August 31?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 297.92513199999996,
+          "accepting_orders": true,
+          "market_id": "3967380",
+          "token_id": "92371464243399972646222220095938841482667205218208899233286901675101894482935"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 22\u00b0C on August 31?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.16,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 1336.1951190000004,
+          "accepting_orders": true,
+          "market_id": "3967381",
+          "token_id": "10688424631479868211898318671993348043150928922390284013310559975522412668002"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 23\u00b0C on August 31?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.43,
+          "bestAsk": 0.47,
+          "price": 0.47,
+          "volume": 1506.4504070000003,
+          "accepting_orders": true,
+          "market_id": "3967382",
+          "token_id": "69238376697068498478110783926640476983935034471378333521652751648635622461857"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C on August 31?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.26,
+          "bestAsk": 0.27,
+          "price": 0.27,
+          "volume": 980.8283369999998,
+          "accepting_orders": true,
+          "market_id": "3967383",
+          "token_id": "56823423990384122460590670135911061771021814423204205004736376889877143499031"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on August 31?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 1285.362752,
+          "accepting_orders": true,
+          "market_id": "3967384",
+          "token_id": "27153981932275144275671496508993307561350408030270145027710001044562114350698"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on August 31?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 420.486675,
+          "accepting_orders": true,
+          "market_id": "3967385",
+          "token_id": "193825288346963422332732469289491265814636967524464388158098743552199690954"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on August 31?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 102.356,
+          "accepting_orders": true,
+          "market_id": "3967386",
+          "token_id": "81370064444764231725375333827386234602650745500527044148113268082052621378088"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C on August 31?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 102.35600000000001,
+          "accepting_orders": true,
+          "market_id": "3967387",
+          "token_id": "62158552339959376767269675015428861049083407893831376380503051263463852368922"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C or higher on August 31?",
+          "bracket_low": 84.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 137.356,
+          "accepting_orders": true,
+          "market_id": "3967388",
+          "token_id": "56294636740900109552680231436436908180396522220428306763075897725263622363860"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "market_id": "3967380",
+          "market_price": 0.02,
+          "forecast_high": 73.1,
+          "true_prob": 0.16453302942328119,
+          "ev": 8.22665147116406,
+          "forecast_openmeteo": 71.9,
+          "model_spread": 1.1999999999999886,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
