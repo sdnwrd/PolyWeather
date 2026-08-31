@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-08-31",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-08-31T05:00:37+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 70.3,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 68.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.200000000000003,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C or below on August 31?",
+          "bracket_low": -Infinity,
+          "bracket_high": 60.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 583.395579,
+          "accepting_orders": true,
+          "market_id": "3967367",
+          "token_id": "63239986080045889295764668432688201087948514248274730921009005463380188529728"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on August 31?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 304.98900000000003,
+          "accepting_orders": true,
+          "market_id": "3967368",
+          "token_id": "31693959931411659614968515652230814322789775901235754820327338763971849569286"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on August 31?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 458.01853099999994,
+          "accepting_orders": true,
+          "market_id": "3967369",
+          "token_id": "114186529000872658605082709006451234724868137045719758500824175666473430548990"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on August 31?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 1214.6878,
+          "accepting_orders": true,
+          "market_id": "3967370",
+          "token_id": "91611761690708067575905566144033636182819811050688393483411234261308303753079"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on August 31?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.01,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 1629.6421520000001,
+          "accepting_orders": true,
+          "market_id": "3967371",
+          "token_id": "91913073321257427441438454264333353477069614754808577209545932510568152116894"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on August 31?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.11,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 4505.354952,
+          "accepting_orders": true,
+          "market_id": "3967372",
+          "token_id": "5150186882765141679994466977627474996568069756920440020781496627928281734589"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on August 31?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.44,
+          "bestAsk": 0.45,
+          "price": 0.45,
+          "volume": 9522.755589000002,
+          "accepting_orders": true,
+          "market_id": "3967373",
+          "token_id": "51913062982513457142120456461255412184359656899074282608667254506309889426226"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on August 31?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.37,
+          "bestAsk": 0.38,
+          "price": 0.38,
+          "volume": 7921.135382,
+          "accepting_orders": true,
+          "market_id": "3967374",
+          "token_id": "43685544541672489444103877404801391331074355935549178897749704200923224931863"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on August 31?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.05,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 3425.6621040000005,
+          "accepting_orders": true,
+          "market_id": "3967375",
+          "token_id": "61892445678623341129182792440280083133143455798169120949137963477293214310642"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on August 31?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.005,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 2029.1151110000003,
+          "accepting_orders": true,
+          "market_id": "3967376",
+          "token_id": "89732542091675408989762486646110377535812608528442044611115472096545429809285"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C or higher on August 31?",
+          "bracket_low": 78.8,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 737.063,
+          "accepting_orders": true,
+          "market_id": "3967377",
+          "token_id": "1209961042534312269132753219939472641561744843805669962881517525300505460073"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "market_id": "3967370",
+          "market_price": 0.008,
+          "forecast_high": 70.3,
+          "true_prob": 0.1331710132392947,
+          "ev": 16.646376654911837,
+          "forecast_openmeteo": 68.1,
+          "model_spread": 2.200000000000003,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
