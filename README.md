@@ -1,8 +1,26 @@
-# weather-signal-bot
+# PolyWeather
 
 Monitors Polymarket temperature-bracket markets for 8 US cities, compares them
 to the NWS daily-high forecast, and pings a Telegram chat when a bracket looks
 mispriced. **It never trades — it only signals.**
+
+## The idea
+
+A market price is an implied probability. To judge it you need an independent probability for the
+same event. The US National Weather Service publishes a free forecast, so the question is whether
+the prices drift away from it.
+
+The forecast is a single number, not an interval, so it gets treated as the mean of a normal
+distribution. That is what makes a temperature bracket integrable into a probability at all. The
+fixed standard deviation is a simplification, and an honest one: I have not calibrated it, so I do
+not claim to have.
+
+Three filters, not one. A high expected value alone is meaningless — it also appears at prices near
+zero, where any deviation looks enormous. Only expected value, absolute price and a minimum
+probability together separate signal from noise. The filters were more work than the maths.
+
+**It never trades.** Automating that would mean trusting money to a model whose calibration I cannot
+demonstrate.
 
 ## How it works
 
@@ -47,7 +65,7 @@ Then edit `.env`:
 ```dotenv
 TELEGRAM_TOKEN=123456:ABC-DEF...
 TELEGRAM_CHAT_ID=987654321
-NWS_USER_AGENT=weather-signal-bot/1.0 (you@example.com)
+NWS_USER_AGENT=polyweather/1.0 (you@example.com)
 ```
 
 NWS requires a descriptive `User-Agent` with a contact email — they will block
