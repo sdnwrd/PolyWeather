@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-09-06",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-09-05T05:00:21+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 76.6,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 79.6,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C or below on September 6?",
+          "bracket_low": -Infinity,
+          "bracket_high": 71.6,
+          "bestBid": 0.005,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 470.880748,
+          "accepting_orders": true,
+          "market_id": "4207261",
+          "token_id": "69346036051270223740603343382832517770468173529630540949578251121143163112497"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on September 6?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 378.088339,
+          "accepting_orders": true,
+          "market_id": "4207262",
+          "token_id": "91933868660621904518117241385521869297925521526151716968488124846590186489793"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on September 6?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.04,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 871.677792,
+          "accepting_orders": true,
+          "market_id": "4207263",
+          "token_id": "61886594486650550608453527169550963589231267474402510010791954875375138828628"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on September 6?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.31,
+          "bestAsk": 0.32,
+          "price": 0.32,
+          "volume": 1897.9625489999999,
+          "accepting_orders": true,
+          "market_id": "4207264",
+          "token_id": "74842607354130224456017038299832737406018853839886489159899686145784776803745"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on September 6?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.42,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 828.836384,
+          "accepting_orders": true,
+          "market_id": "4207265",
+          "token_id": "99962391067298501433595567263063630109062837773712689677670157451152789072798"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on September 6?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.17,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 1243.781528,
+          "accepting_orders": true,
+          "market_id": "4207266",
+          "token_id": "42041537371422593224020691916442590057140267705242708701256146282214511231731"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C on September 6?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.04,
+          "bestAsk": 0.05,
+          "price": 0.05,
+          "volume": 491.97546100000005,
+          "accepting_orders": true,
+          "market_id": "4207267",
+          "token_id": "90935603027458706870555623953113166010180882267510491186959138257597188660292"
+        },
+        {
+          "question": "Will the highest temperature in London be 29\u00b0C on September 6?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 216.85569999999998,
+          "accepting_orders": true,
+          "market_id": "4207268",
+          "token_id": "64279887397468173317649544848240482698430448887756747979181213762560383386253"
+        },
+        {
+          "question": "Will the highest temperature in London be 30\u00b0C on September 6?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 350.35083000000003,
+          "accepting_orders": true,
+          "market_id": "4207269",
+          "token_id": "36315382712748322763677029746542052631394776275471054470035963153880160105390"
+        },
+        {
+          "question": "Will the highest temperature in London be 31\u00b0C on September 6?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 188.789,
+          "accepting_orders": true,
+          "market_id": "4207270",
+          "token_id": "110648387960201520651414154320690084865933123419499788051948104314637604026768"
+        },
+        {
+          "question": "Will the highest temperature in London be 32\u00b0C or higher on September 6?",
+          "bracket_low": 89.6,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 118.99000000000001,
+          "accepting_orders": true,
+          "market_id": "4207271",
+          "token_id": "67314373623899546534738891329700235514033483785270433391033840640724209767616"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "market_id": "4207262",
+          "market_price": 0.02,
+          "forecast_high": 76.6,
+          "true_prob": 0.16418879647289086,
+          "ev": 8.209439823644542,
+          "forecast_openmeteo": 79.6,
+          "model_spread": 3.0,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}

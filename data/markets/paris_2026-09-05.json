@@ -163,6 +163,151 @@
           "vetoed": true
         }
       ]
+    },
+    {
+      "ts": "2026-09-05T05:00:23+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 74.7,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 77.8,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.0999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 20\u00b0C or below on September 5?",
+          "bracket_low": -Infinity,
+          "bracket_high": 68.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1141.945,
+          "accepting_orders": true,
+          "market_id": "4182049",
+          "token_id": "98736263791761598787826438127355070694744241965616168354032246254533904446812"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 21\u00b0C on September 5?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1196.826,
+          "accepting_orders": true,
+          "market_id": "4182050",
+          "token_id": "2336677257345176070266133165784812443354800114218617488942803232488508192701"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 22\u00b0C on September 5?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.027,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 1968.9221790000001,
+          "accepting_orders": true,
+          "market_id": "4182051",
+          "token_id": "84084224847392879275163404837826243492763978598435309020774572334802055540874"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 23\u00b0C on September 5?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.09,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 3113.701053999999,
+          "accepting_orders": true,
+          "market_id": "4182052",
+          "token_id": "93239681494379956478768520975008357941113761685089869029202141385660301342418"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C on September 5?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.41,
+          "bestAsk": 0.43,
+          "price": 0.43,
+          "volume": 7031.011376000001,
+          "accepting_orders": true,
+          "market_id": "4182053",
+          "token_id": "85856180399372208841899399930924931505991155145141843473134305547328299980912"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on September 5?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.26,
+          "bestAsk": 0.3,
+          "price": 0.3,
+          "volume": 6212.6391619999995,
+          "accepting_orders": true,
+          "market_id": "4182054",
+          "token_id": "67595804928455226965382178429524300819153639365494093382217260728411771585673"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on September 5?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.1,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 6040.389322,
+          "accepting_orders": true,
+          "market_id": "4182055",
+          "token_id": "92090945961793385510804504337292214814288942947555066554059984445608957678626"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on September 5?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 3437.1278480000005,
+          "accepting_orders": true,
+          "market_id": "4182056",
+          "token_id": "91888841746514836233292149160985286548068377795967728601618854194063553024386"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C on September 5?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1672.900958,
+          "accepting_orders": true,
+          "market_id": "4182057",
+          "token_id": "58025381563947246204677332243919663410307980838622719804074011745999936645320"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 29\u00b0C on September 5?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 928.033698,
+          "accepting_orders": true,
+          "market_id": "4182058",
+          "token_id": "11689232338940579392538152847858938153398436862845453349761279649338928876922"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 30\u00b0C or higher on September 5?",
+          "bracket_low": 86.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1422.904918,
+          "accepting_orders": true,
+          "market_id": "4182059",
+          "token_id": "82255026063044347663158915980190455596077789437467735433050222986374722578221"
+        }
+      ],
+      "signals_fired": []
     }
   ]
 }
