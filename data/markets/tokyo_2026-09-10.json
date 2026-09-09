@@ -1,0 +1,155 @@
+{
+  "city": "Tokyo",
+  "date": "2026-09-10",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5533,
+  "lon": 139.7811,
+  "snapshots": [
+    {
+      "ts": "2026-09-09T05:00:50+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 72.9,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 70.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.0,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 17\u00b0C or below on September 10?",
+          "bracket_low": -Infinity,
+          "bracket_high": 62.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1321.7419999999997,
+          "accepting_orders": true,
+          "market_id": "4356308",
+          "token_id": "14512206938574267918151221281913732344436668088167460938496545940028504754302"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 18\u00b0C on September 10?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 408.105,
+          "accepting_orders": true,
+          "market_id": "4356309",
+          "token_id": "113254890567055977300195654715906732047523073306930406371331982101746475380093"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 19\u00b0C on September 10?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.01,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 153.5857,
+          "accepting_orders": true,
+          "market_id": "4356310",
+          "token_id": "15126177241837072988725300908514841878432284249694033174099366506986774579588"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 20\u00b0C on September 10?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 219.231142,
+          "accepting_orders": true,
+          "market_id": "4356311",
+          "token_id": "16238963246298022890995405630084004997551474137012052922571748791353756211733"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 21\u00b0C on September 10?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.1,
+          "bestAsk": 0.12,
+          "price": 0.12,
+          "volume": 320.87423199999995,
+          "accepting_orders": true,
+          "market_id": "4356312",
+          "token_id": "47494980052966199210828734957118621682729701196022936463687774007330041063072"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 22\u00b0C on September 10?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.26,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 1864.0526499999999,
+          "accepting_orders": true,
+          "market_id": "4356313",
+          "token_id": "14758533049556613704042789382403356404108135209214928726950718794753569677013"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C on September 10?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.33,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 404.686734,
+          "accepting_orders": true,
+          "market_id": "4356314",
+          "token_id": "51476893929894741464188124765924734603771253796784956521789635445187117251907"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on September 10?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.17,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 944.6809660000004,
+          "accepting_orders": true,
+          "market_id": "4356315",
+          "token_id": "46930427365572176011445058042924714916078300101825638453422709850075897361885"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on September 10?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.05,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 598.169205,
+          "accepting_orders": true,
+          "market_id": "4356316",
+          "token_id": "18703216268789174122867628930410451189556175068429391808217468219609029063166"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on September 10?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.012,
+          "bestAsk": 0.035,
+          "price": 0.035,
+          "volume": 91.015154,
+          "accepting_orders": true,
+          "market_id": "4356317",
+          "token_id": "65656603569112278127680083222785774150175518828116915359717506768038488946374"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C or higher on September 10?",
+          "bracket_low": 80.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 434.917033,
+          "accepting_orders": true,
+          "market_id": "4356318",
+          "token_id": "78819795765812106088850576644166293479129523835238787435674427709561422806858"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
