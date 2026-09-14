@@ -339,5 +339,7 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-09-11,2026-09-11,0,Paris,LFPB,Will the highest temperature in Paris be 22°C on September 11?,71.6,73.4,0.008,74.4,74.4,0.2075,25.93,76.9,2.5,true,77.0,LOSS,2026-09-12T05:00:54+00:00
 2026-09-11,2026-09-12,1,Paris,LFPB,Will the highest temperature in Paris be 22°C on September 12?,71.6,73.4,0.003,76.1,76.1,0.1206,40.19,79.4,3.3,true,78.8,LOSS,2026-09-13T05:00:48+00:00
 2026-09-12,2026-09-12,0,Paris,LFPB,Will the highest temperature in Paris be 23°C on September 12?,73.4,75.2,0.02,74.8,74.8,0.2635,13.17,79.2,4.4,true,78.8,LOSS,2026-09-13T05:00:48+00:00
-2026-09-13,2026-09-13,0,London,EGLC,Will the highest temperature in London be 19°C on September 13?,66.2,68.0,0.004,69.9,69.9,0.1555,38.88,69.3,0.6,true,,PENDING,
-2026-09-13,2026-09-13,0,London,EGLC,Will the highest temperature in London be 20°C on September 13?,68.0,69.8,0.03,69.9,69.9,0.2443,8.14,69.3,0.6,true,,PENDING,
+2026-09-13,2026-09-13,0,London,EGLC,Will the highest temperature in London be 19°C on September 13?,66.2,68.0,0.004,69.9,69.9,0.1555,38.88,69.3,0.6,true,73.4,LOSS,2026-09-14T05:00:48+00:00
+2026-09-13,2026-09-13,0,London,EGLC,Will the highest temperature in London be 20°C on September 13?,68.0,69.8,0.03,69.9,69.9,0.2443,8.14,69.3,0.6,true,73.4,LOSS,2026-09-14T05:00:48+00:00
+2026-09-14,2026-09-15,1,London,EGLC,Will the highest temperature in London be 20°C on September 15?,68.0,69.8,0.012,71.8,71.8,0.1463,12.19,72.6,0.8,true,,PENDING,
+2026-09-14,2026-09-14,0,Paris,LFPB,Will the highest temperature in Paris be 26°C on September 14?,78.8,80.6,0.007,82.8,82.8,0.1381,19.72,82.3,0.5,true,,PENDING,
