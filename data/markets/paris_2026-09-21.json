@@ -1,0 +1,168 @@
+{
+  "city": "Paris",
+  "date": "2026-09-21",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-09-20T05:00:57+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 72.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 73.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 18\u00b0C or below on September 21?",
+          "bracket_low": -Infinity,
+          "bracket_high": 64.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 503.664,
+          "accepting_orders": true,
+          "market_id": "4717924",
+          "token_id": "74295479147237018986878410217337161124365686551742874820906365145431075269391"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 19\u00b0C on September 21?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 446.85835299999997,
+          "accepting_orders": true,
+          "market_id": "4717925",
+          "token_id": "8908077709772712144167613841601593655719041836986624241683133655287608034585"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 20\u00b0C on September 21?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 366.85759999999993,
+          "accepting_orders": true,
+          "market_id": "4717926",
+          "token_id": "94203358454608334648502271851142758598753648833838557770837974707284031483963"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 21\u00b0C on September 21?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.02,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 541.547482,
+          "accepting_orders": true,
+          "market_id": "4717927",
+          "token_id": "14735082448436034892258971078749375621134136682424170363161090692633482605246"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 22\u00b0C on September 21?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.39,
+          "bestAsk": 0.41,
+          "price": 0.41,
+          "volume": 3455.7946449999995,
+          "accepting_orders": true,
+          "market_id": "4717928",
+          "token_id": "62732164034904390498104388000073017739987872820397927659118744680288245475675"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 23\u00b0C on September 21?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.44,
+          "bestAsk": 0.46,
+          "price": 0.46,
+          "volume": 2167.3263279999996,
+          "accepting_orders": true,
+          "market_id": "4717929",
+          "token_id": "99056337814929084521704203006127347459347111845411251617925140538267013761481"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 24\u00b0C on September 21?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.12,
+          "bestAsk": 0.14,
+          "price": 0.14,
+          "volume": 1446.839661,
+          "accepting_orders": true,
+          "market_id": "4717930",
+          "token_id": "77995010183426532124526642710490543393938824802932138580470762100281612831980"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 25\u00b0C on September 21?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 505.721966,
+          "accepting_orders": true,
+          "market_id": "4717931",
+          "token_id": "13629727905295829770549666826179995098307977947022193589959388976346760467098"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 26\u00b0C on September 21?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 221.6822,
+          "accepting_orders": true,
+          "market_id": "4717932",
+          "token_id": "20026246645039145796993414989267327455939612788742907452892992018944361072700"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 27\u00b0C on September 21?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 276.857353,
+          "accepting_orders": true,
+          "market_id": "4717933",
+          "token_id": "44584545507756338074733650397628069224164578160404693536194551760048874067222"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 28\u00b0C or higher on September 21?",
+          "bracket_low": 82.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1048.048285,
+          "accepting_orders": true,
+          "market_id": "4717934",
+          "token_id": "26472429892672375280368611709543678760584211106885235960727319072248930796255"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "market_id": "4717926",
+          "market_price": 0.007,
+          "forecast_high": 72.2,
+          "true_prob": 0.13197740713723388,
+          "ev": 18.853915305319127,
+          "forecast_openmeteo": 73.7,
+          "model_spread": 1.5,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
