@@ -163,6 +163,176 @@
           "vetoed": true
         }
       ]
+    },
+    {
+      "ts": "2026-09-21T05:00:53+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 70.8,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 72.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.1000000000000085,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C or below on September 21?",
+          "bracket_low": -Infinity,
+          "bracket_high": 64.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 166.2035,
+          "accepting_orders": true,
+          "market_id": "4717913",
+          "token_id": "25969928690213917253793803559051160598390871597839842574137973955237240079206"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on September 21?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1942.7721589999999,
+          "accepting_orders": true,
+          "market_id": "4717914",
+          "token_id": "114800736154963586493500501535277191360646928269815236185194128877100019579641"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on September 21?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.005,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 2774.8849070000006,
+          "accepting_orders": true,
+          "market_id": "4717915",
+          "token_id": "89370598478628616859984109224040885235861912453637974766419644039387825865434"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on September 21?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.06,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 4048.080909000001,
+          "accepting_orders": true,
+          "market_id": "4717916",
+          "token_id": "25343151885425145465425927882525151824966181634264231420228918184233683069831"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on September 21?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.55,
+          "bestAsk": 0.57,
+          "price": 0.57,
+          "volume": 7755.813749999996,
+          "accepting_orders": true,
+          "market_id": "4717917",
+          "token_id": "102491165217131231638590207339564006470826266989438099889245645561486846428326"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on September 21?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.32,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 11703.426427000006,
+          "accepting_orders": true,
+          "market_id": "4717918",
+          "token_id": "114452599312159472432013468709644602556733360822154852085114835368850554247824"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on September 21?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.06,
+          "bestAsk": 0.07,
+          "price": 0.07,
+          "volume": 7315.054182,
+          "accepting_orders": true,
+          "market_id": "4717919",
+          "token_id": "103991442056642486468014211291118829183174333816772779171502591497304513226140"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on September 21?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 3656.3097190000008,
+          "accepting_orders": true,
+          "market_id": "4717920",
+          "token_id": "48477667875073288650669352967516348688126764776095308147812080622910737854259"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C on September 21?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1364.5879670000002,
+          "accepting_orders": true,
+          "market_id": "4717921",
+          "token_id": "6953764485815407605609722012888037324536651594193050832621871386964086541389"
+        },
+        {
+          "question": "Will the highest temperature in London be 27\u00b0C on September 21?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 290.10500900000005,
+          "accepting_orders": true,
+          "market_id": "4717922",
+          "token_id": "112831040096395468514817620503971736591191076878614372176533908786402082884007"
+        },
+        {
+          "question": "Will the highest temperature in London be 28\u00b0C or higher on September 21?",
+          "bracket_low": 82.4,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 290.984,
+          "accepting_orders": true,
+          "market_id": "4717923",
+          "token_id": "47330916500358395226915828086186417323277213745141812571715486691546741409333"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "market_id": "4717914",
+          "market_price": 0.004,
+          "forecast_high": 70.8,
+          "true_prob": 0.10632991712451297,
+          "ev": 26.58247928112824,
+          "forecast_openmeteo": 72.9,
+          "model_spread": 2.1000000000000085,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "market_id": "4717915",
+          "market_price": 0.008,
+          "forecast_high": 70.8,
+          "true_prob": 0.20480962776815376,
+          "ev": 25.60120347101922,
+          "forecast_openmeteo": 72.9,
+          "model_spread": 2.1000000000000085,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
