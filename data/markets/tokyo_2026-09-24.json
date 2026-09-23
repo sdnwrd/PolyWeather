@@ -1,0 +1,168 @@
+{
+  "city": "Tokyo",
+  "date": "2026-09-24",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5533,
+  "lon": 139.7811,
+  "snapshots": [
+    {
+      "ts": "2026-09-23T05:00:56+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 79.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 84.6,
+      "veto_source": "openmeteo-gfs",
+      "spread": 5.3999999999999915,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C or below on September 24?",
+          "bracket_low": -Infinity,
+          "bracket_high": 73.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 258.888759,
+          "accepting_orders": true,
+          "market_id": "4829987",
+          "token_id": "30688007951444284073936585108337583942712050777525760475115459980266185546843"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on September 24?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.005,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 232.38273300000003,
+          "accepting_orders": true,
+          "market_id": "4829988",
+          "token_id": "23282974081392648925582443904417239923346376675549099081987990483659463497815"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on September 24?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.03,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 336.783281,
+          "accepting_orders": true,
+          "market_id": "4829989",
+          "token_id": "70927559525483009103428677565680960090641030514655043120084973138279708795454"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on September 24?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.21,
+          "bestAsk": 0.23,
+          "price": 0.23,
+          "volume": 2002.6206129999996,
+          "accepting_orders": true,
+          "market_id": "4829990",
+          "token_id": "99007033906222453111222373542406646293471450783897649794187854313117759957157"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C on September 24?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.33,
+          "bestAsk": 0.37,
+          "price": 0.37,
+          "volume": 965.7835839999999,
+          "accepting_orders": true,
+          "market_id": "4829991",
+          "token_id": "97350579276914123739210059716347664206162044704807827937861347847464167902459"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 28\u00b0C on September 24?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.27,
+          "bestAsk": 0.28,
+          "price": 0.28,
+          "volume": 3593.2996390000003,
+          "accepting_orders": true,
+          "market_id": "4829992",
+          "token_id": "21813679871287291304944454680841341934850703163622319977426469738323583504492"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C on September 24?",
+          "bracket_low": 84.2,
+          "bracket_high": 86.0,
+          "bestBid": 0.09,
+          "bestAsk": 0.11,
+          "price": 0.11,
+          "volume": 2749.581315,
+          "accepting_orders": true,
+          "market_id": "4829993",
+          "token_id": "36579702665286936594547816366195124938159067334079167755670489171548895420791"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 30\u00b0C on September 24?",
+          "bracket_low": 86.0,
+          "bracket_high": 87.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 261.874365,
+          "accepting_orders": true,
+          "market_id": "4829994",
+          "token_id": "55395787970880747050613583448644453057633359111478907823587726400290998706614"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 31\u00b0C on September 24?",
+          "bracket_low": 87.8,
+          "bracket_high": 89.6,
+          "bestBid": null,
+          "bestAsk": 0.02,
+          "price": 0.02,
+          "volume": 269.30469200000005,
+          "accepting_orders": true,
+          "market_id": "4829995",
+          "token_id": "21091325691324023400073386782390494552384690762069991751475070499062574446220"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 32\u00b0C on September 24?",
+          "bracket_low": 89.6,
+          "bracket_high": 91.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 1139.12,
+          "accepting_orders": true,
+          "market_id": "4829996",
+          "token_id": "19071025175514387989394882492350156419364677683813063695242049888440826351235"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 33\u00b0C or higher on September 24?",
+          "bracket_low": 91.4,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 15.0,
+          "accepting_orders": true,
+          "market_id": "4829997",
+          "token_id": "114985688366878403168409652844069927598866344961093271587376644174629482085753"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "market_id": "4829988",
+          "market_price": 0.009,
+          "forecast_high": 79.2,
+          "true_prob": 0.11549763064145074,
+          "ev": 12.833070071272306,
+          "forecast_openmeteo": 84.6,
+          "model_spread": 5.3999999999999915,
+          "vetoed": false
+        }
+      ]
+    }
+  ]
+}
