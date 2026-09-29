@@ -1,0 +1,155 @@
+{
+  "city": "London",
+  "date": "2026-09-30",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-09-29T05:00:45+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 75.3,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 72.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 3.0999999999999943,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C or below on September 30?",
+          "bracket_low": -Infinity,
+          "bracket_high": 60.8,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 256.0,
+          "accepting_orders": true,
+          "market_id": "5063909",
+          "token_id": "28811745714442713733436097804474696090064627005605139916929557102576564856803"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on September 30?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 20.0,
+          "accepting_orders": true,
+          "market_id": "5063910",
+          "token_id": "86436472534892348671425059143254306037751435501691547270214096327723270663054"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on September 30?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 117.05199999999999,
+          "accepting_orders": true,
+          "market_id": "5063911",
+          "token_id": "104243780123503224653444248369679614031499080621417905490517521057626798996318"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on September 30?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 172.25199999999998,
+          "accepting_orders": true,
+          "market_id": "5063912",
+          "token_id": "79036481909462040886539845962493117378857616269846406546042660719411681532656"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on September 30?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 85.64200500000001,
+          "accepting_orders": true,
+          "market_id": "5063913",
+          "token_id": "89615029847032813358280220604512382935162576842216758403213751231491698346761"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on September 30?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.02,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 555.1136,
+          "accepting_orders": true,
+          "market_id": "5063914",
+          "token_id": "42596422207595244790405126709233661341663978333229079913631766461342602275862"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on September 30?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.15,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 749.3169630000001,
+          "accepting_orders": true,
+          "market_id": "5063915",
+          "token_id": "26302552215859791775897443057928168158212726795851861848569669944823125545352"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on September 30?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.45,
+          "bestAsk": 0.48,
+          "price": 0.48,
+          "volume": 1020.845501,
+          "accepting_orders": true,
+          "market_id": "5063916",
+          "token_id": "59930255169082626868782650200719346785571232864077790940819348816570947071713"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on September 30?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.32,
+          "bestAsk": 0.33,
+          "price": 0.33,
+          "volume": 1138.0830809999998,
+          "accepting_orders": true,
+          "market_id": "5063917",
+          "token_id": "11089155783482562032909236121680932004465413284692718060486581574924438040193"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on September 30?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.022,
+          "bestAsk": 0.032,
+          "price": 0.032,
+          "volume": 477.43899999999996,
+          "accepting_orders": true,
+          "market_id": "5063918",
+          "token_id": "40683292572764799536047220541245573528702677538426653254326687738013140166775"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C or higher on September 30?",
+          "bracket_low": 78.8,
+          "bracket_high": Infinity,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 628.1669999999999,
+          "accepting_orders": true,
+          "market_id": "5063919",
+          "token_id": "52291818954706504001942653853694163300217934746622052783407037348080825788726"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
