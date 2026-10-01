@@ -375,3 +375,6 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-09-29,2026-09-29,0,London,EGLC,Will the highest temperature in London be 22°C on September 29?,71.6,73.4,0.003,76.2,76.2,0.1038,34.61,77.6,1.4,true,73.4,LOSS,2026-09-30T05:00:53+00:00
 2026-09-29,2026-09-29,0,London,EGLC,Will the highest temperature in London be 23°C on September 29?,73.4,75.2,0.019,76.2,76.2,0.2079,10.94,77.6,1.4,true,73.4,WIN,2026-09-30T05:00:53+00:00
 2026-09-30,2026-10-01,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 22°C or below on October 1?,-inf,71.6,0.011,73.7,73.7,0.3414,31.03,82.1,8.4,false,,PENDING,
+2026-10-01,2026-10-01,0,London,EGLC,Will the highest temperature in London be 19°C on October 1?,66.2,68.0,0.017,68.6,68.6,0.2273,13.37,70.2,1.6,true,,PENDING,
+2026-10-01,2026-10-02,1,London,EGLC,Will the highest temperature in London be 19°C on October 2?,66.2,68.0,0.019,69.3,69.3,0.1713,9.01,69.7,0.4,true,,PENDING,
+2026-10-01,2026-10-02,1,Paris,LFPB,Will the highest temperature in Paris be 19°C on October 2?,66.2,68.0,0.006,70.4,70.4,0.132,21.99,71.9,1.5,true,,PENDING,
