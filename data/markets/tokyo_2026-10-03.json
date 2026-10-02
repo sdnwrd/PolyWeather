@@ -1,0 +1,155 @@
+{
+  "city": "Tokyo",
+  "date": "2026-10-03",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5533,
+  "lon": 139.7811,
+  "snapshots": [
+    {
+      "ts": "2026-10-02T05:00:34+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 73.3,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 73.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.20000000000000284,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 17\u00b0C or below on October 3?",
+          "bracket_low": -Infinity,
+          "bracket_high": 62.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 308.808,
+          "accepting_orders": true,
+          "market_id": "5170422",
+          "token_id": "15115097881547729816144520452341618589581117400345303800254129853343423804442"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 18\u00b0C on October 3?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 368.688168,
+          "accepting_orders": true,
+          "market_id": "5170423",
+          "token_id": "57449104753355077390517626884133734982161571011509656208856729393007479519773"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 19\u00b0C on October 3?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 439.84497899999997,
+          "accepting_orders": true,
+          "market_id": "5170424",
+          "token_id": "105010163627580343675645771006527032502957933537627419124492392075068706799302"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 20\u00b0C on October 3?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.006,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 251.52224099999998,
+          "accepting_orders": true,
+          "market_id": "5170425",
+          "token_id": "43159578673337341698906397855131929948423018522424822781115730048292219611072"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 21\u00b0C on October 3?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.017,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 264.057454,
+          "accepting_orders": true,
+          "market_id": "5170426",
+          "token_id": "6982467436539809015242338372353994265700718189155221756123310186257576736319"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 22\u00b0C on October 3?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.23,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": 829.554934,
+          "accepting_orders": true,
+          "market_id": "5170427",
+          "token_id": "39863614442226874501929076331597756351524572233332069410822542708342977616986"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C on October 3?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.62,
+          "bestAsk": 0.63,
+          "price": 0.63,
+          "volume": 583.90227,
+          "accepting_orders": true,
+          "market_id": "5170428",
+          "token_id": "8555141448928110160568682634779023413583437859405367761188267845855527907889"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on October 3?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.08,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 812.5917390000001,
+          "accepting_orders": true,
+          "market_id": "5170429",
+          "token_id": "52613613209588263655749615940689402259571233990067568888925708655490369429732"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on October 3?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.02,
+          "bestAsk": 0.03,
+          "price": 0.03,
+          "volume": 322.938564,
+          "accepting_orders": true,
+          "market_id": "5170430",
+          "token_id": "60835642706502491986318908767241328689741790909581813320443844163196735047818"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on October 3?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.003,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 289.208256,
+          "accepting_orders": true,
+          "market_id": "5170431",
+          "token_id": "47125334462842307675460773194298068077570300895675465222795865662405091168086"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C or higher on October 3?",
+          "bracket_low": 80.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 197.697,
+          "accepting_orders": true,
+          "market_id": "5170432",
+          "token_id": "35089803572869081433259419516975010787792441854162948148553943634874528889521"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
