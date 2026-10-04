@@ -1,0 +1,155 @@
+{
+  "city": "London",
+  "date": "2026-10-05",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-10-04T05:00:33+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 72.1,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 72.9,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.8000000000000114,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C or below on October 5?",
+          "bracket_low": -Infinity,
+          "bracket_high": 60.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 179.9398,
+          "accepting_orders": true,
+          "market_id": "5225187",
+          "token_id": "27970657369746148072247374637568840717686277121723624402783466920184498234542"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on October 5?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 225.005,
+          "accepting_orders": true,
+          "market_id": "5225188",
+          "token_id": "22399685596989806511035624487625430763306821797901298423361609193147142290398"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on October 5?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 270.09360100000004,
+          "accepting_orders": true,
+          "market_id": "5225189",
+          "token_id": "84135389454119772363918727065808566413828562156107467721599833879173215161269"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on October 5?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 64.999,
+          "accepting_orders": true,
+          "market_id": "5225190",
+          "token_id": "39370621887757608696828017901918063501063145864159376118447926304201722535798"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on October 5?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.019,
+          "bestAsk": 0.038,
+          "price": 0.038,
+          "volume": 343.24528599999996,
+          "accepting_orders": true,
+          "market_id": "5225191",
+          "token_id": "75624786573796101421504470069987477881356152558097451196439406569234596680337"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on October 5?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.28,
+          "bestAsk": 0.29,
+          "price": 0.29,
+          "volume": 1590.734432,
+          "accepting_orders": true,
+          "market_id": "5225192",
+          "token_id": "100784778760544533141011462179652846781401269290156636030201574204714770944865"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on October 5?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.43,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 1746.296796,
+          "accepting_orders": true,
+          "market_id": "5225193",
+          "token_id": "52219045371057114537240918836674497228760581978360812648754845553605979195840"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on October 5?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.23,
+          "bestAsk": 0.24,
+          "price": 0.24,
+          "volume": 2724.642871,
+          "accepting_orders": true,
+          "market_id": "5225195",
+          "token_id": "275220579522246767897748430218625979481389600966261495598572633505242573520"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C on October 5?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.03,
+          "bestAsk": 0.056,
+          "price": 0.056,
+          "volume": 578.780996,
+          "accepting_orders": true,
+          "market_id": "5225196",
+          "token_id": "87660372152743299896938832661591423189264714830951405130507159738376335378870"
+        },
+        {
+          "question": "Will the highest temperature in London be 25\u00b0C on October 5?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 498.37080000000003,
+          "accepting_orders": true,
+          "market_id": "5225197",
+          "token_id": "1018754079811237432722492201587018526776894209893176793812815037000945321420"
+        },
+        {
+          "question": "Will the highest temperature in London be 26\u00b0C or higher on October 5?",
+          "bracket_low": 78.8,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 266.994,
+          "accepting_orders": true,
+          "market_id": "5225198",
+          "token_id": "91333797539499099535547235586723805088733224057228350630882820573184208369775"
+        }
+      ],
+      "signals_fired": []
+    }
+  ]
+}
