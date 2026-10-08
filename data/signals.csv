@@ -395,6 +395,9 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-10-05,2026-10-05,0,Paris,LFPB,Will the highest temperature in Paris be 23°C on October 5?,73.4,75.2,0.017,74.4,74.4,0.2697,15.86,76.2,1.8,true,77.0,LOSS,2026-10-06T05:00:46+00:00
 2026-10-06,2026-10-06,0,Paris,LFPB,Will the highest temperature in Paris be 22°C on October 6?,71.6,73.4,0.003,74.8,74.8,0.1859,61.95,76.5,1.7,true,77.0,LOSS,2026-10-07T05:00:52+00:00
 2026-10-06,2026-10-06,0,Paris,LFPB,Will the highest temperature in Paris be 23°C on October 6?,73.4,75.2,0.006,74.8,74.8,0.2656,44.27,76.5,1.7,true,77.0,LOSS,2026-10-07T05:00:52+00:00
-2026-10-07,2026-10-07,0,London,EGLC,Will the highest temperature in London be 18°C on October 7?,64.4,66.2,0.007,62.1,62.1,0.1322,18.89,61.6,0.5,true,,PENDING,
-2026-10-07,2026-10-07,0,Paris,LFPB,Will the highest temperature in Paris be 17°C on October 7?,62.6,64.4,0.021,63.9,63.9,0.2661,12.67,66.3,2.4,true,,PENDING,
+2026-10-07,2026-10-07,0,London,EGLC,Will the highest temperature in London be 18°C on October 7?,64.4,66.2,0.007,62.1,62.1,0.1322,18.89,61.6,0.5,true,60.8,LOSS,2026-10-08T05:00:56+00:00
+2026-10-07,2026-10-07,0,Paris,LFPB,Will the highest temperature in Paris be 17°C on October 7?,62.6,64.4,0.021,63.9,63.9,0.2661,12.67,66.3,2.4,true,66.2,LOSS,2026-10-08T05:00:56+00:00
 2026-10-07,2026-10-08,1,Tokyo,RJTT,Will the highest temperature in Tokyo be 21°C on October 8?,69.8,71.6,0.005,74.4,74.4,0.1079,21.57,74.4,0.0,true,,PENDING,
+2026-10-08,2026-10-09,1,London,EGLC,Will the highest temperature in London be 16°C on October 9?,60.8,62.6,0.008,65.4,65.4,0.1169,14.61,63.9,1.5,true,,PENDING,
+2026-10-08,2026-10-09,1,Paris,LFPB,Will the highest temperature in Paris be 12°C on October 9?,53.6,55.4,0.003,57.7,57.7,0.1358,45.27,61.4,3.7,true,,PENDING,
+2026-10-08,2026-10-09,1,Paris,LFPB,Will the highest temperature in Paris be 13°C on October 9?,55.4,57.2,0.015,57.7,57.7,0.196,13.06,61.4,3.7,true,,PENDING,
