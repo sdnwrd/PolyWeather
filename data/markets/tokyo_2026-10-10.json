@@ -1,0 +1,168 @@
+{
+  "city": "Tokyo",
+  "date": "2026-10-10",
+  "station": "RJTT",
+  "region": "intl",
+  "lat": 35.5533,
+  "lon": 139.7811,
+  "snapshots": [
+    {
+      "ts": "2026-10-09T05:00:51+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 76.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 78.5,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.299999999999997,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Tokyo be 19\u00b0C or below on October 10?",
+          "bracket_low": -Infinity,
+          "bracket_high": 66.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 852.685,
+          "accepting_orders": true,
+          "market_id": "5423721",
+          "token_id": "106534409250063831923066868529838262866238054169001105439076911065715637902104"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 20\u00b0C on October 10?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.012,
+          "price": 0.012,
+          "volume": 301.65605600000004,
+          "accepting_orders": true,
+          "market_id": "5423722",
+          "token_id": "15211601845072372785197678670889127840875412269668723262418103598921074068265"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 21\u00b0C on October 10?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.001,
+          "bestAsk": 0.013,
+          "price": 0.013,
+          "volume": 219.82580000000002,
+          "accepting_orders": true,
+          "market_id": "5423723",
+          "token_id": "22263168283449758680218044770124429800576217418293287750251816141349673066807"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 22\u00b0C on October 10?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.003,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 220.95406599999998,
+          "accepting_orders": true,
+          "market_id": "5423724",
+          "token_id": "24307783117260260438253383762575726301376384478404422272046012234475101312528"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 23\u00b0C on October 10?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.031,
+          "bestAsk": 0.06,
+          "price": 0.06,
+          "volume": 252.345716,
+          "accepting_orders": true,
+          "market_id": "5423725",
+          "token_id": "78026954360814903375617521253388970183654002437167953402373433739700839292530"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 24\u00b0C on October 10?",
+          "bracket_low": 75.2,
+          "bracket_high": 77.0,
+          "bestBid": 0.44,
+          "bestAsk": 0.46,
+          "price": 0.46,
+          "volume": 3681.3301279999996,
+          "accepting_orders": true,
+          "market_id": "5423726",
+          "token_id": "67134906693269345218999598372649555048060479194983566021049265836339366342344"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 25\u00b0C on October 10?",
+          "bracket_low": 77.0,
+          "bracket_high": 78.8,
+          "bestBid": 0.41,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 848.131084,
+          "accepting_orders": true,
+          "market_id": "5423727",
+          "token_id": "56960857627614670506936625529452242385197160384219897286242108545268374646511"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 26\u00b0C on October 10?",
+          "bracket_low": 78.8,
+          "bracket_high": 80.6,
+          "bestBid": 0.07,
+          "bestAsk": 0.09,
+          "price": 0.09,
+          "volume": 594.990046,
+          "accepting_orders": true,
+          "market_id": "5423728",
+          "token_id": "81254930834997773856890065795531714623787733503493629767215457035520793570880"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 27\u00b0C on October 10?",
+          "bracket_low": 80.6,
+          "bracket_high": 82.4,
+          "bestBid": 0.005,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 259.416115,
+          "accepting_orders": true,
+          "market_id": "5423729",
+          "token_id": "93467049123088205120678155927921210796984898490882378933404758292795444264800"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 28\u00b0C on October 10?",
+          "bracket_low": 82.4,
+          "bracket_high": 84.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 180.427333,
+          "accepting_orders": true,
+          "market_id": "5423730",
+          "token_id": "106905374049939503687362018497181398090335710562707608880171052134987203211876"
+        },
+        {
+          "question": "Will the highest temperature in Tokyo be 29\u00b0C or higher on October 10?",
+          "bracket_low": 84.2,
+          "bracket_high": Infinity,
+          "bestBid": 0.005,
+          "bestAsk": 0.013,
+          "price": 0.013,
+          "volume": 258.30039999999997,
+          "accepting_orders": true,
+          "market_id": "5423731",
+          "token_id": "105028405156895827466089953854206569663011080435496988218562570912120062914261"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "market_id": "5423724",
+          "market_price": 0.009,
+          "forecast_high": 76.2,
+          "true_prob": 0.10786675556047426,
+          "ev": 11.985195062274919,
+          "forecast_openmeteo": 78.5,
+          "model_spread": 2.299999999999997,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
