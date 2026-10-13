@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-10-14",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-10-13T05:00:53+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 65.8,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 66.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.29999999999999716,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 14\u00b0C or below on October 14?",
+          "bracket_low": -Infinity,
+          "bracket_high": 57.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 160.82000000000002,
+          "accepting_orders": true,
+          "market_id": "5595700",
+          "token_id": "72758022016751479557451402810955804523653853521941586697308152387731935864228"
+        },
+        {
+          "question": "Will the highest temperature in London be 15\u00b0C on October 14?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 137.856592,
+          "accepting_orders": true,
+          "market_id": "5595701",
+          "token_id": "77352240818321236222439712527698993781180921968462793479475343140292343707150"
+        },
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C on October 14?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.005,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 193.532653,
+          "accepting_orders": true,
+          "market_id": "5595702",
+          "token_id": "69730445921378503687526479764104072986495992396555103685202017536831437834956"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on October 14?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": 0.018,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 124.01766200000002,
+          "accepting_orders": true,
+          "market_id": "5595703",
+          "token_id": "3269759054784251828389352754681119442812729023735700931113745194595560700741"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on October 14?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.15,
+          "bestAsk": 0.17,
+          "price": 0.17,
+          "volume": 895.1247039999996,
+          "accepting_orders": true,
+          "market_id": "5595704",
+          "token_id": "66174396592524654124008414064022063554315697450974442299768003531639118319149"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on October 14?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.56,
+          "bestAsk": 0.57,
+          "price": 0.57,
+          "volume": 1990.3340809999997,
+          "accepting_orders": true,
+          "market_id": "5595705",
+          "token_id": "63673870594497404291779994978357844576394442631585474694792755768151175922050"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on October 14?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.25,
+          "bestAsk": 0.26,
+          "price": 0.26,
+          "volume": 819.6329330000001,
+          "accepting_orders": true,
+          "market_id": "5595706",
+          "token_id": "26140444368004937268476105685806726233701772737601955703230703598335401221104"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C on October 14?",
+          "bracket_low": 69.8,
+          "bracket_high": 71.6,
+          "bestBid": 0.012,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 158.991896,
+          "accepting_orders": true,
+          "market_id": "5595707",
+          "token_id": "112830402779025086745989799563267946987051459339866827790668492057759702724669"
+        },
+        {
+          "question": "Will the highest temperature in London be 22\u00b0C on October 14?",
+          "bracket_low": 71.6,
+          "bracket_high": 73.4,
+          "bestBid": 0.003,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 100.493,
+          "accepting_orders": true,
+          "market_id": "5595708",
+          "token_id": "26258682047202553731595278495184866206788679484298233076035980333634534568914"
+        },
+        {
+          "question": "Will the highest temperature in London be 23\u00b0C on October 14?",
+          "bracket_low": 73.4,
+          "bracket_high": 75.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 293.78009699999996,
+          "accepting_orders": true,
+          "market_id": "5595709",
+          "token_id": "67057061688123871818563250002271726385268547767746779611603311059249428534422"
+        },
+        {
+          "question": "Will the highest temperature in London be 24\u00b0C or higher on October 14?",
+          "bracket_low": 75.2,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 100.0,
+          "accepting_orders": true,
+          "market_id": "5595710",
+          "token_id": "18184880362909864323783294323404707797591912488371105381344750673841364462171"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "market_id": "5595703",
+          "market_price": 0.019,
+          "forecast_high": 65.8,
+          "true_prob": 0.1680357015255221,
+          "ev": 8.843984290816953,
+          "forecast_openmeteo": 66.1,
+          "model_spread": 0.29999999999999716,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
