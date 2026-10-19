@@ -150,6 +150,188 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-10-19T05:00:42+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 54.7,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 57.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 2.3999999999999986,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 8\u00b0C or below on October 19?",
+          "bracket_low": -Infinity,
+          "bracket_high": 46.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 374.399,
+          "accepting_orders": true,
+          "market_id": "5795606",
+          "token_id": "67054308157109144518300269886372777102815643141686510864047068499623844412397"
+        },
+        {
+          "question": "Will the highest temperature in London be 9\u00b0C on October 19?",
+          "bracket_low": 48.2,
+          "bracket_high": 50.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 115.01,
+          "accepting_orders": true,
+          "market_id": "5795607",
+          "token_id": "102901755563696872340063457165869787031676305093890843482429851575236663552910"
+        },
+        {
+          "question": "Will the highest temperature in London be 10\u00b0C on October 19?",
+          "bracket_low": 50.0,
+          "bracket_high": 51.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 138.47,
+          "accepting_orders": true,
+          "market_id": "5795608",
+          "token_id": "34701225307258469761738860931540106383881237169499187134926013105227543073060"
+        },
+        {
+          "question": "Will the highest temperature in London be 11\u00b0C on October 19?",
+          "bracket_low": 51.8,
+          "bracket_high": 53.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 211.288,
+          "accepting_orders": true,
+          "market_id": "5795609",
+          "token_id": "73729975654849509271442703276178202830297566014936165561028722801656933761313"
+        },
+        {
+          "question": "Will the highest temperature in London be 12\u00b0C on October 19?",
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "bestBid": 0.002,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 1468.948432,
+          "accepting_orders": true,
+          "market_id": "5795610",
+          "token_id": "10871229366355247766660659854294862569674959838591018347766493688257171009581"
+        },
+        {
+          "question": "Will the highest temperature in London be 13\u00b0C on October 19?",
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "bestBid": 0.18,
+          "bestAsk": 0.19,
+          "price": 0.19,
+          "volume": 3359.1879009999993,
+          "accepting_orders": true,
+          "market_id": "5795611",
+          "token_id": "86192260352450266862482524537857252835774971465804281354662330016400631111219"
+        },
+        {
+          "question": "Will the highest temperature in London be 14\u00b0C on October 19?",
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "bestBid": 0.57,
+          "bestAsk": 0.59,
+          "price": 0.59,
+          "volume": 1916.8882,
+          "accepting_orders": true,
+          "market_id": "5795612",
+          "token_id": "108682567928719165910609543030940391177960597255287752927842488063584785201746"
+        },
+        {
+          "question": "Will the highest temperature in London be 15\u00b0C on October 19?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.23,
+          "bestAsk": 0.26,
+          "price": 0.26,
+          "volume": 7147.083809999999,
+          "accepting_orders": true,
+          "market_id": "5795613",
+          "token_id": "103498475277195852975169714073859724188304920199408367799798135279445408032844"
+        },
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C on October 19?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.005,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 893.5839430000001,
+          "accepting_orders": true,
+          "market_id": "5795614",
+          "token_id": "31017419996537060351347148774578456156460853593239697918212099273593243665422"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on October 19?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 644.941,
+          "accepting_orders": true,
+          "market_id": "5795615",
+          "token_id": "103600248014345487698926070942647054825440206560432559989618730433697726045900"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C or higher on October 19?",
+          "bracket_low": 64.4,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.002,
+          "price": 0.002,
+          "volume": 345.889,
+          "accepting_orders": true,
+          "market_id": "5795616",
+          "token_id": "93388420000803515476489732352677542203833106897693332553464341475100487283280"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 51.8,
+          "bracket_high": 53.6,
+          "market_id": "5795609",
+          "market_price": 0.001,
+          "forecast_high": 54.7,
+          "true_prob": 0.2067902785845705,
+          "ev": 206.7902785845705,
+          "forecast_openmeteo": 57.1,
+          "model_spread": 2.3999999999999986,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 50.0,
+          "bracket_high": 51.8,
+          "market_id": "5795608",
+          "market_price": 0.001,
+          "forecast_high": 54.7,
+          "true_prob": 0.09318572825824711,
+          "ev": 93.18572825824711,
+          "forecast_openmeteo": 57.1,
+          "model_spread": 2.3999999999999986,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "market_id": "5795610",
+          "market_price": 0.004,
+          "forecast_high": 54.7,
+          "true_prob": 0.27976018236021427,
+          "ev": 69.94004559005357,
+          "forecast_openmeteo": 57.1,
+          "model_spread": 2.3999999999999986,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
