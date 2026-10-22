@@ -444,9 +444,12 @@ date,target_date,days_ahead,city,station,question,bracket_low,bracket_high,marke
 2026-10-19,2026-10-19,0,London,EGLC,Will the highest temperature in London be 12°C on October 19?,53.6,55.4,0.004,54.7,54.7,0.2798,69.94,57.1,2.4,true,57.2,LOSS,2026-10-20T05:00:57+00:00
 2026-10-19,2026-10-20,1,London,EGLC,Will the highest temperature in London be 11°C on October 20?,51.8,53.6,0.009,55.6,55.6,0.1484,16.49,56.9,1.3,true,57.2,LOSS,2026-10-21T05:00:45+00:00
 2026-10-19,2026-10-19,0,Paris,LFPB,Will the highest temperature in Paris be 12°C on October 19?,53.6,55.4,0.019,56.5,56.5,0.1931,10.16,58.5,2.0,true,55.4,LOSS,2026-10-20T05:00:57+00:00
-2026-10-20,2026-10-21,1,London,EGLC,Will the highest temperature in London be 10°C on October 21?,50.0,51.8,0.005,53.7,53.7,0.1525,30.49,54.0,0.3,true,,PENDING,
-2026-10-20,2026-10-21,1,London,EGLC,Will the highest temperature in London be 11°C on October 21?,51.8,53.6,0.017,53.7,53.7,0.2108,12.4,54.0,0.3,true,,PENDING,
+2026-10-20,2026-10-21,1,London,EGLC,Will the highest temperature in London be 10°C on October 21?,50.0,51.8,0.005,53.7,53.7,0.1525,30.49,54.0,0.3,true,55.4,LOSS,2026-10-22T05:00:49+00:00
+2026-10-20,2026-10-21,1,London,EGLC,Will the highest temperature in London be 11°C on October 21?,51.8,53.6,0.017,53.7,53.7,0.2108,12.4,54.0,0.3,true,55.4,LOSS,2026-10-22T05:00:49+00:00
 2026-10-21,2026-10-22,1,London,EGLC,Will the highest temperature in London be 13°C on October 22?,55.4,57.2,0.007,57.0,57.0,0.2153,30.75,58.5,1.5,true,,PENDING,
 2026-10-21,2026-10-22,1,London,EGLC,Will the highest temperature in London be 12°C on October 22?,53.6,55.4,0.007,57.0,57.0,0.1642,23.45,58.5,1.5,true,,PENDING,
 2026-10-21,2026-10-22,1,Paris,LFPB,Will the highest temperature in Paris be 13°C on October 22?,55.4,57.2,0.004,58.6,58.6,0.1629,40.72,60.3,1.7,true,,PENDING,
 2026-10-21,2026-10-22,1,Paris,LFPB,Will the highest temperature in Paris be 14°C on October 22?,57.2,59.0,0.019,58.6,58.6,0.198,10.42,60.3,1.7,true,,PENDING,
+2026-10-22,2026-10-22,0,London,EGLC,Will the highest temperature in London be 11°C on October 22?,51.8,53.6,0.001,56.6,56.6,0.0882,88.22,57.1,0.5,true,,PENDING,
+2026-10-22,2026-10-23,1,London,EGLC,Will the highest temperature in London be 11°C on October 23?,51.8,53.6,0.019,55.4,55.4,0.1564,8.23,55.4,0.0,true,,PENDING,
+2026-10-22,2026-10-23,1,Paris,LFPB,Will the highest temperature in Paris be 12°C on October 23?,53.6,55.4,0.018,55.9,55.9,0.1853,10.29,56.2,0.3,true,,PENDING,

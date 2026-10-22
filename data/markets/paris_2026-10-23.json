@@ -1,0 +1,168 @@
+{
+  "city": "Paris",
+  "date": "2026-10-23",
+  "station": "LFPB",
+  "region": "intl",
+  "lat": 48.9694,
+  "lon": 2.4414,
+  "snapshots": [
+    {
+      "ts": "2026-10-22T05:00:46+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 55.9,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 56.2,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.30000000000000426,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 8\u00b0C or below on October 23?",
+          "bracket_low": -Infinity,
+          "bracket_high": 46.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 128.889,
+          "accepting_orders": true,
+          "market_id": "6003522",
+          "token_id": "76390927539609877774207288245918944067554753302774874351192315233463055822092"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 9\u00b0C on October 23?",
+          "bracket_low": 48.2,
+          "bracket_high": 50.0,
+          "bestBid": 0.001,
+          "bestAsk": 0.006,
+          "price": 0.006,
+          "volume": 327.69899999999996,
+          "accepting_orders": true,
+          "market_id": "6003523",
+          "token_id": "40418214337090013008162519351950231898324071703806587004032156874692539118155"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 10\u00b0C on October 23?",
+          "bracket_low": 50.0,
+          "bracket_high": 51.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 77.69900000000001,
+          "accepting_orders": true,
+          "market_id": "6003524",
+          "token_id": "42739518018007447872671476389467842361346690542310705523689449576777182587774"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 11\u00b0C on October 23?",
+          "bracket_low": 51.8,
+          "bracket_high": 53.6,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 78.884,
+          "accepting_orders": true,
+          "market_id": "6003525",
+          "token_id": "92688447077830045955917743148312612562057402903217435696405122044563263075995"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 12\u00b0C on October 23?",
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "bestBid": 0.007,
+          "bestAsk": 0.018,
+          "price": 0.018,
+          "volume": 120.92788300000001,
+          "accepting_orders": true,
+          "market_id": "6003526",
+          "token_id": "28411210563666057923731286828155479969019535396748020410138580647954314970150"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 13\u00b0C on October 23?",
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "bestBid": 0.06,
+          "bestAsk": 0.1,
+          "price": 0.1,
+          "volume": 491.03829800000005,
+          "accepting_orders": true,
+          "market_id": "6003527",
+          "token_id": "72764701973174178064129724437353819531533522473802402011214481347826498550893"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 14\u00b0C on October 23?",
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "bestBid": 0.5,
+          "bestAsk": 0.54,
+          "price": 0.54,
+          "volume": 318.612894,
+          "accepting_orders": true,
+          "market_id": "6003528",
+          "token_id": "25009723818998678605928071174445586413000474168455495047650046289990846908492"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 15\u00b0C on October 23?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.35,
+          "bestAsk": 0.37,
+          "price": 0.37,
+          "volume": 705.3454680000001,
+          "accepting_orders": true,
+          "market_id": "6003529",
+          "token_id": "19518138466961383962055227146135764232299460006224264790463439424316872588772"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 16\u00b0C on October 23?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.025,
+          "bestAsk": 0.029,
+          "price": 0.029,
+          "volume": 203.95733800000002,
+          "accepting_orders": true,
+          "market_id": "6003530",
+          "token_id": "39351657036481272722037714575218867490095905099715709475545241022977895062230"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 17\u00b0C on October 23?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": 0.003,
+          "bestAsk": 0.009,
+          "price": 0.009,
+          "volume": 151.613949,
+          "accepting_orders": true,
+          "market_id": "6003531",
+          "token_id": "39890686171103931709260037961219193936769846040512827447256122089970235417585"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 18\u00b0C or higher on October 23?",
+          "bracket_low": 64.4,
+          "bracket_high": Infinity,
+          "bestBid": 0.001,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 152.73054,
+          "accepting_orders": true,
+          "market_id": "6003532",
+          "token_id": "21704666910698520161197259175042278795906681561598370597717832077620157612047"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "market_id": "6003526",
+          "market_price": 0.018,
+          "forecast_high": 55.9,
+          "true_prob": 0.185293982596951,
+          "ev": 10.294110144275058,
+          "forecast_openmeteo": 56.2,
+          "model_spread": 0.30000000000000426,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
