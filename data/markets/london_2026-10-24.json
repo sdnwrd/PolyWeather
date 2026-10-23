@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-10-24",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-10-23T05:00:55+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 61.1,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 61.3,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.19999999999999574,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 11\u00b0C or below on October 24?",
+          "bracket_low": -Infinity,
+          "bracket_high": 51.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 50.0,
+          "accepting_orders": true,
+          "market_id": "6035858",
+          "token_id": "35282041330403876888498978526340825006902711495717674990047567256316264939371"
+        },
+        {
+          "question": "Will the highest temperature in London be 12\u00b0C on October 24?",
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "bestBid": 0.001,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 193.48700000000002,
+          "accepting_orders": true,
+          "market_id": "6035859",
+          "token_id": "92736937516451107381695350224434408956848073030550611419347861923385640336690"
+        },
+        {
+          "question": "Will the highest temperature in London be 13\u00b0C on October 24?",
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 290.462,
+          "accepting_orders": true,
+          "market_id": "6035860",
+          "token_id": "83344903401774309245922875744371852113273675261630834969583956948105955456672"
+        },
+        {
+          "question": "Will the highest temperature in London be 14\u00b0C on October 24?",
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 515.414,
+          "accepting_orders": true,
+          "market_id": "6035861",
+          "token_id": "115250132803284914823188590232103413159032624900973982056328170605690551009352"
+        },
+        {
+          "question": "Will the highest temperature in London be 15\u00b0C on October 24?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.05,
+          "bestAsk": 0.08,
+          "price": 0.08,
+          "volume": 1203.015472,
+          "accepting_orders": true,
+          "market_id": "6035862",
+          "token_id": "94206611422395387769178294760009899240487957369641186054874540890076123853775"
+        },
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C on October 24?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.38,
+          "bestAsk": 0.41,
+          "price": 0.41,
+          "volume": 6039.389182000001,
+          "accepting_orders": true,
+          "market_id": "6035863",
+          "token_id": "96317750713799159654995031935363933071729794957378976885932728143100959593533"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on October 24?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": 0.38,
+          "bestAsk": 0.44,
+          "price": 0.44,
+          "volume": 1860.35017,
+          "accepting_orders": true,
+          "market_id": "6035864",
+          "token_id": "53598040750419547118352299860476193814851775192598972867249722230433558978115"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on October 24?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.105,
+          "bestAsk": 0.147,
+          "price": 0.147,
+          "volume": 1488.592695,
+          "accepting_orders": true,
+          "market_id": "6035865",
+          "token_id": "42227162738604532880667028092083509321371701103596701271619654396709394010485"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on October 24?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.011,
+          "bestAsk": 0.022,
+          "price": 0.022,
+          "volume": 1588.1316669999999,
+          "accepting_orders": true,
+          "market_id": "6035866",
+          "token_id": "93934052674948587078586992948481121065665438287251264697106007040528823448169"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on October 24?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 258.487,
+          "accepting_orders": true,
+          "market_id": "6035867",
+          "token_id": "43715113219149715325161919483826059234437838313677650252824126510428681545699"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C or higher on October 24?",
+          "bracket_low": 69.8,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": null,
+          "accepting_orders": true,
+          "market_id": "6035868",
+          "token_id": "104339729228073442060390625415255203292600434403949756631851334362644484700037"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "market_id": "6035861",
+          "market_price": 0.003,
+          "forecast_high": 61.1,
+          "true_prob": 0.14431724599330353,
+          "ev": 48.10574866443451,
+          "forecast_openmeteo": 61.3,
+          "model_spread": 0.19999999999999574,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
