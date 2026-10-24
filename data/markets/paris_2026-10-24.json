@@ -150,6 +150,164 @@
         }
       ],
       "signals_fired": []
+    },
+    {
+      "ts": "2026-10-24T05:00:54+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 55.5,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 55.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.3999999999999986,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in Paris be 7\u00b0C or below on October 24?",
+          "bracket_low": -Infinity,
+          "bracket_high": 44.6,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1049.982,
+          "accepting_orders": true,
+          "market_id": "6035869",
+          "token_id": "72060403915854602585258311459540827122272677587986912301655920186171274135589"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 8\u00b0C on October 24?",
+          "bracket_low": 46.4,
+          "bracket_high": 48.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 1083.248,
+          "accepting_orders": true,
+          "market_id": "6035870",
+          "token_id": "99784133062697814762621089343904405418978156692329931434066961662395711095172"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 9\u00b0C on October 24?",
+          "bracket_low": 48.2,
+          "bracket_high": 50.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 90.0,
+          "accepting_orders": true,
+          "market_id": "6035871",
+          "token_id": "17919308703264932710678136716182167368790059866212380894534453397941099442506"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 10\u00b0C on October 24?",
+          "bracket_low": 50.0,
+          "bracket_high": 51.8,
+          "bestBid": null,
+          "bestAsk": 0.008,
+          "price": 0.008,
+          "volume": 120.4,
+          "accepting_orders": true,
+          "market_id": "6035872",
+          "token_id": "63105360717898060148671345047831645370420634349047040826558152417540018036303"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 11\u00b0C on October 24?",
+          "bracket_low": 51.8,
+          "bracket_high": 53.6,
+          "bestBid": 0.01,
+          "bestAsk": 0.011,
+          "price": 0.011,
+          "volume": 1654.6394100000002,
+          "accepting_orders": true,
+          "market_id": "6035873",
+          "token_id": "34210043894215264332119620326032458285041757877589214047479947359077561537720"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 12\u00b0C on October 24?",
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "bestBid": 0.088,
+          "bestAsk": 0.108,
+          "price": 0.108,
+          "volume": 1563.847345,
+          "accepting_orders": true,
+          "market_id": "6035874",
+          "token_id": "34046721592545768991652245606753081008548878318471012674336668834237733546358"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 13\u00b0C on October 24?",
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "bestBid": 0.52,
+          "bestAsk": 0.56,
+          "price": 0.56,
+          "volume": 7023.412026,
+          "accepting_orders": true,
+          "market_id": "6035875",
+          "token_id": "39415866659715348654995803834548294983834157878143258796374255598390594718340"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 14\u00b0C on October 24?",
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "bestBid": 0.31,
+          "bestAsk": 0.35,
+          "price": 0.35,
+          "volume": 6846.033510000001,
+          "accepting_orders": true,
+          "market_id": "6035876",
+          "token_id": "102032143571447480404016311895165545571313192449589423665428045106444104226945"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 15\u00b0C on October 24?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.031,
+          "bestAsk": 0.054,
+          "price": 0.054,
+          "volume": 6305.397284999999,
+          "accepting_orders": true,
+          "market_id": "6035877",
+          "token_id": "41257472445685550990589352201613528346059990345002429754742157732635520906241"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 16\u00b0C on October 24?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.003,
+          "bestAsk": 0.01,
+          "price": 0.01,
+          "volume": 1083.282269,
+          "accepting_orders": true,
+          "market_id": "6035878",
+          "token_id": "104775477207962992297076062185455320725261089551707504061383796976984857933503"
+        },
+        {
+          "question": "Will the highest temperature in Paris be 17\u00b0C or higher on October 24?",
+          "bracket_low": 62.6,
+          "bracket_high": Infinity,
+          "bestBid": 0.002,
+          "bestAsk": 0.014,
+          "price": 0.014,
+          "volume": 1501.185844,
+          "accepting_orders": true,
+          "market_id": "6035879",
+          "token_id": "27328956254757763203139312950441194454660746630980609935611443138364646334740"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 51.8,
+          "bracket_high": 53.6,
+          "market_id": "6035873",
+          "market_price": 0.011,
+          "forecast_high": 55.5,
+          "true_prob": 0.15538037069982202,
+          "ev": 14.125488245438367,
+          "forecast_openmeteo": 55.1,
+          "model_spread": 0.3999999999999986,
+          "vetoed": true
+        }
+      ]
     }
   ]
 }
