@@ -1,0 +1,180 @@
+{
+  "city": "London",
+  "date": "2026-10-26",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-10-25T05:00:54+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 61.2,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 61.7,
+      "veto_source": "openmeteo-gfs",
+      "spread": 0.5,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 11\u00b0C or below on October 26?",
+          "bracket_low": -Infinity,
+          "bracket_high": 51.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 115.0,
+          "accepting_orders": true,
+          "market_id": "6111385",
+          "token_id": "61526352601508844474431245920696371271599322356942490998644214446411869819660"
+        },
+        {
+          "question": "Will the highest temperature in London be 12\u00b0C on October 26?",
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 223.567,
+          "accepting_orders": true,
+          "market_id": "6111386",
+          "token_id": "8942883777794668107454439970990714550895248172586082331198909054146084411479"
+        },
+        {
+          "question": "Will the highest temperature in London be 13\u00b0C on October 26?",
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 170.0,
+          "accepting_orders": true,
+          "market_id": "6111387",
+          "token_id": "87125510073456851015234644207638284306020254431445457560896134749081513075612"
+        },
+        {
+          "question": "Will the highest temperature in London be 14\u00b0C on October 26?",
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "bestBid": 0.003,
+          "bestAsk": 0.007,
+          "price": 0.007,
+          "volume": 853.7603079999999,
+          "accepting_orders": true,
+          "market_id": "6111388",
+          "token_id": "33793930457782627452859142867443192643574724994510779968492037033421403823797"
+        },
+        {
+          "question": "Will the highest temperature in London be 15\u00b0C on October 26?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.006,
+          "bestAsk": 0.019,
+          "price": 0.019,
+          "volume": 1567.702072,
+          "accepting_orders": true,
+          "market_id": "6111389",
+          "token_id": "69679954340925482004772500808470869542014733900340236394575947414907692773106"
+        },
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C on October 26?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.16,
+          "bestAsk": 0.2,
+          "price": 0.2,
+          "volume": 2155.030053,
+          "accepting_orders": true,
+          "market_id": "6111390",
+          "token_id": "76113253630951249189586580408363316229606124881783273244217692515549100370888"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on October 26?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": 0.57,
+          "bestAsk": 0.61,
+          "price": 0.61,
+          "volume": 3177.8206569999998,
+          "accepting_orders": true,
+          "market_id": "6111391",
+          "token_id": "33113200618873058420914004706851275142217649623085700323703347569726645107261"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on October 26?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.21,
+          "bestAsk": 0.25,
+          "price": 0.25,
+          "volume": 1695.213403,
+          "accepting_orders": true,
+          "market_id": "6111392",
+          "token_id": "12865200107877344597844789686412655406477869965658016075240305258603910306122"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on October 26?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": 0.002,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 911.740252,
+          "accepting_orders": true,
+          "market_id": "6111393",
+          "token_id": "87303381463675678336966412847679501973930112286904218539065905467443166787313"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C on October 26?",
+          "bracket_low": 68.0,
+          "bracket_high": 69.8,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 454.98300000000006,
+          "accepting_orders": true,
+          "market_id": "6111394",
+          "token_id": "1666433657494134875173219849301881148265368639363672154964964060885775027063"
+        },
+        {
+          "question": "Will the highest temperature in London be 21\u00b0C or higher on October 26?",
+          "bracket_low": 69.8,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 225.01,
+          "accepting_orders": true,
+          "market_id": "6111395",
+          "token_id": "20177697127133714277893767866943541784710944748785694065179822798165954004647"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "market_id": "6111388",
+          "market_price": 0.007,
+          "forecast_high": 61.2,
+          "true_prob": 0.14020007328694656,
+          "ev": 20.028581898135222,
+          "forecast_openmeteo": 61.7,
+          "model_spread": 0.5,
+          "vetoed": true
+        },
+        {
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "market_id": "6111389",
+          "market_price": 0.019,
+          "forecast_high": 61.2,
+          "true_prob": 0.20390897411543818,
+          "ev": 10.732051269233589,
+          "forecast_openmeteo": 61.7,
+          "model_spread": 0.5,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
