@@ -1,0 +1,168 @@
+{
+  "city": "London",
+  "date": "2026-10-30",
+  "station": "EGLC",
+  "region": "intl",
+  "lat": 51.5053,
+  "lon": 0.0553,
+  "snapshots": [
+    {
+      "ts": "2026-10-29T05:00:47+00:00",
+      "scan_type": "morning",
+      "primary_forecast": 59.9,
+      "primary_source": "openmeteo-best",
+      "veto_forecast": 61.1,
+      "veto_source": "openmeteo-gfs",
+      "spread": 1.2000000000000028,
+      "metar_observed": null,
+      "markets": [
+        {
+          "question": "Will the highest temperature in London be 10\u00b0C or below on October 30?",
+          "bracket_low": -Infinity,
+          "bracket_high": 50.0,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 273.0,
+          "accepting_orders": true,
+          "market_id": "6335335",
+          "token_id": "93496368698214040942156452033080872061597754983922141493671608837333407703815"
+        },
+        {
+          "question": "Will the highest temperature in London be 11\u00b0C on October 30?",
+          "bracket_low": 51.8,
+          "bracket_high": 53.6,
+          "bestBid": null,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 174.97199999999998,
+          "accepting_orders": true,
+          "market_id": "6335336",
+          "token_id": "60779253314409803656872125411889125634427227530274486215823831278754323949121"
+        },
+        {
+          "question": "Will the highest temperature in London be 12\u00b0C on October 30?",
+          "bracket_low": 53.6,
+          "bracket_high": 55.4,
+          "bestBid": null,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 325.353,
+          "accepting_orders": true,
+          "market_id": "6335337",
+          "token_id": "22266187125007308508866655580679148899768464268646596275898154209740785095920"
+        },
+        {
+          "question": "Will the highest temperature in London be 13\u00b0C on October 30?",
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "bestBid": 0.003,
+          "bestAsk": 0.004,
+          "price": 0.004,
+          "volume": 886.2949160000001,
+          "accepting_orders": true,
+          "market_id": "6335338",
+          "token_id": "7189114091759803300402238525480316588308049991387073130217648852735019032337"
+        },
+        {
+          "question": "Will the highest temperature in London be 14\u00b0C on October 30?",
+          "bracket_low": 57.2,
+          "bracket_high": 59.0,
+          "bestBid": 0.016,
+          "bestAsk": 0.04,
+          "price": 0.04,
+          "volume": 923.1112770000001,
+          "accepting_orders": true,
+          "market_id": "6335339",
+          "token_id": "108073015223383711581199952508911836709512038650762274074913671877457404856685"
+        },
+        {
+          "question": "Will the highest temperature in London be 15\u00b0C on October 30?",
+          "bracket_low": 59.0,
+          "bracket_high": 60.8,
+          "bestBid": 0.29,
+          "bestAsk": 0.31,
+          "price": 0.31,
+          "volume": 4400.913165999999,
+          "accepting_orders": true,
+          "market_id": "6335340",
+          "token_id": "82291046687159755297344590768243523495020630799721997361697480780331065928563"
+        },
+        {
+          "question": "Will the highest temperature in London be 16\u00b0C on October 30?",
+          "bracket_low": 60.8,
+          "bracket_high": 62.6,
+          "bestBid": 0.52,
+          "bestAsk": 0.55,
+          "price": 0.55,
+          "volume": 2226.590856,
+          "accepting_orders": true,
+          "market_id": "6335341",
+          "token_id": "60371815028253826164879877985735968706086719488074722325509882892292758546412"
+        },
+        {
+          "question": "Will the highest temperature in London be 17\u00b0C on October 30?",
+          "bracket_low": 62.6,
+          "bracket_high": 64.4,
+          "bestBid": 0.14,
+          "bestAsk": 0.16,
+          "price": 0.16,
+          "volume": 1880.4431479999998,
+          "accepting_orders": true,
+          "market_id": "6335342",
+          "token_id": "74439306065841915187273024511765735674334255760305509696589124968883764216444"
+        },
+        {
+          "question": "Will the highest temperature in London be 18\u00b0C on October 30?",
+          "bracket_low": 64.4,
+          "bracket_high": 66.2,
+          "bestBid": 0.004,
+          "bestAsk": 0.005,
+          "price": 0.005,
+          "volume": 657.1047389999999,
+          "accepting_orders": true,
+          "market_id": "6335343",
+          "token_id": "114999366959941670303173885157216420139394431974514478408349607950445318923812"
+        },
+        {
+          "question": "Will the highest temperature in London be 19\u00b0C on October 30?",
+          "bracket_low": 66.2,
+          "bracket_high": 68.0,
+          "bestBid": null,
+          "bestAsk": 0.003,
+          "price": 0.003,
+          "volume": 392.34950000000003,
+          "accepting_orders": true,
+          "market_id": "6335344",
+          "token_id": "43566768569645369586852309409397671856718024858816709291944512690237413521748"
+        },
+        {
+          "question": "Will the highest temperature in London be 20\u00b0C or higher on October 30?",
+          "bracket_low": 68.0,
+          "bracket_high": Infinity,
+          "bestBid": null,
+          "bestAsk": 0.001,
+          "price": 0.001,
+          "volume": 105.0,
+          "accepting_orders": true,
+          "market_id": "6335345",
+          "token_id": "33531088181019385978881212052455445479289860692667805523497889447226220082642"
+        }
+      ],
+      "signals_fired": [
+        {
+          "bracket_low": 55.4,
+          "bracket_high": 57.2,
+          "market_id": "6335338",
+          "market_price": 0.004,
+          "forecast_high": 59.9,
+          "true_prob": 0.11928424295032564,
+          "ev": 29.82106073758141,
+          "forecast_openmeteo": 61.1,
+          "model_spread": 1.2000000000000028,
+          "vetoed": true
+        }
+      ]
+    }
+  ]
+}
